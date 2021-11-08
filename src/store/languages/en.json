@@ -1,0 +1,10 @@
+{
+  "Header": {
+    "menu": ["Home", "About", "Resume", "Portfolio", "Services", "Contact"]
+  },
+  "SectionMe": {
+    "h1": "Alex Christian",
+    "p": "I'm",
+    "span": "web developer"
+  }
+}

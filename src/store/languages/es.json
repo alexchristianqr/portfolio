@@ -1,0 +1,17 @@
+{
+  "Header": {
+    "menu": [
+      "Inicio",
+      "Sobre mí",
+      "Resumen",
+      "Portafolio",
+      "Servicios",
+      "Contacto"
+    ]
+  },
+  "SectionMe": {
+    "h1":"Alex Christian",
+    "p": "Soy",
+    "span": ["programador web"]
+  }
+}
