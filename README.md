@@ -1,4 +1,5 @@
 # portfolio
+website in vuejs for informational use of my portfolio
 
 ## Project setup
 ```
@@ -13,6 +14,7 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+sh deploy.sh
 ```
 
 ### Lints and fixes files
