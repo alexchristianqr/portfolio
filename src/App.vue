@@ -910,4 +910,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+@import './../public/assets/vendor/aos/aos.css';
+@import './../public/assets/vendor/bootstrap/css/bootstrap.min.css';
+@import './../public/assets/vendor/bootstrap-icons/bootstrap-icons.css';
+@import './../public/assets/vendor/boxicons/css/boxicons.min.css';
+@import './../public/assets/vendor/glightbox/css/glightbox.min.css';
+@import './../public/assets/vendor/swiper/swiper-bundle.min.css';
+@import './../public/assets/css/style.css';
+</style>
