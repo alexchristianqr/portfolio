@@ -7,5 +7,44 @@
     "h1": "Alex",
     "p": "I'm",
     "span": "Web Developer"
+  },
+  "SectionAbout": {
+    "p": "I am a web developer with +4 years of experience using frontend and backend technologies. I have worked in growing technology companies where the challenges and the day to day are variable and high learning. I am also a digital entrepreneur.",
+    "p2": "Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.",
+    "h3": "Web Developer Full Stack",
+    "li": [
+      {
+        "text": "Birthday",
+        "value": "22 de Setiembre de 1993"
+      },
+      {
+        "text": "Website",
+        "value": "https://acqrdeveloper.github.io/portfolio/"
+      },
+      {
+        "text": "Phone",
+        "value": "+51955588297"
+      },
+      {
+        "text": "City",
+        "value": "Lince, Lima, Peru"
+      },
+      {
+        "text": "Age",
+        "value": "28"
+      },
+      {
+        "text": "Degree",
+        "value": "Technical"
+      },
+      {
+        "text": "Email",
+        "value": "alex.quispe@intellitec.pe"
+      },
+      {
+        "text": "Freelance",
+        "value": "Unavailable"
+      }
+    ]
   }
 }

@@ -3,42 +3,73 @@
     <div class="container">
       <div class="section-title">
         <h2>{{ selectedLanguage.Header.menu[1] }}</h2>
-        <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-          ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-        </p>
+        <p>{{ selectedLanguage.SectionAbout.p }}</p>
       </div>
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.jpg" class="img-fluid" alt="" />
+          <img src="assets/img/me.jpg" class="img-fluid" alt="" width="100%" />
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>UI/UX Designer &amp; Web Developer.</h3>
-          <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="col-lg-8 pt-4 pt-lg-0 content my-auto" data-aos="fade-left">
+          <h3>{{ selectedLanguage.SectionAbout.h3 }}</h3>
+          <div class="row pb-5">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <p>{{ selectedLanguage.SectionAbout.p2 }}</p>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>{{ selectedLanguage.SectionAbout.li[0].text }}:</strong>
+                  <span>{{ selectedLanguage.SectionAbout.li[0].value }}</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>{{ selectedLanguage.SectionAbout.li[1].text }}:</strong>
+                  <a :href="selectedLanguage.SectionAbout.li[1].value" target="_blank">{{ selectedLanguage.SectionAbout.li[1].value }}</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>{{ selectedLanguage.SectionAbout.li[2].text }}:</strong>
+                  <span>{{ selectedLanguage.SectionAbout.li[2].value }}</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>{{ selectedLanguage.SectionAbout.li[3].text }}:</strong>
+                  <span>{{ selectedLanguage.SectionAbout.li[3].value }}</span>
+                </li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                <!--Edad-->
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>{{ selectedLanguage.SectionAbout.li[4].text }}:</strong>
+                  <span>{{ new Date().getFullYear() - 1993 }}</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>{{ selectedLanguage.SectionAbout.li[5].text }}:</strong>
+                  <span>{{ selectedLanguage.SectionAbout.li[5].value }}</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>{{ selectedLanguage.SectionAbout.li[6].text }}:</strong>
+                  <span>{{ selectedLanguage.SectionAbout.li[6].value }}</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>{{ selectedLanguage.SectionAbout.li[7].text }}:</strong>
+                  <span>{{ selectedLanguage.SectionAbout.li[7].value }}</span>
+                </li>
               </ul>
             </div>
           </div>
-          <p>
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut
-            dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium
-            dolores.
-          </p>
         </div>
       </div>
     </div>

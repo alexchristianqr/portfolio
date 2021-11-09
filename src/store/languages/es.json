@@ -1,21 +1,50 @@
 {
   "fullName": "Alex",
   "Header": {
-    "menu": [
-      "Inicio",
-      "Sobre mí",
-      "Hechos",
-      "Habilidades",
-      "Resumen",
-      "Portafolio",
-      "Servicios",
-      "Testimonios",
-      "Contacto"
-    ]
+    "menu": ["Inicio", "Sobre mí", "Hechos", "Habilidades", "Resumen", "Portafolio", "Servicios", "Testimonios", "Contacto"]
   },
   "SectionMe": {
-    "h1":"Alex",
+    "h1": "Alex",
     "p": "Soy",
     "span": "Programador"
+  },
+  "SectionAbout": {
+    "p": "Soy un desarrollador web con +4 de años de experiencia usando tecnologías frontend y backend. He trabajado en empresas de tecnología en crecimiento donde los retos y el día a día son variables y de alto aprendizaje. Tambien soy un emprendedor digital.",
+    "p2": "Sin darte cuenta los años en tecnología pasan muy rápido por eso es importante mantenerte actualizado y revisando las contantes actualizaciones.",
+    "h3": "Desarrollador Web Full Stack",
+    "li": [
+      {
+        "text": "Cumpleaños",
+        "value": "22 de Setiembre de 1993"
+      },
+      {
+        "text": "Sitio web",
+        "value": "https://acqrdeveloper.github.io/portfolio/"
+      },
+      {
+        "text": "Phone",
+        "value": "+51955588297"
+      },
+      {
+        "text": "Ciudad",
+        "value": "Lince, Lima, Peru"
+      },
+      {
+        "text": "Edad",
+        "value": "28"
+      },
+      {
+        "text": "Estudios",
+        "value": "Técnico"
+      },
+      {
+        "text": "Email",
+        "value": "alex.quispe@intellitec.pe"
+      },
+      {
+        "text": "Freelance",
+        "value": "No disponible"
+      }
+    ]
   }
 }
