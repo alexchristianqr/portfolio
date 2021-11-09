@@ -12,26 +12,16 @@
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <div class="btn-group mx-1">
-            <button class="btn btn-secondary btn-sm dropdown-toggle text-capitalize" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">{{ language }}</button>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item" style="cursor: pointer" @click="changeLanguage('es')">Español</li>
-              <li class="dropdown-item" style="cursor: pointer" @click="changeLanguage('en')">Ingles</li>
-            </ul>
-          </div>
         </div>
       </div>
       <div class="pt-3 mx-auto">
-        <!--<div class="btn-group position-sticky text-center w-100">-->
-        <!--<button type="button" class="btn btn-primary btn-sm" :class="{ active: language == 'en' }" @click="changeLanguage('en')">En</button>-->
-        <!--<button type="button" class="btn btn-primary btn-sm" :class="{ active: language == 'es' }" @click="changeLanguage('es')">Es</button>-->
-        <!--</div>-->
-        <!--<button class="btn btn-sm text-white mr-5" :class="{ 'btn-primary': language == 'en' }" @click="changeLanguage('en')">-->
-        <!--<span>En</span>-->
-        <!--</button>-->
-        <!--<button class="btn btn-sm text-white" :class="{ 'btn-primary': language == 'es' }" @click="changeLanguage('es')">-->
-        <!--<span>Es</span>-->
-        <!--</button>-->
+        <div class="btn-group mx-1">
+          <button class="btn btn-block dropdown-toggle text-capitalize text-white" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">{{ language }}</button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item" style="cursor: pointer" @click="changeLanguage('es')">Español</li>
+            <li class="dropdown-item" style="cursor: pointer" @click="changeLanguage('en')">Ingles</li>
+          </ul>
+        </div>
       </div>
 
       <!---->
@@ -58,11 +48,11 @@
               <i class="bx bx-book-content"></i> <span>{{ selectedLanguage.Header.menu[5] }}</span>
             </a>
           </li>
-          <li>
-            <a href="#services" class="nav-link scrollto">
-              <i class="bx bx-server"></i> <span>{{ selectedLanguage.Header.menu[6] }}</span>
-            </a>
-          </li>
+          <!--<li>-->
+          <!--<a href="#services" class="nav-link scrollto">-->
+          <!--<i class="bx bx-server"></i> <span>{{ selectedLanguage.Header.menu[6] }}</span>-->
+          <!--</a>-->
+          <!--</li>-->
           <li>
             <a href="#contact" class="nav-link scrollto">
               <i class="bx bx-envelope"></i> <span>{{ selectedLanguage.Header.menu[8] }}</span>
