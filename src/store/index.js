@@ -20,11 +20,11 @@ export const store = new Vuex.Store({
       switch (payload) {
         case 'es':
           localStorage.setItem('lang', 'es')
-          localStorage.setItem('language', JSON.stringify(es))
+          state.language.selected = es
           break
         case 'en':
           localStorage.setItem('lang', 'en')
-          localStorage.setItem('language', JSON.stringify(en))
+          state.language.selected = en
           break
       }
     },

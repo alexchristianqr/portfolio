@@ -16,11 +16,13 @@
       </div>
       <div class="pt-3 mx-auto">
         <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-dark btn-sm" :class="{ active: language == 'es' }" @click="changeLanguage('es')">
+          <button type="button" class="btn btn-dark" style="height: 2.75rem" :class="{ active: language == 'es' }" @click="changeLanguage('es')">
             <img :src="require('../../../public/assets/img/countries/per.svg')" alt="PERU" width="24" class="align-middle" />
+            <div v-if="language === 'es'" class="border border-bottom border-primary"></div>
           </button>
-          <button type="button" class="btn btn-dark btn-sm" :class="{ active: language == 'en' }" @click="changeLanguage('en')">
+          <button type="button" class="btn btn-dark" style="height: 2.75rem" :class="{ active: language == 'en' }" @click="changeLanguage('en')">
             <img :src="require('../../../public/assets/img/countries/usa.svg')" alt="USA" width="24" class="align-middle" />
+            <div v-if="language === 'en'" class="border border-bottom border-primary"></div>
           </button>
         </div>
       </div>

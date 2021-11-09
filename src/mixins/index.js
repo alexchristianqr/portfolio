@@ -1,24 +1,30 @@
 import Vue from 'vue'
 import { store } from '../store'
 import en from '../store/languages/en'
-// import es from '../store/languages/es'
+import es from '../store/languages/es'
 
 Vue.mixin({
-  mounted(){
-    if(localStorage.getItem('lang')){
-      store.state.language.selected = JSON.parse(localStorage.getItem('language'))
-    }else{
+  mounted() {
+    if (localStorage.getItem('lang')) {
+      switch (localStorage.getItem('lang')) {
+        case 'es':
+          store.state.language.selected = es
+          break
+        case 'en':
+          store.state.language.selected = en
+          break
+      }
+    } else {
       localStorage.setItem('lang', 'en')
-      localStorage.setItem('language', JSON.stringify(en))
       store.state.language.selected = en
     }
   },
   computed: {
-    selectedLanguage(){
+    selectedLanguage() {
       return store.getters.selectedLanguage
     },
-    loadingPage(){
+    loadingPage() {
       return store.getters.loadingPage
     },
-  }
+  },
 })
