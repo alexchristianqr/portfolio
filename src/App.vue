@@ -1,61 +1,56 @@
 <template>
   <div id="app">
-    <template v-if="loadingPage">
-      <div class="w-100 h-100">Cargando...</div>
-    </template>
-    <template v-else>
-      <!-- ======= Mobile nav toggle button ======= -->
-      <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-      <!-- ======= Header ======= -->
-      <AppHeader />
-      <!-- End Header -->
+    <!-- ======= Header ======= -->
+    <AppHeader />
+    <!-- End Header -->
 
-      <!-- ======= Hero Section ======= -->
-      <SectionMe />
-      <!-- End Hero -->
+    <!-- ======= Hero Section ======= -->
+    <SectionMe />
+    <!-- End Hero -->
 
-      <main id="main">
-        <!-- ======= About Section ======= -->
-        <SectionAbout />
-        <!-- End About Section -->
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <SectionAbout />
+      <!-- End About Section -->
 
-        <!-- ======= Facts Section ======= -->
-        <!--<SectionFacts />-->
-        <!-- End Facts Section -->
+      <!-- ======= Facts Section ======= -->
+      <!--<SectionFacts />-->
+      <!-- End Facts Section -->
 
-        <!-- ======= Skills Section ======= -->
-        <SectionSkills />
-        <!-- End Skills Section -->
+      <!-- ======= Skills Section ======= -->
+      <SectionSkills />
+      <!-- End Skills Section -->
 
-        <!-- ======= Resume Section ======= -->
-        <SectionResume />
-        <!-- End Resume Section -->
+      <!-- ======= Resume Section ======= -->
+      <SectionResume />
+      <!-- End Resume Section -->
 
-        <!-- ======= Portfolio Section ======= -->
-        <SectionPortfolio />
-        <!-- End Portfolio Section -->
+      <!-- ======= Portfolio Section ======= -->
+      <SectionPortfolio />
+      <!-- End Portfolio Section -->
 
-        <!-- ======= Services Section ======= -->
-        <!--<SectionServices />-->
-        <!-- End Services Section -->
+      <!-- ======= Services Section ======= -->
+      <!--<SectionServices />-->
+      <!-- End Services Section -->
 
-        <!-- ======= Testimonials Section ======= -->
-        <SectionTestimonials />
-        <!-- End Testimonials Section -->
+      <!-- ======= Testimonials Section ======= -->
+      <SectionTestimonials />
+      <!-- End Testimonials Section -->
 
-        <!-- ======= Contact Section ======= -->
-        <SectionContact />
-        <!-- End Contact Section -->
-      </main>
-      <!-- End #main -->
+      <!-- ======= Contact Section ======= -->
+      <SectionContact />
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
 
-      <!-- ======= Footer ======= -->
-      <AppFooter />
-      <!-- End  Footer -->
+    <!-- ======= Footer ======= -->
+    <AppFooter />
+    <!-- End  Footer -->
 
-      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-    </template>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   </div>
 </template>
 

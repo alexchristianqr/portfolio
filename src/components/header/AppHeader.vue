@@ -15,12 +15,13 @@
         </div>
       </div>
       <div class="pt-3 mx-auto">
-        <div class="btn-group mx-1">
-          <button class="btn btn-block dropdown-toggle text-capitalize text-white" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">{{ language }}</button>
-          <ul class="dropdown-menu">
-            <li class="dropdown-item" style="cursor: pointer" @click="changeLanguage('es')">Español</li>
-            <li class="dropdown-item" style="cursor: pointer" @click="changeLanguage('en')">Ingles</li>
-          </ul>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-dark btn-sm" :class="{ active: language == 'es' }" @click="changeLanguage('es')">
+            <img :src="require('../../../public/assets/img/countries/per.svg')" alt="PERU" width="24" class="align-middle" />
+          </button>
+          <button type="button" class="btn btn-dark btn-sm" :class="{ active: language == 'en' }" @click="changeLanguage('en')">
+            <img :src="require('../../../public/assets/img/countries/usa.svg')" alt="USA" width="24" class="align-middle" />
+          </button>
         </div>
       </div>
 
@@ -70,9 +71,8 @@ export default {
   name: 'AppHeader',
   data: () => ({
     language: 'en',
-    changed: false,
   }),
-  mounted() {
+  beforeMount() {
     this.language = localStorage.getItem('lang')
   },
   methods: {

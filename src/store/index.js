@@ -31,9 +31,7 @@ export const store = new Vuex.Store({
     setLoadingPage(state, payload) {
       console.log('[Mutations.setLoadingPage]', payload)
       state.loading.page = payload
-      setTimeout(() => {
-        window.location.reload()
-      }, 1500)
+      window.location.reload(true)
     },
   },
   getters: {

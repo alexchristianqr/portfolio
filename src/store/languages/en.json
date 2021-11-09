@@ -1,5 +1,5 @@
 {
-  "fullName": "Alex",
+  "fullName": "Alex Christian",
   "Header": {
     "menu": ["Home", "About", "Facts", "Skills", "Resume", "Portfolio", "Services", "Testimonials", "Contact"]
   },
@@ -49,5 +49,63 @@
   },
   "SectionSkills": {
     "p": "Throughout all these years there are many technologies that I have tried and many experiences that I have lived. But very useful to develop functional, secure and scalable software."
+  },
+  "SectionResume": {
+    "p": null,
+    "categories": [
+      {
+        "title": "Profesión",
+        "data": [
+          {
+            "title": "Alex Christian",
+            "date": "2021",
+            "local": null,
+            "description": [
+              "Profesional con estudios técnicos y autodidacta en mis tiempos libres soy un desarrollador web con más de 4 años de experiencia desarrollando aplicaciones para frontend, backend, API's y microservicios."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Educación",
+        "data": [
+          {
+            "title": "Computación e Informática",
+            "date": "2012 - 2015",
+            "local": "Instituto Privado Superior Tecnológico IDAT",
+            "description": [""]
+          }
+        ]
+      },
+      {
+        "title": "Experiencia Profesional",
+        "data": [
+          {
+            "title": "Desarrollador Web Full Stack",
+            "date": "2018 - 2021",
+            "local": "Securitec Peru S.A.C",
+            "description": ["Desarrollar apps"]
+          },
+          {
+            "title": "Analista y Desarrollador Web",
+            "date": "2018 - 2018",
+            "local": "Corporación Sapia S.A",
+            "description": ["Hola"]
+          },
+          {
+            "title": "Desarrollador Web",
+            "date": "2016 - 2017",
+            "local": "Centros Virtuales del Peru E.I.R.L",
+            "description": ["Hola"]
+          },
+          {
+            "title": "Practicante Desarrollador Web",
+            "date": "2016 - 2017",
+            "local": "Hacom S.A.C",
+            "description": ["Hola"]
+          }
+        ]
+      }
+    ]
   }
 }

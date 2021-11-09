@@ -228,7 +228,7 @@ h6 {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  height: 55%;
+  height: 42.5%;
   min-width: 425px;
 }
 #hero h1 {
@@ -250,14 +250,31 @@ h6 {
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
-@media (max-width: 1440px) {
+@media (min-width: 2560px) {
   #hero h1 {
-    font-size: 52px;
+    font-size: 90px;
+  }
+  #hero p {
+    font-size: 45px;
   }
   #hero .hero-container {
     position: relative;
     z-index: 2;
-    height: 65%;
+    height: 38.5%;
+    min-width: 400px;
+  }
+}
+@media (max-width: 1440px) {
+  #hero h1 {
+    font-size: 54px;
+  }
+  #hero p {
+    font-size: 27px;
+  }
+  #hero .hero-container {
+    position: relative;
+    z-index: 2;
+    height: 58.5%;
     min-width: 400px;
   }
 }
@@ -265,31 +282,27 @@ h6 {
   #hero h1 {
     font-size: 48px;
   }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  #hero p {
+    font-size: 24px;
   }
   #hero .hero-container {
     position: relative;
     z-index: 2;
-    height: 70%;
+    height: 64.5%;
     min-width: 375px;
   }
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 44px;
+    font-size: 48px;
   }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  #hero p {
+    font-size: 24px;
   }
   #hero .hero-container {
     position: relative;
     z-index: 2;
-    height: 72.5%;
+    height: 64.5%;
     min-width: 375px;
   }
 }
