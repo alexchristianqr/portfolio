@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Consolas", sans-serif;
   color: #272829;
 }
 
@@ -24,7 +24,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Consolas", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Consolas", sans-serif;
 }
 #header .profile h1 a, #header .profile h1 a:hover {
   color: #fff;
@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Consolas", sans-serif;
 }
 #hero p span {
   color: #fff;
@@ -347,7 +347,7 @@ section {
 .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Consolas", sans-serif;
   font-size: 14px;
   color: #122f57;
 }
@@ -357,7 +357,7 @@ section {
   margin-top: 20px;
   color: #122f57;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Consolas", sans-serif;
   transition: ease-in-out 0.3s;
 }
 .facts .count-box a:hover {
@@ -379,7 +379,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Consolas", sans-serif;
   color: #050d18;
 }
 .skills .progress .skill .val {
@@ -418,7 +418,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Consolas", sans-serif;
   color: #050d18;
   margin-bottom: 10px;
 }
