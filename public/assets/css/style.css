@@ -228,7 +228,8 @@ h6 {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
+  height: 55%;
+  min-width: 425px;
 }
 #hero h1 {
   margin: 0 0 10px 0;
@@ -249,20 +250,56 @@ h6 {
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
-@media (min-width: 1024px) {
+@media (max-width: 1440px) {
   #hero {
     background-attachment: fixed;
+  }
+  #hero h1 {
+    font-size: 55px;
+    line-height: 24px;
+  }
+  #hero .hero-container {
+    position: relative;
+    z-index: 2;
+    height: 65%;
+    min-width: 400px;
+  }
+}
+@media (max-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+  #hero h1 {
+    font-size: 48px;
+    line-height: 24px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #hero .hero-container {
+    position: relative;
+    z-index: 2;
+    height: 70%;
+    min-width: 375px;
   }
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 38px;
     line-height: 36px;
   }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+  #hero .hero-container {
+    position: relative;
+    z-index: 2;
+    height: 72.5%;
+    min-width: 375px;
   }
 }
 
