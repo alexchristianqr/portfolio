@@ -7,18 +7,25 @@
           <a href="/portfolio">{{ selectedLanguage.fullName }}</a>
         </h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <div class="btn-group mx-1">
+            <button class="btn btn-secondary btn-sm dropdown-toggle text-capitalize" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">{{ language }}</button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item" style="cursor: pointer" @click="changeLanguage('es')">Español</li>
+              <li class="dropdown-item" style="cursor: pointer" @click="changeLanguage('en')">Ingles</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="pt-3 mx-auto">
-        <div class="btn-group position-sticky text-center w-100">
-          <button type="button" class="btn btn-primary btn-sm" :class="{ active: language == 'en' }" @click="changeLanguage('en')">En</button>
-          <button type="button" class="btn btn-primary btn-sm" :class="{ active: language == 'es' }" @click="changeLanguage('es')">Es</button>
-        </div>
+        <!--<div class="btn-group position-sticky text-center w-100">-->
+        <!--<button type="button" class="btn btn-primary btn-sm" :class="{ active: language == 'en' }" @click="changeLanguage('en')">En</button>-->
+        <!--<button type="button" class="btn btn-primary btn-sm" :class="{ active: language == 'es' }" @click="changeLanguage('es')">Es</button>-->
+        <!--</div>-->
         <!--<button class="btn btn-sm text-white mr-5" :class="{ 'btn-primary': language == 'en' }" @click="changeLanguage('en')">-->
         <!--<span>En</span>-->
         <!--</button>-->
