@@ -21,7 +21,7 @@
         <!-- End About Section -->
 
         <!-- ======= Facts Section ======= -->
-        <SectionFacts />
+        <!--<SectionFacts />-->
         <!-- End Facts Section -->
 
         <!-- ======= Skills Section ======= -->
@@ -79,12 +79,12 @@ import SectionServices from './components/main/SectionServices'
 import SectionTestimonials from './components/main/SectionTestimonials'
 import SectionContact from './components/main/SectionContact'
 import SectionSkills from './components/main/SectionSkills'
-import SectionFacts from './components/main/SectionFacts'
+// import SectionFacts from './components/main/SectionFacts'
 
 export default {
   name: 'App',
   components: {
-    SectionFacts,
+    // SectionFacts,
     SectionSkills,
     SectionContact,
     SectionTestimonials,

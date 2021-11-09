@@ -3,55 +3,16 @@
     <div class="container">
       <div class="section-title">
         <h2>{{ selectedLanguage.Header.menu[3] }}</h2>
-        <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-          ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-        </p>
+        <p>{{ selectedLanguage.SectionSkills.p }}</p>
       </div>
-
       <div class="row skills-content">
-        <div class="col-lg-6" data-aos="fade-up">
+        <div class="col-lg-6" data-aos="fade-up" v-for="(v, k) in skills" :key="k">
           <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
+            <span class="skill"
+              >{{ v.text }}<i class="val">{{ v.value }} %</i></span
+            >
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="progress">
-            <span class="skill">PHP <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Photoshop <i class="val">55%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" :aria-valuenow="v.value" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
@@ -63,6 +24,70 @@
 <script>
 export default {
   name: 'SectionSkills',
+  data: () => ({
+    skills: [
+      {
+        text: 'HTML',
+        value: 100,
+      },
+      {
+        text: 'PHP',
+        value: 90,
+      },
+      {
+        text: 'Javascript',
+        value: 90,
+      },
+      {
+        text: 'Mongodb',
+        value: 79,
+      },
+      {
+        text: 'Socket.IO',
+        value: 100,
+      },
+      {
+        text: 'Express',
+        value: 100,
+      },
+      {
+        text: 'Nodejs',
+        value: 90,
+      },
+      {
+        text: 'Laravel PHP',
+        value: 90,
+      },
+      {
+        text: 'Lumen PHP',
+        value: 79,
+      },
+      {
+        text: 'MySQL',
+        value: 69,
+      },
+      {
+        text: 'Shell Scripts',
+        value: 54,
+      },
+      {
+        text: 'Git',
+        value: 98,
+      },
+      {
+        text: 'Vuejs',
+        value: 98,
+      },
+      {
+        text: 'WebRTC',
+        value: 69,
+      },
+      {
+        text: 'Bootstrap',
+        value: 90,
+      },
+    ],
+  }),
 }
 </script>
 

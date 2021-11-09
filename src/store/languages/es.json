@@ -6,10 +6,10 @@
   "SectionMe": {
     "h1": "Alex Christian",
     "p": "Soy",
-    "span": "programador"
+    "span": "desarrollador"
   },
   "SectionAbout": {
-    "p": "Soy un desarrollador web con +4 de años de experiencia usando tecnologías frontend y backend. He trabajado en empresas de tecnología en crecimiento donde los retos y el día a día son variables y de alto aprendizaje. Tambien soy un emprendedor digital.",
+    "p": "Soy un desarrollador web con +4 de años de experiencia usando tecnologías frontend y backend. He trabajado en empresas startups de gran crecimiento donde los retos y el día a día son variables y de alto aprendizaje. Tambien tengo mi negocio digital.",
     "p2": "Sin darte cuenta los años en tecnología pasan muy rápido por eso es importante mantenerte actualizado y revisando las contantes actualizaciones.",
     "h3": "Desarrollador Web Full Stack",
     "li": [
@@ -46,5 +46,8 @@
         "value": "No disponible"
       }
     ]
-  }
+  },
+  "SectionSkills": {
+  "p": "A lo largo de todos estos años son muchas las tecnologías que eh probado y muchas las experiencias que eh vivido. Pero de mucha utilidad para desarrollar software funcional, seguro y escalable."
+}
 }

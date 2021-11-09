@@ -7,18 +7,20 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.jpg" class="img-fluid" alt="" width="100%" />
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content my-auto" data-aos="fade-left">
-          <h3>{{ selectedLanguage.SectionAbout.h3 }}</h3>
-          <div class="row pb-5">
-            <div class="col-lg-12">
-              <div class="form-group">
-                <p>{{ selectedLanguage.SectionAbout.p2 }}</p>
-              </div>
-            </div>
+        <div class="col-lg-4 my-auto" data-aos="fade-up">
+          <div class="text-center">
+            <img src="assets/img/me.jpg" class="img-fluid img-thumbnail" alt="" width="75%" />
           </div>
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content my-auto" data-aos="fade-up">
+          <!--<h3>{{ selectedLanguage.SectionAbout.h3 }}</h3>-->
+          <!--<div class="row pb-5">-->
+          <!--<div class="col-lg-12">-->
+          <!--<div class="form-group">-->
+          <!--<p>{{ selectedLanguage.SectionAbout.p2 }}</p>-->
+          <!--</div>-->
+          <!--</div>-->
+          <!--</div>-->
           <div class="row">
             <div class="col-lg-6">
               <ul>

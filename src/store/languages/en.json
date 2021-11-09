@@ -9,7 +9,7 @@
     "span": "developer"
   },
   "SectionAbout": {
-    "p": "I am a web developer with +4 years of experience using frontend and backend technologies. I have worked in growing technology companies where the challenges and the day to day are variable and high learning. I am also a digital entrepreneur.",
+    "p": "I am a web developer with +4 years of experience using frontend and backend technologies. I have worked in high-growth startup companies where the challenges and the day-to-day are variable and of high learning. Also my digital business.",
     "p2": "Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.",
     "h3": "Web Developer Full Stack",
     "li": [
@@ -46,5 +46,8 @@
         "value": "Unavailable"
       }
     ]
+  },
+  "SectionSkills": {
+    "p": "Throughout all these years there are many technologies that I have tried and many experiences that I have lived. But very useful to develop functional, secure and scalable software."
   }
 }
