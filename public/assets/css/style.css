@@ -251,9 +251,9 @@ h6 {
   border-bottom: 3px solid #149ddd;
 }
 @media (max-width: 1440px) {
-  #hero {
-    background-attachment: fixed;
-  }
+  /*#hero {*/
+  /*background-attachment: fixed;*/
+  /*}*/
   #hero h1 {
     font-size: 55px;
     line-height: 24px;
@@ -266,9 +266,9 @@ h6 {
   }
 }
 @media (max-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
+  /*#hero {*/
+  /*background-attachment: fixed;*/
+  /*}*/
   #hero h1 {
     font-size: 48px;
     line-height: 24px;
