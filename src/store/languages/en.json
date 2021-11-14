@@ -130,5 +130,160 @@
         ]
       }
     ]
+  },
+  "SectionPortfolio": {
+    "p": "These are just some of the personal and work projects that I have developed throughout my years as a professional developer.",
+    "data": [
+      {
+        "type": "app",
+        "title": "Orbidata",
+        "image": "assets/img/portfolio/orbidata.png",
+        "link": "https://wa.link/r28uwd",
+        "granted": {
+          "label": "Request permission to view private repository",
+          "permission": false
+        }
+      },
+      {
+        "type": "app",
+        "title": "Platcon",
+        "image": "assets/img/portfolio/platcon.png",
+        "link": "https://wa.link/r28uwd",
+        "granted": {
+          "label": "Request permission to view private repository",
+          "permission": false
+        }
+      },
+      {
+        "type": "app",
+        "title": "Ticker",
+        "image": "assets/img/portfolio/ticker.png",
+        "link": "https://wa.link/r28uwd",
+        "granted": {
+          "label": "Request permission to view private repository",
+          "permission": false
+        }
+      },
+      {
+        "type": "app",
+        "title": "Súmate al Éxito",
+        "image": "assets/img/portfolio/sumatealexito.png",
+        "link": "https://wa.link/r28uwd",
+        "granted": {
+          "label": "Request permission to view private repository",
+          "permission": false
+        }
+      },
+      {
+        "type": "landing",
+        "title": "Intellitec",
+        "image": "assets/img/portfolio/intellitec.png",
+        "link": "https://wa.link/r28uwd",
+        "granted": {
+          "label": "Request permission to view private repository",
+          "permission": false
+        }
+      },
+      {
+        "type": "app",
+        "title": "Tasks CRM",
+        "image": "assets/img/portfolio/taskscrm.png",
+        "link": "https://wa.link/r28uwd",
+        "granted": {
+          "label": "Request permission to view private repository",
+          "permission": false
+        }
+      },
+      {
+        "type": "microservice",
+        "title": "Main API - Tasks CRM",
+        "image": "assets/img/portfolio/microservicio01.png",
+        "link": "https://wa.link/r28uwd",
+        "granted": {
+          "label": "Request permission to view private repository",
+          "permission": false
+        }
+      },
+      {
+        "type": "microservice",
+        "title": "Billing API - Tasks CRM",
+        "image": "assets/img/portfolio/microservicio02.png",
+        "link": "https://wa.link/r28uwd",
+        "granted": {
+          "label": "Request permission to view private repository",
+          "permission": false
+        }
+      },
+      {
+        "type": "microservice",
+        "title": "API Socket - Tasks CRM",
+        "image": "assets/img/portfolio/microservicio03.png",
+        "link": "https://wa.link/r28uwd",
+        "granted": {
+          "label": "Request permission to view private repository",
+          "permission": false
+        }
+      },
+      {
+        "type": "landing",
+        "title": "Personal Portfolio",
+        "image": "assets/img/portfolio/portfolio.png",
+        "link": "https://github.com/acqrdeveloper/portfolio",
+        "granted": {
+          "label": "See public repository",
+          "permission": true
+        }
+      },
+      {
+        "type": "app",
+        "title": "Personal Blog",
+        "image": "assets/img/portfolio/github.png",
+        "link": "https://github.com/acqrdeveloper/blog",
+        "granted": {
+          "label": "See public repository",
+          "permission": true
+        }
+      },
+      {
+        "type": "app",
+        "title": "Personal CMS Blog",
+        "image": "assets/img/portfolio/github.png",
+        "link": "https://github.com/acqrdeveloper/cms-blog",
+        "granted": {
+          "label": "See public repository",
+          "permission": true
+        }
+      },
+      {
+        "type": "app",
+        "title": "Online Virtual Exam",
+        "image": "assets/img/portfolio/github.png",
+        "link": "https://github.com/acqrdeveloper/virtual-exam",
+        "granted": {
+          "label": "See public repository",
+          "permission": true
+        }
+      },
+      {
+        "type": "mobile",
+        "title": "GMAIL clone",
+        "image": "assets/img/portfolio/github.png",
+        "link": "https://github.com/acqrdeveloper/gmail-clone-app",
+        "granted": {
+          "label": "See public repository",
+          "permission": true
+        }
+      },
+      {
+        "type": "mobile",
+        "title": "Sushi Delivery Restaurant",
+        "image": "assets/img/portfolio/github.png",
+        "link": "https://github.com/acqrdeveloper/rollyroll-app",
+        "granted": {
+          "label": "See public repository",
+          "permission": true
+        }
+      }
+    ]
   }
 }
