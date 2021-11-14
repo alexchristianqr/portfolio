@@ -37,7 +37,7 @@
       <!-- End Services Section -->
 
       <!-- ======= Testimonials Section ======= -->
-      <SectionTestimonials />
+      <!--<SectionTestimonials />-->
       <!-- End Testimonials Section -->
 
       <!-- ======= Contact Section ======= -->
@@ -71,7 +71,7 @@ import SectionAbout from './components/main/SectionAbout'
 import SectionResume from './components/main/SectionResume'
 import SectionPortfolio from './components/main/SectionPortfolio'
 // import SectionServices from './components/main/SectionServices'
-import SectionTestimonials from './components/main/SectionTestimonials'
+// import SectionTestimonials from './components/main/SectionTestimonials'
 import SectionContact from './components/main/SectionContact'
 import SectionSkills from './components/main/SectionSkills'
 // import SectionFacts from './components/main/SectionFacts'
@@ -82,7 +82,7 @@ export default {
     // SectionFacts,
     SectionSkills,
     SectionContact,
-    SectionTestimonials,
+    // SectionTestimonials,
     // SectionServices,
     SectionPortfolio,
     SectionResume,
