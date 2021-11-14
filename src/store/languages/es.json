@@ -6,7 +6,7 @@
   "SectionMe": {
     "h1": "Alex Christian",
     "p": "Soy",
-    "span": "desarrollador"
+    "span": ["bueno", "apasionado", "lógico", "desarrollador"]
   },
   "SectionAbout": {
     "p": "Soy un desarrollador web con +4 de años de experiencia usando tecnologías frontend y backend. He trabajado en empresas startups de gran crecimiento donde los retos y el día a día son variables y de alto aprendizaje. Tambien tengo mi negocio digital.",
@@ -54,26 +54,29 @@
     "p": null,
     "categories": [
       {
-        "title": "Profesión",
+        "title": "Perfil y Educación",
         "data": [
           {
-            "title": "Alex Christian",
-            "date": "2021",
-            "local": null,
+            "title": "Perfil",
+            "date": null,
+            "local": "Desarrollador Senior Full Stack",
+            "link": "https://acqrdeveloper.github.io/portfolio/",
             "description": [
-              "Profesional con estudios técnicos y autodidacta en mis tiempos libres soy un desarrollador web con más de 4 años de experiencia desarrollando aplicaciones para frontend, backend, API's y microservicios."
+              "Profesional con estudios técnicos y autodidacta en mis tiempos libres soy un desarrollador web con más de 4 años de experiencia desarrollando aplicaciones para frontend, backend, API's y microservicios.",
+              "https://www.youtube.com/c/IdatOficial",
+              "https://www.youtube.com/c/Platzi",
+              "https://www.youtube.com/c/EDteam"
             ]
-          }
-        ]
-      },
-      {
-        "title": "Educación",
-        "data": [
+          },
           {
             "title": "Computación e Informática",
             "date": "2012 - 2015",
             "local": "Instituto Privado Superior Tecnológico IDAT",
-            "description": [""]
+            "link": "https://www.idat.edu.pe/",
+            "description": [
+              "Una institución privada de tecnología muy reconocida perteneciente al grupo Intercorp.",
+              "Programación, Android, Networking, Sistemas Operativos, Ingles 3, Matemática 3, Contabilidad y Estadística son algunos de los cursos más destacados."
+            ]
           }
         ]
       },
@@ -82,27 +85,47 @@
         "data": [
           {
             "title": "Desarrollador Web Full Stack",
-            "date": "2018 - 2021",
+            "date": "10/2018 - 09/2021",
             "local": "Securitec Peru S.A.C",
-            "description": ["Desarrollar apps"]
+            "link": "https://www.securitec.pe/",
+            "description": [
+              "Trabajar en equipo usando la metodología de SCRUM.",
+              "Desarrollar en backend con Nodejs y frontend con vuejs para el proyecto de 'Ticker'.",
+              "Implementar consumo de las API´s de Twilio como un servicio para el proyecto de 'Ticker'.",
+              "Implementar consumo de las API´s de PAYU como un microservicio para el proyecto de 'Ticker'.",
+              "Desarrollar en backend con laravel y vuejs para el proyecto de 'Platcon' y 'Orbidata'.",
+              "Implementar consumo de API´s de Infobip como un servicio para el proyecto de 'Platcon'.",
+              "Desarrollar en backend con Laravel y frontend con vuejs para el proyecto de 'Score Dialer'.",
+              "Implementar webRTC como canal de comunicación en tiempo real para el proyecto de 'Score Dialer'."
+            ]
           },
           {
             "title": "Analista y Desarrollador Web",
-            "date": "2018 - 2018",
+            "date": "01/2018 - 10/2018",
             "local": "Corporación Sapia S.A",
-            "description": ["Hola"]
+            "link": "https://sapia.com.pe/",
+            "description": [
+              "Tomar los requerimientos de cada jefe de proyecto en sus áreas y darles funcionalidad al sistema de atención al cliente.",
+              "Desarrollar un sistema de encuesta virtual con laravel y vuejs para evaluzar la atención al cliente en linea."
+            ]
           },
           {
             "title": "Desarrollador Web",
-            "date": "2016 - 2017",
+            "date": "07/2016 - 12/2017",
             "local": "Centros Virtuales del Peru E.I.R.L",
-            "description": ["Hola"]
+            "link": "https://www.centrosvirtuales.com/",
+            "description": [
+              "Tomar los requerimientos de actualizaciones al sistema administrativo en web y movil de reservas.",
+              "Desarrollar un modulo de selección de reserva de espacios COWORKING tipo CINEPLANET para el sistema administrativo en web.",
+              "Desarrollar en frontend con angularjs en el desarrollo del proyecto 'SUMATE AL ÉXITO' un sistema integrado de reservas."
+            ]
           },
           {
             "title": "Practicante Desarrollador Web",
-            "date": "2016 - 2017",
+            "date": "01/2016 - 06/2016",
             "local": "Hacom S.A.C",
-            "description": ["Hola"]
+            "link": "http://www.hacom.com.pe/",
+            "description": ["Crear scripts automatizados de reportes con python para las estadísticas de localización satelital."]
           }
         ]
       }
