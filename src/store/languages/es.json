@@ -285,5 +285,57 @@
         }
       }
     ]
+  },
+  "SectionContact": {
+    "p": "Aquí tienes toda mi información básica para poder escribrime un mensaje, llamarme o mandar un email.",
+    "contact": {
+      "telegram": {
+        "text": "Telegram",
+        "value": "1"
+      },
+      "whatsapp": {
+        "text": "WhatsApp",
+        "value": "1"
+      },
+      "messenger": {
+        "text": "Messenger",
+        "value": "1"
+      },
+      "location": {
+        "text": "Ubicación",
+        "value": "Lince, Lima, Peru"
+      },
+      "email": {
+        "text": "Email",
+        "value": "aquispe.developer@gmail.com"
+      },
+      "phone": {
+        "text": "Teléfono",
+        "value": "+51 955 588 297"
+      }
+    },
+    "maps": null,
+    "sendMessage": {
+      "name": {
+        "text": "Nombre",
+        "value": null
+      },
+      "email": {
+        "text": "Email",
+        "value": null
+      },
+      "subject": {
+        "text": "Asunto",
+        "value": null
+      },
+      "message": {
+        "text": "Mensaje",
+        "value": null
+      },
+      "action": {
+        "text": "Enviar mensaje",
+        "value": null
+      }
+    }
   }
 }
