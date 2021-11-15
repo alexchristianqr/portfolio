@@ -9,9 +9,15 @@
       <div class="row" data-aos="fade-in">
         <div class="col-lg-5 d-flex align-items-stretch">
           <div class="info position-relative">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>{{ selectedLanguage.SectionContact.contact.location.text }}</h4>
+              <p>{{ selectedLanguage.SectionContact.contact.location.value }}</p>
+            </div>
+
             <div class="email">
               <i class="bi bi-envelope"></i>
-              <h4>{{ selectedLanguage.SectionContact.contact.email.text }}:</h4>
+              <h4>{{ selectedLanguage.SectionContact.contact.email.text }}</h4>
               <p>{{ selectedLanguage.SectionContact.contact.email.value }}</p>
             </div>
 
@@ -33,15 +39,9 @@
             <!--&lt;!&ndash;<p>{{ selectedLanguage.SectionContact.contact.messenger.value }}</p>&ndash;&gt;-->
             <!--</div>-->
 
-            <div class="address">
-              <i class="bi bi-geo-alt"></i>
-              <h4>{{ selectedLanguage.SectionContact.contact.location.text }}:</h4>
-              <p>{{ selectedLanguage.SectionContact.contact.location.value }}</p>
-            </div>
-
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h4>{{ selectedLanguage.SectionContact.contact.phone.text }}:</h4>
+              <h4>{{ selectedLanguage.SectionContact.contact.phone.text }}</h4>
               <p>{{ selectedLanguage.SectionContact.contact.phone.value }}</p>
             </div>
 
