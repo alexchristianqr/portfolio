@@ -27,4 +27,13 @@ Vue.mixin({
       return store.getters.loadingPage
     },
   },
+  methods: {
+    trackEvent(action) {
+      this.$gtag.event(action, {
+        event_category: 'not set',
+        event_label: 'not set',
+        value: 1,
+      })
+    },
+  },
 })

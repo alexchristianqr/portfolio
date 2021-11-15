@@ -31,23 +31,23 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li>
-            <a href="#hero" class="nav-link scrollto active">
+            <a href="#hero" class="nav-link scrollto active" @click="trackEvent('#home')">
               <i class="bx bx-home"></i>
               <span>{{ selectedLanguage.Header.menu[0] }}</span>
             </a>
           </li>
           <li>
-            <a href="#about" class="nav-link scrollto">
+            <a href="#about" class="nav-link scrollto" @click="trackEvent('#aboutme')">
               <i class="bx bx-user"></i> <span>{{ selectedLanguage.Header.menu[1] }}</span>
             </a>
           </li>
           <li>
-            <a href="#resume" class="nav-link scrollto"
-              ><i class="bx bx-file-blank"></i> <span>{{ selectedLanguage.Header.menu[4] }}</span>
+            <a href="#resume" class="nav-link scrollto" @click="trackEvent('#resume')">
+              <i class="bx bx-file-blank"></i> <span>{{ selectedLanguage.Header.menu[4] }}</span>
             </a>
           </li>
           <li>
-            <a href="#portfolio" class="nav-link scrollto">
+            <a href="#portfolio" class="nav-link scrollto" @click="trackEvent('#portfolio')">
               <i class="bx bx-book-content"></i> <span>{{ selectedLanguage.Header.menu[5] }}</span>
             </a>
           </li>
@@ -57,7 +57,7 @@
           <!--</a>-->
           <!--</li>-->
           <li>
-            <a href="#contact" class="nav-link scrollto">
+            <a href="#contact" class="nav-link scrollto" @click="trackEvent('#contact')">
               <i class="bx bx-envelope"></i> <span>{{ selectedLanguage.Header.menu[8] }}</span>
             </a>
           </li>
