@@ -5,8 +5,8 @@
   },
   "SectionMe": {
     "h1": "Alex Christian",
-    "p": "I'm",
-    "span": "developer"
+    "p": "I am",
+    "span": ["passionate ❤️", "logical 🔢", "software developer ‍💻"]
   },
   "SectionAbout": {
     "p": "I am a web developer with +4 years of experience using frontend and backend technologies. I have worked in high-growth startup companies where the challenges and the day-to-day are variable and of high learning. Also my digital business.",
