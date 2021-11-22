@@ -6,11 +6,12 @@
         <p>{{ selectedLanguage.SectionSkills.p }}</p>
       </div>
       <div class="row skills-content">
-        <div class="col-lg-6" data-aos="fade-up" v-for="(v, k) in skills" :key="k">
+        <div class="col-lg-4" data-aos="fade-up" v-for="(v, k) in dataSkills" :key="k">
           <div class="progress">
-            <span class="skill"
-              >{{ v.text }}<i class="val">{{ v.value }} %</i></span
-            >
+            <span class="skill">
+              {{ v.text }}
+              <i class="val">{{ v.value }} %</i>
+            </span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" :aria-valuenow="v.value" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -25,14 +26,14 @@
 export default {
   name: 'SectionSkills',
   data: () => ({
-    skills: [
+    dataSkills: [
       {
         text: 'HTML',
         value: 100,
       },
       {
         text: 'PHP',
-        value: 90,
+        value: 75,
       },
       {
         text: 'Javascript',
@@ -88,6 +89,19 @@ export default {
       },
     ],
   }),
+  mounted(){
+    this.dataSkills.sort((x, y) => {
+      if (x.value > y.value) {
+        return -1 // DESC
+      }
+
+      if (x.value < y.value) {
+        return 1 // ASC
+      }
+
+      return 0
+    })
+  }
 }
 </script>
 
