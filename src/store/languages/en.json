@@ -9,7 +9,7 @@
     "span": ["passionate ❤️", "logical 🔢", "developer ‍💻"]
   },
   "SectionAbout": {
-    "p": "I am a web developer with +4 years of experience using frontend and backend technologies. I have worked in high-growth startup companies where the challenges and the day-to-day are variable and of high learning. Also my digital business.",
+    "p": "I am a senior full stack web developer with more than 4 years of experience using frontend and backend technologies. He worked in high-growth startup companies where the challenges and the day-to-day are variable and of high learning. I am also a digital entrepreneur to learn more about business businesses in this great technological world.",
     "p2": "Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.",
     "h3": "Web Developer Full Stack",
     "li": [
@@ -34,8 +34,8 @@
         "value": "28"
       },
       {
-        "text": "Higher Education",
-        "value": "Technical"
+        "text": "Education",
+        "value": "Technical Professional in Software Development"
       },
       {
         "text": "Email",
@@ -138,6 +138,7 @@
         "type": "app",
         "title": "Orbidata",
         "image": "assets/img/portfolio/orbidata.png",
+        "description": "It is a system to consult information of a person data for contact center.",
         "link": "https://wa.link/r28uwd",
         "granted": {
           "label": "Request permission to view private repository",
@@ -147,6 +148,7 @@
       {
         "type": "app",
         "title": "Platcon",
+        "description": "It is a management system for bulk SMS shipments for marketing.",
         "image": "assets/img/portfolio/platcon.png",
         "link": "https://wa.link/r28uwd",
         "granted": {
@@ -157,6 +159,7 @@
       {
         "type": "app",
         "title": "Ticker",
+        "description": "It is a real-time chat system that integrates a WhatsApp API Twilio, Messenger, Instagram API.",
         "image": "assets/img/portfolio/ticker.png",
         "link": "https://wa.link/r28uwd",
         "granted": {
@@ -167,6 +170,7 @@
       {
         "type": "app",
         "title": "Súmate al Éxito",
+        "description": "It is a COWORKING room reservation management system.",
         "image": "assets/img/portfolio/sumatealexito.png",
         "link": "https://wa.link/r28uwd",
         "granted": {
@@ -187,6 +191,7 @@
       {
         "type": "app",
         "title": "Tasks CRM",
+        "description": "It is a CRM that integrates the most used chat applications such as WhatsApp with QR, Telegram, Widget livechats.",
         "image": "assets/img/portfolio/taskscrm.png",
         "link": "https://wa.link/r28uwd",
         "granted": {
@@ -247,6 +252,7 @@
       {
         "type": "app",
         "title": "Personal CMS Blog",
+        "description": "It is a personal blog on the server side with laravel and vuejs to be deployed in the digital ocean cloud.",
         "image": "assets/img/portfolio/github.png",
         "link": "https://github.com/acqrdeveloper/cms-blog",
         "granted": {
@@ -257,6 +263,7 @@
       {
         "type": "app",
         "title": "Online Virtual Exam",
+        "description": "It is a virtual survey manager system to evaluate help desk customer service.",
         "image": "assets/img/portfolio/github.png",
         "link": "https://github.com/acqrdeveloper/virtual-exam",
         "granted": {

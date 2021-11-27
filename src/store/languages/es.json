@@ -9,7 +9,7 @@
     "span": ["apasionado ❤️", "lógico 🔢", "desarrollador ‍💻"]
   },
   "SectionAbout": {
-    "p": "Soy un desarrollador web con +4 de años de experiencia usando tecnologías frontend y backend. He trabajado en empresas startups de gran crecimiento donde los retos y el día a día son variables y de alto aprendizaje. Tambien tengo mi negocio digital.",
+    "p": "Soy un desarrollador senior web full stack con más 4 de años de experiencia usando tecnologías frontend y backend. He trabajado en empresas startups de gran crecimiento donde los retos y el día a día son variables y de alto aprendizaje. Tambien soy un emprendedor digital para conocer más de cerca los negocios empresariales en este gran mundo tecnológico.",
     "p2": "Sin darte cuenta los años en tecnología pasan muy rápido por eso es importante mantenerte actualizado y revisando las contantes actualizaciones.",
     "h3": "Desarrollador Web Full Stack",
     "li": [
@@ -34,8 +34,8 @@
         "value": "28"
       },
       {
-        "text": "Estudios Superiores",
-        "value": "Técnico"
+        "text": "Estudios",
+        "value": "Profesional Técnico en Desarrollo de Software"
       },
       {
         "text": "Email",
@@ -137,6 +137,7 @@
       {
         "type": "app",
         "title": "Orbidata",
+        "description": "Es un sistema para consultar información de una persona datos para contact center.",
         "image": "assets/img/portfolio/orbidata.png",
         "link": "https://wa.link/r28uwd",
         "granted": {
@@ -147,6 +148,7 @@
       {
         "type": "app",
         "title": "Platcon",
+        "description": "Es un sistema gestor de envíos de SMS masivo para marketing.",
         "image": "assets/img/portfolio/platcon.png",
         "link": "https://wa.link/r28uwd",
         "granted": {
@@ -157,6 +159,7 @@
       {
         "type": "app",
         "title": "Ticker",
+        "description": "Es un sistema de chat en tiempo real que integra una API de Whatsapp API Twilio, Messenger, Instagram.",
         "image": "assets/img/portfolio/ticker.png",
         "link": "https://wa.link/r28uwd",
         "granted": {
@@ -167,6 +170,7 @@
       {
         "type": "app",
         "title": "Súmate al Éxito",
+        "description": "Es un sistema gestor de administración de reservas de salas COWORKING.",
         "image": "assets/img/portfolio/sumatealexito.png",
         "link": "https://wa.link/r28uwd",
         "granted": {
@@ -187,6 +191,7 @@
       {
         "type": "app",
         "title": "Tasks CRM",
+        "description": "Es un CRM que integra las aplicaciones de chat mas utilizadas como WhatsApp con QR, Telegram, Widget livechats.",
         "image": "assets/img/portfolio/taskscrm.png",
         "link": "https://wa.link/r28uwd",
         "granted": {
@@ -237,6 +242,7 @@
       {
         "type": "app",
         "title": "Blog Personal",
+        "description": "Es un blog personal en el lado del servidor con laravel y vuejs para desplegarse en el cloud de digital ocean.",
         "image": "assets/img/portfolio/github.png",
         "link": "https://github.com/acqrdeveloper/blog",
         "granted": {
@@ -257,6 +263,7 @@
       {
         "type": "app",
         "title": "Exámen Virtual en Línea",
+        "description": "Es un sistema gestor de encuesta virtual para evaluar la atención al cliente de mesa de ayuda.",
         "image": "assets/img/portfolio/github.png",
         "link": "https://github.com/acqrdeveloper/virtual-exam",
         "granted": {
