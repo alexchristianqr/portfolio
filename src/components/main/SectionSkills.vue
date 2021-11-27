@@ -81,7 +81,7 @@ export default {
       },
       {
         text: 'WebRTC',
-        value: 69,
+        value: 37,
       },
       {
         text: 'Bootstrap',
