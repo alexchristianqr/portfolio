@@ -40,7 +40,7 @@
                 <li>
                   <i class="bi bi-chevron-right"></i>
                   <strong>{{ selectedLanguage.SectionAbout.li[4].text }}:</strong>
-                  <span>{{ new Date().getFullYear() - 1993 }}</span>
+                  <span>{{ birthDate }}</span>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
@@ -69,6 +69,25 @@
 <script>
 export default {
   name: 'SectionAbout',
+  computed: {
+    birthDate() {
+      const originDate = '1993-09-22 00:00:00' // Fecha de cumpleaños
+      let today = new Date()
+      let birthDate = new Date(originDate)
+
+      // Obtener edad
+      let age = today.getFullYear() - birthDate.getFullYear()
+      let m = today.getMonth() - birthDate.getMonth()
+
+      // Validar para reducir la edad obtenida
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--
+      }
+
+      // Response
+      return age
+    },
+  },
 }
 </script>
 
