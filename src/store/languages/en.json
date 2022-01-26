@@ -240,6 +240,17 @@
         }
       },
       {
+        "type": "microservice",
+        "title": "API in postman",
+        "description": "Crud API example exercise with use of postman in public mode.",
+        "image": "assets/img/portfolio/api-colors-postman.png",
+        "link": "https://github.com/acqrdeveloper/api-colors",
+        "granted": {
+          "label": "See public repository",
+          "permission": true
+        }
+      },
+      {
         "type": "landing",
         "title": "Personal Portfolio",
         "image": "assets/img/portfolio/portfolio.png",
