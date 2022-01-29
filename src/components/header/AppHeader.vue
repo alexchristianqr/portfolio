@@ -43,7 +43,7 @@
             </a>
           </li>
           <li>
-            <a href="#resume" class="nav-link scrollto" @click="trackEvent('#resume')">
+            <a href="#resume" class="nav-link scrollto" @click="trackEvent('#summary')">
               <i class="bx bx-file-blank"></i> <span>{{ selectedLanguage.Header.menu[4] }}</span>
             </a>
           </li>
@@ -60,6 +60,11 @@
           <li>
             <a href="#contact" class="nav-link scrollto" @click="trackEvent('#contact')">
               <i class="bx bx-envelope"></i> <span>{{ selectedLanguage.Header.menu[8] }}</span>
+            </a>
+          </li>
+          <li>
+            <a href="/AlexChristianQuispeRoque_Detallado_CV_2022.pdf" target="_blank" class="nav-link scrollto" @click="trackEvent('#curriculumvitae')">
+              <i class="bx bx-download"></i> <span>{{ selectedLanguage.Header.menu[9] }}</span>
             </a>
           </li>
         </ul>
