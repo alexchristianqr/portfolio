@@ -67,6 +67,21 @@
               <i class="bx bx-download"></i> <span>{{ selectedLanguage.Header.menu[9] }}</span>
             </a>
           </li>
+          <li>
+            <a href="/portfolio/AlexChristianQuispeRoque_Detallado_CV_2022.pdf" target="_blank" class="nav-link scrollto" @click="trackEvent('#curriculumvitae')">
+              <i class="bx bx-download"></i> <span>{{ selectedLanguage.Header.menu[9] }}</span>
+            </a>
+          </li>
+          <li>
+            <a href="/portfolio/AlexChristianQuispeRoque_Detallado_CV_2022.pdf" target="_blank" class="nav-link scrollto" @click="trackEvent('#curriculumvitae')">
+              <i class="bx bx-download"></i> <span>{{ selectedLanguage.Header.menu[9] }}</span>
+            </a>
+          </li>
+          <li>
+            <a href="/portfolio/AlexChristianQuispeRoque_Detallado_CV_2022.pdf" target="_blank" class="nav-link scrollto" @click="trackEvent('#curriculumvitae')">
+              <i class="bx bx-download"></i> <span>{{ selectedLanguage.Header.menu[9] }}</span>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- .nav-menu -->
