@@ -1011,6 +1011,7 @@ section {
 }
 #footer .credits {
   padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
   font-size: 13px;
   color: #eaebf0;
@@ -1019,6 +1020,6 @@ section {
   #footer {
     position: static;
     width: auto;
-    padding: 20px 15px;
+    padding: 15px 15px;
   }
 }
