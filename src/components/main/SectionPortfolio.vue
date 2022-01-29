@@ -13,10 +13,10 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-landing">Landing</li>
-            <li data-filter=".filter-app">Apps</li>
-            <li data-filter=".filter-microservice">Microservices</li>
-            <li data-filter=".filter-mobile">Mobile</li>
+            <li data-filter=".filter-app">Web Apps</li>
+            <li data-filter=".filter-microservice">API Services</li>
+            <li data-filter=".filter-mobile">Mobile Apps</li>
+            <li data-filter=".filter-landing">Landing Pages</li>
           </ul>
         </div>
       </div>
@@ -28,7 +28,9 @@
           <div class="portfolio-wrap shadow">
             <img :src="v.image" class="img-fluid border-0" alt="" />
             <div class="portfolio-links">
-              <a :href="v.image" data-gallery="portfolioGallery" class="portfolio-lightbox pt-2" :data-glightbox="`title: ${v.title}; description: ${v.description ? v.description : '' };`"><i class="bx bx-search"></i></a>
+              <a :href="v.image" data-gallery="portfolioGallery" class="portfolio-lightbox pt-2" :data-glightbox="`title: ${v.title}; description: ${v.description ? v.description : ''};`"
+                ><i class="bx bx-search"></i
+              ></a>
               <a v-if="v.granted.permission" :href="v.link" target="_blank" :title="v.granted.label" class="pt-2">
                 <span><i class="bx bx-lock-open"></i></span>
               </a>
