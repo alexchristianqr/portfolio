@@ -44,7 +44,7 @@ export default {
         value: 79,
       },
       {
-        text: 'Socket.IO',
+        text: 'Websocket',
         value: 100,
       },
       {
@@ -89,7 +89,7 @@ export default {
       },
     ],
   }),
-  mounted(){
+  mounted() {
     this.dataSkills.sort((x, y) => {
       if (x.value > y.value) {
         return -1 // DESC
@@ -101,7 +101,7 @@ export default {
 
       return 0
     })
-  }
+  },
 }
 </script>
 
