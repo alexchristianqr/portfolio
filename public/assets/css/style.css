@@ -69,9 +69,8 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 50px;
   width: 300px;
-  transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
@@ -1015,6 +1014,6 @@ section {
   #footer {
     position: static;
     width: auto;
-    padding-right: 20px 15px;
+    padding: 20px 15px;
   }
 }
