@@ -16,12 +16,12 @@
                 <li>
                   <i class="bi bi-chevron-right"></i>
                   <strong>{{ selectedLanguage.SectionAbout.li[0].text }}:</strong>
-                  <span>{{ selectedLanguage.SectionAbout.li[0].value }}</span>
+                  <a :href="selectedLanguage.SectionAbout.li[0].value" target="_blank">{{ selectedLanguage.SectionAbout.li[0].value }}</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
                   <strong>{{ selectedLanguage.SectionAbout.li[1].text }}:</strong>
-                  <a :href="selectedLanguage.SectionAbout.li[1].value" target="_blank">{{ selectedLanguage.SectionAbout.li[1].value }}</a>
+                  <span>{{ selectedLanguage.SectionAbout.li[1].value }}</span>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
@@ -52,11 +52,11 @@
                   <strong>{{ selectedLanguage.SectionAbout.li[6].text }}:</strong>
                   <span>{{ selectedLanguage.SectionAbout.li[6].value }}</span>
                 </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <strong>{{ selectedLanguage.SectionAbout.li[7].text }}:</strong>
-                  <span>{{ selectedLanguage.SectionAbout.li[7].value }}</span>
-                </li>
+                <!--<li>-->
+                <!--<i class="bi bi-chevron-right"></i>-->
+                <!--<strong>{{ selectedLanguage.SectionAbout.li[7].text }}:</strong>-->
+                <!--<span>{{ selectedLanguage.SectionAbout.li[7].value }}</span>-->
+                <!--</li>-->
               </ul>
             </div>
           </div>

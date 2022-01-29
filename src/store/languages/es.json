@@ -14,12 +14,12 @@
     "h3": "Desarrollador Web Full Stack",
     "li": [
       {
-        "text": "Cumpleaños",
-        "value": "22 de Setiembre de 1993"
+        "text": "Sitio web",
+        "value": "https://acqrdeveloper.github.io/portfolio/"
       },
       {
-        "text": "Web",
-        "value": "https://acqrdeveloper.github.io/portfolio/"
+        "text": "Cumpleaños",
+        "value": "22 de Setiembre de 1993"
       },
       {
         "text": "Teléfono",
@@ -32,10 +32,6 @@
       {
         "text": "Edad",
         "value": "28"
-      },
-      {
-        "text": "Estudios",
-        "value": "Profesional Técnico en Desarrollo de Software"
       },
       {
         "text": "Email",
