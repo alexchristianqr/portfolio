@@ -1,5 +1,5 @@
 <template>
-  <section id="resume" class="resume">
+  <section id="summary" class="resume">
     <div class="container">
       <div class="section-title">
         <h2>{{ selectedLanguage.Header.menu[4] }}</h2>
