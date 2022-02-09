@@ -56,11 +56,11 @@ export default {
         value: 90,
       },
       {
-        text: 'Laravel PHP',
+        text: 'Laravel',
         value: 90,
       },
       {
-        text: 'Lumen PHP',
+        text: 'Lumen',
         value: 79,
       },
       {
@@ -68,7 +68,7 @@ export default {
         value: 69,
       },
       {
-        text: 'Shell Scripts',
+        text: 'Bash',
         value: 54,
       },
       {
@@ -84,8 +84,20 @@ export default {
         value: 45,
       },
       {
-        text: 'Bootstrap',
+        text: 'BootstrapVue',
         value: 90,
+      },
+      {
+        text: 'Typescript',
+        value: 70,
+      },
+      {
+        text: 'Webpack',
+        value: 75,
+      },
+      {
+        text: 'JWT',
+        value: 100,
       },
     ],
   }),

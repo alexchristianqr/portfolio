@@ -90,6 +90,22 @@
         "title": "Professional Experience",
         "data": [
           {
+            "title": "Desarrollador Web Full Stack",
+            "date": "09/2021 - present",
+            "local": "Intellitec S.A.C",
+            "link": "https://intellitec.pe/",
+            "description": [
+              "Create a chatbot",
+              "Create an installable chat widget",
+              "Integrate APIs of Telegram, Instagram, WhatsApp with puppeteer, Messenger",
+              "Develop in frontend with vuejs, vuex and nuxtjs",
+              "Develop in backend with nodejs, express, mongoose, mongodb",
+              "Documentation in postman",
+              "Creating API services with Rest",
+              "API microservice creation with GraphQL and SOA"
+            ]
+          },
+          {
             "title": "Full Stack Web Developer",
             "date": "10/2018 - 09/2021",
             "local": "Securitec Peru S.A.C",

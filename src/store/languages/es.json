@@ -91,6 +91,22 @@
         "data": [
           {
             "title": "Desarrollador Web Full Stack",
+            "date": "09/2021 - actualidad",
+            "local": "Intellitec S.A.C",
+            "link": "https://intellitec.pe/",
+            "description": [
+              "Crear un chatbot",
+              "Crear un widget chat instalable",
+              "Integrar API’s de Telegram, Instagram, WhatsApp con puppeteer, Messenger",
+              "Desarrollar en frontend con vuejs, vuex y nuxtjs",
+              "Desarrollar en backend con nodejs, express, mongoose, mongodb",
+              "Documentación en postman",
+              "Creación de servicios API con Rest",
+              "Creación de microservicio API con GraphQL y SOA"
+            ]
+          },
+          {
+            "title": "Desarrollador Web Full Stack",
             "date": "10/2018 - 09/2021",
             "local": "Securitec Peru S.A.C",
             "link": "https://www.securitec.pe/",
