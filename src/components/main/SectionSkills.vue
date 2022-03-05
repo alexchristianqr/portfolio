@@ -84,7 +84,7 @@ export default {
         value: 45,
       },
       {
-        text: 'BootstrapVue',
+        text: 'Bootstrap-Vue',
         value: 90,
       },
       {
@@ -98,6 +98,14 @@ export default {
       {
         text: 'JWT',
         value: 100,
+      },
+      {
+        text: 'NestJS',
+        value: 82,
+      },
+      {
+        text: 'Docker',
+        value: 65,
       },
     ],
   }),
