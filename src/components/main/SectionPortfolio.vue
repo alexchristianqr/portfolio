@@ -31,10 +31,10 @@
               <a :href="v.image" data-gallery="portfolioGallery" class="portfolio-lightbox pt-2" :data-glightbox="`title: ${v.title}; description: ${v.description ? v.description : ''};`"
                 ><i class="bx bx-search"></i
               ></a>
-              <a v-if="v.granted.permission" :href="v.link" target="_blank" :title="v.granted.label" class="pt-2">
+              <a v-if="v.granted.permission" :href="v.link" target="_blank" :title="v.granted.label" class="pt-2 bg-success">
                 <span><i class="bx bx-lock-open"></i></span>
               </a>
-              <a v-if="!v.granted.permission" :href="v.link" target="_blank" :title="v.granted.label" class="pt-2 bg-success">
+              <a v-if="!v.granted.permission" :href="v.link" target="_blank" :title="v.granted.label" class="pt-2 bg-danger">
                 <span><i class="bx bx-lock"></i></span>
               </a>
             </div>

@@ -1,5 +1,6 @@
 {
-  "fullName": "Alex Christian",
+  "fullName": "Alex Christian Q. R.",
+
   "Header": {
     "menu": ["Inicio", "Sobre mí", "Hechos", "Habilidades", "Resumen", "Portafolio", "Servicios", "Testimonios", "Contacto", "Curriculum Vitae"]
   },
@@ -343,15 +344,41 @@
       },
       "location": {
         "text": "Ubicación",
-        "value": "Lince, Lima, Peru"
+        "value": "Peru"
       },
       "email": {
         "text": "Email",
-        "value": "aquispe.developer@gmail.com"
+        "value": "alexchristianqr@gmail.com"
       },
       "phone": {
         "text": "Teléfono",
-        "value": "+51 955 588 297"
+        "value": "(+51) 955588297"
+      },
+      "socialnetwork": {
+        "text": "Redes Sociales",
+        "value": "Contáctame enviando un mensaje en cualquier momento y conversemos como buenos amigos.",
+        "networks": [
+          {
+            "text": "bi bi-linkedin",
+            "value": "https://www.linkedin.com/in/alexchristianqr/"
+          },
+          {
+            "text": "bi bi-github",
+            "value": "https://github.com/acqrdeveloper"
+          },
+          {
+            "text": "bi bi-facebook",
+            "value": "https://www.facebook.com/alexchristianqr/"
+          },
+          {
+            "text": "bi bi-whatsapp",
+            "value": "#"
+          },
+          {
+            "text": "bi bi-twitter",
+            "value": "https://twitter.com/alexchristianqr/"
+          }
+        ]
       }
     },
     "maps": null,
