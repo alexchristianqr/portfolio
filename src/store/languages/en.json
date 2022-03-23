@@ -327,7 +327,7 @@
     ]
   },
   "SectionContact": {
-    "p": "Here you have all my basic information to be able to write me a message, call me or send an email.",
+    "p": "Here you have all my basic information to be able to write me a message, call me or send me an email.",
     "contact": {
       "location": {
         "text": "Location",
@@ -346,23 +346,23 @@
         "value": "Contact me by sending a message at any time and let's talk like good friends.",
         "networks": [
           {
-            "text": "bi bi-linkedin",
+            "text": "bx bxl-linkedin",
             "value": "https://www.linkedin.com/in/alexchristianqr/"
           },
           {
-            "text": "bi bi-github",
+            "text": "bx bxl-github",
             "value": "https://github.com/acqrdeveloper"
           },
           {
-            "text": "bi bi-facebook",
+            "text": "bx bxl-facebook",
             "value": "https://www.facebook.com/alexchristianqr/"
           },
           {
-            "text": "bi bi-whatsapp",
+            "text": "bx bxl-whatsapp",
             "value": "#"
           },
           {
-            "text": "bi bi-twitter",
+            "text": "bx bxl-twitter",
             "value": "https://twitter.com/alexchristianqr/"
           }
         ]

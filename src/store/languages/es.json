@@ -328,7 +328,7 @@
     ]
   },
   "SectionContact": {
-    "p": "Aquí tienes toda mi información básica para poder escribrime un mensaje, llamarme o mandar un email.",
+    "p": "Aquí tienes toda mi información básica para poder escribirme un mensaje, llamarme o mandarme un email.",
     "contact": {
       "telegram": {
         "text": "Telegram",
@@ -359,23 +359,23 @@
         "value": "Contáctame enviando un mensaje en cualquier momento y conversemos como buenos amigos.",
         "networks": [
           {
-            "text": "bi bi-linkedin",
+            "text": "bx bxl-linkedin",
             "value": "https://www.linkedin.com/in/alexchristianqr/"
           },
           {
-            "text": "bi bi-github",
+            "text": "bx bxl-github",
             "value": "https://github.com/acqrdeveloper"
           },
           {
-            "text": "bi bi-facebook",
+            "text": "bx bxl-facebook",
             "value": "https://www.facebook.com/alexchristianqr/"
           },
           {
-            "text": "bi bi-whatsapp",
+            "text": "bx bxl-whatsapp",
             "value": "#"
           },
           {
-            "text": "bi bi-twitter",
+            "text": "bx bxl-twitter",
             "value": "https://twitter.com/alexchristianqr/"
           }
         ]
