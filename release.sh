@@ -12,7 +12,7 @@ tagVersion=$1
 set -e
 
 #git tag -d "v$tagVersion"
-git tag -a -m "new tag release v$tagVersion" "$tagVersion"
+git tag -a -m "new tag release v$tagVersion" "v$tagVersion"
 git push origin "v$tagVersion"
 
 npm run build
