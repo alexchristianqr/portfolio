@@ -1,27 +1,12 @@
 # portfolio
 website in vuejs for informational use of my portfolio
 
-## Project setup
+## automatically generated tag with shell script
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+sh release.sh v1.0.3
 ```
 
-### Compiles and minifies for production
+## manually generated tag with git
 ```
-npm run build
-sh deploy.sh
-npm run deploy
+git tag -a v1.0.3 -m "version 1.0.3"
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
