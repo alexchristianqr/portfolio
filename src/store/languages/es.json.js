@@ -90,7 +90,7 @@ export default {
         title: 'Experiencia Profesional',
         data: [
           {
-            title: 'Desarrollador Backend Developer',
+            title: 'Backend Developer',
             date: '01/2022 - actualidad',
             local: 'Quality & Development Software',
             link: 'https://www.qdsgroup.com.pe/',
