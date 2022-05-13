@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import { store } from '../store'
-import en from '../store/languages/en'
-import es from '../store/languages/es'
+import en from '../store/languages/en.json'
+import es from '../store/languages/es.json'
 
 Vue.mixin({
   mounted() {
