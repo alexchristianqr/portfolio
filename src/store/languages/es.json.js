@@ -15,7 +15,7 @@ export default {
     li: [
       {
         text: 'Web',
-        value: 'https://acqrdeveloper.github.io/portfolio/',
+        value: 'https://alexchristianqr.github.io/portfolio/',
       },
       {
         text: 'Cumpleaños',
@@ -56,7 +56,7 @@ export default {
             title: 'Perfil',
             date: null,
             local: 'Desarrollador Web Full Stack',
-            link: 'https://acqrdeveloper.github.io/portfolio/',
+            link: 'https://alexchristianqr.github.io/portfolio/',
             description: [
               "Profesional con estudios y autodidacta en mis tiempos libres soy un desarrollador web con más de 4 años de experiencia desarrollando aplicaciones para frontend, backend, API's y microservicios.",
               'https://www.youtube.com/c/IdatOficial',
@@ -261,7 +261,7 @@ export default {
         title: 'API en postman',
         description: 'API crud ejercicio de ejemplo  con uso de postman en modo público.',
         image: 'assets/img/portfolio/api-colors-postman.png',
-        link: 'https://github.com/acqrdeveloper/api-colors',
+        link: 'https://github.com/alexchristianqr/api-colors',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -271,7 +271,7 @@ export default {
         type: 'landing',
         title: 'Portafolio Personal',
         image: 'assets/img/portfolio/portfolio.png',
-        link: 'https://github.com/acqrdeveloper/portfolio',
+        link: 'https://github.com/alexchristianqr/portfolio',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -282,7 +282,7 @@ export default {
         title: 'Blog Personal',
         description: 'Es un blog personal en el lado del servidor con laravel y vuejs para desplegarse en el cloud de digital ocean.',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/blog',
+        link: 'https://github.com/alexchristianqr/blog',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -292,7 +292,7 @@ export default {
         type: 'app',
         title: 'Blog CMS Personal',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/cms-blog',
+        link: 'https://github.com/alexchristianqr/cms-blog',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -303,7 +303,7 @@ export default {
         title: 'Exámen Virtual en Línea',
         description: 'Es un sistema gestor de encuesta virtual para evaluar la atención al cliente de mesa de ayuda.',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/virtual-exam',
+        link: 'https://github.com/alexchristianqr/virtual-exam',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -313,7 +313,7 @@ export default {
         type: 'mobile',
         title: 'Clone de GMAIL',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/gmail-clone-app',
+        link: 'https://github.com/alexchristianqr/gmail-clone-app',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -323,7 +323,7 @@ export default {
         type: 'mobile',
         title: 'Restaurante Sushi Delivery',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/rollyroll-app',
+        link: 'https://github.com/alexchristianqr/rollyroll-app',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -368,7 +368,7 @@ export default {
           },
           {
             text: 'bx bxl-github',
-            value: 'https://github.com/acqrdeveloper',
+            value: 'https://github.com/alexchristianqr',
           },
           {
             text: 'bx bxl-facebook',

@@ -15,7 +15,7 @@ export default {
     li: [
       {
         text: 'Web',
-        value: 'https://acqrdeveloper.github.io/portfolio/',
+        value: 'https://alexchristianqr.github.io/portfolio/',
       },
       {
         text: 'Birthday',
@@ -56,7 +56,7 @@ export default {
             title: 'Profile',
             date: null,
             local: 'Full Stack Web Developer',
-            link: 'https://acqrdeveloper.github.io/portfolio/',
+            link: 'https://alexchristianqr.github.io/portfolio/',
             description: [
               "Professional with studies and self-taught in my free time I am a web developer with more than 4 years of experience developing applications for frontend, backend, API's and microservices.",
               'https://www.youtube.com/c/IdatOficial',
@@ -119,7 +119,7 @@ export default {
             title: 'Full Stack Web Developer',
             date: '10/2018 - 09/2021',
             local: 'Securitec Peru S.A.C',
-            link: 'https://www.securetec.pe/',
+            link: 'https://www.securitec.pe/',
             description: [
               'Create a web application to manage mass SMS sending campaigns.',
               'Create an administrator web application and an installable client web application to manage VOIP call campaigns.',
@@ -261,7 +261,7 @@ export default {
         title: 'API in postman',
         description: 'Crud API example exercise with use of postman in public mode.',
         image: 'assets/img/portfolio/api-colors-postman.png',
-        link: 'https://github.com/acqrdeveloper/api-colors',
+        link: 'https://github.com/alexchristianqr/api-colors',
         granted: {
           label: 'See public repository',
           permission: true,
@@ -271,7 +271,7 @@ export default {
         type: 'landing',
         title: 'Personal Portfolio',
         image: 'assets/img/portfolio/portfolio.png',
-        link: 'https://github.com/acqrdeveloper/portfolio',
+        link: 'https://github.com/alexchristianqr/portfolio',
         granted: {
           label: 'See public repository',
           permission: true,
@@ -281,7 +281,7 @@ export default {
         type: 'app',
         title: 'Personal Blog',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/blog',
+        link: 'https://github.com/alexchristianqr/blog',
         granted: {
           label: 'See public repository',
           permission: true,
@@ -292,7 +292,7 @@ export default {
         title: 'Personal CMS Blog',
         description: 'It is a personal blog on the server side with laravel and vuejs to be deployed in the digital ocean cloud.',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/cms-blog',
+        link: 'https://github.com/alexchristianqr/cms-blog',
         granted: {
           label: 'See public repository',
           permission: true,
@@ -303,7 +303,7 @@ export default {
         title: 'Online Virtual Exam',
         description: 'It is a virtual survey manager system to evaluate help desk customer service.',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/virtual-exam',
+        link: 'https://github.com/alexchristianqr/virtual-exam',
         granted: {
           label: 'See public repository',
           permission: true,
@@ -313,7 +313,7 @@ export default {
         type: 'mobile',
         title: 'GMAIL clone',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/gmail-clone-app',
+        link: 'https://github.com/alexchristianqr/gmail-clone-app',
         granted: {
           label: 'See public repository',
           permission: true,
@@ -323,7 +323,7 @@ export default {
         type: 'mobile',
         title: 'Sushi Delivery Restaurant',
         image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/acqrdeveloper/rollyroll-app',
+        link: 'https://github.com/alexchristianqr/rollyroll-app',
         granted: {
           label: 'See public repository',
           permission: true,
@@ -356,7 +356,7 @@ export default {
           },
           {
             text: 'bx bxl-github',
-            value: 'https://github.com/acqrdeveloper',
+            value: 'https://github.com/alexchristianqr',
           },
           {
             text: 'bx bxl-facebook',

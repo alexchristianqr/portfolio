@@ -8,7 +8,7 @@
         </h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/alexchristianqr/" target="_blank" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/acqrdeveloper" target="_blank" class="github" title="Github"><i class="bx bxl-github"></i></a>
+          <a href="https://github.com/alexchristianqr" target="_blank" class="github" title="Github"><i class="bx bxl-github"></i></a>
           <a href="https://www.facebook.com/alexchristianqr/" target="_blank" class="facebook" title="Facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://twitter.com/alexchristianqr/" target="_blank" class="twitter" title="Twitter"><i class="bx bxl-twitter"></i></a>
           <!--<a href="#" class="google-plus"><i class="bx bxl-google"></i></a>-->
