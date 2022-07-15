@@ -4,7 +4,7 @@
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
     <!-- ======= Header ======= -->
-    <AppHeader />
+    <AppHeader @eventReloadTyped="reloadTyped" />
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
@@ -96,8 +96,45 @@ export default {
   },
   data: () => ({
     typed: null,
+    showMobile: false,
+    existsTyped: null,
   }),
   methods: {
+    reloadTyped() {
+      this.$nextTick(() => {
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+          el = el.trim()
+          if (all) {
+            return [...document.querySelectorAll(el)]
+          } else {
+            return document.querySelector(el)
+          }
+        }
+
+        /**
+         * Hero type effect
+         */
+        const typed = select('.typed')
+        if (typed) {
+          let typed_strings = typed.getAttribute('data-typed-items')
+          typed_strings = typed_strings.split(',')
+          if (!this.existsTyped) {
+            this.existsTyped = new Typed('.typed', {
+              strings: typed_strings,
+              loop: true,
+              typeSpeed: 100,
+              backSpeed: 50,
+              backDelay: 2000,
+            })
+          } else {
+            this.existsTyped.strings = typed_strings
+          }
+        }
+      })
+    },
     reloadPage() {
       this.$nextTick(() => {
         /**
@@ -230,13 +267,17 @@ export default {
         if (typed) {
           let typed_strings = typed.getAttribute('data-typed-items')
           typed_strings = typed_strings.split(',')
-          new Typed('.typed', {
-            strings: typed_strings,
-            loop: true,
-            typeSpeed: 100,
-            backSpeed: 50,
-            backDelay: 2000,
-          })
+          if (!this.existsTyped) {
+            this.existsTyped = new Typed('.typed', {
+              strings: typed_strings,
+              loop: true,
+              typeSpeed: 100,
+              backSpeed: 50,
+              backDelay: 2000,
+            })
+          } else {
+            this.existsTyped.strings = typed_strings
+          }
         }
 
         /**

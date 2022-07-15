@@ -1,5 +1,5 @@
 export default {
-  fullName: 'Alex Christian Q. R.',
+  fullName: 'Alex Christian',
   Header: {
     menu: ['Inicio', 'Sobre mí', 'Hechos', 'Habilidades', 'Resumen', 'Portafolio', 'Servicios', 'Testimonios', 'Contacto', 'Curriculum Vitae'],
   },
@@ -26,8 +26,8 @@ export default {
         value: '(+51) 955588297',
       },
       {
-        text: 'Ciudad',
-        value: 'Lince, Lima, Peru',
+        text: 'Ubicación',
+        value: 'Lima / Peru',
       },
       {
         text: 'Edad',
@@ -334,6 +334,8 @@ export default {
   SectionContact: {
     p: 'Aquí tienes toda mi información básica para poder escribirme un mensaje, llamarme o mandarme un email.',
     contact: {
+      text: 'Medios Activos',
+      value: 'Estoy activo por estos medios de comunicación, puedes contactarme en cualquier momento y contestaré.',
       telegram: {
         text: 'Telegram',
         value: '1',
@@ -348,14 +350,14 @@ export default {
       },
       location: {
         text: 'Ubicación',
-        value: 'Peru',
+        value: 'Lima / Peru',
       },
       email: {
         text: 'Email',
         value: 'alexchristianqr@gmail.com',
       },
       phone: {
-        text: 'Teléfono',
+        text: 'WhatsApp',
         value: '(+51) 955588297',
       },
       socialnetwork: {
@@ -364,7 +366,7 @@ export default {
         networks: [
           {
             text: 'bx bxl-linkedin',
-            value: 'https://www.linkedin.com/in/alexchristianqr/',
+            value: 'https://linkedin.com/in/alexchristianqr/',
           },
           {
             text: 'bx bxl-github',
@@ -372,11 +374,11 @@ export default {
           },
           {
             text: 'bx bxl-facebook',
-            value: 'https://www.facebook.com/alexchristianqr/',
+            value: 'https://facebook.com/alexchristianqr/',
           },
           {
             text: 'bx bxl-whatsapp',
-            value: '#',
+            value: 'https://wa.link/r28uwd',
           },
           {
             text: 'bx bxl-twitter',
@@ -389,6 +391,10 @@ export default {
     sendMessage: {
       name: {
         text: 'Nombre',
+        value: null,
+      },
+      phone: {
+        text: 'Teléfono',
         value: null,
       },
       email: {

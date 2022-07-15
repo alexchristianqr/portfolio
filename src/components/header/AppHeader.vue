@@ -7,9 +7,9 @@
           <a href="/portfolio">{{ selectedLanguage.fullName }}</a>
         </h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://www.linkedin.com/in/alexchristianqr/" target="_blank" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/alexchristianqr" target="_blank" class="github" title="Github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.facebook.com/alexchristianqr/" target="_blank" class="facebook" title="Facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://linkedin.com/in/alexchristianqr/" target="_blank" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/alexchristianqr/" target="_blank" class="github" title="Github"><i class="bx bxl-github"></i></a>
+          <a href="https://facebook.com/alexchristianqr/" target="_blank" class="facebook" title="Facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://twitter.com/alexchristianqr/" target="_blank" class="twitter" title="Twitter"><i class="bx bxl-twitter"></i></a>
           <!--<a href="#" class="google-plus"><i class="bx bxl-google"></i></a>-->
           <!--<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>-->
@@ -17,14 +17,14 @@
       </div>
       <div class="pt-3 mx-auto">
         <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-dark" style="height: 2.75rem" :class="{ active: language == 'es' }" @click="changeLanguage('es')">
+          <div class="btn" style="height: 2.75rem" :class="{ active: language == 'es' }" @click="changeLanguage('es')">
             <img :src="require('../../../public/assets/img/countries/per.svg')" alt="PERU" width="24" class="align-middle" />
             <div v-if="language === 'es'" class="border border-bottom border-primary"></div>
-          </button>
-          <button type="button" class="btn btn-dark" style="height: 2.75rem" :class="{ active: language == 'en' }" @click="changeLanguage('en')">
+          </div>
+          <div class="btn" style="height: 2.75rem" :class="{ active: language == 'en' }" @click="changeLanguage('en')">
             <img :src="require('../../../public/assets/img/countries/usa.svg')" alt="USA" width="24" class="align-middle" />
             <div v-if="language === 'en'" class="border border-bottom border-primary"></div>
-          </button>
+          </div>
         </div>
       </div>
 
@@ -93,6 +93,7 @@ export default {
       this.language = lang
       this.$store.commit('setLanguage', lang)
       this.$store.commit('setLoadingPage', true)
+      this.$emit('eventReloadTyped')
     },
   },
 }

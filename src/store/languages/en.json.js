@@ -1,5 +1,5 @@
 export default {
-  fullName: 'Alex Christian Q. R.',
+  fullName: 'Alex Christian',
   Header: {
     menu: ['Home', 'About', 'Facts', 'Skills', 'Summary', 'Portfolio', 'Services', 'Testimonials', 'Contact', 'Curriculum Vitae'],
   },
@@ -26,8 +26,8 @@ export default {
         value: '(+51) 955588297',
       },
       {
-        text: 'City',
-        value: 'Lince, Lima, Peru',
+        text: 'Location',
+        value: 'Lima / Peru',
       },
       {
         text: 'Age',
@@ -334,9 +334,11 @@ export default {
   SectionContact: {
     p: 'Here you have all my basic information to be able to write me a message, call me or send me an email.',
     contact: {
+      text: 'Active Media',
+      value: 'I am active by these means of communication, you can contact me at any time and I will answer.',
       location: {
         text: 'Location',
-        value: 'Peru',
+        value: 'Lima / Peru',
       },
       email: {
         text: 'Email',
@@ -352,7 +354,7 @@ export default {
         networks: [
           {
             text: 'bx bxl-linkedin',
-            value: 'https://www.linkedin.com/in/alexchristianqr/',
+            value: 'https://linkedin.com/in/alexchristianqr/',
           },
           {
             text: 'bx bxl-github',
@@ -360,11 +362,11 @@ export default {
           },
           {
             text: 'bx bxl-facebook',
-            value: 'https://www.facebook.com/alexchristianqr/',
+            value: 'https://facebook.com/alexchristianqr/',
           },
           {
             text: 'bx bxl-whatsapp',
-            value: '#',
+            value: 'https://wa.link/r28uwd',
           },
           {
             text: 'bx bxl-twitter',
@@ -377,6 +379,10 @@ export default {
     sendMessage: {
       name: {
         text: 'Full Name',
+        value: null,
+      },
+      phone: {
+        text: 'Phone',
         value: null,
       },
       email: {
