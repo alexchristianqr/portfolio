@@ -1,7 +1,12 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.9",
+  "description": "web application",
+  "author": {
+    "name": "Alex Christian",
+    "github": "https://github.com/alexchristianqr"
+  },
+  "private": false,
   "scripts": {
     "deploy": "sh deploy.sh",
     "serve": "vue-cli-service serve",

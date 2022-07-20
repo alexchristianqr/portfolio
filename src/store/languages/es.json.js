@@ -163,6 +163,17 @@ export default {
     data: [
       {
         type: 'app',
+        title: 'TodoList',
+        description: 'Aplicación web demostrativa.',
+        image: 'assets/img/portfolio/todolist.png',
+        link: 'https://github.com/alexchristianqr/todolist',
+        granted: {
+          label: 'Ver repositorio público',
+          permission: true,
+        },
+      },
+      {
+        type: 'app',
         title: 'Orbidata',
         description: 'Es un sistema para consultar información de una persona datos para contact center.',
         image: 'assets/img/portfolio/orbidata.png',
