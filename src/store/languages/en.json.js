@@ -163,6 +163,28 @@ export default {
     data: [
       {
         type: 'app',
+        title: 'Todo-list',
+        description: 'Demo web application',
+        image: 'assets/img/portfolio/todolist.png',
+        link: 'https://github.com/alexchristianqr/todolist',
+        granted: {
+          label: 'See public repository',
+          permission: true,
+        },
+      },
+      {
+        type: 'app',
+        title: 'For you',
+        description: 'Interactive demo web application',
+        image: 'assets/img/portfolio/foryou.png',
+        link: 'https://github.com/alexchristianqr/foryou',
+        granted: {
+          label: 'See public repository',
+          permission: true,
+        },
+      },
+      {
+        type: 'app',
         title: 'Orbidata',
         image: 'assets/img/portfolio/orbidata.png',
         description: 'It is a system to consult information of a person data for contact center.',

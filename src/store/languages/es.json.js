@@ -163,10 +163,21 @@ export default {
     data: [
       {
         type: 'app',
-        title: 'TodoList',
+        title: 'Lista de tareas',
         description: 'Aplicación web demostrativa.',
         image: 'assets/img/portfolio/todolist.png',
         link: 'https://github.com/alexchristianqr/todolist',
+        granted: {
+          label: 'Ver repositorio público',
+          permission: true,
+        },
+      },
+      {
+        type: 'app',
+        title: 'Para ti',
+        description: 'Aplicación web demostrativa interactiva.',
+        image: 'assets/img/portfolio/foryou.png',
+        link: 'https://github.com/alexchristianqr/foryou',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
