@@ -32,10 +32,15 @@
                 ><i class="bx bx-search"></i
               ></a>
               <a v-if="v.granted.permission" :href="v.link" target="_blank" :title="v.granted.label" class="pt-2 bg-success">
-                <span><i class="bx bx-lock-open"></i></span>
+                <span>
+                  <!--                  <i class="bx bx-lock-open"></i>-->
+                  <i class="bx bx-code-alt"></i>
+                </span>
               </a>
               <a v-if="!v.granted.permission" :href="v.link" target="_blank" :title="v.granted.label" class="pt-2 bg-danger">
-                <span><i class="bx bx-lock"></i></span>
+                <span>
+                  <i class="bx bx-code-block"></i>
+                </span>
               </a>
             </div>
           </div>
