@@ -166,7 +166,8 @@ export default {
         title: 'Lista de tareas',
         description: 'Aplicación web demostrativa.',
         image: 'assets/img/portfolio/todolist.png',
-        link: 'https://github.com/alexchristianqr/todolist',
+        link: 'https://alexchristianqr.github.io/todolist/',
+        repository: 'https://github.com/alexchristianqr/todolist',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -177,7 +178,8 @@ export default {
         title: 'Para ti',
         description: 'Aplicación web demostrativa interactiva.',
         image: 'assets/img/portfolio/foryou.png',
-        link: 'https://github.com/alexchristianqr/foryou',
+        link: 'https://alexchristianqr.github.io/foryou/',
+        repository: 'https://github.com/alexchristianqr/foryou',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -188,18 +190,21 @@ export default {
         title: 'Orbidata',
         description: 'Es un sistema para consultar información de una persona datos para contact center.',
         image: 'assets/img/portfolio/orbidata.png',
-        link: 'https://wa.link/r28uwd',
+        link: 'https://app.orbidata.pe/',
+        repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Solicitar permiso para ver repositorio privado',
           permission: false,
         },
       },
+
       {
         type: 'app',
         title: 'Platcon',
         description: 'Es un sistema gestor de envíos de SMS masivo para marketing.',
         image: 'assets/img/portfolio/platcon.png',
-        link: 'https://wa.link/r28uwd',
+        link: 'https://platcon.com.pe/',
+        repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Solicitar permiso para ver repositorio privado',
           permission: false,
@@ -210,7 +215,8 @@ export default {
         title: 'Ticker',
         description: 'Es un sistema de chat en tiempo real que integra una API de Whatsapp API Twilio, Messenger, Instagram.',
         image: 'assets/img/portfolio/ticker.png',
-        link: 'https://wa.link/r28uwd',
+        link: 'https://app.ticker.pe/login',
+        repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Solicitar permiso para ver repositorio privado',
           permission: false,
@@ -221,7 +227,20 @@ export default {
         title: 'Súmate al Éxito',
         description: 'Es un sistema gestor de administración de reservas de salas COWORKING.',
         image: 'assets/img/portfolio/sumatealexito.png',
+        link: 'https://app.sumatealexito.com/login',
+        repository: 'https://wa.link/r28uwd',
+        granted: {
+          label: 'Solicitar permiso para ver repositorio privado',
+          permission: false,
+        },
+      },
+
+      {
+        type: 'landing',
+        title: 'Intellitec',
+        image: 'assets/img/portfolio/intellitec.png',
         link: 'https://wa.link/r28uwd',
+        repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Solicitar permiso para ver repositorio privado',
           permission: false,
@@ -229,12 +248,13 @@ export default {
       },
       {
         type: 'landing',
-        title: 'Intellitec',
-        image: 'assets/img/portfolio/intellitec.png',
-        link: 'https://wa.link/r28uwd',
+        title: 'Portafolio Personal',
+        image: 'assets/img/portfolio/portfolio.png',
+        link: 'https://alexchristianqr.github.io/portfolio/',
+        repository: 'https://github.com/alexchristianqr/portfolio',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
-          permission: false,
+          label: 'Ver repositorio público',
+          permission: true,
         },
       },
       {
@@ -243,6 +263,31 @@ export default {
         description: 'Es un CRM que integra las aplicaciones de chat mas utilizadas como WhatsApp con QR, Telegram, Widget livechats.',
         image: 'assets/img/portfolio/taskscrm.png',
         link: 'https://wa.link/r28uwd',
+        repository: 'https://wa.link/r28uwd',
+        granted: {
+          label: 'Solicitar permiso para ver repositorio privado',
+          permission: false,
+        },
+      },
+
+      {
+        type: 'microservice',
+        title: 'API en postman',
+        description: 'API crud ejercicio de ejemplo  con uso de postman en modo público.',
+        image: 'assets/img/portfolio/api-colors-postman.png',
+        link: 'https://documenter.getpostman.com/view/3683906/UVXonZoV',
+        repository: 'https://github.com/alexchristianqr/api-colors',
+        granted: {
+          label: 'Ver repositorio público',
+          permission: true,
+        },
+      },
+      {
+        type: 'microservice',
+        title: 'API GraphQL - Tasks CRM',
+        image: 'assets/img/portfolio/graphqlapi.png',
+        link: 'https://documenter.getpostman.com/view/3683906/UVCCfisV',
+        repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Solicitar permiso para ver repositorio privado',
           permission: false,
@@ -253,9 +298,23 @@ export default {
         title: 'API Principal - Tasks CRM',
         image: 'assets/img/portfolio/microservicio01.png',
         link: 'https://wa.link/r28uwd',
+        repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Solicitar permiso para ver repositorio privado',
           permission: false,
+        },
+      },
+
+      {
+        type: 'app',
+        title: 'Blog Personal',
+        description: 'Es un blog personal en el lado del servidor con laravel y vuejs para desplegarse en el cloud de digital ocean.',
+        image: 'assets/img/portfolio/github.png',
+        link: 'https://github.com/alexchristianqr/blog',
+        repository: 'https://github.com/alexchristianqr/blog',
+        granted: {
+          label: 'Ver repositorio público',
+          permission: true,
         },
       },
       {
@@ -263,6 +322,7 @@ export default {
         title: 'API Facturación - Tasks CRM',
         image: 'assets/img/portfolio/microservicio02.png',
         link: 'https://wa.link/r28uwd',
+        repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Solicitar permiso para ver repositorio privado',
           permission: false,
@@ -273,48 +333,19 @@ export default {
         title: 'API Socket - Tasks CRM',
         image: 'assets/img/portfolio/microservicio03.png',
         link: 'https://wa.link/r28uwd',
+        repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Solicitar permiso para ver repositorio privado',
           permission: false,
         },
       },
-      {
-        type: 'microservice',
-        title: 'API en postman',
-        description: 'API crud ejercicio de ejemplo  con uso de postman en modo público.',
-        image: 'assets/img/portfolio/api-colors-postman.png',
-        link: 'https://github.com/alexchristianqr/api-colors',
-        granted: {
-          label: 'Ver repositorio público',
-          permission: true,
-        },
-      },
-      {
-        type: 'landing',
-        title: 'Portafolio Personal',
-        image: 'assets/img/portfolio/portfolio.png',
-        link: 'https://github.com/alexchristianqr/portfolio',
-        granted: {
-          label: 'Ver repositorio público',
-          permission: true,
-        },
-      },
-      {
-        type: 'app',
-        title: 'Blog Personal',
-        description: 'Es un blog personal en el lado del servidor con laravel y vuejs para desplegarse en el cloud de digital ocean.',
-        image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/alexchristianqr/blog',
-        granted: {
-          label: 'Ver repositorio público',
-          permission: true,
-        },
-      },
+
       {
         type: 'app',
         title: 'Blog CMS Personal',
         image: 'assets/img/portfolio/github.png',
         link: 'https://github.com/alexchristianqr/cms-blog',
+        repository: 'https://github.com/alexchristianqr/cms-blog',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -326,6 +357,7 @@ export default {
         description: 'Es un sistema gestor de encuesta virtual para evaluar la atención al cliente de mesa de ayuda.',
         image: 'assets/img/portfolio/github.png',
         link: 'https://github.com/alexchristianqr/virtual-exam',
+        repository: 'https://github.com/alexchristianqr/virtual-exam',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
@@ -336,16 +368,19 @@ export default {
         title: 'Clone de GMAIL',
         image: 'assets/img/portfolio/github.png',
         link: 'https://github.com/alexchristianqr/gmail-clone-app',
+        repository: 'https://github.com/alexchristianqr/gmail-clone-app',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
         },
       },
+
       {
         type: 'mobile',
         title: 'Restaurante Sushi Delivery',
         image: 'assets/img/portfolio/github.png',
         link: 'https://github.com/alexchristianqr/rollyroll-app',
+        repository: 'https://github.com/alexchristianqr/rollyroll-app',
         granted: {
           label: 'Ver repositorio público',
           permission: true,

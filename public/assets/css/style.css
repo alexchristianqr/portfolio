@@ -521,7 +521,6 @@ section {
   margin-bottom: 30px;
 }
 .portfolio #portfolio-flters {
-  padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
@@ -588,15 +587,19 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(20, 157, 221, 1);
 }
-.portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
+.portfolio .portfolio-wrap .portfolio-links a {
+  border-left: 1px solid #ffffff;
+  opacity: 0.75;
+}
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  opacity: 1;
 }
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 1;
+  /*opacity: 0.25;*/
 }
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;

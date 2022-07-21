@@ -28,16 +28,23 @@
           <div class="portfolio-wrap shadow">
             <img :src="v.image" class="img-fluid border-0" alt="" />
             <div class="portfolio-links">
-              <a :href="v.image" data-gallery="portfolioGallery" class="portfolio-lightbox pt-2" :data-glightbox="`title: ${v.title}; description: ${v.description ? v.description : ''};`"
-                ><i class="bx bx-search"></i
-              ></a>
-              <a v-if="v.granted.permission" :href="v.link" target="_blank" :title="v.granted.label" class="pt-2 bg-success">
+              <!--Zoom de la imagen-->
+              <a :href="v.image" data-gallery="portfolioGallery" class="portfolio-lightbox pt-2" :data-glightbox="`title: ${v.title}; description: ${v.description ? v.description : ''};`">
+                <i class="bx bx-fullscreen"></i>
+              </a>
+              <!--Link sitio web-->
+              <a :href="v.link" target="_blank" :title="v.link" class="pt-2 ">
                 <span>
-                  <!--                  <i class="bx bx-lock-open"></i>-->
+                  <i class="bx bx-link"></i>
+                </span>
+              </a>
+              <!--Repositorio-->
+              <a v-if="v.granted.permission" :href="v.repository" target="_blank" :title="v.granted.label" class="pt-2 ">
+                <span>
                   <i class="bx bx-code-alt"></i>
                 </span>
               </a>
-              <a v-if="!v.granted.permission" :href="v.link" target="_blank" :title="v.granted.label" class="pt-2 bg-danger">
+              <a v-if="!v.granted.permission" :href="v.repository" target="_blank" :title="v.granted.label" class="pt-2 bg-danger">
                 <span>
                   <i class="bx bx-code-block"></i>
                 </span>
