@@ -587,7 +587,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(20, 157, 221, 1);
 }
-.portfolio .portfolio-wrap .portfolio-links a {
+.portfolio .portfolio-wrap .portfolio-links a:not(:first-child) {
   border-left: 1px solid #ffffff;
   opacity: 0.75;
 }

@@ -33,18 +33,18 @@
                 <i class="bx bx-fullscreen"></i>
               </a>
               <!--Link sitio web-->
-              <a :href="v.link" target="_blank" :title="v.link" class="pt-2 ">
+              <a :href="v.link" target="_blank" :title="v.link" class="pt-2">
                 <span>
                   <i class="bx bx-link"></i>
                 </span>
               </a>
               <!--Repositorio-->
-              <a v-if="v.granted.permission" :href="v.repository" target="_blank" :title="v.granted.label" class="pt-2 ">
+              <a v-if="v.granted.permission" :href="v.repository" target="_blank" :title="v.granted.label" class="pt-2">
                 <span>
                   <i class="bx bx-code-alt"></i>
                 </span>
               </a>
-              <a v-if="!v.granted.permission" :href="v.repository" target="_blank" :title="v.granted.label" class="pt-2 bg-danger">
+              <a v-if="!v.granted.permission" target="_blank" :title="v.granted.label" class="pt-2 bg-danger">
                 <span>
                   <i class="bx bx-code-block"></i>
                 </span>
