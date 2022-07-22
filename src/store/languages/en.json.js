@@ -190,7 +190,7 @@ export default {
         title: 'Orbidata',
         image: 'assets/img/portfolio/orbidata.png',
         description: 'It is a system to consult information of a person data for contact center.',
-        link: 'https://app.orbidata.pe/',
+        link: 'https://orbidata.pe/',
         repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Request permission to view private repository',
@@ -203,7 +203,7 @@ export default {
         title: 'Platcon',
         description: 'It is a management system for bulk SMS shipments for marketing.',
         image: 'assets/img/portfolio/platcon.png',
-        link: 'https://platcon.com.pe/',
+        link: 'https://platcon.securitec.pe/login',
         repository: 'https://wa.link/r28uwd',
         granted: {
           label: 'Request permission to view private repository',
