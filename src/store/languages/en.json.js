@@ -163,8 +163,20 @@ export default {
     data: [
       {
         type: 'app',
+        title: 'Iframe template for mobile apps',
+        description: 'Demo web application.',
+        image: 'assets/img/portfolio/iframephone.png',
+        link: 'https://alexchristianqr.github.io/iframephone/?src=',
+        repository: 'https://github.com/alexchristianqr/iframephone',
+        granted: {
+          label: 'See public repository',
+          permission: true,
+        },
+      },
+      {
+        type: 'app',
         title: 'Todo-list',
-        description: 'Demo web application',
+        description: 'Demo web application.',
         image: 'assets/img/portfolio/todolist.png',
         link: 'https://alexchristianqr.github.io/todolist/',
         repository: 'https://github.com/alexchristianqr/todolist',
@@ -176,7 +188,7 @@ export default {
       {
         type: 'app',
         title: 'For you',
-        description: 'Interactive demo web application',
+        description: 'Interactive demo web application.',
         image: 'assets/img/portfolio/foryou.png',
         link: 'https://alexchristianqr.github.io/foryou/',
         repository: 'https://github.com/alexchristianqr/foryou',

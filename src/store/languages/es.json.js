@@ -163,6 +163,18 @@ export default {
     data: [
       {
         type: 'app',
+        title: 'Plantilla iframe para aplicaciones móviles',
+        description: 'Aplicación web demostrativa.',
+        image: 'assets/img/portfolio/iframephone.png',
+        link: 'https://alexchristianqr.github.io/iframephone/?src=',
+        repository: 'https://github.com/alexchristianqr/iframephone',
+        granted: {
+          label: 'Ver repositorio público',
+          permission: true,
+        },
+      },
+      {
+        type: 'app',
         title: 'Lista de tareas',
         description: 'Aplicación web demostrativa.',
         image: 'assets/img/portfolio/todolist.png',
