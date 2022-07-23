@@ -162,7 +162,7 @@ export default {
     p: 'Estos son solo algunos de los proyectos personales y laborales que he desarrollado a lo largo de mis años como desarrollador profesional.',
     data: [
       {
-        type: 'app',
+        type: 'mobile',
         title: 'Clone de gmail es una aplicación móvil hibrida para enviar emails, bandeja de entrada y correos no leidos.',
         description: 'Aplicación web demostrativa.',
         image: 'assets/img/portfolio/clonegmail.png',
@@ -174,7 +174,7 @@ export default {
         },
       },
       {
-        type: 'app',
+        type: 'mobile',
         title: 'Plantilla iframe para aplicaciones móviles',
         description: 'Aplicación web demostrativa.',
         image: 'assets/img/portfolio/iframephone.png',

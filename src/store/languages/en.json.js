@@ -162,7 +162,7 @@ export default {
     p: 'These are just some of the personal and work projects that I have developed throughout my years as a professional developer.',
     data: [
       {
-        type: 'app',
+        type: 'mobile',
         title: 'Gmail clone is a hybrid mobile application to send emails, inbox and unread emails.',
         description: 'Demo web application.',
         image: 'assets/img/portfolio/clonegmail.png',
@@ -174,7 +174,7 @@ export default {
         },
       },
       {
-        type: 'app',
+        type: 'mobile',
         title: 'Iframe template for mobile apps',
         description: 'Demo web application.',
         image: 'assets/img/portfolio/iframephone.png',
