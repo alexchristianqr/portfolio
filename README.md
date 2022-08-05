@@ -3,7 +3,8 @@ website in vuejs for informational use of my portfolio
 
 ## automatically generated tag with shell script
 ```
-sh release.sh 1.0.3
+git tag
+sh ghpages.sh 1.0.3
 ```
 
 ## manually generated tag with git
