@@ -6,7 +6,13 @@ Sitio web personal en vuejs. En la sección de portafolio encontraras proyectos 
 
 ```bash
 git tag # Listar ascendente
+```
+
+```bash
 git tag --sort=-v:refname # Listar descendiente
+```
+
+```bash
 sh ghpages.sh 1.0.3 # Ejecutar shell script
 ```
 
@@ -14,5 +20,8 @@ sh ghpages.sh 1.0.3 # Ejecutar shell script
 
 ```bash
 git tag -a 1.0.X -m "version 1.0.X" # Comentar version tag
+```
+
+```bash
 git push -f git@github.com:alexchristianqr/portfolio.git master:gh-pages # Link repositorio github
 ```
