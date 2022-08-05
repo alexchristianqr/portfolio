@@ -9,7 +9,7 @@ export default {
     span: ['passionate ❤️', 'logical 🔢', 'developer ‍💻'],
   },
   SectionAbout: {
-    p: 'I am full stack web developer with more than 4 years of experience using frontend and backend technologies. I have worked in high growth startup companies where challenges and day-to-day life are variable and high learning. I am also a digital entrepreneur for learn more about the technology entrepreneurial businesses.',
+    p: 'I am full stack web developer with more than 5 years of experience using frontend and backend technologies. I have worked in high growth startup companies where challenges and day-to-day life are variable and high learning. I am also a digital entrepreneur for learn more about the technology businesses.',
     p2: 'Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.',
     h3: 'Web Developer Full Stack',
     li: [
