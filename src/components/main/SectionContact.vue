@@ -76,7 +76,8 @@
 export default {
   name: 'SectionContact',
   methods: {
-    sendMessage() {
+    // Contactar por WhatsApp
+    contactUsByWhatsApp() {
       const fullName = this.selectedLanguage.SectionContact.sendMessage.name.value
       const email = this.selectedLanguage.SectionContact.sendMessage.email.value
       const subject = this.selectedLanguage.SectionContact.sendMessage.subject.value
@@ -86,6 +87,9 @@ export default {
       const context = `Mi tracking de datos: {"name": "${fullName}", "email": "${email}", "name": "${phoneRemitente}", "subject": "${subject}", "message": "${message}"}`
       window.open(`https://wa.me/${phone}?text=${context}`)
     },
+    sendMessage(){
+
+    }
   },
 }
 </script>
