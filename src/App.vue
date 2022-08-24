@@ -409,4 +409,5 @@ export default {
 @import './../public/assets/vendor/glightbox/css/glightbox.min.css';
 @import './../public/assets/vendor/swiper/swiper-bundle.min.css';
 @import './../public/assets/css/style.css';
+@import '~vue-toast-notification/dist/theme-default.css';
 </style>

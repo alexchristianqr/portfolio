@@ -16,8 +16,6 @@ export default {
           to_email: self.params.toEmail,
           message: self.params.messageEmail,
           reply_to: self.params.replyToEmail,
-          // username: 'Alex',
-          // 'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...',
         },
       }
 
@@ -32,8 +30,10 @@ export default {
       self.selectedLanguage.SectionContact.sendMessage.message.value = null
       self.selectedLanguage.SectionContact.sendMessage.phone.value = null
       self.selectedLanguage.SectionContact.sendMessage.subject.value = null
+      self.$toast.open(`Mensaje enviado con éxito`)
     } catch (e) {
       context.commit('setLoadingButton', false)
+      self.$toast.error(`El mensaje no fué enviado`)
       context.commit('setError', e)
     }
   },
