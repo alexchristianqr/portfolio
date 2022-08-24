@@ -17,11 +17,11 @@
                   <h4>{{ selectedLanguage.SectionContact.contact.email.text }}</h4>
                   <p>{{ selectedLanguage.SectionContact.contact.email.value }}</p>
                 </div>
-                <div class="phone">
-                  <i class="bi bi-whatsapp"></i>
-                  <h4>{{ selectedLanguage.SectionContact.contact.phone.text }}</h4>
-                  <p>{{ selectedLanguage.SectionContact.contact.phone.value }}</p>
-                </div>
+<!--                <div class="phone">-->
+<!--                  <i class="bi bi-whatsapp"></i>-->
+<!--                  <h4>{{ selectedLanguage.SectionContact.contact.phone.text }}</h4>-->
+<!--                  <p>{{ selectedLanguage.SectionContact.contact.phone.value }}</p>-->
+<!--                </div>-->
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
                   <h4>{{ selectedLanguage.SectionContact.contact.location.text }}</h4>
@@ -63,7 +63,8 @@
               <textarea class="form-control" name="message" id="message" rows="10" v-model="selectedLanguage.SectionContact.sendMessage.message.value" required></textarea>
             </div>
             <div class="text-center">
-              <button type="submit">{{ selectedLanguage.SectionContact.sendMessage.action.text }}</button>
+              <button v-if="!loadingButton" type="submit">{{ selectedLanguage.SectionContact.sendMessage.action.text }}</button>
+              <button v-if="loadingButton" type="button" disabled>Enviando...</button>
             </div>
           </form>
         </div>
@@ -75,21 +76,35 @@
 <script>
 export default {
   name: 'SectionContact',
+  data: () => ({
+    params: {},
+  }),
+  computed: {
+    loadingButton() {
+      return this.$store.getters.loadingButton
+    },
+  },
   methods: {
-    // Contactar por WhatsApp
-    contactUsByWhatsApp() {
+    // Enviar email
+    async sendMessage() {
+      // Formulario de contacto
       const fullName = this.selectedLanguage.SectionContact.sendMessage.name.value
       const email = this.selectedLanguage.SectionContact.sendMessage.email.value
-      const subject = this.selectedLanguage.SectionContact.sendMessage.subject.value
       const message = this.selectedLanguage.SectionContact.sendMessage.message.value
       const phoneRemitente = this.selectedLanguage.SectionContact.sendMessage.phone.value
-      const phone = '51955588297'
-      const context = `Mi tracking de datos: {"name": "${fullName}", "email": "${email}", "name": "${phoneRemitente}", "subject": "${subject}", "message": "${message}"}`
-      window.open(`https://wa.me/${phone}?text=${context}`)
+      const subject = this.selectedLanguage.SectionContact.sendMessage.subject.value
+      this.params.fullnameInvitedEmail = fullName // Nombre del usuario invitado
+      this.params.phoneInvitedEmail = phoneRemitente // Telefono del usuario invitado
+      this.params.subjectInvitedEmail = subject // Asunto del usuario invitado
+      this.params.messageEmail = message // Mensaje del usuario invitado
+      this.params.replyToEmail = email // Email del usuario invitado
+      // Env
+      this.params.toNameEmail = this.$store.getters.env.toNameEmail
+      this.params.toEmail = this.$store.getters.env.toMailEmail
+      // Store
+      this.$store.commit('setLoadingButton', true)
+      await this.$store.dispatch('ContactUs.sendMail', { self: this })
     },
-    sendMessage(){
-
-    }
   },
 }
 </script>

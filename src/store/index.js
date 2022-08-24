@@ -1,11 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import Enviroment from './../env'
 import es from './languages/es.json'
 import en from './languages/en.json'
+import modules from './modules'
 
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
+  modules,
   state: {
     language: {
       selected: en,
@@ -13,6 +16,13 @@ export const store = new Vuex.Store({
     loading: {
       page: false,
     },
+    alerts: [
+      { label: 'error', content: null },
+      { label: 'success', content: null },
+      { label: 'warning', content: null },
+      { label: 'info', content: null },
+    ],
+    env: Enviroment,
   },
   mutations: {
     setLanguage(state, payload) {
@@ -33,6 +43,42 @@ export const store = new Vuex.Store({
       state.loading.page = payload
       // window.location.reload(true)
     },
+    async setError(state, e) {
+      console.error('[Mutations.setError]', { error: e })
+
+      const modals = window.document.getElementsByClassName('modal')
+      for (let i = 0; i < modals.length; i++) {
+        modals[i].scrollTop = 0
+      }
+
+      if (typeof e.response === 'object') {
+        const statusCode = e.response.status
+        switch (statusCode) {
+          // case 401: // Unauthorized
+          //   await this.dispatch('Auth/userUnauthorized')
+          //   break
+          case 402: // Require payment
+            state.alerts[0].content = e.response.data.message
+            break
+          case 403: // Require Authorization
+            state.alerts[0].content = e.response.data.message
+            break
+          case 422: // Unprocessable entity
+            state.alerts[0].content = e.response.data.errors
+            break
+          case 500: // Server error
+            state.alerts[0].content = 'Internal server error'
+            break
+          default:
+            state.alerts[0].content = e.response.data.message
+            break
+        }
+      } else if (e.message === 'Network Error') {
+        state.alerts[0].content = e.message
+      } else {
+        state.alerts[0].content = e
+      }
+    },
   },
   getters: {
     selectedLanguage: (state) => {
@@ -41,5 +87,6 @@ export const store = new Vuex.Store({
     loadingPage: (state) => {
       return state.loading.page
     },
+    env: (state) => state.env,
   },
 })
