@@ -13,7 +13,7 @@ git tag --sort=-v:refname # Listar descendiente
 ```
 
 ```bash
-sh ghpages.sh 1.0.3 # Ejecutar shell script
+sh ghpages.sh 1.1.0 # Ejecutar shell script
 ```
 
 ## Manually tag
