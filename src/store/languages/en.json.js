@@ -22,24 +22,20 @@ export default {
         value: '22 de Setiembre de 1993',
       },
       {
-        text: 'Phone',
-        value: '(+51) 955588297',
-      },
-      {
         text: 'Location',
         value: 'Lima / Peru',
-      },
-      {
-        text: 'Age',
-        value: '28',
       },
       {
         text: 'Email',
         value: 'alexchristianqr@gmail.com',
       },
       {
-        text: 'Freelance',
-        value: 'Unavailable',
+        text: 'Work Freelance',
+        value: 'Available',
+      },
+      {
+        text: 'Part Time Consulting',
+        value: 'Available',
       },
     ],
   },
@@ -444,10 +440,6 @@ export default {
           {
             text: 'bx bxl-facebook',
             value: 'https://facebook.com/alexchristianqr/',
-          },
-          {
-            text: 'bx bxl-whatsapp',
-            value: 'https://wa.link/r28uwd',
           },
           {
             text: 'bx bxl-twitter',

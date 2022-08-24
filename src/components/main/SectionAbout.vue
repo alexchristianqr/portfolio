@@ -40,23 +40,13 @@
                 <li>
                   <i class="bi bi-chevron-right"></i>
                   <strong>{{ selectedLanguage.SectionAbout.li[4].text }}:</strong>
-                  <span>{{ birthDate }}</span>
+                  <span>{{ selectedLanguage.SectionAbout.li[4].value }}</span>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
                   <strong>{{ selectedLanguage.SectionAbout.li[5].text }}:</strong>
                   <span>{{ selectedLanguage.SectionAbout.li[5].value }}</span>
                 </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <strong>{{ selectedLanguage.SectionAbout.li[6].text }}:</strong>
-                  <span>{{ selectedLanguage.SectionAbout.li[6].value }}</span>
-                </li>
-                <!--<li>-->
-                <!--<i class="bi bi-chevron-right"></i>-->
-                <!--<strong>{{ selectedLanguage.SectionAbout.li[7].text }}:</strong>-->
-                <!--<span>{{ selectedLanguage.SectionAbout.li[7].value }}</span>-->
-                <!--</li>-->
               </ul>
             </div>
           </div>
