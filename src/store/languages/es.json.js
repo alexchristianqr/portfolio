@@ -9,7 +9,7 @@ export default {
     span: ['apasionado ❤️', 'lógico 🔢', 'desarrollador ‍💻'],
   },
   SectionAbout: {
-    p: 'Soy un desarrollador web full stack con más 5 de años de experiencia usando tecnologías frontend y backend. He trabajado para grandes empresas y startups con grandes crecimientos, donde los retos y el día a día son variables y de alto aprendizaje. También soy un emprendedor digital para conocer más sobre los negocios de tecnología.',
+    p: 'Soy un desarrollador web full stack con más de 5 años de experiencia usando tecnologías frontend y backend. He trabajado para grandes empresas y startups con grandes crecimientos, donde los retos y el día a día son variables y de alto aprendizaje. También soy un emprendedor digital para conocer más sobre los negocios de tecnología.',
     p2: 'Sin darte cuenta los años en tecnología pasan muy rápido por eso es importante mantenerte actualizado y revisando las contantes actualizaciones.',
     h3: 'Desarrollador Web Full Stack',
     li: [
@@ -34,7 +34,7 @@ export default {
         value: 'Disponible',
       },
       {
-        text: 'Asesoria a Tiempo Parcial',
+        text: 'Asesoria',
         value: 'Disponible',
       },
     ],
