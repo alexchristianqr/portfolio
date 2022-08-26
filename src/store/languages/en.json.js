@@ -9,7 +9,7 @@ export default {
     span: ['passionate ❤️', 'logical 🔢', 'developer ‍💻'],
   },
   SectionAbout: {
-    p: 'I am full stack web developer with more than 5 years of experience using frontend and backend technologies. I have worked in high growth startup companies where challenges and day-to-day life are variable and high learning. I am also a digital entrepreneur for learn more about the technology business.',
+    p: "I'm a full stack web developer with more than 5 years of experience using frontend and backend technologies. I have worked for large companies and startups with great growth, where the challenges and day to day are variable and high learning. I am also a digital entrepreneur to know more about technology business.",
     p2: 'Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.',
     h3: 'Web Developer Full Stack',
     li: [
@@ -96,21 +96,21 @@ export default {
             ],
           },
           /*{
-            title: 'Desarrollador Web Full Stack',
-            date: '09/2021 - present',
-            local: 'Intellitec',
-            link: 'https://intellitec.pe/',
-            description: [
-              'Create a chatbot',
-              'Create an installable chat widget',
-              'Integrate APIs of Telegram, Instagram, WhatsApp with puppeteer, Messenger',
-              'Develop in frontend with vuejs, vuex and nuxtjs',
-              'Develop in backend with nodejs, express, mongoose, mongodb',
-              'Documentation in postman',
-              'Creating API services with Rest',
-              'API microservice creation with GraphQL and SOA',
-            ],
-          },*/
+                      title: 'Desarrollador Web Full Stack',
+                      date: '09/2021 - present',
+                      local: 'Intellitec',
+                      link: 'https://intellitec.pe/',
+                      description: [
+                        'Create a chatbot',
+                        'Create an installable chat widget',
+                        'Integrate APIs of Telegram, Instagram, WhatsApp with puppeteer, Messenger',
+                        'Develop in frontend with vuejs, vuex and nuxtjs',
+                        'Develop in backend with nodejs, express, mongoose, mongodb',
+                        'Documentation in postman',
+                        'Creating API services with Rest',
+                        'API microservice creation with GraphQL and SOA',
+                      ],
+                    },*/
           {
             title: 'Full Stack Web Developer',
             date: '10/2018 - 09/2021',
