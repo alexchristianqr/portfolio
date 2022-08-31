@@ -198,23 +198,11 @@ export default {
         title: 'Para ti',
         description: 'Aplicación web demostrativa interactiva.',
         image: 'assets/img/portfolio/foryou.png',
-        link: 'https://alexchristianqr.github.io/foryou/',
+        link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/foryou',
         repository: 'https://github.com/alexchristianqr/foryou',
         granted: {
           label: 'Ver repositorio público',
           permission: true,
-        },
-      },
-      {
-        type: 'app',
-        title: 'Orbidata',
-        description: 'Es un sistema para consultar información de una persona datos para contact center.',
-        image: 'assets/img/portfolio/orbidata.png',
-        link: 'https://orbidata.pe/',
-        repository: 'https://wa.link/r28uwd',
-        granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
-          permission: false,
         },
       },
 
