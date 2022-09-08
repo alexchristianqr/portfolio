@@ -54,10 +54,11 @@ export default {
             local: 'Desarrollador Web Full Stack',
             link: 'https://alexchristianqr.github.io/portfolio/',
             description: [
-              "Profesional con estudios y autodidacta en mis tiempos libres soy un desarrollador web con más de 5 años de experiencia desarrollando aplicaciones para frontend, backend, API's y microservicios.",
+              "Profesional con estudios superiores y autodidacta en mis tiempos libres. Soy un desarrollador web con más de 5 años de experiencia desarrollando aplicaciones con tecnologías frontend, backend, virtualización y computación en la nube.",
               'https://www.youtube.com/c/IdatOficial',
               'https://www.youtube.com/c/Platzi',
               'https://www.youtube.com/c/EDteam',
+              'https://www.youtube.com/c/CodelyTv',
             ],
           },
           {
