@@ -30,7 +30,7 @@ export default {
         value: 'alexchristianqr@gmail.com',
       },
       {
-        text: 'Work Freelance',
+        text: 'Freelancer',
         value: 'Available',
       },
       {
@@ -73,7 +73,7 @@ export default {
           },
           {
             title: 'Software Engineering',
-            date: '2022',
+            date: '2022 - present',
             local: 'Universidad Tecnológica del Peru - UTP',
             link: 'https://www.utp.edu.pe/',
             description: [

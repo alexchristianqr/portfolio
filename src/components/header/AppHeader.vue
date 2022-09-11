@@ -85,7 +85,7 @@ export default {
   data: () => ({
     language: 'en',
   }),
-  beforeMount() {
+  mounted() {
     this.language = localStorage.getItem('lang')
   },
   methods: {

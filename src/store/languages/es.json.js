@@ -30,7 +30,7 @@ export default {
         value: 'alexchristianqr@gmail.com',
       },
       {
-        text: 'Trabajos Freelance',
+        text: 'Freelancer',
         value: 'Disponible',
       },
       {
@@ -73,7 +73,7 @@ export default {
           },
           {
             title: 'Ingenieria de Software',
-            date: '2022',
+            date: '2022 - presente',
             local: 'Universidad Tecnológica del Peru - UTP',
             link: 'https://www.utp.edu.pe/',
             description: [
@@ -88,7 +88,7 @@ export default {
         data: [
           {
             title: 'Backend Developer',
-            date: '01/2022 - actualidad',
+            date: '01/2022 - presente',
             local: 'Quality & Development Software',
             link: 'https://www.qdsgroup.com.pe/',
             description: [
