@@ -40,7 +40,7 @@ export default {
     ],
   },
   SectionSkills: {
-    p: 'Throughout all these years there are many technologies that I have tried and many experiences that I have lived. But very useful to develop functional, secure and scalable software.',
+    p: 'Throughout all these years there are many technologies that I have used and many experiences that I have lived. But very useful to develop functional, secure and scalable software.',
   },
   SectionResume: {
     p: null,
@@ -68,7 +68,7 @@ export default {
             link: 'https://www.idat.edu.pe/',
             description: [
               'A very recognized private technology institution belonging to the Intercorp group.',
-              'Programming, Android, Networking, Operating Systems, English 3, Mathematics 3, Accounting and Statistics are some of the most outstanding courses.',
+              'Programming, Android, Networking, Operating Systems, English, Mathematics, Accounting and Statistics.',
             ],
           },
           {
@@ -78,7 +78,7 @@ export default {
             link: 'https://www.utp.edu.pe/',
             description: [
               'We are international comprehensive programs and scholarships in the best universities in the world.',
-              'Mathematics, English, Web programming, Interactive game development, Computer security, Networks, Cryptography, Business intelligence, Artificial intelligence.',
+              'Programming, Design patterns, Software architecture, Computer security, Interactive game development, Networks, Cryptography, Business intelligence, Artificial intelligence.',
             ],
           },
         ],

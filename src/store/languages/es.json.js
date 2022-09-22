@@ -40,7 +40,7 @@ export default {
     ],
   },
   SectionSkills: {
-    p: 'A lo largo de todos estos años son muchas las tecnologías que eh probado y muchas las experiencias que eh vivido. Pero de mucha utilidad para desarrollar software funcional, seguro y escalable.',
+    p: 'A lo largo de todos estos años son muchas las tecnologías que eh utilizado y muchas las experiencias que eh vivido. Pero de mucha utilidad para desarrollar software funcional, seguro y escalable.',
   },
   SectionResume: {
     p: null,
@@ -68,7 +68,7 @@ export default {
             link: 'https://www.idat.edu.pe/',
             description: [
               'Una institución privada de tecnología muy reconocida perteneciente al grupo Intercorp.',
-              'Programación, Android, Networking, Sistemas Operativos, Ingles 3, Matemática 3, Contabilidad y Estadística son algunos de los cursos más destacados.',
+              'Programación, Android, Networking, Sistemas Operativos, Ingles, Matemática, Contabilidad y Estadística.',
             ],
           },
           {
@@ -78,7 +78,7 @@ export default {
             link: 'https://www.utp.edu.pe/',
             description: [
               'Somos internacionales programas y becas integrales en las mejores universidades del mundo.',
-              'Matemática, Ingles, Programación web, Desarrollo de juegos interactivos, Seguridad informática, Redes, Criptografia, Inteligencia de negocios, Inteligencia artificial.',
+              'Programación, Patrones de diseño, Arquitectura de software, Seguridad informática, Desarrollo de juegos interactivos, Redes, Criptografia, Inteligencia de negocios, Inteligencia artificial.',
             ],
           },
         ],
