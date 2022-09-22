@@ -54,7 +54,7 @@ export default {
             local: 'Desarrollador Web Full Stack',
             link: 'https://alexchristianqr.github.io/portfolio/',
             description: [
-              "Profesional con estudios superiores y autodidacta en mis tiempos libres. Soy un desarrollador web con más de 5 años de experiencia desarrollando aplicaciones con tecnologías frontend, backend, virtualización y computación en la nube.",
+              'Profesional con estudios superiores y autodidacta en mis tiempos libres. Soy un desarrollador web con más de 5 años de experiencia desarrollando aplicaciones con tecnologías frontend, backend, virtualización y computación en la nube.',
               'https://www.youtube.com/c/IdatOficial',
               'https://www.youtube.com/c/Platzi',
               'https://www.youtube.com/c/EDteam',
@@ -159,6 +159,17 @@ export default {
     p: 'Estos son solo algunos de los proyectos personales y laborales que he desarrollado a lo largo de mis años como desarrollador profesional.',
     data: [
       {
+        type: 'landing',
+        title: 'API No Oficial de WhatsApp',
+        image: 'assets/img/portfolio/sharedapis.png',
+        link: 'https://sharedapis.com/',
+        repository: 'https://wa.link/r28uwd',
+        granted: {
+          label: 'Este repositorio es privado',
+          permission: false,
+        },
+      },
+      {
         type: 'mobile',
         title: 'Clone de gmail es una aplicación móvil hibrida para enviar emails, bandeja de entrada y correos no leidos.',
         description: 'Aplicación web demostrativa.',
@@ -182,6 +193,7 @@ export default {
           permission: true,
         },
       },
+
       {
         type: 'app',
         title: 'Lista de tareas',
@@ -206,7 +218,6 @@ export default {
           permission: true,
         },
       },
-
       {
         type: 'app',
         title: 'Platcon',
@@ -215,10 +226,11 @@ export default {
         link: 'https://platcon.securitec.pe/login',
         repository: 'https://wa.link/r28uwd',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
+          label: 'Este repositorio es privado',
           permission: false,
         },
       },
+
       {
         type: 'app',
         title: 'Ticker',
@@ -227,7 +239,7 @@ export default {
         link: 'https://app.ticker.pe/login',
         repository: 'https://wa.link/r28uwd',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
+          label: 'Este repositorio es privado',
           permission: false,
         },
       },
@@ -239,11 +251,10 @@ export default {
         link: 'https://app.sumatealexito.com/login',
         repository: 'https://wa.link/r28uwd',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
+          label: 'Este repositorio es privado',
           permission: false,
         },
       },
-
       {
         type: 'landing',
         title: 'Intellitec',
@@ -251,10 +262,11 @@ export default {
         link: 'https://wa.link/r28uwd',
         repository: 'https://wa.link/r28uwd',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
+          label: 'Este repositorio es privado',
           permission: false,
         },
       },
+
       {
         type: 'landing',
         title: 'Portafolio Personal',
@@ -274,11 +286,10 @@ export default {
         link: 'https://wa.link/r28uwd',
         repository: 'https://wa.link/r28uwd',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
+          label: 'Este repositorio es privado',
           permission: false,
         },
       },
-
       {
         type: 'microservice',
         title: 'API en postman',
@@ -291,6 +302,7 @@ export default {
           permission: true,
         },
       },
+
       {
         type: 'microservice',
         title: 'API GraphQL - Tasks CRM',
@@ -298,7 +310,7 @@ export default {
         link: 'https://documenter.getpostman.com/view/3683906/UVCCfisV',
         repository: 'https://wa.link/r28uwd',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
+          label: 'Este repositorio es privado',
           permission: false,
         },
       },
@@ -309,11 +321,10 @@ export default {
         link: 'https://wa.link/r28uwd',
         repository: 'https://wa.link/r28uwd',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
+          label: 'Este repositorio es privado',
           permission: false,
         },
       },
-
       {
         type: 'app',
         title: 'Blog Personal',
@@ -326,6 +337,7 @@ export default {
           permission: true,
         },
       },
+
       {
         type: 'microservice',
         title: 'API Facturación - Tasks CRM',
@@ -333,7 +345,7 @@ export default {
         link: 'https://wa.link/r28uwd',
         repository: 'https://wa.link/r28uwd',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
+          label: 'Este repositorio es privado',
           permission: false,
         },
       },
@@ -344,11 +356,10 @@ export default {
         link: 'https://wa.link/r28uwd',
         repository: 'https://wa.link/r28uwd',
         granted: {
-          label: 'Solicitar permiso para ver repositorio privado',
+          label: 'Este repositorio es privado',
           permission: false,
         },
       },
-
       {
         type: 'app',
         title: 'Blog CMS Personal',
@@ -360,6 +371,7 @@ export default {
           permission: true,
         },
       },
+
       {
         type: 'app',
         title: 'Exámen Virtual en Línea',
@@ -383,7 +395,6 @@ export default {
           permission: true,
         },
       },
-
       {
         type: 'mobile',
         title: 'Restaurante Sushi Delivery',
