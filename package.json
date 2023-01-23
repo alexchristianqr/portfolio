@@ -8,7 +8,6 @@
   },
   "private": false,
   "scripts": {
-    "deploy": "sh deploy.sh",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
