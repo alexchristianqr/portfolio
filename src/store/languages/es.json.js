@@ -185,7 +185,7 @@ export default {
       {
         type: 'mobile',
         title: 'Clone de Gmail',
-        description: 'Es una aplicación móvil hibrida para enviar emails, bandeja de entrada y correos no leidos.',
+        description: `<div class="content-text">Es una aplicación móvil hibrida para enviar emails, bandeja de entrada y correos no leidos.</div><div class="content-icons"><div class="row"><div class="col-3"><div class="icon-ionic"></div></div><div class="col-3"><div class="icon-angular"></div></div><div class="col-3"><div class="icon-git"></div></div></div></div>`,
         image: 'assets/img/portfolio/clonegmail.png',
         link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/gmail/',
         repository: 'https://github.com/alexchristianqr/gmail',

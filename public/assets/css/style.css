@@ -1103,3 +1103,7 @@ hr {
   height: 2.5rem;
   background: url('/assets/css/nuxtjs.svg') no-repeat;
 }
+.content-icons .icon-ionic {
+  height: 2.5rem;
+  background: url('/assets/css/ionic.svg') no-repeat;
+}
