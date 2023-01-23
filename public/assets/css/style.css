@@ -1041,3 +1041,44 @@ section {
     padding: 15px 15px;
   }
 }
+
+.gslide-description {
+  text-align: justify;
+  border-right: 1px solid #e0e1e1;
+}
+
+hr {
+  color: #e0e1e1;
+  opacity: 1;
+}
+
+.content-icons,
+.content-list,
+.content-text {
+  padding-bottom: 1.25rem;
+}
+
+.content-list > ul {
+  padding-left: 1rem;
+}
+
+.content-icons .icon-angular {
+  height: 3rem;
+  background: url('/assets/css/angular.svg') no-repeat;
+}
+.content-icons .icon-vue {
+  height: 2rem;
+  background: url('/assets/css/vuejs.svg') no-repeat;
+}
+.content-icons .icon-html5 {
+  height: 2rem;
+  background: url('/assets/css/html5.svg') no-repeat;
+}
+.content-icons .icon-git {
+  height: 3rem;
+  background: url('/assets/css/git.svg') no-repeat;
+}
+.content-icons .icon-github {
+  height: 4rem;
+  background: url('/assets/css/github.svg') no-repeat;
+}

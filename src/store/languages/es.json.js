@@ -161,6 +161,7 @@ export default {
       {
         type: 'mobile',
         title: 'Game apps',
+        description: `<div class="content-text">Es una aplicación web interactiva de juegos clásicos. Aquellos juegos que tuvieron su época dorada en los años 95 al 2000. La app está diseñada para ejecutarse por la web de manera responsiva.</div><div class="content-list"><ul><li><b>Tres en linea</b></li><li><b>Tetris</b></li><li><b>Zudoku</b></li></ul></div><div class="content-icons"><div class="row"><div class="col-3"><div class="icon-angular"></div></div><div class="col-3"><div class="icon-git"></div></div></div></div>`,
         image: 'assets/img/portfolio/gameapps.jpg',
         link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/game-apps/#/',
         repository: 'https://github.com/alexchristianqr/game-apps',
@@ -172,6 +173,7 @@ export default {
       {
         type: 'landing',
         title: 'API No Oficial de WhatsApp',
+        description: null,
         image: 'assets/img/portfolio/sharedapis.png',
         link: 'https://sharedapis.com/',
         repository: 'https://wa.link/r28uwd',

@@ -29,7 +29,7 @@
             <img :src="v.image" class="img-fluid border-0" alt="" />
             <div class="portfolio-links">
               <!--Zoom de la imagen-->
-              <a :href="v.image" data-gallery="portfolioGallery" class="portfolio-lightbox pt-2" :data-glightbox="`title: ${v.title}; description: ${v.description ? v.description : ''};`">
+              <a :href="v.image" data-gallery="portfolioGallery" class="portfolio-lightbox pt-2" :data-glightbox="`title: <h3>${v.title}</h3><hr>; description: ${v.description ? v.description : ''}; descPosition: ${v.position ? v.position : 'left'}`">
                 <i class="bx bx-fullscreen"></i>
               </a>
               <!--Link sitio web-->
@@ -52,6 +52,7 @@
             </div>
           </div>
         </div>
+<!--        <IconAngular />-->
       </div>
       <!---->
     </div>
