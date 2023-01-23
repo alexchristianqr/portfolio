@@ -159,6 +159,17 @@ export default {
     p: 'These are just some of the personal and work projects that I have developed throughout my years as a professional developer.',
     data: [
       {
+        type: 'mobile',
+        title: 'Game apps',
+        image: 'assets/img/portfolio/gameapps.jpg',
+        link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/game-apps/#/',
+        repository: 'https://github.com/alexchristianqr/game-apps',
+        granted: {
+          label: 'See public repository',
+          permission: true,
+        },
+      },
+      {
         type: 'landing',
         title: 'API No Oficial de WhatsApp',
         image: 'assets/img/portfolio/sharedapis.png',
