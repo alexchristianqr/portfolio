@@ -1063,22 +1063,43 @@ hr {
 }
 
 .content-icons .icon-angular {
-  height: 3rem;
+  height: 2.5rem;
+  width: 100%;
   background: url('/assets/css/angular.svg') no-repeat;
 }
 .content-icons .icon-vue {
-  height: 2rem;
+  height: 3rem;
   background: url('/assets/css/vuejs.svg') no-repeat;
 }
 .content-icons .icon-html5 {
-  height: 2rem;
+  height: 3rem;
   background: url('/assets/css/html5.svg') no-repeat;
 }
 .content-icons .icon-git {
-  height: 3rem;
+  height: 2.5rem;
   background: url('/assets/css/git.svg') no-repeat;
 }
 .content-icons .icon-github {
-  height: 4rem;
+  height: 3rem;
   background: url('/assets/css/github.svg') no-repeat;
+}
+.content-icons .icon-typescript {
+  height: 3rem;
+  background: url('/assets/css/typescript.svg') no-repeat;
+}
+.content-icons .icon-javascript {
+  height: 3rem;
+  background: url('/assets/css/javascript.svg') no-repeat;
+}
+.content-icons .icon-firebase {
+  height: 2.5rem;
+  background: url('/assets/css/firebase.svg') no-repeat;
+}
+.content-icons .icon-material-design {
+  height: 2.5rem;
+  background: url('/assets/css/material-design.svg') no-repeat;
+}
+.content-icons .icon-nuxtjs {
+  height: 2.5rem;
+  background: url('/assets/css/nuxtjs.svg') no-repeat;
 }

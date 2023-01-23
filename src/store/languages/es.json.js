@@ -161,7 +161,7 @@ export default {
       {
         type: 'mobile',
         title: 'Game apps',
-        description: `<div class="content-text">Es una aplicación web interactiva de juegos clásicos. Aquellos juegos que tuvieron su época dorada en los años 95 al 2000. La app está diseñada para ejecutarse por la web de manera responsiva.</div><div class="content-list"><ul><li><b>Tres en linea</b></li><li><b>Tetris</b></li><li><b>Zudoku</b></li></ul></div><div class="content-icons"><div class="row"><div class="col-3"><div class="icon-angular"></div></div><div class="col-3"><div class="icon-git"></div></div></div></div>`,
+        description: `<div class="content-text">Es una aplicación web interactiva de juegos clásicos. Aquellos juegos que tuvieron su época dorada en los años 95 al 2000. La app está diseñada para ejecutarse por la web de manera responsiva.</div><div class="content-list"><ul><li><b>Tres en linea</b></li><li><b>Tetris</b></li><li><b>Zudoku</b></li></ul></div><div class="content-icons"><div class="row"><div class="col-3"><div class="icon-angular"></div></div><div class="col-3"><div class="icon-firebase"></div></div><div class="col-3"><div class="icon-material-design"></div></div><div class="col-3"><div class="icon-git"></div></div></div></div>`,
         image: 'assets/img/portfolio/gameapps.jpg',
         link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/game-apps/#/',
         repository: 'https://github.com/alexchristianqr/game-apps',
@@ -172,8 +172,8 @@ export default {
       },
       {
         type: 'landing',
-        title: 'API No Oficial de WhatsApp',
-        description: null,
+        title: 'API de WhatsApp B2B',
+        description: `<div class='content-text'>Es un sitio web landing page para ofrecer el servicio de integración de la API no oficial de WhatsApp.</div><div class="content-icons"><div class="row"><div class="col-3"><div class="icon-vue"></div></div><div class="col-3"><div class="icon-nuxtjs"></div></div><div class="col-3"><div class="icon-git"></div></div></div></div>`,
         image: 'assets/img/portfolio/sharedapis.png',
         link: 'https://sharedapis.com/',
         repository: 'https://wa.link/r28uwd',
@@ -184,8 +184,8 @@ export default {
       },
       {
         type: 'mobile',
-        title: 'Clone de gmail es una aplicación móvil hibrida para enviar emails, bandeja de entrada y correos no leidos.',
-        description: 'Aplicación web demostrativa.',
+        title: 'Clone de Gmail',
+        description: 'Es una aplicación móvil hibrida para enviar emails, bandeja de entrada y correos no leidos.',
         image: 'assets/img/portfolio/clonegmail.png',
         link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/gmail/',
         repository: 'https://github.com/alexchristianqr/gmail',
