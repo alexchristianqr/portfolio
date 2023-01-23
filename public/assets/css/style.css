@@ -1060,6 +1060,7 @@ hr {
 
 .content-list > ul {
   padding-left: 1rem;
+  margin-bottom: 0;
 }
 
 .content-icons .icon-angular {
