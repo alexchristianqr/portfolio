@@ -196,8 +196,8 @@ export default {
       },
       {
         type: 'mobile',
-        title: 'Plantilla iframe para aplicaciones móviles',
-        description: 'Aplicación web demostrativa.',
+        title: 'Iframe',
+        description: `<div class="content-text">Es una aplicación web que sirve para enmascarar otras aplicaciones y puedan visualizarse de manera responsiva.</div><div class="content-text"><div><a href="https://alexchristianqr.github.io/iframephone/?src=" target="_blank">Link del sitio web</a></div><div><a href="https://github.com/alexchristianqr/iframephone" target="_blank">Link del repositorio en github</a></div></div><div class="content-icons"><div class="row"><div class="col-3"><div class="icon-javascript"></div></div><div class="col-3"><div class="icon-html5"></div></div><div class="col-3"><div class="icon-css"></div></div><div class="col-3"><div class="icon-git"></div></div></div></div>`,
         image: 'assets/img/portfolio/iframephone.png',
         link: 'https://alexchristianqr.github.io/iframephone/?src=',
         repository: 'https://github.com/alexchristianqr/iframephone',

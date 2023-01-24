@@ -1118,3 +1118,8 @@ hr {
   height: 2.5rem;
   background: url('/assets/css/ionic.svg') no-repeat;
 }
+.content-icons .icon-css {
+  margin: 0 0 0.75rem 0;
+  height: 2.5rem;
+  background: url('/assets/css/css.svg') no-repeat;
+}
