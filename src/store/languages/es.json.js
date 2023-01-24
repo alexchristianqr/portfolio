@@ -209,6 +209,18 @@ export default {
 
       {
         type: 'app',
+        title: 'Tasks CRM',
+        description: 'Es un CRM que integra las aplicaciones de chat mas utilizadas como WhatsApp con QR, Telegram, Widget livechats.',
+        image: 'assets/img/portfolio/taskscrm.jpg',
+        link: 'https://wa.link/r28uwd',
+        repository: 'https://wa.link/r28uwd',
+        granted: {
+          label: 'Este repositorio es privado',
+          permission: false,
+        },
+      },
+      {
+        type: 'app',
         title: 'Lista de tareas',
         description: 'Aplicación web demostrativa.',
         image: 'assets/img/portfolio/todolist.png',
@@ -231,6 +243,7 @@ export default {
           permission: true,
         },
       },
+
       {
         type: 'app',
         title: 'Platcon',
@@ -243,7 +256,6 @@ export default {
           permission: false,
         },
       },
-
       {
         type: 'app',
         title: 'Ticker',
@@ -268,6 +280,7 @@ export default {
           permission: false,
         },
       },
+
       {
         type: 'landing',
         title: 'Intellitec',
@@ -279,7 +292,6 @@ export default {
           permission: false,
         },
       },
-
       {
         type: 'landing',
         title: 'Portafolio Personal',
@@ -289,18 +301,6 @@ export default {
         granted: {
           label: 'Ver repositorio público',
           permission: true,
-        },
-      },
-      {
-        type: 'app',
-        title: 'Tasks CRM',
-        description: 'Es un CRM que integra las aplicaciones de chat mas utilizadas como WhatsApp con QR, Telegram, Widget livechats.',
-        image: 'assets/img/portfolio/taskscrm.png',
-        link: 'https://wa.link/r28uwd',
-        repository: 'https://wa.link/r28uwd',
-        granted: {
-          label: 'Este repositorio es privado',
-          permission: false,
         },
       },
       {
