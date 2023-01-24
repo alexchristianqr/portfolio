@@ -210,7 +210,7 @@ export default {
       {
         type: 'app',
         title: 'Tasks CRM',
-        description: 'Es un CRM que integra las aplicaciones de chat mas utilizadas como WhatsApp con QR, Telegram, Widget livechats.',
+        description: `<div class="content-text">Es un CRM que integra las aplicaciones de chat mas utilizadas como WhatsApp con QR, Telegram, Widget livechats.</div><div class="content-text"><div><a href="https://wa.link/r28uwd" target="_blank">Link del sitio web</a></div><div><a href="https://wa.link/r28uwd" target="_blank">Link del repositorio en github</a></div></div><div class="content-icons"><div class="row"><div class="col-3"><div class="icon-vue"></div></div><div class="col-3"><div class="icon-javascript"></div></div><div class="col-3"><div class="icon-html5"></div></div><div class="col-3"><div class="icon-git"></div></div><div class="col-3"><div class="icon-bootstrap"></div></div></div></div>`,
         image: 'assets/img/portfolio/taskscrm.jpg',
         link: 'https://wa.link/r28uwd',
         repository: 'https://wa.link/r28uwd',

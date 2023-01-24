@@ -1123,3 +1123,18 @@ hr {
   height: 2.5rem;
   background: url('/portfolio/assets/css/css.svg') no-repeat;
 }
+.content-icons .icon-mongodb {
+  margin: 0 0 0.75rem 0;
+  height: 2.5rem;
+  background: url('/portfolio/assets/css/mongodb.svg') no-repeat;
+}
+.content-icons .icon-nginx {
+  margin: 0 0 0.75rem 0;
+  height: 2.5rem;
+  background: url('/portfolio/assets/css/nginx.svg') no-repeat;
+}
+.content-icons .icon-bootstrap {
+  margin: 0 0 0.75rem 0;
+  height: 2.5rem;
+  background: url('/portfolio/assets/css/bootstrap.svg') no-repeat;
+}
