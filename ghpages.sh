@@ -22,6 +22,6 @@ cd dist
 git init
 git add -A
 git commit -m "new deployment for release v$tagVersion"
-git push -f git@github.com:alexchristianqr/portfolio.git master:gh-pages
+git push -f git@github.com:alexchristianqr/portfolio.git main:gh-pages
 
 cd -
