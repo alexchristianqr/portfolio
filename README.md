@@ -2,26 +2,20 @@
 
 Sitio web personal en vuejs. En la sección de portafolio encontraras proyectos interesantes desplegados en github pages y repositorios publicos de codigo abierto.
 
-## Automatic tag
+## Steps for deployment
 
 ```bash
-git tag # Listar ascendente
+sh ghpages.sh --tag="0.0.0"
 ```
-
 ```bash
-git tag --sort=-v:refname # Listar descendiente
+sh ghpages.sh --dir="dist"
 ```
-
 ```bash
-sh ghpages.sh 1.1.4 # Ejecutar shell script
+sh ghpages.sh --branch="main"
 ```
-
-## Manually tag
-
 ```bash
-git tag -a 1.0.X -m "version 1.0.X" # Comentar version tag
+sh ghpages.sh --exec="build"
 ```
-
 ```bash
-git push -f git@github.com:alexchristianqr/portfolio.git master:gh-pages # Link repositorio github
+sh ghpages.sh --repository="alexchristianqr/portfolio"
 ```
