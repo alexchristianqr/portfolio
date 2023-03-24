@@ -9,7 +9,7 @@ export default {
     span: ['apasionado ❤️', 'lógico 🔢', 'desarrollador ‍💻'],
   },
   SectionAbout: {
-    p: 'Soy un desarrollador web full stack con más de 5 años de experiencia usando tecnologías frontend y backend. He trabajado para grandes empresas y startups con grandes crecimientos, donde los retos y el día a día son variables y de alto aprendizaje. También soy un emprendedor digital para conocer más sobre los negocios de tecnología.',
+    p: 'Con más de 7 años de experiencia en desarrollo web, me especializo en tecnologías tanto Frontend como Backend, lo que me convierte en un desarrollador Full Stack. He tenido el privilegio de trabajar con empresas líderes en el mercado y con startups en pleno crecimiento, lo que me ha permitido enfrentar desafíos y aprender constantemente. Además, mi faceta como emprendedor digital me ha brindado una visión más completa y global de los negocios en tecnología.',
     p2: 'Sin darte cuenta los años en tecnología pasan muy rápido por eso es importante mantenerte actualizado y revisando las contantes actualizaciones.',
     h3: 'Desarrollador Web Full Stack',
     li: [
@@ -19,11 +19,11 @@ export default {
       },
       {
         text: 'Cumpleaños',
-        value: '22 de Setiembre de 1993',
+        value: '22 de Setiembre',
       },
       {
         text: 'Ubicación',
-        value: 'Lima / Peru',
+        value: 'Peru',
       },
       {
         text: 'Email',
@@ -40,7 +40,7 @@ export default {
     ],
   },
   SectionSkills: {
-    p: 'A lo largo de todos estos años son muchas las tecnologías que eh utilizado y muchas las experiencias que eh vivido. Pero de mucha utilidad para desarrollar software funcional, seguro y escalable.',
+    p: 'A lo largo de todos estos años, he utilizado muchas tecnologías y vivido muchas experiencias. Estas han sido de gran utilidad en el desarrollo de software funcional, seguro y escalable.',
   },
   SectionResume: {
     p: null,
@@ -54,11 +54,7 @@ export default {
             local: 'Desarrollador Web Full Stack',
             link: 'https://alexchristianqr.github.io/portfolio/',
             description: [
-              'Profesional con estudios superiores y autodidacta en mis tiempos libres. Soy un desarrollador web con más de 5 años de experiencia desarrollando aplicaciones con tecnologías frontend, backend, virtualización y computación en la nube.',
-              'https://www.youtube.com/c/IdatOficial',
-              'https://www.youtube.com/c/Platzi',
-              'https://www.youtube.com/c/EDteam',
-              'https://www.youtube.com/c/CodelyTv',
+              'Como profesional autodidacta y con estudios superiores, cuento con una experiencia de más de 7 años en desarrollo, habiendo creado diversas aplicaciones que utilizan tecnologías frontend, backend, virtualización y computación en la nube. Mi perfil combina la formación académica con una actitud proactiva ante el aprendizaje continuo, lo que me permite estar siempre actualizado en el campo de la tecnología.',
             ],
           },
           {
@@ -67,8 +63,9 @@ export default {
             local: 'Instituto Privado Superior Tecnológico - IDAT',
             link: 'https://www.idat.edu.pe/',
             description: [
-              'Una institución privada de tecnología muy reconocida perteneciente al grupo Intercorp.',
-              'Programación, Android, Networking, Sistemas Operativos, Ingles, Matemática, Contabilidad y Estadística.',
+              // 'Una institución privada de tecnología muy reconocida perteneciente al grupo Intercorp.',
+              // 'Programación, Android, Networking, Sistemas Operativos, Ingles, Matemática, Contabilidad y Estadística.',
+              'Un desarrollador de software es un profesional con habilidades técnicas en programación, bases de datos, redes y seguridad informática, y habilidades blandas como pensamiento crítico, resolución de problemas y trabajo en equipo, dedicado al diseño, codificación, implementación, pruebas y mantenimiento de programas informáticos que cumplan con las necesidades del usuario. Comprometido con la mejora continua y adaptarse a los cambios en la tecnología y el mercado.',
             ],
           },
           {
@@ -77,8 +74,9 @@ export default {
             local: 'Universidad Tecnológica del Peru - UTP',
             link: 'https://www.utp.edu.pe/',
             description: [
-              'Somos internacionales programas y becas integrales en las mejores universidades del mundo.',
-              'Programación, Patrones de diseño, Arquitectura de software, Seguridad informática, Desarrollo de juegos interactivos, Redes, Criptografia, Inteligencia de negocios, Inteligencia artificial.',
+              // 'Somos internacionales programas y becas integrales en las mejores universidades del mundo.',
+              // 'Programación, Patrones de diseño, Arquitectura de software, Seguridad informática, Desarrollo de juegos interactivos, Redes, Criptografia, Inteligencia de negocios, Inteligencia artificial.',
+              'Un ingeniero de software es un profesional con conocimientos técnicos en programación, sistemas operativos, bases de datos, redes y seguridad informática, capaz de resolver problemas complejos y adaptarse a los cambios tecnológicos y a las necesidades cambiantes del mercado. Tiene habilidades blandas, como la creatividad, trabajo en equipo, gestión de proyectos y orientación al cliente, para diseñar, desarrollar, probar y mantener software de calidad que satisfaga las necesidades de los usuarios finales.',
             ],
           },
         ],
@@ -156,7 +154,7 @@ export default {
     ],
   },
   SectionPortfolio: {
-    p: 'Estos son solo algunos de los proyectos personales y laborales que he desarrollado a lo largo de mis años como desarrollador profesional.',
+    p: 'A lo largo de mi carrera como desarrollador profesional, he tenido la oportunidad de trabajar en numerosos proyectos laborales y personales. A continuación, te presento algunos de ellos.',
     data: [
       {
         type: 'mobile',
@@ -422,7 +420,7 @@ export default {
     ],
   },
   SectionContact: {
-    p: 'Aquí tienes toda mi información básica para poder escribirme un mensaje, llamarme o mandarme un email.',
+    p: 'Si deseas ponerte en contacto conmigo, a continuación encontrarás mi información básica para enviarme un mensaje, llamarme o escribirme un correo electrónico.',
     contact: {
       text: 'Medios Activos',
       value: 'Estoy activo por estos medios de comunicación, puedes contactarme en cualquier momento y contestaré.',

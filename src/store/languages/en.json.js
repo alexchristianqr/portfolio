@@ -9,7 +9,7 @@ export default {
     span: ['passionate ❤️', 'logical 🔢', 'developer ‍💻'],
   },
   SectionAbout: {
-    p: 'I am a full stack web developer with more than 5 years of experience using frontend and backend technologies. I have worked for large companies and startups with great growth, where the challenges and day to day are variable and high learning. I am also a digital entrepreneur to know more about technology business.',
+    p: 'With over 7 years of experience in web development, I specialize in both Frontend and Backend technologies, making me a Full Stack developer. I have had the privilege of working with market-leading companies as well as startups in full growth mode, which has allowed me to face challenges and constantly learn. Furthermore, my experience as a digital entrepreneur has provided me with a more comprehensive and global perspective of technology businesses.',
     p2: 'Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.',
     h3: 'Web Developer Full Stack',
     li: [
@@ -19,11 +19,11 @@ export default {
       },
       {
         text: 'Birthday',
-        value: '22 de Setiembre de 1993',
+        value: '22 of September',
       },
       {
         text: 'Location',
-        value: 'Lima / Peru',
+        value: 'Peru',
       },
       {
         text: 'Email',
@@ -40,7 +40,7 @@ export default {
     ],
   },
   SectionSkills: {
-    p: 'Throughout all these years there are many technologies that I have used and many experiences that I have lived. But very useful to develop functional, secure and scalable software.',
+    p: 'Throughout all these years, I have used many technologies and lived many experiences. These have been very useful in developing functional, secure, and scalable software.',
   },
   SectionResume: {
     p: null,
@@ -54,11 +54,7 @@ export default {
             local: 'Full Stack Web Developer',
             link: 'https://alexchristianqr.github.io/portfolio/',
             description: [
-              'Professional with higher education and self-taught in my spare time. I am a web developer with more than 5 years of experience developing applications with frontend, backend, virtualization and cloud computing technologies.',
-              'https://www.youtube.com/c/IdatOficial',
-              'https://www.youtube.com/c/Platzi',
-              'https://www.youtube.com/c/EDteam',
-              'https://www.youtube.com/c/CodelyTv',
+              'As a self-taught professional with higher education, I have over 7 years of development experience, having created various applications that use frontend, backend, virtualization, and cloud computing technologies. My profile combines academic training with a proactive attitude towards continuous learning, which allows me to always stay updated in the field of technology.',
             ],
           },
           {
@@ -156,7 +152,7 @@ export default {
     ],
   },
   SectionPortfolio: {
-    p: 'These are just some of the personal and work projects that I have developed throughout my years as a professional developer.',
+    p: 'Throughout my career as a professional developer, I have had the opportunity to work on numerous personal and professional projects. Below are some of them.',
     data: [
       {
         type: 'mobile',
@@ -420,7 +416,7 @@ export default {
     ],
   },
   SectionContact: {
-    p: 'Here you have all my basic information to be able to write me a message, call me or send me an email.',
+    p: 'If you want to get in touch with me, below you will find my basic information to send me a message, call me, or write me an email.',
     contact: {
       text: 'Active Media',
       value: 'I am active by these means of communication, you can contact me at any time and I will answer.',

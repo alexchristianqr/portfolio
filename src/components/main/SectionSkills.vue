@@ -56,14 +56,6 @@ export default {
         value: 90,
       },
       {
-        text: 'Laravel',
-        value: 90,
-      },
-      {
-        text: 'Lumen',
-        value: 79,
-      },
-      {
         text: 'MySQL',
         value: 69,
       },
@@ -84,20 +76,12 @@ export default {
         value: 45,
       },
       {
-        text: 'Bootstrap-Vue',
-        value: 90,
-      },
-      {
         text: 'Typescript',
         value: 70,
       },
       {
-        text: 'Webpack',
-        value: 75,
-      },
-      {
-        text: 'JWT',
-        value: 100,
+        text: 'AWS',
+        value: 60,
       },
       {
         text: 'NestJS',

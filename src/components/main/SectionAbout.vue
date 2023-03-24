@@ -7,7 +7,7 @@
       </div>
       <div class="row">
         <div class="col-lg-3 my-auto" data-aos="fade-up">
-          <img src="assets/img/me.jpg" class="img-fluid img-thumbnail" alt="" width="75%" />
+          <img src="assets/img/me.jpg" class="img-fluid" width="75%" />
         </div>
         <div class="col-lg-9 pt-4 pt-lg-0 content my-auto" data-aos="fade-up">
           <div class="row">
@@ -28,15 +28,15 @@
                   <strong>{{ selectedLanguage.SectionAbout.li[2].text }}:</strong>
                   <span>{{ selectedLanguage.SectionAbout.li[2].value }}</span>
                 </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
                 <li>
                   <i class="bi bi-chevron-right"></i>
                   <strong>{{ selectedLanguage.SectionAbout.li[3].text }}:</strong>
                   <span>{{ selectedLanguage.SectionAbout.li[3].value }}</span>
                 </li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
                 <li>
                   <i class="bi bi-chevron-right"></i>
                   <strong>{{ selectedLanguage.SectionAbout.li[4].text }}:</strong>
