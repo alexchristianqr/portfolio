@@ -393,17 +393,6 @@ export default {
       },
       {
         type: 'mobile',
-        title: 'GMAIL clone',
-        image: 'assets/img/portfolio/github.png',
-        link: 'https://github.com/alexchristianqr/gmail-clone-app',
-        repository: 'https://github.com/alexchristianqr/gmail-clone-app',
-        granted: {
-          label: 'See public repository',
-          permission: true,
-        },
-      },
-      {
-        type: 'mobile',
         title: 'Sushi Delivery Restaurant',
         image: 'assets/img/portfolio/github.png',
         link: 'https://github.com/alexchristianqr/rollyroll-app',
