@@ -63,8 +63,6 @@ export default {
             local: 'Instituto Privado Superior Tecnológico - IDAT',
             link: 'https://www.idat.edu.pe/',
             description: [
-              // 'Una institución privada de tecnología muy reconocida perteneciente al grupo Intercorp.',
-              // 'Programación, Android, Networking, Sistemas Operativos, Ingles, Matemática, Contabilidad y Estadística.',
               'Un desarrollador de software es un profesional con habilidades técnicas en programación, bases de datos, redes y seguridad informática, y habilidades blandas como pensamiento crítico, resolución de problemas y trabajo en equipo, dedicado al diseño, codificación, implementación, pruebas y mantenimiento de programas informáticos que cumplan con las necesidades del usuario. Comprometido con la mejora continua y adaptarse a los cambios en la tecnología y el mercado.',
             ],
           },
@@ -74,8 +72,6 @@ export default {
             local: 'Universidad Tecnológica del Peru - UTP',
             link: 'https://www.utp.edu.pe/',
             description: [
-              // 'Somos internacionales programas y becas integrales en las mejores universidades del mundo.',
-              // 'Programación, Patrones de diseño, Arquitectura de software, Seguridad informática, Desarrollo de juegos interactivos, Redes, Criptografia, Inteligencia de negocios, Inteligencia artificial.',
               'Un ingeniero de software es un profesional con conocimientos técnicos en programación, sistemas operativos, bases de datos, redes y seguridad informática, capaz de resolver problemas complejos y adaptarse a los cambios tecnológicos y a las necesidades cambiantes del mercado. Tiene habilidades blandas, como la creatividad, trabajo en equipo, gestión de proyectos y orientación al cliente, para diseñar, desarrollar, probar y mantener software de calidad que satisfaga las necesidades de los usuarios finales.',
             ],
           },

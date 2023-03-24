@@ -54,7 +54,7 @@ export default {
             local: 'Full Stack Web Developer',
             link: 'https://alexchristianqr.github.io/portfolio/',
             description: [
-              'As a self-taught professional with higher education, I have over 7 years of development experience, having created various applications that use frontend, backend, virtualization, and cloud computing technologies. My profile combines academic training with a proactive attitude towards continuous learning, which allows me to always stay updated in the field of technology.',
+              'As a self-taught professional with higher education, I have more than 7 years of experience in development, having created various applications that use frontend, backend, virtualization and cloud computing technologies. My profile combines academic training with a proactive attitude towards continuous learning, which allows me to always be up-to-date in the field of technology.',
             ],
           },
           {
@@ -63,8 +63,7 @@ export default {
             local: 'Instituto Privado Superior Tecnológico - IDAT',
             link: 'https://www.idat.edu.pe/',
             description: [
-              'A very recognized private technology institution belonging to the Intercorp group.',
-              'Programming, Android, Networking, Operating Systems, English, Mathematics, Accounting and Statistics.',
+              'A software developer is a professional with technical skills in programming, databases, networking, and computer security, and soft skills such as critical thinking, problem solving, and teamwork, dedicated to program design, coding, implementation, testing, and maintenance. computers that meet the needs of the user. Committed to continuous improvement and adapt to changes in technology and the market.',
             ],
           },
           {
@@ -73,8 +72,7 @@ export default {
             local: 'Universidad Tecnológica del Peru - UTP',
             link: 'https://www.utp.edu.pe/',
             description: [
-              'We are international comprehensive programs and scholarships in the best universities in the world.',
-              'Programming, Design patterns, Software architecture, Computer security, Interactive game development, Networks, Cryptography, Business intelligence, Artificial intelligence.',
+              'A software engineer is a professional with technical knowledge in programming, operating systems, databases, networks and computer security, capable of solving complex problems and adapting to technological changes and changing market needs. You have soft skills, such as creativity, teamwork, project management and customer orientation, to design, develop, test and maintain quality software that meets the needs of end users.',
             ],
           },
         ],
