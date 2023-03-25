@@ -409,7 +409,7 @@ export default {
       value: 'I am active by these means of communication, you can contact me at any time and I will answer.',
       location: {
         text: 'Location',
-        value: 'Lima / Peru',
+        value: 'Peru',
       },
       email: {
         text: 'Email',

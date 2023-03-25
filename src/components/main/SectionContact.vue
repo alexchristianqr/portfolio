@@ -17,11 +17,6 @@
                   <h4>{{ selectedLanguage.SectionContact.contact.email.text }}</h4>
                   <p>{{ selectedLanguage.SectionContact.contact.email.value }}</p>
                 </div>
-<!--                <div class="phone">-->
-<!--                  <i class="bi bi-whatsapp"></i>-->
-<!--                  <h4>{{ selectedLanguage.SectionContact.contact.phone.text }}</h4>-->
-<!--                  <p>{{ selectedLanguage.SectionContact.contact.phone.value }}</p>-->
-<!--                </div>-->
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
                   <h4>{{ selectedLanguage.SectionContact.contact.location.text }}</h4>

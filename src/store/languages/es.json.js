@@ -423,7 +423,7 @@ export default {
       },
       location: {
         text: 'Ubicación',
-        value: 'Lima / Peru',
+        value: 'Peru',
       },
       email: {
         text: 'Email',
