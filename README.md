@@ -1,4 +1,4 @@
-# Project: portfolio
+# Portfolio
 
 Sitio web personal en vuejs. En la sección de portafolio encontraras proyectos interesantes desplegados en github pages y repositorios publicos de codigo abierto.
 
