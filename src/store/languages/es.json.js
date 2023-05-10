@@ -6,7 +6,7 @@ export default {
   SectionMe: {
     h1: 'Alex Christian Quispe Roque',
     p: 'Soy',
-    span: ['apasionado ❤️', 'lógico 🔢', 'desarrollador ‍💻'],
+    span: ['apasionado', 'lógico', 'desarrollador'],
   },
   SectionAbout: {
     p: 'Con más de 7 años de experiencia en desarrollo web, me especializo en tecnologías tanto Frontend como Backend, lo que me convierte en un desarrollador Full Stack. He tenido el privilegio de trabajar con empresas líderes en el mercado y con startups en pleno crecimiento, lo que me ha permitido enfrentar desafíos y aprender constantemente. Además, mi faceta como emprendedor digital me ha brindado una visión más completa y global de los negocios en tecnología.',
