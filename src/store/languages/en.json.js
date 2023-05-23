@@ -5,7 +5,7 @@ export default {
   },
   SectionMe: {
     h1: 'Alex Christian Quispe Roque',
-    p: 'I\'m',
+    p: "I'm",
     span: ['passionate', 'logical', 'developer'],
   },
   SectionAbout: {
@@ -179,8 +179,8 @@ export default {
         title: 'Gmail clone is a hybrid mobile application to send emails, inbox and unread emails.',
         description: 'Demo web application.',
         image: 'assets/img/portfolio/clonegmail.png',
-        link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/gmail/',
-        repository: 'https://github.com/alexchristianqr/gmail',
+        link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/gmail-ghpages/',
+        repository: 'https://github.com/alexchristianqr/gmail-ghpages',
         granted: {
           label: 'See public repository',
           permission: true,
