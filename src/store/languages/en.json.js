@@ -178,7 +178,7 @@ export default {
         type: 'mobile',
         title: 'Gmail clone is a hybrid mobile application to send emails, inbox and unread emails.',
         description: 'Demo web application.',
-        image: 'assets/img/portfolio/clonegmail.png',
+        image: 'assets/img/portfolio/gmailclone.jpg',
         link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/gmail-ghpages/',
         repository: 'https://github.com/alexchristianqr/gmail-ghpages',
         granted: {
