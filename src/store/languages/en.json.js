@@ -86,8 +86,9 @@ export default {
             local: 'Software of quality and development',
             link: 'https://www.qdsgroup.com.pe/',
             description: [
-              'Analyze data lake information to optimize reporting and statistical performance in applications.',
-              'Deploy new microservices for business process automation with Serverless AWS, Lambda Functions, API Gateway, S3, Docker, Kubernetes.',
+              'Implement B2C channel orchestration services (Email, SMS and WhatsApp) using AWS Api Gateway + Lambda Functions + Step Functions.',
+              'Deploy frontend and backend applications to list and execute automated workflows using AWS ECR + EKS + Docker services.',
+              'Optimize CI/CD configurations in GitHub Actions.',
             ],
           },
           /*{
