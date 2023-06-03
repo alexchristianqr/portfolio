@@ -86,7 +86,7 @@ export default {
             local: 'Software of quality and development',
             link: 'https://www.qdsgroup.com.pe/',
             description: [
-              'Implement B2C channel orchestration services (Email, SMS and WhatsApp) using AWS Api Gateway + Lambda Functions + Step Functions.',
+              'Implement channel orchestration service (Email, SMS and WhatsApp) using AWS Api Gateway + Lambda Functions + Step Functions.',
               'Deploy frontend and backend applications to list and execute automated workflows using AWS ECR + EKS + Docker services.',
               'Optimize CI/CD configurations in GitHub Actions.',
             ],
