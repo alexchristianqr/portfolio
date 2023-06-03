@@ -11,7 +11,7 @@ export const store = new Vuex.Store({
   modules,
   state: {
     language: {
-      selected: en,
+      selected: es,
     },
     loading: {
       page: false,

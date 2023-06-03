@@ -15,8 +15,8 @@ Vue.mixin({
           break
       }
     } else {
-      localStorage.setItem('lang', 'en')
-      store.state.language.selected = en
+      localStorage.setItem('lang', 'es')
+      store.state.language.selected = es
     }
   },
   computed: {
