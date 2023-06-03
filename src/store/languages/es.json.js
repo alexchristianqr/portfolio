@@ -9,7 +9,7 @@ export default {
     span: ['apasionado', 'lógico', 'desarrollador'],
   },
   SectionAbout: {
-    p: 'Con más de 7 años de experiencia en desarrollo web, me especializo en tecnologías tanto Frontend como Backend, lo que me convierte en un desarrollador Full Stack. He tenido el privilegio de trabajar con empresas líderes en el mercado y con startups en pleno crecimiento, lo que me ha permitido enfrentar desafíos y aprender constantemente. Además, mi faceta como emprendedor digital me ha brindado una visión más completa y global de los negocios en tecnología.',
+    p: 'Soy un Desarrollador de Aplicaciones apasionado por resolver problemas y crear soluciones innovadoras. Con más de 5 años de experiencia en el desarrollo de software, he trabajado en proyectos emocionantes en empresas de tecnología de vanguardia y startups de gran crecimiento. Mi experiencia incluye el desarrollo de aplicaciones web y móviles utilizando tecnologías como Vue, Angular, Node.js, MongoDB, entre otras. Además, cuento con experiencia en el diseño e implementación de arquitecturas basadas en AWS Serverless. Soy conocido por mi capacidad para trabajar en equipo, comunicar efectivamente con otros departamentos y entregar soluciones de alta calidad dentro de los plazos establecidos. Estoy comprometido con mi carrera y siempre busco nuevos desafíos y oportunidades de aprendizaje.',
     p2: 'Sin darte cuenta los años en tecnología pasan muy rápido por eso es importante mantenerte actualizado y revisando las contantes actualizaciones.',
     h3: 'Desarrollador Web Full Stack',
     li: [

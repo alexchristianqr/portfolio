@@ -9,7 +9,7 @@ export default {
     span: ['passionate', 'logical', 'developer'],
   },
   SectionAbout: {
-    p: 'With over 7 years of experience in web development, I specialize in both Frontend and Backend technologies, making me a Full Stack developer. I have had the privilege of working with market-leading companies as well as startups in full growth mode, which has allowed me to face challenges and constantly learn. Furthermore, my experience as a digital entrepreneur has provided me with a more comprehensive and global perspective of technology businesses.',
+    p: 'I am an Application Developer passionate about solving problems and creating innovative solutions. With more than 5 years of experience in software development, I have worked on exciting projects at cutting-edge technology companies and high-growth startups. My experience includes the development of web and mobile applications using technologies such as Vue, Angular, Node.js, MongoDB, among others. In addition, I have experience in the design and implementation of architectures based on AWS Serverless. I am known for my ability to work as a team, communicate effectively with other departments, and deliver high-quality solutions within established deadlines. I am committed to my career and always look for new challenges and learning opportunities.',
     p2: 'Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.',
     h3: 'Web Developer Full Stack',
     li: [
