@@ -1,5 +1,5 @@
 <template>
-  <div id="app" style="text-align: justify">
+  <div id="app">
     <!-- ======= Mobile nav toggle button ======= -->
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
