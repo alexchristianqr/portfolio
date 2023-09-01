@@ -17,7 +17,7 @@
               <span>
                 <span>{{ vv.local }}</span>
               </span>
-              <span v-if="vv.link">&nbsp;&nbsp; &blacksquare; &nbsp;&nbsp;</span>
+              <span v-if="vv.link">&nbsp;&nbsp;&blacksquare;&nbsp;&nbsp;</span>
               <span v-if="vv.link">
                 <a :href="vv.link" target="_blank">{{ vv.link }}</a>
               </span>
