@@ -9,7 +9,7 @@ export default {
     span: ['passionate', 'logical', 'developer'],
   },
   SectionAbout: {
-    p: 'I am an Application Developer passionate about solving problems and creating innovative solutions. With more than 5 years of experience in software development, I have worked on exciting projects at cutting-edge technology companies and high-growth startups. My experience includes the development of web and mobile applications using technologies such as Vue, Angular, Node.js, MongoDB, among others. In addition, I have experience in the design and implementation of architectures based on AWS Serverless. I am known for my ability to work as a team, communicate effectively with other departments, and deliver high-quality solutions within established deadlines. I am committed to my career and always look for new challenges and learning opportunities.',
+    p: 'I am an Application Developer passionate about solving problems and creating innovative solutions. I have more than 5 years of experience in software development. I stand out for my ability to work as a team, communicate effectively and deliver high-quality solutions within established deadlines. I am committed to my career and always look for new challenges and learning opportunities.',
     p2: 'Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.',
     h3: 'Web Developer Full Stack',
     li: [
@@ -40,21 +40,21 @@ export default {
     ],
   },
   SectionSkills: {
-    p: 'Throughout all these years, I have used many technologies and lived many experiences. These have been very useful in developing functional, secure, and scalable software.',
+    p: 'Throughout all these years, I have used many technologies and lived many experiences. These have been very useful in the development of functional, secure and scalable software.',
   },
   SectionResume: {
     p: null,
     categories: [
       {
-        title: 'Profile and Education',
+        title: 'Educational Training',
         data: [
           {
-            title: 'Profile',
-            date: null,
-            local: 'Full Stack Web Developer',
-            link: 'https://alexchristianqr.github.io/portfolio/',
+            title: 'Software Engineering',
+            date: '2022 - present',
+            local: 'Universidad Tecnológica del Peru - UTP',
+            link: 'https://www.utp.edu.pe/',
             description: [
-              'As a self-taught professional with higher education, I have more than 7 years of experience in development, having created various applications that use frontend, backend, virtualization and cloud computing technologies. My profile combines academic training with a proactive attitude towards continuous learning, which allows me to always be up-to-date in the field of technology.',
+              'A software engineer is a professional with technical knowledge in programming, operating systems, databases, networks and computer security, capable of solving complex problems and adapting to technological changes and changing market needs. You have soft skills, such as creativity, teamwork, project management and customer orientation, to design, develop, test and maintain quality software that meets the needs of end users.',
             ],
           },
           {
@@ -64,15 +64,6 @@ export default {
             link: 'https://www.idat.edu.pe/',
             description: [
               'A software developer is a professional with technical skills in programming, databases, networking, and computer security, and soft skills such as critical thinking, problem solving, and teamwork, dedicated to program design, coding, implementation, testing, and maintenance. computers that meet the needs of the user. Committed to continuous improvement and adapt to changes in technology and the market.',
-            ],
-          },
-          {
-            title: 'Software Engineering',
-            date: '2022 - present',
-            local: 'Universidad Tecnológica del Peru - UTP',
-            link: 'https://www.utp.edu.pe/',
-            description: [
-              'A software engineer is a professional with technical knowledge in programming, operating systems, databases, networks and computer security, capable of solving complex problems and adapting to technological changes and changing market needs. You have soft skills, such as creativity, teamwork, project management and customer orientation, to design, develop, test and maintain quality software that meets the needs of end users.',
             ],
           },
         ],

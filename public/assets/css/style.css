@@ -803,7 +803,7 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: inherit;
   float: left;
   width: 44px;
   height: 44px;
@@ -825,7 +825,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: inherit;
 }
 .contact .info .email p {
   padding-top: 5px;

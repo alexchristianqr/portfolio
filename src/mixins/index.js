@@ -20,6 +20,9 @@ Vue.mixin({
     }
   },
   computed: {
+    urlFileCV(){
+      return `/portfolio/${store.getters.env.filenameCV}`
+    },
     selectedLanguage() {
       return store.getters.selectedLanguage
     },

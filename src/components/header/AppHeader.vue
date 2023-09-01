@@ -73,7 +73,7 @@
             </a>
           </li>
           <li>
-            <a href="/portfolio/AlexChristianQuispeRoque_CV_2023.pdf" target="_blank"
+            <a :href="urlFileCV" target="_blank"
                class="nav-link scrollto" @click="trackEvent('#curriculumvitae')">
               <i class="bx bx-download"></i> <span>{{ selectedLanguage.Header.menu[9] }}</span>
             </a>

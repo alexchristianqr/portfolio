@@ -15,12 +15,12 @@
             <h5 v-if="vv.date">{{ vv.date }}</h5>
             <p>
               <span>
-                <em>{{ vv.local }}</em>
+                <span>{{ vv.local }}</span>
               </span>
-              <span v-if="vv.link">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-              <em v-if="vv.link">
+              <span v-if="vv.link">&nbsp;&nbsp; &blacksquare; &nbsp;&nbsp;</span>
+              <span v-if="vv.link">
                 <a :href="vv.link" target="_blank">{{ vv.link }}</a>
-              </em>
+              </span>
             </p>
             <ul v-for="(vvv, kkk) in vv.description" :key="kkk">
               <li>{{ vvv }}</li>
@@ -38,4 +38,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.resume .resume-item::before{
+  background: #1f5297;
+}
+</style>
