@@ -77,9 +77,9 @@ export default {
             local: 'Software of quality and development',
             link: 'https://www.qdsgroup.com.pe/',
             description: [
-              'Implement channel orchestration service (Email, SMS and WhatsApp) using AWS Api Gateway + Lambda Functions + Step Functions.',
-              'Deploy frontend and backend applications to list and execute automated workflows using AWS ECR + EKS + Docker services.',
-              'Optimize CI/CD configurations in GitHub Actions.',
+              'Implementation of B2C channel orchestration services for Email and SMS campaigns. (AWS Api Gateway + Lambda Functions + AWS Step Functions + NodeJS + Typescript)',
+              'Backend development to efficiently manage automated workflows (batch processes in Scaler). (AWS ECR + AWS EKS + Docker + NestJS + Typescript)',
+              'Backend development and frontend support for the service and integration for URL shortening. (AWS Cloud Formation + AWS RDS + Nodejs + Vue 3 + Typescript)',
             ],
           },
           /*{
@@ -104,9 +104,9 @@ export default {
             local: 'Securitec Peru S.A.C',
             link: 'https://www.securitec.pe/',
             description: [
-              'Create a web application to manage mass SMS sending campaigns.',
-              'Create an administrator web application and an installable client web application to manage VOIP call campaigns.',
-              'Create a web application that integrates WhatsApp with Twilio, Telegram, Instagram, Facebook Messenger, Chatbot, payment gateway with PayU and Paypal.',
+              'Maintenance of web application to manage campaigns to send massive SMS and improve delivery queues. (Laravel 5 + Nodejs + Vue 2 + MySQL).',
+              'Development of an administrative web application and installable webphone client to manage VOIP call campaigns. (Laravel 6 + Nodejs + Vue 2 + MySQL)',
+              'Web application development that integrates API WhatsApp with Twilio, Telegram, Instagram, Facebook Messenger, Chatbot, payment gateway with PayU and Paypal. (Nodejs + Vue 2 + MongoDB)',
             ],
           },
           {
@@ -115,8 +115,8 @@ export default {
             local: 'Corporación Sapia S.A',
             link: 'https://sapia.com.pe/',
             description: [
-              'Take the requirements of each project manager in their areas and give functionality to the customer service system.',
-              'Develop a virtual survey system with laravel and vuejs to evaluate online customer service.',
+              'Analyze the requirements of the corresponding areas and provide correct maintenance to the call system. (Nodejs + Vue 2 + MySQL)',
+              'Development of a virtual survey system. (Laravel 5 + Vue 2 + MySQL)',
             ],
           },
           {
@@ -125,9 +125,8 @@ export default {
             local: 'Centros Virtuales del Peru E.I.R.L',
             link: 'https://www.centrosvirtuales.com/',
             description: [
-              'Take the requirements for updates to the administrative system on the web and mobile reservations.',
-              'Develop a CINEPLANET type COWORKING space reservation selection module for the web-based administrative system.',
-              "Develop in frontend with angularjs in the development of the project 'SUMATE AL ÉXITO' an integrated reservation system.",
+              'As part of the maintenance of the booking web site, create a cineplanet-type COWORKING space reservation selection module. (Ionic 2 + BackboneJS + Bootstrap 3)',
+              "Development of the modern web application 'JOIN SUCCESS' that integrates the new booking module. (Laravel 4 + Nodejs + Vue + MySQL)",
             ],
           },
           {

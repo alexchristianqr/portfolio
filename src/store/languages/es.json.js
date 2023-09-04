@@ -77,9 +77,9 @@ export default {
             local: 'Quality & Development Software',
             link: 'https://www.qdsgroup.com.pe/',
             description: [
-              'Implementar servicio de orquestación de canales (Email, SMS y WhatsApp) usando AWS Api Gateway + Lambda Functions + Step Functions.',
-              'Desplegar aplicaciones frontend y backend para listar y ejecutar flujos de trabajo automatizado usando servicios de AWS ECR + EKS + Docker.',
-              'Optimizar configuraciones de CI/CD en GitHub Actions.',
+              'Implementación de servicios B2C de orquestación de canales para campañas de Email y SMS. (AWS Api Gateway + Lambda Functions + AWS Step Functions + NodeJS + Typescript)',
+              'Desarrollo en backend para administrar eficientemente los flujos de trabajo automatizado (procesos batch en Scaler). (AWS ECR + AWS EKS + Docker + NestJS + Typescript)',
+              'Desarrollo en backend y apoyo en frontend el servicio e integración para el acortamiento de URL. (AWS Cloud Formation + AWS RDS + Nodejs + Vue 3 + Typescript)',
             ],
           },
           /*{
@@ -104,9 +104,9 @@ export default {
             local: 'Securitec Peru S.A.C',
             link: 'https://www.securitec.pe/',
             description: [
-              'Crear una aplicación web para gestionar campañas de envío de SMS masivos.',
-              'Crear una aplicación web administrador y una aplicación web cliente instalable para gestionar campañas de llamadas VOIP.',
-              'Crear una aplicación web que integra WhatsApp con Twilio, Telegram, Instagram, Facebook Messenger, Chatbot, pasarela de pagos con PayU y Paypal.',
+              'Mantenimiento de aplicación web para gestionar campañas de envío de SMS masivos y mejorar las colas de envío. (Laravel 5 + Nodejs + Vue 2 + MySQL).',
+              'Desarrollo de aplicación web administrativa y webphone cliente instalable para gestionar campañas de llamadas VOIP. (Laravel 6 + Nodejs + Vue 2 + MySQL)',
+              'Desarrollo de aplicación web que integra API WhatsApp con Twilio, Telegram, Instagram, Facebook Messenger, Chatbot, pasarela de pagos con PayU y Paypal. (Nodejs + Vue 2 + MongoDB)',
             ],
           },
           {
@@ -115,8 +115,8 @@ export default {
             local: 'Corporación Sapia S.A',
             link: 'https://sapia.com.pe/',
             description: [
-              'Tomar los requerimientos de cada jefe de proyecto en sus áreas y darles funcionalidad al sistema de atención al cliente.',
-              'Desarrollar un sistema de encuesta virtual con laravel y vuejs para evaluar la atención al cliente en linea.',
+              'Analizar los requerimientos de las áreas correspondientes y brindar el mantenimiento correcto al sistema de llamadas. (Nodejs + Vue 2 + MySQL)',
+              'Desarrollo de un sistema de encuesta virtual. (Laravel 5 + Vue 2 + MySQL)',
             ],
           },
           {
@@ -125,9 +125,8 @@ export default {
             local: 'Centros Virtuales del Peru E.I.R.L',
             link: 'https://www.centrosvirtuales.com/',
             description: [
-              'Tomar los requerimientos de actualizaciones al sistema administrativo en web y movil de reservas.',
-              'Desarrollar un modulo de selección de reserva de espacios COWORKING tipo CINEPLANET para el sistema administrativo en web.',
-              "Desarrollar en frontend con angularjs en el desarrollo del proyecto 'SUMATE AL ÉXITO' un sistema integrado de reservas.",
+              'Como parte del mantenimiento del sitema web de reservas, crear un modulo de selección de reserva de espacios COWORKING tipo cineplanet. (Ionic 2 + BackboneJS + Bootstrap 3)',
+              "Desarrollo de la aplicación web moderna 'SUMATE AL ÉXITO' que integra el nuevo modulo de reservas. (Laravel 4 + Nodejs + Vue + MySQL)",
             ],
           },
           {
