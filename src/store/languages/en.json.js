@@ -1,7 +1,7 @@
 export default {
   fullName: 'Alex Christian',
   Header: {
-    menu: ['Home', 'About', 'Facts', 'Skills', 'Summary', 'Portfolio', 'Services', 'Testimonials', 'Contact', 'Curriculum Vitae'],
+    menu: ['Home', 'Profile', 'Facts', 'Skills', 'Summary', 'Portfolio', 'Services', 'Testimonials', 'Contact', 'Curriculum Vitae'],
   },
   SectionMe: {
     h1: 'Alex Christian Quispe Roque',
