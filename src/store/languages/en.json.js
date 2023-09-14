@@ -73,7 +73,7 @@ export default {
         data: [
           {
             title: 'Backend Developer',
-            date: '01/2022 - present',
+            date: '03/2022 - 09/2023',
             local: 'Software of quality and development',
             link: 'https://www.qdsgroup.com.pe/',
             description: [
