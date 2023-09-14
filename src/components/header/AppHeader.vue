@@ -43,7 +43,7 @@
             </a>
           </li>
           <li>
-            <a href="#about" class="nav-link scrollto" @click="trackEvent('#aboutme')">
+            <a href="#profile" class="nav-link scrollto" @click="trackEvent('#profile')">
               <i class="bx bx-user"></i> <span>{{ selectedLanguage.Header.menu[1] }}</span>
             </a>
           </li>

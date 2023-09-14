@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Enviroment from './../env'
-import es from './languages/es.json'
-import en from './languages/en.json'
+import es from '../locale/es.json.js'
+import en from '../locale/en.json.js'
 import modules from './modules'
 
 Vue.use(Vuex)
