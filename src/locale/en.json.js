@@ -9,7 +9,7 @@ export default {
     span: ['passionate', 'logical', 'developer'],
   },
   SectionAbout: {
-    p: 'I am an Application Developer passionate about solving problems and creating innovative solutions. I have more than 5 years of experience in software development. I stand out for my ability to work as a team, communicate effectively and deliver high-quality solutions within established deadlines. I am committed to my career and always look for new challenges and learning opportunities.',
+    p: 'I am an Application Developer passionate about solving problems and creating innovative solutions. I have more than 5 years of experience in software development. I stand out for my ability to work as a team, communicate effectively and deliver high-quality solutions within established deadlines. I am committed to my career, super challenging challenges and always willing to teach and learn.',
     p2: 'Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.',
     h3: 'Web Developer Full Stack',
     li: [
@@ -73,8 +73,18 @@ export default {
         data: [
           {
             title: 'Backend Developer',
+            date: '10/2023 - Present',
+            local: 'Softtek / Client: Rimac Seguros',
+            link: 'https://www.qdsgroup.com.pe/',
+            description: [
+              'General maintenance of broker services (Policies, Renewals, Endorsements, Financing). (AWS + Serverless + Nodejs + Typescript)',
+              'High-impact root solutions for bugs. (AWS + Serverless + DynamoDB + Unit Tests)',
+            ],
+          },
+          {
+            title: 'Backend Developer',
             date: '03/2022 - 09/2023',
-            local: 'Software of quality and development',
+            local: 'Quality & Development Software SAC / Client: Empresas Jordan SA in Santiago - Chile',
             link: 'https://www.qdsgroup.com.pe/',
             description: [
               'Implementation of B2C channel orchestration services for Email and SMS campaigns. (AWS Api Gateway + Lambda Functions + AWS Step Functions + NodeJS + Typescript)',

@@ -9,7 +9,7 @@ export default {
     span: ['apasionado', 'lógico', 'desarrollador'],
   },
   SectionAbout: {
-    p: 'Soy un Desarrollador de Aplicaciones apasionado por resolver problemas y crear soluciones innovadoras. Cuento con más de 5 años de experiencia en el desarrollo de software. Me destaco por mi capacidad para trabajar en equipo, comunicarme efectivamente y entregar soluciones de alta calidad dentro de los plazos establecidos. Estoy comprometido con mi carrera y siempre busco nuevos desafíos y oportunidades de aprendizaje.',
+    p: 'Soy un Desarrollador de Aplicaciones apasionado por resolver problemas y crear soluciones innovadoras. Cuento con más de 5 años de experiencia en el desarrollo de software. Me destaco por mi capacidad para trabajar en equipo, comunicarme efectivamente y entregar soluciones de alta calidad dentro de los plazos establecidos. Estoy comprometido con mi carrera, los desafíos super retadores y dispuesto siempre a enseñar y aprender.',
     p2: 'Sin darte cuenta los años en tecnología pasan muy rápido por eso es importante mantenerte actualizado y revisando las contantes actualizaciones.',
     h3: 'Desarrollador Web Full Stack',
     li: [
@@ -73,8 +73,18 @@ export default {
         data: [
           {
             title: 'Backend Developer',
+            date: '10/2023 - Presente',
+            local: 'Softtek / Cliente: Rimac Seguros',
+            link: 'https://www.softtek.com/es/',
+            description: [
+              'Mantenimiento general de los servicios de corredores (Pólizas, Renovaciones, Endosos, Financiamientos). (AWS + Serverless + Nodejs + Typescript)',
+              'Soluciones raíz de bugs de alto impacto. (AWS + Serverless + DynamoDB + Unit Tests)',
+            ],
+          },
+          {
+            title: 'Backend Developer',
             date: '03/2022 - 09/2023',
-            local: 'Quality & Development Software',
+            local: 'Quality & Development Software SAC / Cliente: Empresas Jordan SA en Santiago - Chile',
             link: 'https://www.qdsgroup.com.pe/',
             description: [
               'Implementación de servicios B2C de orquestación de canales para campañas de Email y SMS. (AWS Api Gateway + Lambda Functions + AWS Step Functions + NodeJS + Typescript)',
