@@ -2,7 +2,7 @@
   <header id="header">
     <div class="d-flex flex-column">
       <div class="profile">
-        <img src="assets/img/me.jpg" alt="" class="img-fluid rounded-circle"/>
+        <img alt="" class="img-fluid rounded-circle"/>
         <h1 class="text-light">
           <a href="/portfolio">{{ selectedLanguage.fullName }}</a>
         </h1>

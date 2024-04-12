@@ -73,9 +73,9 @@ export default {
         data: [
           {
             title: 'Backend Developer',
-            date: '10/2023 - Present',
+            date: '10/2023 - 03/2024',
             local: 'Softtek / Client: Rimac Seguros',
-            link: 'https://www.qdsgroup.com.pe/',
+            link: 'https://www.softtek.com/es/',
             description: [
               'General maintenance of broker services (Policies, Renewals, Endorsements, Financing). (AWS + Serverless + Nodejs + Typescript)',
               'High-impact root solutions for bugs. (AWS + Serverless + DynamoDB + Unit Tests)',

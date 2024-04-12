@@ -73,7 +73,7 @@ export default {
         data: [
           {
             title: 'Backend Developer',
-            date: '10/2023 - Presente',
+            date: '10/2023 - 03/2024',
             local: 'Softtek / Cliente: Rimac Seguros',
             link: 'https://www.softtek.com/es/',
             description: [
