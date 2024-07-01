@@ -48,6 +48,11 @@
             </a>
           </li>
           <li>
+            <a href="#portfolio" class="nav-link scrollto" @click="trackEvent('#portfolio')">
+              <i class="bx bx-book-content"></i> <span>{{ selectedLanguage.Header.menu[5] }}</span>
+            </a>
+          </li>
+          <li>
             <a href="#skills" class="nav-link scrollto" @click="trackEvent('#skills')">
               <i class="bx bxs-hand"></i> <span>{{ selectedLanguage.Header.menu[3] }}</span>
             </a>
@@ -55,11 +60,6 @@
           <li>
             <a href="#summary" class="nav-link scrollto" @click="trackEvent('#summary')">
               <i class="bx bx-file-blank"></i> <span>{{ selectedLanguage.Header.menu[4] }}</span>
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio" class="nav-link scrollto" @click="trackEvent('#portfolio')">
-              <i class="bx bx-book-content"></i> <span>{{ selectedLanguage.Header.menu[5] }}</span>
             </a>
           </li>
           <!--<li>-->

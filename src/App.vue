@@ -7,48 +7,20 @@
     <AppHeader @eventReloadTyped="reloadTyped" />
     <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
     <SectionMe />
-    <!-- End Hero -->
 
     <main id="main">
-      <!-- ======= About Section ======= -->
       <SectionAbout />
-      <!-- End About Section -->
-
-      <!-- ======= Facts Section ======= -->
-      <!--<SectionFacts />-->
-      <!-- End Facts Section -->
-
-      <!-- ======= Skills Section ======= -->
-      <SectionSkills />
-      <!-- End Skills Section -->
-
-      <!-- ======= Resume Section ======= -->
-      <SectionResume />
-      <!-- End Resume Section -->
-
-      <!-- ======= Portfolio Section ======= -->
       <SectionPortfolio />
-      <!-- End Portfolio Section -->
-
-      <!-- ======= Services Section ======= -->
+      <SectionSkills />
+      <SectionResume />
       <!--<SectionServices />-->
-      <!-- End Services Section -->
-
-      <!-- ======= Testimonials Section ======= -->
       <!--<SectionTestimonials />-->
-      <!-- End Testimonials Section -->
-
-      <!-- ======= Contact Section ======= -->
       <SectionContact />
-      <!-- End Contact Section -->
     </main>
     <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
     <AppFooter />
-    <!-- End  Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   </div>
