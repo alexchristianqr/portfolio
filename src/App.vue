@@ -7,16 +7,16 @@
     <AppHeader @eventReloadTyped="reloadTyped" />
     <!-- End Header -->
 
-    <SectionMe />
+    <SectionMe class="wrapper fullscreen" />
 
     <main id="main">
-      <SectionAbout />
-      <SectionPortfolio />
-      <SectionSkills />
-      <SectionResume />
+      <SectionAbout class="wrapper fullscreen" />
+      <SectionPortfolio class="wrapper fullscreen" />
+      <SectionSkills class="wrapper fullscreen" />
+      <SectionResume class="wrapper fullscreen" />
       <!--<SectionServices />-->
       <!--<SectionTestimonials />-->
-      <SectionContact />
+      <SectionContact class="wrapper fullscreen"/>
     </main>
     <!-- End #main -->
 
@@ -382,4 +382,22 @@ export default {
 @import './../public/assets/vendor/swiper/swiper-bundle.min.css';
 @import './../public/assets/css/style.css';
 @import '~vue-toast-notification/dist/theme-default.css';
+
+.wrapper.fullscreen {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
 </style>
