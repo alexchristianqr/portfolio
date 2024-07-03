@@ -14,8 +14,6 @@
       <SectionPortfolio class="wrapper fullscreen" />
       <SectionSkills class="wrapper fullscreen" />
       <SectionResume class="wrapper fullscreen" />
-      <!--<SectionServices />-->
-      <!--<SectionTestimonials />-->
       <SectionContact class="wrapper fullscreen"/>
     </main>
     <!-- End #main -->
@@ -42,20 +40,14 @@ import SectionMe from './components/main/SectionMe'
 import SectionAbout from './components/main/SectionAbout'
 import SectionResume from './components/main/SectionResume'
 import SectionPortfolio from './components/main/SectionPortfolio'
-// import SectionServices from './components/main/SectionServices'
-// import SectionTestimonials from './components/main/SectionTestimonials'
 import SectionContact from './components/main/SectionContact'
 import SectionSkills from './components/main/SectionSkills'
-// import SectionFacts from './components/main/SectionFacts'
 
 export default {
   name: 'App',
   components: {
-    // SectionFacts,
     SectionSkills,
     SectionContact,
-    // SectionTestimonials,
-    // SectionServices,
     SectionPortfolio,
     SectionResume,
     SectionAbout,
