@@ -73,7 +73,7 @@ add_remove_tag() {
     echo "[MESSAGE_CLI] Existe en local, tag: $TAG"
     VALUE_TAG="$LATEST_TAG"
     remove_tag
-    add_tag
+    add_remove_tag
   else
     VALUE_TAG="$TAG"
     git tag -a -m "New tag release $TAG" "$TAG" # Crear en local
