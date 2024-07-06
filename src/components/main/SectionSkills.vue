@@ -8,9 +8,7 @@
       <div class="row skills-content">
         <div class="col-lg-2" data-aos="fade-up" v-for="(v, k) in dataSkills" :key="k">
           <div class="py-xl-1">
-            <img :src="`/portfolio/assets/css/${v.icon}`" alt="" width="48px" height="48px" class="figure-img border-0 bg-transparent" />
-            <!--            <img src="/portfolio/assets/css/angular.svg" alt="" width="42px" class="img-thumbnail border-0 bg-transparent" />-->
-            <!--            <img src="/portfolio/assets/css/angular.svg" alt="" width="42px" class="img-thumbnail border-0 bg-transparent" />-->
+            <img :src="`/portfolio/assets/images/icons/${v.icon}`" alt="" width="48px" height="48px" class="figure-img border-0 bg-transparent" />
           </div>
           <div class="progress">
             <span class="skill">{{ v.text }}</span>
@@ -29,6 +27,11 @@ export default {
   name: "SectionSkills",
   data: () => ({
     dataSkills: [
+      {
+        text: "Java",
+        value: 85,
+        icon: "java.svg"
+      },
       {
         text: "HTML",
         value: 100,
@@ -87,7 +90,7 @@ export default {
       {
         text: "WebRTC",
         value: 45,
-        icon: "none.svg"
+        icon: "webrtc.svg"
       },
       {
         text: "Typescript",

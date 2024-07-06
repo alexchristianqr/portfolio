@@ -26,10 +26,15 @@
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
         <div :class="`col-lg-4 col-md-6 portfolio-item filter-${v.type}`" v-for="(v, k) in selectedLanguage.SectionPortfolio.data" :key="k">
           <div class="portfolio-wrap shadow">
-            <img :src="v.image" class="img-fluid border-0" alt="" />
+            <img :src="`assets/images/portfolio/${v.image}`" class="img-fluid border-0" alt="" />
             <div class="portfolio-links">
               <!--Zoom de la imagen-->
-              <a :href="v.image" data-gallery="portfolioGallery" class="portfolio-lightbox pt-2" :data-glightbox="`title: <h3>${v.title}</h3><hr>; description: ${v.description ? v.description : ''}; descPosition: ${v.position ? v.position : 'left'}; zoomable: false;`">
+              <a
+                :href="`assets/images/portfolio/${v.image}`"
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox pt-2"
+                :data-glightbox="`title: <h3>${v.title}</h3><hr>; description: ${v.description ? v.description : ''}; descPosition: ${v.position ? v.position : 'left'}; zoomable: false;`"
+              >
                 <i class="bx bx-fullscreen"></i>
               </a>
               <!--Link sitio web-->
@@ -52,7 +57,6 @@
             </div>
           </div>
         </div>
-<!--        <IconAngular />-->
       </div>
       <!---->
     </div>
@@ -61,8 +65,8 @@
 
 <script>
 export default {
-  name: 'SectionPortfolio',
-}
+  name: "SectionPortfolio"
+};
 </script>
 
 <style scoped></style>
