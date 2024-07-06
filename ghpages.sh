@@ -5,36 +5,37 @@ set -e
 # VARIABLES LOCALES
 KEY=''
 VALUE=''
+LASTTAG=''
 
 # VALORES POR DEFECTO
 VALUE_TAG=''
 VALUE_DIRECTORY='dist'
-VALUE_BRANCH='main'
 VALUE_EXEC='build'
 VALUE_REPOSITORY='alexchristianqr/portfolio'
-VALUE_DELETED_TAG='false'
-VALUE_PUSH_GHPAGES='true'
+VALUE_DELETED_TAG='true'
+PREFIX_VERSION='v'
+VALUE_BRANCH_LOCAL='main'
+VALUE_BRANCH_REMOTO='gh-pages'
 
 # VARIABLES PARA USAR EN LA EJECUCION
 TAG=''
 DIRECTORY=''
-BRANCH=''
+BRANCH_LOCAL=''
+BRANCH_REMOTO=''
 EXEC=''
 REPOSITORY=''
-DELETED_TAG=''
-PUSH_GHPAGES=''
 
 # MOSTRAR MENSAJE DE ERROR DE ARGUMENTO TAG
 error_arg_tag() {
   echo "[ OBLIGATORIO ]"
-  echo "-t=$VALUE_TAG, --tag=$VALUE_TAG ........................... Estructura de un tag [NivelMayor.NivelMenor.NivelBugfix]"
+  echo "-t=$VALUE_TAG, --tag=$VALUE_TAG ........................... Estructura de un tag [X_mayor.Y_menor.Z_bugfix]"
   exit 1
 }
 
 # MOSTRAR MENSAJE DE ERROR GENERAL
 error_args_general() {
   echo "[ COMANDOS CLI ]"
-  echo "-t, --tag ........................... structura de un tag [NivelMayor.NivelMenor.NivelBugfix]"
+  echo "-t, --tag ........................... Estructura de un tag [X_mayor.Y_menor.Z_bugfix]"
   echo "-dt, --deleted-lasttag .............. Eliminar último tag registrado"
   echo "-b, --branch ........................ Rama git"
   echo "--exec .............................. Comando de compilación"
@@ -43,74 +44,78 @@ error_args_general() {
   echo "-gp, --github-pages ................. Utilizar github pages"
   echo
   echo "[ DOCUMENTACION ]"
-  echo "Repositorio github: https://github.com/alexchristianqr/sh-ghpages"
+  echo "Repositorio GitHub: https://github.com/alexchristianqr/sh-ghpages"
   echo
   echo "[ AUTOR ]"
   echo "Usuario: Alex Christian"
   echo "Email: alexchristianqr@gmail.com"
-  echo "Repositorio github: https://github.com/alexchristianqr"
+  echo "GitHub: https://github.com/alexchristianqr"
   exit 1
 }
 
 # ELIMINAR TAG
-delete_tag() {
+remove_tag() {
   TAG="$VALUE_TAG"
 
-  set -e
-  git push --delete origin "v$TAG"
-  git tag -d "v$TAG"
+  git push --delete origin "$TAG" # Eliminar en remoto
+  echo "[MESSAGE_CLI] Eliminando en remoto... tag: $TAG"
+  git tag -d "$TAG" # Eliminar en local
+  echo "[MESSAGE_CLI] Eliminando en local... tag: $TAG"
 }
 
-# AGREGAR TAG
-add_tag() {
+# AGREGAR o ELIMINAR TAG
+add_remove_tag() {
   TAG="$VALUE_TAG"
+  LATEST_TAG=$(git ls-remote --tags origin | grep -v '\^{}' | sort -t '/' -k 3 -V | tail -n 1 | awk '{print $2}' | sed 's|refs/tags/||')
+  echo "[MESSAGE_CLI] Exite en remoto, tag: $LATEST_TAG"
 
-  set -e
-  git tag -a -m "New tag release v$TAG" "v$TAG"
+  if [[ "$TAG" == "$LATEST_TAG" ]]; then
+    echo "[MESSAGE_CLI] Existe en local, tag: $TAG"
+    VALUE_TAG="$LATEST_TAG"
+    remove_tag
+    add_tag
+  else
+    VALUE_TAG="$TAG"
+    git tag -a -m "New tag release $TAG" "$TAG" # Crear en local
+    echo "[MESSAGE_CLI] Creado en local... tag: $TAG"
+    git push origin "$TAG" # Crear en remoto
+    echo "[MESSAGE_CLI] Creado en remoto... tag: $TAG"
+  fi
 }
 
 # DESPLEGAR EN GITHUB PAGES
-deploy_to_ghpages() {
+deploy_to_github() {
   TAG="$VALUE_TAG"
   EXEC="$VALUE_EXEC"
   DIRECTORY="$VALUE_DIRECTORY"
   REPOSITORY="$VALUE_REPOSITORY"
-  BRANCH="$VALUE_BRANCH"
-  PUSH_GHPAGES="$VALUE_PUSH_GHPAGES"
+  BRANCH_LOCAL="$VALUE_BRANCH_LOCAL"
+  BRANCH_REMOTO="$VALUE_BRANCH_REMOTO"
 
   set -e
-  git push origin "v$TAG"
+  git push origin "$TAG"
 
-  if [[ "$PUSH_GHPAGES" == 'true' ]]; then
-    npm run "$EXEC"
+  npm run "$EXEC"
 
-    cd "$DIRECTORY"
+  cd "$DIRECTORY"
 
-    git init
-    git add -A
-    git commit -m "New deployment for release v$TAG"
-    git push -f "git@github.com:$REPOSITORY.git" "$BRANCH:gh-pages"
+  git init
+  git add -A
+  git commit -m "New deployment for release $TAG"
+  git push -f "git@github.com:$REPOSITORY.git" "$BRANCH_LOCAL:$BRANCH_REMOTO"
 
-    cd -
+  cd -
 
-    rm -rf "$DIRECTORY"
-  else
-    exit 1
-  fi
+  rm -rf "$DIRECTORY"
 }
 
 # VALIDAR VALORES DE LOS ARGUMENTOS OBLIGATORIOS
 validate_values_args() {
   TAG="$VALUE_TAG"
-  DELETED_TAG="$VALUE_DELETED_TAG"
 
   # VALIDAR PARAMETROS REQUERIDOS OBLIGATORIAMENTE
   if [[ "$TAG" == '' ]]; then
     error_arg_tag
-  fi
-
-  if [[ "$DELETED_TAG" == 'true' ]]; then
-    delete_tag
   fi
 }
 
@@ -122,7 +127,6 @@ process_args() {
 
   # ITERAR ARGUMENTOS CLI
   for ARGUMENT in "$@"; do
-
     KEY=$(echo "$ARGUMENT" | cut -f1 -d=)
 
     # SET LLAVE Y VALOR
@@ -134,37 +138,34 @@ process_args() {
       if [[ "$KEY" == '-h' ]] || [[ "$KEY" == '--help' ]]; then
         error_args_general
       elif [[ "$KEY" == '-t' ]] || [[ "$KEY" == '--tag' ]]; then
-        VALUE_TAG="$VALUE"
+        VALUE_TAG="$PREFIX_VERSION$VALUE"
       elif [[ "$KEY" == '-o' ]] || [[ "$KEY" == '--out-dir' ]] || [[ "$KEY" == '--out-directory' ]]; then
         VALUE_DIRECTORY="$VALUE"
       elif [[ "$KEY" == '-b' ]] || [[ "$KEY" == '--branch' ]]; then
-        VALUE_BRANCH="$VALUE"
+        VALUE_BRANCH_LOCAL="$VALUE"
       elif [[ "$KEY" == '--exec' ]]; then
         VALUE_EXEC="$VALUE"
       elif [[ "$KEY" == '--repository' ]]; then
         VALUE_REPOSITORY="$VALUE"
       elif [[ "$KEY" == '-dt' ]] || [[ "$KEY" == '--deleted-lasttag' ]]; then
         VALUE_DELETED_TAG="$VALUE"
-      elif [[ "$KEY" == '-gp' ]] || [[ "$KEY" == '--github-pages' ]]; then
-        VALUE_PUSH_GHPAGES="$VALUE"
       else
         error_args_general
       fi
     else
       error_args_general
     fi
-
-    # echo "CORRECTO: $KEY=$VALUE"
   done
 
   # VALIDAR PARAMETROS OBLIGATORIOS
   validate_values_args
 
   # CREAR TAG
-  add_tag
+  set -e
+  add_remove_tag
 
-  # EJECUTAR ACTION IN GITHUB PAGES
-  deploy_to_ghpages
+  # EJECUTAR DESPLIEGUE
+  deploy_to_github
 }
 
 # MENU PRINCIPAL
