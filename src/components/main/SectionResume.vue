@@ -1,5 +1,5 @@
 <template>
-  <section id="summary" class="resume">
+  <section id="summary" class="resume section-bg">
     <div class="container">
       <div class="section-title">
         <h2>{{ selectedLanguage.Header.menu[4] }}</h2>
@@ -34,12 +34,12 @@
 
 <script>
 export default {
-  name: 'SectionResume',
-}
+  name: "SectionResume"
+};
 </script>
 
 <style scoped>
-.resume .resume-item::before{
+.resume .resume-item::before {
   background: #1f5297;
 }
 </style>
