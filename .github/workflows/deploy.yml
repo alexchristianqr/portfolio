@@ -34,6 +34,9 @@ jobs:
         folder: dist        # Carpeta que contiene los archivos construidos (puede ser `build` o `dist` dependiendo de tu proyecto)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token para autenticar el despliegue
+        VITE_APP_APPURL: ${{ vars.VITE_APP_APPURL }}
+        VITE_APP_FILENAME_CV: ${{ vars.VITE_APP_FILENAME_CV }}
+        VITE_APP_GOOGLE_ANALITYCS: ${{ vars.VITE_APP_GOOGLE_ANALITYCS }}
 
     - name: Notify deployment success
       run: echo "Deployment to GitHub Pages successful!"
