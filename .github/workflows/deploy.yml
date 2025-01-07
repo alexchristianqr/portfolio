@@ -1,0 +1,39 @@
+name: Deploy Application
+
+on:
+  workflow_dispatch:  # Permite ejecutar el flujo de trabajo manualmente
+    inputs:
+      branch:
+        description: 'Select the branch to deploy'  # Descripción del campo
+        required: true
+        default: 'develop'  # Puedes establecer una rama por defecto
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # Usa la versión que necesitas para tu proyecto
+
+    - name: Install dependencies
+      run: npm install  # O yarn install si usas yarn
+
+    - name: Build the project
+      run: npm run build  # O cualquier otro comando de construcción si lo necesitas
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages   # Rama donde se desplegará el contenido (puede ser gh-pages o main)
+        folder: dist        # Carpeta que contiene los archivos construidos (puede ser `build` o `dist` dependiendo de tu proyecto)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token para autenticar el despliegue
+
+    - name: Notify deployment success
+      run: echo "Deployment to GitHub Pages successful!"
