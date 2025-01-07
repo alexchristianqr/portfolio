@@ -1,13 +1,11 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createStore } from 'vuex'
 import Enviroment from './../env'
 import es from '../locale/es.json.js'
 import en from '../locale/en.json.js'
 import modules from './modules'
 
-Vue.use(Vuex)
-
-export const store = new Vuex.Store({
+// Crear el store con Vuex
+export const store = createStore({
   modules,
   state: {
     language: {
@@ -41,7 +39,6 @@ export const store = new Vuex.Store({
     setLoadingPage(state, payload) {
       console.log('[Mutations.setLoadingPage]', payload)
       state.loading.page = payload
-      // window.location.reload(true)
     },
     async setError(state, e) {
       console.error('[Mutations.setError]', { error: e })
@@ -54,9 +51,6 @@ export const store = new Vuex.Store({
       if (typeof e.response === 'object') {
         const statusCode = e.response.status
         switch (statusCode) {
-          // case 401: // Unauthorized
-          //   await this.dispatch('Auth/userUnauthorized')
-          //   break
           case 402: // Require payment
             state.alerts[0].content = e.response.data.message
             break
