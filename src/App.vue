@@ -357,11 +357,9 @@ onMounted(() => {
 
 <style lang="scss">
 @import "aos/dist/aos.css";
-//@import "boxicons/css/boxicons.min.css";
 @import "glightbox/dist/css/glightbox.min.css";
 @import "./../node_modules/swiper/swiper-bundle.min.css";
 @import "./../public/assets/css/style.css";
-@import "./../node_modules/vue-toast-notification/dist/theme-default.css";
 
 .wrapper.fullscreen {
   display: -moz-flex;
