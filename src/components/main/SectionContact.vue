@@ -70,38 +70,38 @@
 
 <script>
 export default {
-  name: 'SectionContact',
+  name: "SectionContact",
   data: () => ({
-    params: {},
+    params: {}
   }),
   computed: {
     loadingButton() {
-      return this.$store.getters.loadingButton
-    },
+      return this.$store.getters.loadingButton;
+    }
   },
   methods: {
     // Enviar email
     async sendMessage() {
       // Formulario de contacto
-      const fullName = this.selectedLanguage.SectionContact.sendMessage.name.value
-      const email = this.selectedLanguage.SectionContact.sendMessage.email.value
-      const message = this.selectedLanguage.SectionContact.sendMessage.message.value
-      const phoneRemitente = this.selectedLanguage.SectionContact.sendMessage.phone.value
-      const subject = this.selectedLanguage.SectionContact.sendMessage.subject.value
-      this.params.fullnameInvitedEmail = fullName // Nombre del usuario invitado
-      this.params.phoneInvitedEmail = phoneRemitente // Telefono del usuario invitado
-      this.params.subjectInvitedEmail = subject // Asunto del usuario invitado
-      this.params.messageEmail = message // Mensaje del usuario invitado
-      this.params.replyToEmail = email // Email del usuario invitado
+      const fullName = this.selectedLanguage.SectionContact.sendMessage.name.value;
+      const email = this.selectedLanguage.SectionContact.sendMessage.email.value;
+      const message = this.selectedLanguage.SectionContact.sendMessage.message.value;
+      const phoneRemitente = this.selectedLanguage.SectionContact.sendMessage.phone.value;
+      const subject = this.selectedLanguage.SectionContact.sendMessage.subject.value;
+      this.params.fullnameInvitedEmail = fullName; // Nombre del usuario invitado
+      this.params.phoneInvitedEmail = phoneRemitente; // Telefono del usuario invitado
+      this.params.subjectInvitedEmail = subject; // Asunto del usuario invitado
+      this.params.messageEmail = message; // Mensaje del usuario invitado
+      this.params.replyToEmail = email; // Email del usuario invitado
       // Env
-      this.params.toNameEmail = this.$store.getters.env.toNameEmail
-      this.params.toEmail = this.$store.getters.env.toMailEmail
+      this.params.toNameEmail = this.$store.getters.env.toNameEmail;
+      this.params.toEmail = this.$store.getters.env.toMailEmail;
       // Store
-      this.$store.commit('setLoadingButton', true)
-      await this.$store.dispatch('ContactUs.sendMail', { self: this })
-    },
-  },
-}
+      this.$store.commit("setLoadingButton", true);
+      await this.$store.dispatch("ContactUs.sendMail", { self: this });
+    }
+  }
+};
 </script>
 
 <style scoped></style>

@@ -1,0 +1,7 @@
+
+.rounded-circle{
+    background: url("/portfolio/assets/images/perfil.jpg") no-repeat top;
+    background-size: cover;
+    width: 153px !important;
+    height: 153px !important;
+}

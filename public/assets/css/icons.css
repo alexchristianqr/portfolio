@@ -1,0 +1,86 @@
+.content-icons,
+.content-list,
+.content-text {
+    padding-bottom: 1.25rem;
+}
+
+.content-list > ul {
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.content-icons .icon-angular {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/angular.svg') no-repeat;
+}
+.content-icons .icon-vue {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/vuejs.svg') no-repeat;
+}
+.content-icons .icon-html5 {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/html5.svg') no-repeat;
+}
+.content-icons .icon-git {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/git.svg') no-repeat;
+}
+.content-icons .icon-github {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/github.svg') no-repeat;
+}
+.content-icons .icon-typescript {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/typescript.svg') no-repeat;
+}
+.content-icons .icon-javascript {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/javascript.svg') no-repeat;
+}
+.content-icons .icon-firebase {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/firebase.svg') no-repeat;
+}
+.content-icons .icon-material-design {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/material-design.svg') no-repeat;
+}
+.content-icons .icon-nuxtjs {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/nuxtjs.svg') no-repeat;
+}
+.content-icons .icon-ionic {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/ionic.svg') no-repeat;
+}
+.content-icons .icon-css {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/css.svg') no-repeat;
+}
+.content-icons .icon-mongodb {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/mongodb.svg') no-repeat;
+}
+.content-icons .icon-nginx {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/nginx.svg') no-repeat;
+}
+.content-icons .icon-bootstrap {
+    margin: 0 0 0.75rem 0;
+    height: 2.5rem;
+    background: url('/portfolio/assets/images/icons/bootstrap.svg') no-repeat;
+}

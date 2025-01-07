@@ -1,4 +1,4 @@
-import ContactUs from "@/store/modules/contact-us";
+import ContactUs from "../../store/modules/contact-us";
 
 export default {
     ContactUs
