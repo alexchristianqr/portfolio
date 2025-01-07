@@ -68,39 +68,48 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "SectionContact",
-  data: () => ({
-    params: {}
-  }),
-  computed: {
-    loadingButton() {
-      return this.$store.getters.loadingButton;
-    }
-  },
-  methods: {
-    // Enviar email
-    async sendMessage() {
-      // Formulario de contacto
-      const fullName = this.selectedLanguage.SectionContact.sendMessage.name.value;
-      const email = this.selectedLanguage.SectionContact.sendMessage.email.value;
-      const message = this.selectedLanguage.SectionContact.sendMessage.message.value;
-      const phoneRemitente = this.selectedLanguage.SectionContact.sendMessage.phone.value;
-      const subject = this.selectedLanguage.SectionContact.sendMessage.subject.value;
-      this.params.fullnameInvitedEmail = fullName; // Nombre del usuario invitado
-      this.params.phoneInvitedEmail = phoneRemitente; // Telefono del usuario invitado
-      this.params.subjectInvitedEmail = subject; // Asunto del usuario invitado
-      this.params.messageEmail = message; // Mensaje del usuario invitado
-      this.params.replyToEmail = email; // Email del usuario invitado
-      // Env
-      this.params.toNameEmail = this.$store.getters.env.toNameEmail;
-      this.params.toEmail = this.$store.getters.env.toMailEmail;
-      // Store
-      this.$store.commit("setLoadingButton", true);
-      await this.$store.dispatch("ContactUs.sendMail", { self: this });
-    }
-  }
+<script setup>
+import { ref, computed } from "vue";
+import { useStore } from "vuex";
+import { globalMixin } from "../../mixins/index.js";
+
+const { selectedLanguage } = globalMixin();
+
+// Acceder al store de Vuex
+const store = useStore();
+
+// Definir los parámetros del formulario
+const params = ref({});
+
+// Computed: Obtener el estado del botón de carga
+const loadingButton = computed(() => store.getters.loadingButton);
+
+// Método para enviar el mensaje
+const sendMessage = async () => {
+  // Obtener los valores del formulario de contacto desde el store
+  const selectedLanguage = store.getters.selectedLanguage;
+  const fullName = selectedLanguage.SectionContact.sendMessage.name.value;
+  const email = selectedLanguage.SectionContact.sendMessage.email.value;
+  const message = selectedLanguage.SectionContact.sendMessage.message.value;
+  const phoneRemitente = selectedLanguage.SectionContact.sendMessage.phone.value;
+  const subject = selectedLanguage.SectionContact.sendMessage.subject.value;
+
+  // Asignar los valores a los parámetros
+  params.value.fullnameInvitedEmail = fullName;
+  params.value.phoneInvitedEmail = phoneRemitente;
+  params.value.subjectInvitedEmail = subject;
+  params.value.messageEmail = message;
+  params.value.replyToEmail = email;
+
+  // Obtener los valores de entorno desde el store
+  params.value.toNameEmail = store.getters.env.toNameEmail;
+  params.value.toEmail = store.getters.env.toMailEmail;
+
+  // Establecer el estado del botón de carga
+  store.commit("setLoadingButton", true);
+
+  // Enviar el email usando una acción del store
+  await store.dispatch("ContactUs.sendMail", { self: this });
 };
 </script>
 

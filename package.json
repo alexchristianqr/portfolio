@@ -34,6 +34,8 @@
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/isotope-layout": "^3.0.14",
     "@vitejs/plugin-vue": "^5.2.1",
     "prettier": "^2.3.2",
     "sass-embedded": "^1.83.1",

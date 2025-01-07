@@ -22,6 +22,7 @@ const state = reactive({
 });
 
 const reloadTyped = () => {
+  console.log("[Method] reloadTyped");
   nextTick(() => {
     /**
      * Easy selector helper function
@@ -356,9 +357,7 @@ onMounted(() => {
 
 <style lang="scss">
 @import "aos/dist/aos.css";
-@import "bootstrap/dist/css/bootstrap.min.css";
-@import "bootstrap-icons/font/bootstrap-icons.css";
-@import "boxicons/css/boxicons.min.css";
+//@import "boxicons/css/boxicons.min.css";
 @import "glightbox/dist/css/glightbox.min.css";
 @import "./../node_modules/swiper/swiper-bundle.min.css";
 @import "./../public/assets/css/style.css";
