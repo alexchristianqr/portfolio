@@ -2,11 +2,6 @@ name: Deploy Application
 
 on:
   workflow_dispatch:  # Permite ejecutar el flujo de trabajo manualmente
-    inputs:
-      branch:
-        description: 'Select the branch to deploy'  # Descripción del campo
-        required: true
-        default: 'develop'  # Puedes establecer una rama por defecto
 
 jobs:
   deploy:
