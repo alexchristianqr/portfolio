@@ -7,5 +7,5 @@ export default defineConfig({
     sourcemap: false, // Desactiva completamente los source maps
   },
   plugins: [vue()],
-  //base: '/portfolio/', // Set the base path
+  base: '/portfolio/', // Set the base path
 })
