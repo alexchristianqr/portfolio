@@ -88,7 +88,7 @@ const { selectedLanguage, trackEvent } = globalMixin();
 const store = useStore();
 
 // Estado reactivo para el idioma
-const language = ref(store.state.language);
+const language = ref(store.state.prefixLanguage);
 const urlFileCV = ref(`/portfolio/files/${import.meta.env.VITE_APP_FILENAME_CV}`);
 
 // Función para cargar el idioma desde localStorage

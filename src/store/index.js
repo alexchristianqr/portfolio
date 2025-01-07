@@ -8,7 +8,7 @@ import modules from "./modules";
 export const store = createStore({
   modules,
   state: {
-    language: localStorage.getItem("lang") || "es", // Idioma por defecto
+    prefixLanguage: localStorage.getItem("lang") || "es", // Idioma por defecto
     loading: {
       page: false
     },
@@ -23,7 +23,7 @@ export const store = createStore({
   mutations: {
     setLanguage(state, payload) {
       console.log("[Mutations.setLanguage]", payload);
-      state.language = payload;
+      state.prefixLanguage = payload;
       localStorage.setItem("lang", payload); // Guardar preferencia en localStorage
     },
     setLoadingPage(state, payload) {
@@ -66,12 +66,13 @@ export const store = createStore({
   },
   getters: {
     currentLanguage(state) {
-      console.log("[Getters.changeLanguage]");
+      console.log("[Getters.currentLanguage]");
       const languages = { es, en };
-      return languages[state.language] || languages["es"]; // Retorna el idioma correspondiente
+      return languages[state.prefixLanguage] || languages["es"]; // Retorna el idioma correspondiente
     },
-    selectedLanguage: (state) => {
-      return state.language;
+    selectedPrefixLanguage: (state) => {
+      console.log("[Getters.selectedPrefixLanguage]");
+      return state.prefixLanguage;
     },
     loadingPage: (state) => {
       return state.loading.page;

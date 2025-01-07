@@ -87,7 +87,7 @@ const loadingButton = computed(() => store.getters.loadingButton);
 // Método para enviar el mensaje
 const sendMessage = async () => {
   // Obtener los valores del formulario de contacto desde el store
-  const selectedLanguage = store.getters.selectedLanguage;
+  // const selectedLanguage = store.getters.selectedLanguage;
   const fullName = selectedLanguage.SectionContact.sendMessage.name.value;
   const email = selectedLanguage.SectionContact.sendMessage.email.value;
   const message = selectedLanguage.SectionContact.sendMessage.message.value;
