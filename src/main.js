@@ -2,7 +2,9 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import { store } from "./store";
 import VueGtag from "vue-gtag";
-import ToastPlugin from "vue-toast-notification";
+
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css";
 
 // Importar Bootstrap & Icons CSS
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -19,7 +21,7 @@ app.use(VueGtag, {
 });
 
 // Use VueToast
-app.use(ToastPlugin, {
+app.use(Toast, {
   position: "top",
   type: "default",
   duration: 2500

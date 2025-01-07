@@ -75,41 +75,39 @@ import { globalMixin } from "../../mixins/index.js";
 
 const { selectedLanguage } = globalMixin();
 
-// Acceder al store de Vuex
+// Store
 const store = useStore();
 
-// Definir los parámetros del formulario
-const params = ref({});
+// Parámetros del formulario
+const params = ref({
+  fullname: "",
+  phone: "",
+  subject: "",
+  message: "",
+  replyTo: "",
+  toName: store.getters.env.toNameEmail,
+  toEmail: store.getters.env.toMailEmail
+});
 
-// Computed: Obtener el estado del botón de carga
+// Estado del botón de carga
 const loadingButton = computed(() => store.getters.loadingButton);
 
-// Método para enviar el mensaje
+// Función para enviar el mensaje
 const sendMessage = async () => {
-  // Obtener los valores del formulario de contacto desde el store
-  // const selectedLanguage = store.getters.selectedLanguage;
-  const fullName = selectedLanguage.SectionContact.sendMessage.name.value;
-  const email = selectedLanguage.SectionContact.sendMessage.email.value;
-  const message = selectedLanguage.SectionContact.sendMessage.message.value;
-  const phoneRemitente = selectedLanguage.SectionContact.sendMessage.phone.value;
-  const subject = selectedLanguage.SectionContact.sendMessage.subject.value;
-
-  // Asignar los valores a los parámetros
-  params.value.fullnameInvitedEmail = fullName;
-  params.value.phoneInvitedEmail = phoneRemitente;
-  params.value.subjectInvitedEmail = subject;
-  params.value.messageEmail = message;
-  params.value.replyToEmail = email;
-
-  // Obtener los valores de entorno desde el store
-  params.value.toNameEmail = store.getters.env.toNameEmail;
-  params.value.toEmail = store.getters.env.toMailEmail;
-
-  // Establecer el estado del botón de carga
   store.commit("setLoadingButton", true);
 
-  // Enviar el email usando una acción del store
-  await store.dispatch("ContactUs.sendMail", { self: this });
+  try {
+    await store.dispatch("ContactUs.sendMail", params.value);
+
+    // Resetear los campos después del envío
+    params.value.fullname = "";
+    params.value.phone = "";
+    params.value.subject = "";
+    params.value.message = "";
+    params.value.replyTo = "";
+  } catch (error) {
+    console.error("Error al enviar el mensaje:", error);
+  }
 };
 </script>
 
