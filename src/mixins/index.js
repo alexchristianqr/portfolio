@@ -1,9 +1,8 @@
-import Vue from "vue";
-import { store } from "@/store";
 import en from "../locale/en.json.js";
 import es from "../locale/es.json.js";
+import {store} from "./../store";
 
-Vue.mixin({
+export const globalMixin = {
   mounted() {
     if (localStorage.getItem("lang")) {
       switch (localStorage.getItem("lang")) {
@@ -39,4 +38,4 @@ Vue.mixin({
       });
     }
   }
-});
+};

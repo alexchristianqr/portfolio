@@ -1,27 +1,35 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import { store } from './store'
 import VueGtag from 'vue-gtag'
-import VueToast from 'vue-toast-notification'
+import ToastPlugin  from 'vue-toast-notification'
+import {globalMixin} from  './mixins'
 
-// Set mixins global
-import './mixins'
+// Importar Bootstrap CSS
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Configuration VueAnalytics
-Vue.use(VueGtag, {
-  config: { id: process.env.VUE_APP_GOOGLE_ANALITYCS },
+
+// Crea la instancia de la aplicación
+const app = createApp(App)
+
+// Configura VueGtag
+app.use(VueGtag, {
+    config: { id: import.meta.env.VITE_APP_GOOGLE_ANALITYCS }, // Usa tu ID de Google Analytics
 })
 
 // Use VueToast
-Vue.use(VueToast, {
+app.use(ToastPlugin, {
   position: 'top',
   type: 'default',
   duration: 2500,
 })
 
-Vue.config.productionTip = false
+// Agrega el store si estás usando Vuex o Pinia
+app.use(store)
 
-new Vue({
-  store,
-  render: (h) => h(App),
-}).$mount('#app')
+// Registra el mixin global
+app.mixin(globalMixin)
+
+// Monta la aplicación
+app.mount('#app')

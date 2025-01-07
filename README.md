@@ -1,12 +1,5 @@
-# Portfolio
+# Vue 3 + Vite
 
-Sitio web personal.
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-> En la sección <b>Portafolio</b>, encontraras proyectos interesantes desplegados en github pages y repositorios publicos de codigo abierto para toda la comunidad.
-
-## Deploy to GitHub Pages
-
-```bash
-git describe --tags --abbrev=0 # Obtener última version del proyecto
-sh ghpages.sh --tag="0.0.0" # Crear tag en GitHub. Por ejemplo: v1.0.0
-```
+Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
