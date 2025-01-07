@@ -3,9 +3,19 @@ name: Deploy Application
 on:
   workflow_dispatch:  # Permite ejecutar el flujo de trabajo manualmente
 
+env:
+  VITE_APP_APPURL: "${{ vars.VITE_APP_APPURL }}"
+  VITE_APP_FILENAME_CV: "${{ vars.VITE_APP_FILENAME_CV }}"
+  VITE_APP_GOOGLE_ANALITYCS: "${{ vars.VITE_APP_GOOGLE_ANALITYCS }}"
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    env:
+      VITE_APP_APPURL: "${{ vars.VITE_APP_APPURL }}"
+      VITE_APP_FILENAME_CV: "${{ vars.VITE_APP_FILENAME_CV }}"
+      VITE_APP_GOOGLE_ANALITYCS: "${{ vars.VITE_APP_GOOGLE_ANALITYCS }}"
 
     steps:
     - name: Checkout code
