@@ -54,7 +54,7 @@ export default {
             local: "Universidad Tecnológica del Peru - UTP",
             link: "https://www.utp.edu.pe/",
             description: [
-              "Un ingeniero de software es un profesional con conocimientos técnicos en programación, sistemas operativos, bases de datos, redes y seguridad informática, capaz de resolver problemas complejos y adaptarse a los cambios tecnológicos y a las necesidades cambiantes del mercado. Tiene habilidades blandas, como la creatividad, trabajo en equipo, gestión de proyectos y orientación al cliente, para diseñar, desarrollar, probar y mantener software de calidad que satisfaga las necesidades de los usuarios finales."
+              "Actualmente curso el octavo ciclo de la carrera de Ingeniería de Software, complementando una formación académica sólida con más de 5 años de experiencia práctica en desarrollo web y móvil. Mi trayectoria me ha permitido dominar tecnologías modernas y adaptarme a los constantes cambios del sector. Durante este tiempo, he adquirido habilidades técnicas avanzadas en programación, arquitectura de software, bases de datos y metodologías ágiles, así como competencias clave como la resolución de problemas, trabajo en equipo y gestión de proyectos. Estoy comprometido con el aprendizaje continuo para mantenerme a la vanguardia tecnológica y aportar soluciones innovadoras que agreguen valor a los proyectos en los que participo."
             ]
           },
           {
@@ -63,7 +63,7 @@ export default {
             local: "Instituto Privado Superior Tecnológico - IDAT",
             link: "https://www.idat.edu.pe/",
             description: [
-              "Un desarrollador de software es un profesional con habilidades técnicas en programación, bases de datos, redes y seguridad informática, y habilidades blandas como pensamiento crítico, resolución de problemas y trabajo en equipo, dedicado al diseño, codificación, implementación, pruebas y mantenimiento de programas informáticos que cumplan con las necesidades del usuario. Comprometido con la mejora continua y adaptarse a los cambios en la tecnología y el mercado."
+              "Egresado de una carrera técnica en desarrollo de software, donde obtuve una formación integral en programación, bases de datos, redes y seguridad informática. Durante este proceso, desarrollé habilidades clave como el pensamiento crítico, la resolución de problemas y el trabajo en equipo. Mi experiencia académica me preparó para diseñar, implementar y mantener soluciones informáticas que cumplan con los requerimientos del usuario final, siempre con un enfoque en la calidad y la mejora continua. Como profesional comprometido, me adapto constantemente a los avances tecnológicos y a las nuevas demandas del mercado para mantenerme actualizado y aportar valor en cada proyecto."
             ]
           }
         ]
@@ -71,6 +71,16 @@ export default {
       {
         title: "Experiencia Profesional",
         data: [
+          {
+            title: "Backend Developer",
+            date: "04/2024 - Presente",
+            local: "LimaTours SAC",
+            link: "https://www.limatours.com.pe/",
+            description: [
+              "Desarrollo y mantenimiento de servicios backend para aplicaciones de gestión turística, asegurando alta disponibilidad y rendimiento. (AWS + Serverless + Node.js / PHP / TypeScript)",
+              "Implementación de soluciones para optimizar procesos internos y mejorar la experiencia del usuario final. (DynamoDB + Lambda)"
+            ]
+          },
           {
             title: "Backend Developer",
             date: "10/2023 - 03/2024",

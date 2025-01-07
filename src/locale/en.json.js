@@ -54,7 +54,7 @@ export default {
             local: "Universidad Tecnológica del Peru - UTP",
             link: "https://www.utp.edu.pe/",
             description: [
-              "A software engineer is a professional with technical knowledge in programming, operating systems, databases, networks and computer security, capable of solving complex problems and adapting to technological changes and changing market needs. You have soft skills, such as creativity, teamwork, project management and customer orientation, to design, develop, test and maintain quality software that meets the needs of end users."
+              "I am currently in the eighth semester of my Software Engineering degree, complementing a solid academic background with more than 5 years of practical experience in web and mobile development. My career has allowed me to master modern technologies and adapt to the constant changes in the tech industry. Throughout this time, I have acquired advanced technical skills in programming, software architecture, databases, and agile methodologies, as well as key soft skills such as problem-solving, teamwork, and project management. I am committed to continuous learning to stay at the forefront of technology and deliver innovative solutions that add value to the projects I work on."
             ]
           },
           {
@@ -63,7 +63,7 @@ export default {
             local: "Instituto Privado Superior Tecnológico - IDAT",
             link: "https://www.idat.edu.pe/",
             description: [
-              "A software developer is a professional with technical skills in programming, databases, networking, and computer security, and soft skills such as critical thinking, problem solving, and teamwork, dedicated to program design, coding, implementation, testing, and maintenance. computers that meet the needs of the user. Committed to continuous improvement and adapt to changes in technology and the market."
+              "I am a graduate of a technical degree in Software Development, where I received comprehensive training in programming, databases, networks, and cybersecurity. Throughout this process, I developed key skills such as critical thinking, problem-solving, and teamwork. My academic experience prepared me to design, implement, and maintain software solutions that meet end-user requirements, always focusing on quality and continuous improvement. As a committed professional, I constantly adapt to technological advances and new market demands to stay up to date and add value to every project I work on."
             ]
           }
         ]
@@ -71,6 +71,16 @@ export default {
       {
         title: "Professional Experience",
         data: [
+          {
+            title: "Backend Developer",
+            date: "04/2024 - Present",
+            local: "LimaTours SAC",
+            link: "https://www.limatours.com.pe/",
+            description: [
+              "Development and maintenance of backend services for tourism management applications, ensuring high availability and performance. (AWS + Serverless + Node.js / PHP / TypeScript)",
+              "Implementation of solutions to optimize internal processes and improve the end-user experience. (DynamoDB + Lambda)"
+            ]
+          },
           {
             title: "Backend Developer",
             date: "10/2023 - 03/2024",
