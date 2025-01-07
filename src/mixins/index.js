@@ -20,7 +20,7 @@ export const globalMixin = {
   },
   computed: {
     urlFileCV() {
-      return `/portfolio/files/${store.getters.env.filenameCV}`;
+      return `/portfolio/files/${import.meta.env.VITE_APP_FILENAME_CV}`;
     },
     selectedLanguage() {
       return store.getters.selectedLanguage;
