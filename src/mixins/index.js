@@ -12,7 +12,6 @@ export function globalMixin() {
     loadingPage: store.getters.loadingPage,
     trackEvent(action) {
       if (window.gtag) {
-        alert("lanzando evento gtag:  " + action);
         window.gtag("event", action, {
           event_category: "not set",
           event_label: "not set",
