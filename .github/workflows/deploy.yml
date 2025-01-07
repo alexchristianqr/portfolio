@@ -1,0 +1,57 @@
+name: Deploy application
+
+on:
+  workflow_dispatch:  # Permite ejecutar el flujo de trabajo manualmente
+
+env:
+  VITE_APP_APPURL: ${{ vars.VITE_APP_APPURL }}
+  VITE_APP_FILENAME_CV: ${{ vars.VITE_APP_FILENAME_CV }}
+  VITE_APP_GOOGLE_ANALITYCS: ${{ secrets.VITE_APP_GOOGLE_ANALITYCS }}
+  VITE_APP_EMAILJS_BASE_URL: ${{ vars.VITE_APP_EMAILJS_BASE_URL }}
+  VITE_APP_EMAILJS_SERVICE_ID: ${{ secrets.VITE_APP_EMAILJS_SERVICE_ID }}
+  VITE_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_APP_EMAILJS_TEMPLATE_ID }}
+  VITE_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}
+  VITE_APP_TO_NAME: ${{ vars.VITE_APP_APPURL }}
+  VITE_APP_TO_EMAIL: ${{ vars.VITE_APP_APPURL }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'  # Usa la versión que necesitas para tu proyecto
+
+    - name: Debug environment variables
+      run: |
+        echo "VITE_APP_APPURL=${{ vars.VITE_APP_APPURL }}"
+        echo "VITE_APP_FILENAME_CV=${{ vars.VITE_APP_FILENAME_CV }}"
+        echo "VITE_APP_GOOGLE_ANALITYCS=${{ secrets.VITE_APP_GOOGLE_ANALITYCS }}"
+        echo "VITE_APP_EMAILJS_BASE_URL=${{ vars.VITE_APP_EMAILJS_BASE_URL }}"
+        echo "VITE_APP_EMAILJS_SERVICE_ID=${{ secrets.VITE_APP_EMAILJS_SERVICE_ID }}"
+        echo "VITE_APP_EMAILJS_TEMPLATE_ID=${{ secrets.VITE_APP_EMAILJS_TEMPLATE_ID }}"
+        echo "VITE_APP_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}"
+        echo "VITE_APP_TO_NAME=${{ vars.VITE_APP_TO_NAME }}"
+        echo "VITE_APP_TO_EMAIL=${{ vars.VITE_APP_TO_EMAIL }}"
+
+    - name: Install dependencies
+      run: npm install  # O yarn install si usas yarn
+
+    - name: Build the project
+      run: npm run build  # O cualquier otro comando de construcción si lo necesitas
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages   # Rama donde se desplegará el contenido (puede ser gh-pages o main)
+        folder: dist        # Carpeta que contiene los archivos construidos (puede ser `build` o `dist` dependiendo de tu proyecto)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token para autenticar el despliegue
+
+    - name: Notify deployment success
+      run: echo "Deployment to GitHub Pages successful!"

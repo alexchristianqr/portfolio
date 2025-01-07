@@ -1,5 +1,5 @@
 <template>
-  <section id="summary" class="resume">
+  <section id="summary" class="resume section-bg">
     <div class="container">
       <div class="section-title">
         <h2>{{ selectedLanguage.Header.menu[4] }}</h2>
@@ -32,14 +32,14 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'SectionResume',
-}
+<script setup>
+import { globalMixin } from "../../mixins/index.js";
+
+const { selectedLanguage } = globalMixin();
 </script>
 
 <style scoped>
-.resume .resume-item::before{
+.resume .resume-item::before {
   background: #1f5297;
 }
 </style>

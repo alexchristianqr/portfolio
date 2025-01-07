@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" class="skills section-bg">
+  <section id="skills" class="skills">
     <div class="container">
       <div class="section-title">
         <h2>{{ selectedLanguage.Header.menu[3] }}</h2>
@@ -22,112 +22,37 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "SectionSkills",
-  data: () => ({
-    dataSkills: [
-      {
-        text: "Java",
-        value: 85,
-        icon: "java.svg"
-      },
-      {
-        text: "HTML",
-        value: 100,
-        icon: "html5.svg"
-      },
-      {
-        text: "PHP",
-        value: 75,
-        icon: "php.svg"
-      },
-      {
-        text: "Javascript",
-        value: 90,
-        icon: "javascript.svg"
-      },
-      {
-        text: "Mongodb",
-        value: 79,
-        icon: "mongodb.svg"
-      },
-      {
-        text: "Websocket",
-        value: 100,
-        icon: "nodejs.svg"
-      },
-      {
-        text: "Express",
-        value: 100,
-        icon: "express.svg"
-      },
-      {
-        text: "Nodejs",
-        value: 90,
-        icon: "nodejs.svg"
-      },
-      {
-        text: "MySQL",
-        value: 69,
-        icon: "mysql.svg"
-      },
-      {
-        text: "Bash",
-        value: 54,
-        icon: "bash.svg"
-      },
-      {
-        text: "Git",
-        value: 98,
-        icon: "git.svg"
-      },
-      {
-        text: "Vuejs",
-        value: 98,
-        icon: "vue.svg"
-      },
-      {
-        text: "WebRTC",
-        value: 45,
-        icon: "webrtc.svg"
-      },
-      {
-        text: "Typescript",
-        value: 70,
-        icon: "typescript.svg"
-      },
-      {
-        text: "AWS",
-        value: 60,
-        icon: "aws.svg"
-      },
-      {
-        text: "NestJS",
-        value: 82,
-        icon: "nestjs.svg"
-      },
-      {
-        text: "Docker",
-        value: 65,
-        icon: "docker.svg"
-      }
-    ]
-  }),
-  mounted() {
-    this.dataSkills.sort((x, y) => {
-      if (x.value > y.value) {
-        return -1; // DESC
-      }
+<script setup>
+import { ref, onMounted } from "vue";
+import { globalMixin } from "../../mixins/index.js";
 
-      if (x.value < y.value) {
-        return 1; // ASC
-      }
+const { selectedLanguage } = globalMixin();
 
-      return 0;
-    });
-  }
-};
+// Definir los datos de habilidades
+const dataSkills = ref([
+  { text: "Java", value: 85, icon: "java.svg" },
+  { text: "HTML", value: 100, icon: "html5.svg" },
+  { text: "PHP", value: 75, icon: "php.svg" },
+  { text: "Javascript", value: 90, icon: "javascript.svg" },
+  { text: "Mongodb", value: 79, icon: "mongodb.svg" },
+  { text: "Websocket", value: 100, icon: "nodejs.svg" },
+  { text: "Express", value: 100, icon: "express.svg" },
+  { text: "Nodejs", value: 90, icon: "nodejs.svg" },
+  { text: "MySQL", value: 69, icon: "mysql.svg" },
+  { text: "Bash", value: 54, icon: "bash.svg" },
+  { text: "Git", value: 98, icon: "git.svg" },
+  { text: "Vuejs", value: 98, icon: "vue.svg" },
+  { text: "WebRTC", value: 45, icon: "webrtc.svg" },
+  { text: "Typescript", value: 70, icon: "typescript.svg" },
+  { text: "AWS", value: 60, icon: "aws.svg" },
+  { text: "NestJS", value: 82, icon: "nestjs.svg" },
+  { text: "Docker", value: 65, icon: "docker.svg" }
+]);
+
+// Ordenar las habilidades al montar el componente
+onMounted(() => {
+  dataSkills.value.sort((a, b) => b.value - a.value);
+});
 </script>
 
 <style scoped></style>

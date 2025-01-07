@@ -45,10 +45,9 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'SectionServices',
-}
+<script setup>
+import { globalMixin } from "../../mixins/index.js";
+const { selectedLanguage } = globalMixin();
 </script>
 
 <style scoped></style>
