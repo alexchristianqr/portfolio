@@ -68,38 +68,45 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "SectionContact",
-  data: () => ({
-    params: {}
-  }),
-  computed: {
-    loadingButton() {
-      return this.$store.getters.loadingButton;
-    }
-  },
-  methods: {
-    // Enviar email
-    async sendMessage() {
-      // Formulario de contacto
-      const fullName = this.selectedLanguage.SectionContact.sendMessage.name.value;
-      const email = this.selectedLanguage.SectionContact.sendMessage.email.value;
-      const message = this.selectedLanguage.SectionContact.sendMessage.message.value;
-      const phoneRemitente = this.selectedLanguage.SectionContact.sendMessage.phone.value;
-      const subject = this.selectedLanguage.SectionContact.sendMessage.subject.value;
-      this.params.fullnameInvitedEmail = fullName; // Nombre del usuario invitado
-      this.params.phoneInvitedEmail = phoneRemitente; // Telefono del usuario invitado
-      this.params.subjectInvitedEmail = subject; // Asunto del usuario invitado
-      this.params.messageEmail = message; // Mensaje del usuario invitado
-      this.params.replyToEmail = email; // Email del usuario invitado
-      // Env
-      this.params.toNameEmail = this.$store.getters.env.toNameEmail;
-      this.params.toEmail = this.$store.getters.env.toMailEmail;
-      // Store
-      this.$store.commit("setLoadingButton", true);
-      await this.$store.dispatch("ContactUs.sendMail", { self: this });
-    }
+<script setup>
+import { ref, computed } from "vue";
+import { useStore } from "vuex";
+import { globalMixin } from "../../mixins/index.js";
+
+const { selectedLanguage } = globalMixin();
+
+// Store
+const store = useStore();
+
+// Parámetros del formulario
+const params = ref({
+  fullname: "",
+  phone: "",
+  subject: "",
+  message: "",
+  replyTo: "",
+  toName: store.getters.env.toNameEmail,
+  toEmail: store.getters.env.toMailEmail
+});
+
+// Estado del botón de carga
+const loadingButton = computed(() => store.getters.loadingButton);
+
+// Función para enviar el mensaje
+const sendMessage = async () => {
+  store.commit("setLoadingButton", true);
+
+  try {
+    await store.dispatch("ContactUs.sendMail", params.value);
+
+    // Resetear los campos después del envío
+    params.value.fullname = "";
+    params.value.phone = "";
+    params.value.subject = "";
+    params.value.message = "";
+    params.value.replyTo = "";
+  } catch (error) {
+    console.error("Error al enviar el mensaje:", error);
   }
 };
 </script>

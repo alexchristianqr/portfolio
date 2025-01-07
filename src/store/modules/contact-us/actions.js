@@ -1,40 +1,40 @@
-import axios from 'axios'
+import axios from "axios";
+import { useToast } from "vue-toastification";
+
 export default {
-  async 'ContactUs.sendMail'(context, { self }) {
+  async "ContactUs.sendMail"({ getters, commit }, params) {
+    const toast = useToast();
+
     try {
-      // Parameters
-      const url = `${context.getters.env.baseUrlEmailJS}/email/send`
+      // Preparar los datos para enviar el email
+      const url = `${getters.env.baseUrlEmailJS}/email/send`;
       const data = {
-        service_id: context.getters.env.serviceIdEmailJS,
-        template_id: context.getters.env.templateIdEmailJS,
-        user_id: context.getters.env.publicKeyEmailJS,
+        service_id: getters.env.serviceIdEmailJS,
+        template_id: getters.env.templateIdEmailJS,
+        user_id: getters.env.publicKeyEmailJS,
         template_params: {
-          fullname_invited: self.params.fullnameInvitedEmail,
-          phone_invited: self.params.phoneInvitedEmail,
-          subject_invited: self.params.subjectInvitedEmail,
-          to_name: self.params.toNameEmail,
-          to_email: self.params.toEmail,
-          message: self.params.messageEmail,
-          reply_to: self.params.replyToEmail,
-        },
+          fullname_invited: params.fullname,
+          phone_invited: params.phone,
+          subject_invited: params.subject,
+          to_name: params.toName,
+          to_email: params.toEmail,
+          message: params.message,
+          reply_to: params.replyTo
+        }
+      };
+
+      // Hacer la solicitud
+      const response = await axios.post(url, data);
+      if (response.status === 200) {
+        commit("setLoadingButton", false);
+        toast.success("Mensaje enviado con éxito");
+      } else {
+        throw new Error("Error al enviar el mensaje");
       }
-
-      // Request
-      const response = await axios.post(url, data)
-      if (response.status !== 200) return
-
-      // Response
-      context.commit('setLoadingButton', false)
-      self.selectedLanguage.SectionContact.sendMessage.name.value = null
-      self.selectedLanguage.SectionContact.sendMessage.email.value = null
-      self.selectedLanguage.SectionContact.sendMessage.message.value = null
-      self.selectedLanguage.SectionContact.sendMessage.phone.value = null
-      self.selectedLanguage.SectionContact.sendMessage.subject.value = null
-      self.$toast.open(`Mensaje enviado con éxito`)
-    } catch (e) {
-      context.commit('setLoadingButton', false)
-      self.$toast.error(`El mensaje no fué enviado`)
-      context.commit('setError', e)
+    } catch (error) {
+      commit("setLoadingButton", false);
+      commit("setError", error);
+      toast.error("El mensaje no fue enviado. Inténtalo de nuevo.");
     }
-  },
-}
+  }
+};

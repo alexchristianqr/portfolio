@@ -32,10 +32,10 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "SectionResume"
-};
+<script setup>
+import { globalMixin } from "../../mixins/index.js";
+
+const { selectedLanguage } = globalMixin();
 </script>
 
 <style scoped>
