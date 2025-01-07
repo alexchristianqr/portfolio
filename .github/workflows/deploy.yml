@@ -16,11 +16,6 @@ jobs:
       with:
         node-version: '18'  # Usa la versión que necesitas para tu proyecto
 
-    - name: Show environment variables
-      run: |
-        echo "VITE_APP_FILENAME_CV=${{ secrets.VITE_APP_FILENAME_CV }}"
-        echo "VITE_APP_GOOGLE_ANALITYCS=${{ secrets.VITE_APP_GOOGLE_ANALITYCS }}"
-
     - name: Install dependencies
       run: npm install  # O yarn install si usas yarn
 
@@ -34,6 +29,9 @@ jobs:
         folder: dist        # Carpeta que contiene los archivos construidos (puede ser `build` o `dist` dependiendo de tu proyecto)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token para autenticar el despliegue
+        VITE_APP_FILENAME_CV: ${{ secrets.VITE_APP_FILENAME_CV }}
+        VITE_APP_GOOGLE_ANALITYCS: ${{ secrets.VITE_APP_GOOGLE_ANALITYCS }}
+        VITE_APP_APPURL: ${{ secrets.VITE_APP_APPURL }}
 
     - name: Notify deployment success
       run: echo "Deployment to GitHub Pages successful!"
