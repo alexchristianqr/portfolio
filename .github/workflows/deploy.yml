@@ -4,9 +4,15 @@ on:
   workflow_dispatch:  # Permite ejecutar el flujo de trabajo manualmente
 
 env:
-  VITE_APP_APPURL: ${{ secrets.VITE_APP_APPURL }}
-  VITE_APP_FILENAME_CV: ${{ secrets.VITE_APP_FILENAME_CV }}
+  VITE_APP_APPURL: ${{ vars.VITE_APP_APPURL }}
+  VITE_APP_FILENAME_CV: ${{ vars.VITE_APP_FILENAME_CV }}
   VITE_APP_GOOGLE_ANALITYCS: ${{ secrets.VITE_APP_GOOGLE_ANALITYCS }}
+  VITE_APP_EMAILJS_BASE_URL: ${{ vars.VITE_APP_EMAILJS_BASE_URL }}
+  VITE_APP_EMAILJS_SERVICE_ID: ${{ secrets.VITE_APP_EMAILJS_SERVICE_ID }}
+  VITE_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_APP_EMAILJS_TEMPLATE_ID }}
+  VITE_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}
+  VITE_APP_TO_NAME: ${{ vars.VITE_APP_APPURL }}
+  VITE_APP_TO_EMAIL: ${{ vars.VITE_APP_APPURL }}
 
 jobs:
   deploy:
@@ -21,10 +27,17 @@ jobs:
       with:
         node-version: '18'  # Usa la versión que necesitas para tu proyecto
 
-    - name: Show environment variables
+    - name: Debug environment variables
       run: |
-        echo "VITE_APP_FILENAME_CV=${{ secrets.VITE_APP_FILENAME_CV }}"
+        echo "VITE_APP_APPURL=${{ vars.VITE_APP_APPURL }}"
+        echo "VITE_APP_FILENAME_CV=${{ vars.VITE_APP_FILENAME_CV }}"
         echo "VITE_APP_GOOGLE_ANALITYCS=${{ secrets.VITE_APP_GOOGLE_ANALITYCS }}"
+        echo "VITE_APP_EMAILJS_BASE_URL=${{ vars.VITE_APP_EMAILJS_BASE_URL }}"
+        echo "VITE_APP_EMAILJS_SERVICE_ID=${{ secrets.VITE_APP_EMAILJS_SERVICE_ID }}"
+        echo "VITE_APP_EMAILJS_TEMPLATE_ID=${{ secrets.VITE_APP_EMAILJS_TEMPLATE_ID }}"
+        echo "VITE_APP_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}"
+        echo "VITE_APP_TO_NAME=${{ vars.VITE_APP_TO_NAME }}"
+        echo "VITE_APP_TO_EMAIL=${{ vars.VITE_APP_TO_EMAIL }}"
 
     - name: Install dependencies
       run: npm install  # O yarn install si usas yarn
