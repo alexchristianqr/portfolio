@@ -3,11 +3,6 @@ name: Deploy application
 on:
   workflow_dispatch:  # Permite ejecutar el flujo de trabajo manualmente
 
-env:
-  VITE_APP_APPURL: ${{ secrets.VITE_APP_APPURL }}
-  VITE_APP_FILENAME_CV: ${{ secrets.VITE_APP_FILENAME_CV }}
-  VITE_APP_GOOGLE_ANALITYCS: ${{ secrets.VITE_APP_GOOGLE_ANALITYCS }}
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,13 +16,13 @@ jobs:
       with:
         node-version: '18'  # Usa la versión que necesitas para tu proyecto
 
-    - name: Install dependencies
-      run: npm install  # O yarn install si usas yarn
-
     - name: Show environment variables
       run: |
         echo "VITE_APP_FILENAME_CV=${{ secrets.VITE_APP_FILENAME_CV }}"
         echo "VITE_APP_GOOGLE_ANALITYCS=${{ secrets.VITE_APP_GOOGLE_ANALITYCS }}"
+
+    - name: Install dependencies
+      run: npm install  # O yarn install si usas yarn
 
     - name: Build the project
       run: npm run build  # O cualquier otro comando de construcción si lo necesitas
