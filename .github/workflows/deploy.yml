@@ -24,6 +24,11 @@ jobs:
     - name: Install dependencies
       run: npm install  # O yarn install si usas yarn
 
+    - name: Show environment variables
+      run: |
+        echo "VITE_APP_FILENAME_CV=${{ vars.VITE_APP_FILENAME_CV }}"
+        echo "VITE_APP_GOOGLE_ANALITYCS=${{ vars.VITE_APP_GOOGLE_ANALITYCS }}"
+
     - name: Build the project
       run: npm run build  # O cualquier otro comando de construcción si lo necesitas
 
