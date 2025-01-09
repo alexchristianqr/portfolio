@@ -15,7 +15,7 @@ env:
   VITE_APP_TO_EMAIL: ${{ vars.VITE_APP_APPURL }}
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
