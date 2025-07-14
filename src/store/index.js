@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-import Enviroment from "./../env";
+import { environment } from "./../env";
 import es from "../locale/es.json.js";
 import en from "../locale/en.json.js";
 import modules from "./modules";
@@ -18,7 +18,7 @@ export const store = createStore({
       { label: "warning", content: null },
       { label: "info", content: null }
     ],
-    env: Enviroment
+    env: environment
   },
   mutations: {
     setLanguage(state, payload) {

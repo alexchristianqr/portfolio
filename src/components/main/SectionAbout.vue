@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-title">
         <h2>{{ selectedLanguage.Header.menu[1] }}</h2>
-        <p>{{ selectedLanguage.SectionAbout.p }}</p>
+        <p v-html="selectedLanguage.SectionAbout.p.replace(/\n/g, '<br>')"></p>
       </div>
       <!--      <div class="row">-->
       <!--        <div class="col-lg-3 my-auto" data-aos="fade-up">-->

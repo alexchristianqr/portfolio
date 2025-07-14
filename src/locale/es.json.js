@@ -9,7 +9,14 @@ export default {
     span: ["apasionado", "lógico", "desarrollador"]
   },
   SectionAbout: {
-    p: "Soy un Desarrollador de Aplicaciones apasionado por resolver problemas y crear soluciones innovadoras. Cuento con más de 5 años de experiencia en el desarrollo de software. Me destaco por mi capacidad para trabajar en equipo, comunicarme efectivamente y entregar soluciones de alta calidad dentro de los plazos establecidos. Estoy comprometido con mi carrera, los desafíos super retadores y dispuesto siempre a enseñar y aprender.",
+    p:
+      "Ingeniero de Software y Desarrollador Full Stack con más de 5 años creando soluciones eficientes, bien estructuradas y enfocadas en resolver problemas reales. Me apasiona la tecnología cuando tiene propósito: mejorar procesos, conectar sistemas y generar valor tangible.\n" +
+      "\n" +
+      'He trabajado en los sectores de turismo y hotelería, administración y finanzas, donde he diseñado y desarrollado arquitecturas capaces de escalar y adaptarse a los cambios sin sacrificar calidad. Me interesa tanto el "cómo" como el "para qué" de cada solución, buscando siempre un equilibrio entre rendimiento, mantenibilidad y objetivos del negocio.\n' +
+      "\n" +
+      "Me destaco por ser proactivo, comunicarme con claridad, trabajar bien en equipo y mantener una mentalidad abierta al aprendizaje constante. Disfruto tanto de escribir buenas líneas de código como de compartir conocimientos, colaborar en soluciones o acompañar el crecimiento de otros a través de mentoría.\n" +
+      "\n" +
+      "💻 Tecnologías que uso con frecuencia: TypeScript, Laravel, NestJS, Express.js, MySQL, MongoDB, Redis, Serverless, Docker y AWS.",
     p2: "Sin darte cuenta los años en tecnología pasan muy rápido por eso es importante mantenerte actualizado y revisando las contantes actualizaciones.",
     h3: "Desarrollador Web Full Stack",
     li: [
@@ -55,6 +62,18 @@ export default {
             link: "https://www.utp.edu.pe/",
             description: [
               "Actualmente curso el octavo ciclo de la carrera de Ingeniería de Software, complementando una formación académica sólida con más de 5 años de experiencia práctica en desarrollo web y móvil. Mi trayectoria me ha permitido dominar tecnologías modernas y adaptarme a los constantes cambios del sector. Durante este tiempo, he adquirido habilidades técnicas avanzadas en programación, arquitectura de software, bases de datos y metodologías ágiles, así como competencias clave como la resolución de problemas, trabajo en equipo y gestión de proyectos. Estoy comprometido con el aprendizaje continuo para mantenerme a la vanguardia tecnológica y aportar soluciones innovadoras que agreguen valor a los proyectos en los que participo."
+            ]
+          },
+          {
+            title: "Certificación de JavaScript Avanzado",
+            date: "2023 - 2024",
+            local: "Universidad Nacional Mayor de San Marcos",
+            link: "https://www.unmsm.edu.pe/",
+            description: [
+              "Certificación en JavaScript Avanzado, donde profundicé conceptos avanzados del lenguaje.",
+              "Esta formación me permitió dominar temas como el manejo de asincronía, patrones de diseño, optimización de rendimiento y mejores prácticas en desarrollo.",
+              "A través de proyectos prácticos, adquirí habilidades para escribir código limpio, eficiente y escalable, aplicando principios de programación funcional y orientada a objetos.",
+              "Esta certificación complementa mi experiencia profesional y me capacita para enfrentar desafíos complejos en el desarrollo de aplicaciones web modernas."
             ]
           },
           {

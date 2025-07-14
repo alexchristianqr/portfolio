@@ -30,23 +30,23 @@ const { selectedLanguage } = globalMixin();
 
 // Definir los datos de habilidades
 const dataSkills = ref([
-  { text: "Java", value: 85, icon: "java.svg" },
+  { text: "Java", value: 70, icon: "java.svg" },
   { text: "HTML", value: 100, icon: "html5.svg" },
-  { text: "PHP", value: 75, icon: "php.svg" },
+  { text: "PHP", value: 70, icon: "php.svg" },
   { text: "Javascript", value: 90, icon: "javascript.svg" },
-  { text: "Mongodb", value: 79, icon: "mongodb.svg" },
+  { text: "Mongodb", value: 72, icon: "mongodb.svg" },
   { text: "Websocket", value: 100, icon: "nodejs.svg" },
-  { text: "Express", value: 100, icon: "express.svg" },
+  { text: "Express", value: 90, icon: "express.svg" },
   { text: "Nodejs", value: 90, icon: "nodejs.svg" },
-  { text: "MySQL", value: 69, icon: "mysql.svg" },
+  { text: "MySQL", value: 72, icon: "mysql.svg" },
   { text: "Bash", value: 54, icon: "bash.svg" },
-  { text: "Git", value: 98, icon: "git.svg" },
-  { text: "Vuejs", value: 98, icon: "vue.svg" },
-  { text: "WebRTC", value: 45, icon: "webrtc.svg" },
-  { text: "Typescript", value: 70, icon: "typescript.svg" },
-  { text: "AWS", value: 60, icon: "aws.svg" },
-  { text: "NestJS", value: 82, icon: "nestjs.svg" },
-  { text: "Docker", value: 65, icon: "docker.svg" }
+  { text: "Git", value: 90, icon: "git.svg" },
+  { text: "Vuejs", value: 90, icon: "vue.svg" },
+  { text: "WebRTC", value: 25, icon: "webrtc.svg" },
+  { text: "Typescript", value: 75, icon: "typescript.svg" },
+  { text: "AWS", value: 80, icon: "aws.svg" },
+  { text: "NestJS", value: 75, icon: "nestjs.svg" },
+  { text: "Docker", value: 80, icon: "docker.svg" }
 ]);
 
 // Ordenar las habilidades al montar el componente
