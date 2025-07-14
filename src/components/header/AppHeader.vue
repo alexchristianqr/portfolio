@@ -2,9 +2,11 @@
   <header id="header">
     <div class="d-flex flex-column">
       <div class="profile">
-        <img alt="" class="img-fluid rounded-circle" />
+        <a href="/portfolio/">
+          <img alt="" class="img-fluid rounded-circle" />
+        </a>
         <h1 class="text-light">
-          <a href="/portfolio">{{ selectedLanguage.fullName }}</a>
+          <a href="/portfolio/">{{ selectedLanguage.fullName }}</a>
         </h1>
         <div class="social-links mt-3 text-center">
           <a href="https://linkedin.com/in/alexchristianqr/" target="_blank" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
@@ -29,12 +31,12 @@
       <!---->
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li>
-            <a href="#hero" class="nav-link scrollto active" @click="trackEvent('#home')">
-              <i class="bx bx-home"></i>
-              <span>{{ selectedLanguage.Header.menu[0] }}</span>
-            </a>
-          </li>
+          <!--          <li>-->
+          <!--            <a href="#hero" class="nav-link scrollto active" @click="trackEvent('#home')">-->
+          <!--              <i class="bx bx-home"></i>-->
+          <!--              <span>{{ selectedLanguage.Header.menu[0] }}</span>-->
+          <!--            </a>-->
+          <!--          </li>-->
           <li>
             <a href="#profile" class="nav-link scrollto" @click="trackEvent('#profile')">
               <i class="bx bx-user"></i> <span>{{ selectedLanguage.Header.menu[1] }}</span>

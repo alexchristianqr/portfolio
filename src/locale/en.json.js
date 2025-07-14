@@ -9,7 +9,14 @@ export default {
     span: ["passionate", "logical", "developer"]
   },
   SectionAbout: {
-    p: "I am an Application Developer passionate about solving problems and creating innovative solutions. I have more than 5 years of experience in software development. I stand out for my ability to work as a team, communicate effectively and deliver high-quality solutions within established deadlines. I am committed to my career, super challenging challenges and always willing to teach and learn.",
+    p:
+      "Software Engineer and Full Stack Developer with over 5 years of experience creating efficient, well-structured solutions focused on solving real problems. I'm passionate about technology when it serves a purpose: improving processes, connecting systems, and generating tangible value.\n" +
+      "\n" +
+      'I have worked in the tourism and hospitality, administration, and finance sectors, where I designed and developed architectures capable of scaling and adapting to changes without sacrificing quality. I\'m interested in both the "how" and "why" of each solution, always seeking a balance between performance, maintainability, and business objectives.\n' +
+      "\n" +
+      "I excel at being proactive, communicating clearly, working well in teams, and maintaining an open mindset toward constant learning. I enjoy writing great lines of code as much as I enjoy sharing knowledge, collaborating on solutions, or supporting the growth of others through mentoring.\n" +
+      "\n" +
+      "💻 Technologies I frequently use: TypeScript, Laravel, NestJS, Express.js, MySQL, MongoDB, Redis, Serverless, Docker, and AWS.",
     p2: "Without realizing it, the years in technology go by very quickly so it is important to keep up to date and review the constant updates.",
     h3: "Web Developer Full Stack",
     li: [
@@ -55,6 +62,18 @@ export default {
             link: "https://www.utp.edu.pe/",
             description: [
               "I am currently in the eighth semester of my Software Engineering degree, complementing a solid academic background with more than 5 years of practical experience in web and mobile development. My career has allowed me to master modern technologies and adapt to the constant changes in the tech industry. Throughout this time, I have acquired advanced technical skills in programming, software architecture, databases, and agile methodologies, as well as key soft skills such as problem-solving, teamwork, and project management. I am committed to continuous learning to stay at the forefront of technology and deliver innovative solutions that add value to the projects I work on."
+            ]
+          },
+          {
+            title: "Certification in Advanced JavaScript",
+            date: "2023 - 2024",
+            local: "Universidad Nacional Mayor de San Marcos",
+            link: "https://www.unmsm.edu.pe/",
+            description: [
+              "Certification in Advanced JavaScript, where I deepened advanced concepts of the language.",
+              "This training allowed me to master topics such as asynchronous handling, design patterns, performance optimization, and best practices in development.",
+              "Through practical projects, I acquired skills to write clean, efficient, and scalable code, applying principles of functional and object-oriented programming.",
+              "This certification complements my professional experience and equips me to tackle complex challenges in modern web application development."
             ]
           },
           {
