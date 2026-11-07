@@ -77,10 +77,19 @@ const buildInfo = (() => {
   }
 })()
 
+/** El sitio vive en https://<usuario>.github.io/portfolio/ */
+const BASE = '/portfolio/'
+
+const buildJson = `${JSON.stringify(buildInfo, null, 2)}\n`
+
 /**
  * Publica la marca de dos formas, además de la que pinta el pie de página:
  *  - `<meta name="build">` en el HTML (se ve con «ver código fuente», sin ejecutar JS).
  *  - `build.json` junto al sitio, consultable con `curl`: <https://…/portfolio/build.json>.
+ *
+ * `build.json` se emite al compilar (`generateBundle`), así que lo sirve `npm run preview`. En
+ * `npm run dev` no hay compilación: sin `configureServer`, Vite respondería a esa ruta con el HTML
+ * de la página y un 200, que confunde. Allí el commit y la hora son los de arrancar el servidor.
  */
 const buildMarker = (): Plugin => ({
   name: 'build-marker',
@@ -94,12 +103,15 @@ const buildMarker = (): Plugin => ({
       injectTo: 'head'
     }
   ],
-  generateBundle() {
-    this.emitFile({
-      type: 'asset',
-      fileName: 'build.json',
-      source: `${JSON.stringify(buildInfo, null, 2)}\n`
+  configureServer(server) {
+    server.middlewares.use(`${BASE}build.json`, (_req, res) => {
+      res.setHeader('Content-Type', 'application/json')
+      res.setHeader('Cache-Control', 'no-store')
+      res.end(buildJson)
     })
+  },
+  generateBundle() {
+    this.emitFile({ type: 'asset', fileName: 'build.json', source: buildJson })
   }
 })
 
@@ -112,8 +124,7 @@ export default defineConfig(({ mode }) => {
     define: {
       __APP_BUILD__: JSON.stringify(buildInfo)
     },
-    // El sitio vive en https://<usuario>.github.io/portfolio/
-    base: '/portfolio/',
+    base: BASE,
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))

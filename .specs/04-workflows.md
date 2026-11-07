@@ -65,6 +65,15 @@ Cada compilación lleva una marca (la genera `vite.config.ts`: versión, commit 
 - **Como archivo**: `https://alexchristianqr.github.io/portfolio/build.json`, consultable desde la
   terminal: `curl -s https://alexchristianqr.github.io/portfolio/build.json`.
 
+**En local:** `build.json` también existe, pero de dos formas distintas.
+
+| Cómo lo ves                         | URL                                          | Qué contiene                                |
+| ----------------------------------- | -------------------------------------------- | ------------------------------------------- |
+| `npm run dev`                       | `http://localhost:5173/portfolio/build.json` | commit y hora del **arranque del servidor** |
+| `npm run build` + `npm run preview` | `http://localhost:4173/portfolio/build.json` | commit y hora de **esa compilación**        |
+
+En `dev` el commit no se actualiza al hacer commits nuevos: reinicia el servidor para refrescarlo.
+
 Para saber si un cambio ya está publicado, compara ese commit con el de `main`
 (`git rev-parse --short origin/main`). Un despliegue disparado por un merge lleva el commit **del
 merge**, no el del último commit de `dev`; el PR fusionado muestra ese commit. Un despliegue manual
