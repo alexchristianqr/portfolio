@@ -66,5 +66,7 @@
 
 - Las flechas se escuchan en un `div` interior y no en `<DialogContent>`: Reka reenvía los
   atributos por varias capas y el manejador se ejecutaba dos veces por pulsación.
-- Los proyectos «Blog Personal», «Blog CMS Personal», «Exámen Virtual» y «Restaurante Sushi
-  Delivery» usan la imagen genérica de GitHub; conviene sustituirla por una captura real.
+- Los proyectos «Blog Personal», «Blog CMS Personal», «Exámen Virtual», «Restaurante Sushi
+  Delivery» y «Bicinav» usan la imagen genérica de GitHub; conviene sustituirla por una captura real.
+- Todo proyecto declara `stack` (iconos de `public/assets/images/icons/`, ver `TechSlug`) y lleva
+  `summary` en ambos idiomas. «Havítan Landing» y «Bicinav» abren la lista (los más recientes).

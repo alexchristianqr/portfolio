@@ -50,16 +50,29 @@ export type ProjectCategory = 'app' | 'microservice' | 'mobile' | 'landing'
 
 /** Nombre del archivo SVG (sin extensión) en `public/assets/images/icons/`. */
 export type TechSlug =
+  | 'android'
   | 'angular'
+  | 'aws'
   | 'bootstrap'
   | 'css'
+  | 'docker'
+  | 'express'
   | 'firebase'
   | 'git'
   | 'html5'
   | 'ionic'
+  | 'java'
   | 'javascript'
+  | 'kotlin'
+  | 'laravel'
   | 'material-design'
+  | 'mongodb'
+  | 'mysql'
+  | 'nestjs'
+  | 'nodejs'
   | 'nuxtjs'
+  | 'php'
+  | 'python'
   | 'typescript'
   | 'vue'
 
@@ -84,6 +97,10 @@ export interface ProjectText {
 export interface ResumeItem {
   title: string
   date?: string
+  /** Clase de icono Phosphor, literal completa (solo la usan las tarjetas de formación). */
+  icon?: string
+  /** Insignia corta junto a la fecha: «Egresado», «Certificado». */
+  status?: string
   place: string
   link?: string
   bullets: string[]

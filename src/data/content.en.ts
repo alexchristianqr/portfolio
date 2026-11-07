@@ -12,7 +12,8 @@ export const contentEn: Content<ProjectId> = {
       "Software Engineer and Full Stack Developer with over 5 years of experience creating efficient, well-structured solutions focused on solving real problems. I'm passionate about technology when it serves a purpose: improving processes, connecting systems, and generating tangible value.",
       'I have worked in the tourism and hospitality, administration, and finance sectors, where I designed and developed architectures capable of scaling and adapting to changes without sacrificing quality. I\'m interested in both the "how" and "why" of each solution, always seeking a balance between performance, maintainability, and business objectives.',
       'I excel at being proactive, communicating clearly, working well in teams, and maintaining an open mindset toward constant learning. I enjoy writing great lines of code as much as I enjoy sharing knowledge, collaborating on solutions, or supporting the growth of others through mentoring.',
-      '💻 Technologies I frequently use: TypeScript, Laravel, NestJS, Express.js, MySQL, MongoDB, Redis, Serverless, Docker, and AWS.'
+      'I work with Spec Driven Development (SDD): before writing code I put the specification in writing —requirements, architecture decisions (ADRs) and one SPEC per feature— and that specification is the source of truth, for me and for the AI alike. I configure my tools so agents work with the right context: Kiro with steering, Powers and specs (requirements → design → tasks); Claude Code with CLAUDE.md/AGENTS.md, Skills, Hooks and subagents; and MCP servers that give them access to code, docs and data. AI speeds up execution, but direction and review stay with me: every change goes through lint, types, build and the spec that backs it.',
+      '💻 Technologies I frequently use: TypeScript, Laravel, NestJS, Express.js, MySQL, MongoDB, Redis, Serverless, Docker, and AWS. AI: Kiro, Claude Code and MCP.'
     ]
   },
   skills: {
@@ -23,6 +24,16 @@ export const contentEn: Content<ProjectId> = {
     intro:
       'Throughout my career as a professional developer, I have had the opportunity to work on numerous personal and professional projects. Below are some of them.',
     projects: {
+      'havitan-landing': {
+        title: 'Havítan Landing',
+        summary:
+          'Website for Havítan, the condominium management platform: common-area bookings, security and access control, announcements and billing. Vue 3 + Vite, 100% static and built with Spec Driven Development.'
+      },
+      bicinav: {
+        title: 'Bicinav',
+        summary:
+          'Android app for cyclists with a map, routes and a user account, built with Jetpack Compose and Material 3.'
+      },
       'game-apps': {
         title: 'Game apps',
         summary:
@@ -73,20 +84,25 @@ export const contentEn: Content<ProjectId> = {
         summary: 'A management system for booking COWORKING rooms.'
       },
       intellitec: {
-        title: 'Intellitec'
+        title: 'Intellitec',
+        summary: 'Corporate website (landing page) for the technology solutions company Intellitec.'
       },
       'portafolio-personal': {
-        title: 'Personal Portfolio'
+        title: 'Personal Portfolio',
+        summary:
+          'My personal portfolio: profile, projects, skills and contact, in Spanish and English, with dark mode.'
       },
       'api-en-postman': {
         title: 'API in Postman',
         summary: 'Example CRUD API exercise documented with Postman in public mode.'
       },
       'api-graphql-tasks-crm': {
-        title: 'GraphQL API - Tasks CRM'
+        title: 'GraphQL API - Tasks CRM',
+        summary: 'GraphQL microservice that connects Tasks CRM with third-party services.'
       },
       'api-principal-tasks-crm': {
-        title: 'Main API - Tasks CRM'
+        title: 'Main API - Tasks CRM',
+        summary: 'Main REST service of Tasks CRM: users, conversations, channels and campaigns.'
       },
       'blog-personal': {
         title: 'Personal Blog',
@@ -94,20 +110,24 @@ export const contentEn: Content<ProjectId> = {
           'A server-side personal blog built with Laravel and Vue.js, deployed to the DigitalOcean cloud.'
       },
       'api-facturacion-tasks-crm': {
-        title: 'Billing API - Tasks CRM'
+        title: 'Billing API - Tasks CRM',
+        summary: 'Billing and payments microservice of the Tasks CRM platform.'
       },
       'api-socket-tasks-crm': {
-        title: 'Socket API - Tasks CRM'
+        title: 'Socket API - Tasks CRM',
+        summary: 'Socket microservice powering Tasks CRM real-time chat.'
       },
       'blog-cms-personal': {
-        title: 'Personal CMS Blog'
+        title: 'Personal CMS Blog',
+        summary: 'Content management system (CMS) to publish and manage my personal blog posts.'
       },
       'examen-virtual-en-linea': {
         title: 'Online Virtual Exam',
         summary: 'A virtual survey management system to evaluate help desk customer service.'
       },
       'restaurante-sushi-delivery': {
-        title: 'Sushi Delivery Restaurant'
+        title: 'Sushi Delivery Restaurant',
+        summary: 'Mobile app to order sushi delivery: menu, cart and order tracking.'
       }
     }
   },
@@ -119,32 +139,39 @@ export const contentEn: Content<ProjectId> = {
         items: [
           {
             title: 'Software Engineering',
-            date: '2022 - present',
-            place: 'Universidad Tecnológica del Peru - UTP',
+            date: '2022 - 2026',
+            icon: 'icon-[ph--graduation-cap]',
+            status: 'Graduate',
+            place: 'Universidad Tecnológica del Perú - UTP',
             link: 'https://www.utp.edu.pe/',
             bullets: [
-              'I am currently in the eighth semester of my Software Engineering degree, complementing a solid academic background with more than 5 years of practical experience in web and mobile development. My career has allowed me to master modern technologies and adapt to the constant changes in the tech industry. Throughout this time, I have acquired advanced technical skills in programming, software architecture, databases, and agile methodologies, as well as key soft skills such as problem-solving, teamwork, and project management. I am committed to continuous learning to stay at the forefront of technology and deliver innovative solutions that add value to the projects I work on.'
+              'Software architecture, databases and agile methodologies.',
+              'Capstone projects in Java, a video game in Godot and cryptography labs.',
+              'Backed by more than 5 years of professional experience in web and mobile development.'
             ]
           },
           {
             title: 'Certification in Advanced JavaScript',
             date: '2023 - 2024',
-            place: 'Universidad Nacional Mayor de San Marcos',
+            icon: 'icon-[ph--certificate]',
+            status: 'Certified',
+            place: 'Universidad Nacional Mayor de San Marcos - UNMSM',
             link: 'https://www.unmsm.edu.pe/',
             bullets: [
-              'Certification in Advanced JavaScript, where I deepened advanced concepts of the language.',
-              'This training allowed me to master topics such as asynchronous handling, design patterns, performance optimization, and best practices in development.',
-              'Through practical projects, I acquired skills to write clean, efficient, and scalable code, applying principles of functional and object-oriented programming.',
-              'This certification complements my professional experience and equips me to tackle complex challenges in modern web application development.'
+              'Asynchronous programming, design patterns and performance optimization.',
+              'Clean, scalable code with functional and object-oriented programming.'
             ]
           },
           {
-            title: 'Computing and Information',
+            title: 'Computing and Information Technology',
             date: '2012 - 2015',
+            icon: 'icon-[ph--desktop]',
+            status: 'Graduate',
             place: 'Instituto Privado Superior Tecnológico - IDAT',
             link: 'https://www.idat.edu.pe/',
             bullets: [
-              'I am a graduate of a technical degree in Software Development, where I received comprehensive training in programming, databases, networks, and cybersecurity. Throughout this process, I developed key skills such as critical thinking, problem-solving, and teamwork. My academic experience prepared me to design, implement, and maintain software solutions that meet end-user requirements, always focusing on quality and continuous improvement. As a committed professional, I constantly adapt to technological advances and new market demands to stay up to date and add value to every project I work on.'
+              'Programming, databases, networks and cybersecurity.',
+              'Technical foundation to design, implement and maintain software solutions.'
             ]
           }
         ]

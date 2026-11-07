@@ -12,7 +12,8 @@ export const contentEs: Content<ProjectId> = {
       'Ingeniero de Software y Desarrollador Full Stack con más de 5 años creando soluciones eficientes, bien estructuradas y enfocadas en resolver problemas reales. Me apasiona la tecnología cuando tiene propósito: mejorar procesos, conectar sistemas y generar valor tangible.',
       'He trabajado en los sectores de turismo y hotelería, administración y finanzas, donde he diseñado y desarrollado arquitecturas capaces de escalar y adaptarse a los cambios sin sacrificar calidad. Me interesa tanto el "cómo" como el "para qué" de cada solución, buscando siempre un equilibrio entre rendimiento, mantenibilidad y objetivos del negocio.',
       'Me destaco por ser proactivo, comunicarme con claridad, trabajar bien en equipo y mantener una mentalidad abierta al aprendizaje constante. Disfruto tanto de escribir buenas líneas de código como de compartir conocimientos, colaborar en soluciones o acompañar el crecimiento de otros a través de mentoría.',
-      '💻 Tecnologías que uso con frecuencia: TypeScript, Laravel, NestJS, Express.js, MySQL, MongoDB, Redis, Serverless, Docker y AWS.'
+      'Trabajo con Spec Driven Development (SDD): antes de escribir código dejo la especificación por escrito —requisitos, decisiones de arquitectura (ADR) y una SPEC por funcionalidad— y esa especificación es la fuente de verdad, tanto para mí como para la IA. Configuro bien mis herramientas para que los agentes trabajen con el contexto correcto: Kiro con steering, Powers y specs (requisitos → diseño → tareas); Claude Code con CLAUDE.md/AGENTS.md, Skills, Hooks y subagentes; y servidores MCP que les dan acceso a código, documentación y datos. La IA acelera la ejecución, pero la dirección y la revisión son mías: cada cambio pasa por lint, tipos, build y por la spec que lo respalda.',
+      '💻 Tecnologías que uso con frecuencia: TypeScript, Laravel, NestJS, Express.js, MySQL, MongoDB, Redis, Serverless, Docker y AWS. IA: Kiro, Claude Code y MCP.'
     ]
   },
   skills: {
@@ -23,6 +24,16 @@ export const contentEs: Content<ProjectId> = {
     intro:
       'A lo largo de mi carrera como desarrollador profesional, he tenido la oportunidad de trabajar en numerosos proyectos laborales y personales. A continuación, te presento algunos de ellos.',
     projects: {
+      'havitan-landing': {
+        title: 'Havítan Landing',
+        summary:
+          'Sitio web de Havítan, la plataforma de gestión de condominios: reservas de áreas comunes, seguridad y control de acceso, comunicados y cobranzas. Vue 3 + Vite, 100 % estático y construido con Spec Driven Development.'
+      },
+      bicinav: {
+        title: 'Bicinav',
+        summary:
+          'Aplicación Android para ciclistas con mapa, rutas y cuenta de usuario, hecha con Jetpack Compose y Material 3.'
+      },
       'game-apps': {
         title: 'Game apps',
         summary:
@@ -74,20 +85,27 @@ export const contentEs: Content<ProjectId> = {
         summary: 'Es un sistema gestor de administración de reservas de salas COWORKING.'
       },
       intellitec: {
-        title: 'Intellitec'
+        title: 'Intellitec',
+        summary:
+          'Sitio web institucional (landing page) de la empresa de soluciones tecnológicas Intellitec.'
       },
       'portafolio-personal': {
-        title: 'Portafolio Personal'
+        title: 'Portafolio Personal',
+        summary:
+          'Mi portafolio personal: perfil, proyectos, habilidades y contacto, en español e inglés, con modo oscuro.'
       },
       'api-en-postman': {
         title: 'API en postman',
         summary: 'API crud ejercicio de ejemplo  con uso de postman en modo público.'
       },
       'api-graphql-tasks-crm': {
-        title: 'API GraphQL - Tasks CRM'
+        title: 'API GraphQL - Tasks CRM',
+        summary: 'Microservicio GraphQL que integra Tasks CRM con servicios de terceros.'
       },
       'api-principal-tasks-crm': {
-        title: 'API Principal - Tasks CRM'
+        title: 'API Principal - Tasks CRM',
+        summary:
+          'Servicio principal REST de Tasks CRM: usuarios, conversaciones, canales y campañas.'
       },
       'blog-personal': {
         title: 'Blog Personal',
@@ -95,13 +113,17 @@ export const contentEs: Content<ProjectId> = {
           'Es un blog personal en el lado del servidor con laravel y vuejs para desplegarse en el cloud de digital ocean.'
       },
       'api-facturacion-tasks-crm': {
-        title: 'API Facturación - Tasks CRM'
+        title: 'API Facturación - Tasks CRM',
+        summary: 'Microservicio de facturación y cobros de la plataforma Tasks CRM.'
       },
       'api-socket-tasks-crm': {
-        title: 'API Socket - Tasks CRM'
+        title: 'API Socket - Tasks CRM',
+        summary: 'Microservicio de sockets para el chat en tiempo real de Tasks CRM.'
       },
       'blog-cms-personal': {
-        title: 'Blog CMS Personal'
+        title: 'Blog CMS Personal',
+        summary:
+          'Gestor de contenidos (CMS) para publicar y administrar las entradas de mi blog personal.'
       },
       'examen-virtual-en-linea': {
         title: 'Exámen Virtual en Línea',
@@ -109,7 +131,9 @@ export const contentEs: Content<ProjectId> = {
           'Es un sistema gestor de encuesta virtual para evaluar la atención al cliente de mesa de ayuda.'
       },
       'restaurante-sushi-delivery': {
-        title: 'Restaurante Sushi Delivery'
+        title: 'Restaurante Sushi Delivery',
+        summary:
+          'Aplicación móvil para pedir sushi a domicilio: carta, carrito y seguimiento del pedido.'
       }
     }
   },
@@ -120,33 +144,40 @@ export const contentEs: Content<ProjectId> = {
         title: 'Formación Educativa',
         items: [
           {
-            title: 'Ingenieria de Software',
-            date: '2022 - presente',
-            place: 'Universidad Tecnológica del Peru - UTP',
+            title: 'Ingeniería de Software',
+            date: '2022 - 2026',
+            icon: 'icon-[ph--graduation-cap]',
+            status: 'Egresado',
+            place: 'Universidad Tecnológica del Perú - UTP',
             link: 'https://www.utp.edu.pe/',
             bullets: [
-              'Actualmente curso el octavo ciclo de la carrera de Ingeniería de Software, complementando una formación académica sólida con más de 5 años de experiencia práctica en desarrollo web y móvil. Mi trayectoria me ha permitido dominar tecnologías modernas y adaptarme a los constantes cambios del sector. Durante este tiempo, he adquirido habilidades técnicas avanzadas en programación, arquitectura de software, bases de datos y metodologías ágiles, así como competencias clave como la resolución de problemas, trabajo en equipo y gestión de proyectos. Estoy comprometido con el aprendizaje continuo para mantenerme a la vanguardia tecnológica y aportar soluciones innovadoras que agreguen valor a los proyectos en los que participo.'
+              'Arquitectura de software, bases de datos y metodologías ágiles.',
+              'Proyectos integradores en Java, un videojuego en Godot y prácticas de criptografía.',
+              'Se suman más de 5 años de experiencia profesional en desarrollo web y móvil.'
             ]
           },
           {
             title: 'Certificación de JavaScript Avanzado',
             date: '2023 - 2024',
-            place: 'Universidad Nacional Mayor de San Marcos',
+            icon: 'icon-[ph--certificate]',
+            status: 'Certificado',
+            place: 'Universidad Nacional Mayor de San Marcos - UNMSM',
             link: 'https://www.unmsm.edu.pe/',
             bullets: [
-              'Certificación en JavaScript Avanzado, donde profundicé conceptos avanzados del lenguaje.',
-              'Esta formación me permitió dominar temas como el manejo de asincronía, patrones de diseño, optimización de rendimiento y mejores prácticas en desarrollo.',
-              'A través de proyectos prácticos, adquirí habilidades para escribir código limpio, eficiente y escalable, aplicando principios de programación funcional y orientada a objetos.',
-              'Esta certificación complementa mi experiencia profesional y me capacita para enfrentar desafíos complejos en el desarrollo de aplicaciones web modernas.'
+              'Asincronía, patrones de diseño y optimización de rendimiento.',
+              'Código limpio y escalable con programación funcional y orientada a objetos.'
             ]
           },
           {
             title: 'Computación e Informática',
             date: '2012 - 2015',
+            icon: 'icon-[ph--desktop]',
+            status: 'Egresado',
             place: 'Instituto Privado Superior Tecnológico - IDAT',
             link: 'https://www.idat.edu.pe/',
             bullets: [
-              'Egresado de una carrera técnica en desarrollo de software, donde obtuve una formación integral en programación, bases de datos, redes y seguridad informática. Durante este proceso, desarrollé habilidades clave como el pensamiento crítico, la resolución de problemas y el trabajo en equipo. Mi experiencia académica me preparó para diseñar, implementar y mantener soluciones informáticas que cumplan con los requerimientos del usuario final, siempre con un enfoque en la calidad y la mejora continua. Como profesional comprometido, me adapto constantemente a los avances tecnológicos y a las nuevas demandas del mercado para mantenerme actualizado y aportar valor en cada proyecto.'
+              'Programación, bases de datos, redes y seguridad informática.',
+              'Base técnica para diseñar, implementar y mantener soluciones de software.'
             ]
           }
         ]
