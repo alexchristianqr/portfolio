@@ -4,7 +4,6 @@ import type { ProjectId } from './projects.data'
 /** Textos en español. Los datos invariantes viven en `projects.data.ts` y `profile.data.ts`. */
 export const contentEs: Content<ProjectId> = {
   hero: {
-    intro: 'Soy',
     phrases: ['Ingeniero de Software', 'Desarrollador Full Stack', 'Líder Técnico con IA y SDD']
   },
   about: {

@@ -123,7 +123,7 @@ export interface ResumeCategory {
 
 /** Todo el texto largo de un idioma. `Id` ata los proyectos a los de `projects.data.ts`. */
 export interface Content<Id extends string = string> {
-  hero: { intro: string; phrases: string[] }
+  hero: { phrases: string[] }
   about: { paragraphs: string[] }
   skills: {
     intro: string
