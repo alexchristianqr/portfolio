@@ -60,6 +60,13 @@ export default defineConfig(({ mode }) => {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
+    // El servidor de desarrollo escucha en todas las interfaces (`0.0.0.0`) para abrir el sitio
+    // desde el móvil por la red local. Va aquí y no como `--host` en el script `dev`, así vale para
+    // cualquier forma de arrancar (`npm run dev`, `npx vite`, el IDE). Vite imprime la línea
+    // `Network:` con la URL a teclear en el móvil.
+    server: {
+      host: '0.0.0.0'
+    },
     build: {
       sourcemap: false
     }

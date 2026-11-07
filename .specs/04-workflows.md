@@ -13,6 +13,18 @@
 | `local.development` | `npm run dev`   | `.env.local.development`            |
 | `production`        | `npm run build` | `.env.production` o variables de CI |
 
+## Servidor de desarrollo
+
+`npm run dev` escucha siempre en todas las interfaces (`server.host: '0.0.0.0'` en
+`vite.config.ts`, no como bandera del script). Vite imprime dos URLs:
+
+- `Local:` para el navegador de tu máquina.
+- `Network:` (p. ej. `http://192.168.x.x:5173/portfolio/`) para abrir el sitio desde el móvil o
+  desde otro equipo de la misma red.
+
+Ojo: ese puerto queda accesible para toda la red local mientras dure el servidor; úsalo en redes
+de confianza.
+
 ## Scripts
 
 | Script               | Qué hace                                              |
