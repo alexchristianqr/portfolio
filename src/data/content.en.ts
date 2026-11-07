@@ -5,15 +5,12 @@ import type { ProjectId } from './projects.data'
 export const contentEn: Content<ProjectId> = {
   hero: {
     intro: "I'm",
-    phrases: ['passionate', 'logical', 'developer']
+    phrases: ['a Software Engineer', 'a Full Stack Developer', 'a Tech Lead with AI and SDD']
   },
   about: {
     paragraphs: [
-      "Software Engineer and Full Stack Developer with over 8 years of experience creating efficient, well-structured solutions focused on solving real problems. I'm passionate about technology when it serves a purpose: improving processes, connecting systems, and generating tangible value.",
-      'I have worked in the tourism and hospitality, administration, and finance sectors, where I designed and developed architectures capable of scaling and adapting to changes without sacrificing quality. I\'m interested in both the "how" and "why" of each solution, always seeking a balance between performance, maintainability, and business objectives.',
-      'I excel at being proactive, communicating clearly, working well in teams, and maintaining an open mindset toward constant learning. I enjoy writing great lines of code as much as I enjoy sharing knowledge, collaborating on solutions, or supporting the growth of others through mentoring.',
-      'I work with Spec Driven Development (SDD): before writing code I put the specification in writing —requirements, architecture decisions (ADRs) and one SPEC per feature— and that specification is the source of truth, for me and for the AI alike. I configure my tools so agents work with the right context: Kiro with steering, Powers and specs (requirements → design → tasks); Claude Code with CLAUDE.md/AGENTS.md, Skills, Hooks and subagents; and MCP servers that give them access to code, docs and data. AI speeds up execution, but direction and review stay with me: every change goes through lint, types, build and the spec that backs it.',
-      '💻 Technologies I frequently use: TypeScript, Laravel, NestJS, Express.js, MySQL, MongoDB, Redis, Serverless, Docker, and AWS. AI: Kiro, Claude Code and MCP.'
+      "Writing code is no longer the hard part. AI agents generate it in seconds. The hard part is deciding what to build, within which limits, and checking it came out right. According to Stack Overflow 2025, 84% of developers already use AI and 46% don't trust what it produces. That favors whoever has the judgment to direct and review. That is why I work with Spec Driven Development (SDD). Before coding I write the requirements, the architecture decisions (ADRs) and one SPEC per feature. That specification is the source of truth for me and for the AI. If the code contradicts it, there is a bug.",
+      'I have over 8 years in backend and full stack, in tourism and insurance among other sectors. Today I am Tech Lead at LimaTours and I run a team of 3 people that works with SDD. On that base I use Kiro to go from requirements to design and tasks, Claude Code with Skills, Hooks and subagents, and MCP servers that give agents access to code and data. All of it on TypeScript, NestJS and serverless AWS. AI executes faster when the specification is clear. Direction and review stay with me, and nothing is merged without passing lint, types, build and the spec. That is how projects end up stable, scalable and profitable: every decision is written down, can be reviewed, and nobody redoes what no one understood. This portfolio is built that way.'
     ]
   },
   skills: {
@@ -195,11 +192,22 @@ export const contentEn: Content<ProjectId> = {
         title: 'Professional Experience',
         items: [
           {
-            title: 'Backend Developer',
-            date: '04/2024 - Present',
+            title: 'Tech Lead',
+            date: '2025 - Present',
             place: 'LimaTours SAC',
             link: 'https://www.limatours.com.pe/',
             bullets: [
+              'I lead a team of 3 people that develops and evolves the tourism management applications. (AWS + Serverless + TypeScript)',
+              'We work with Spec Driven Development: the written specification is the source of truth and every change is reviewed against it.'
+            ]
+          },
+          {
+            title: 'Backend Developer',
+            date: '04/2024 - 2025',
+            place: 'LimaTours SAC',
+            link: 'https://www.limatours.com.pe/',
+            bullets: [
+              'I built and evolved the HyperGuest reservations product: monthly sales grew 1,400%, progressively over a year and a half.',
               'Development and maintenance of backend services for tourism management applications, ensuring high availability and performance. (AWS + Serverless + Node.js / PHP / TypeScript)',
               'Implementation of solutions to optimize internal processes and improve the end-user experience. (DynamoDB + Lambda)'
             ]
