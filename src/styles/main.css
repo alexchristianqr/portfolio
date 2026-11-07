@@ -55,6 +55,9 @@
   --logo-tile: #f1f5fb;
   --timeline: #1f5297;
 
+  /* Resaltador de ideas clave (`<mark>`): amarillo suave en claro, ámbar translúcido en oscuro. */
+  --mark: #fde68a;
+
   /* Estados del formulario. */
   --success: #18d26e;
   --danger: #ed3c0d;
@@ -82,6 +85,7 @@
   --icon-soft: #17324a;
   --logo-tile: #e6edf7;
   --timeline: #4d86d6;
+  --mark: rgb(250 204 21 / 0.28);
 
   --shadow-card: 0 4px 24px rgb(0 0 0 / 0.5);
 }
@@ -114,6 +118,7 @@
   --color-icon-soft: var(--icon-soft);
   --color-tile: var(--logo-tile);
   --color-timeline: var(--timeline);
+  --color-mark: var(--mark);
 
   --color-success: var(--success);
   --color-danger: var(--danger);
@@ -178,6 +183,16 @@
 
 /* v-reveal (src/directives/reveal.ts). La clase la añade JS, así que sin JS el contenido se ve. */
 @layer components {
+  /* Resaltador: franja inferior que sigue cada línea si el texto se parte (RichText). */
+  .highlight {
+    background: linear-gradient(transparent 35%, var(--mark) 35%);
+    color: inherit;
+    padding: 0 0.15em;
+    border-radius: 0.2em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
   .reveal-hidden,
   .reveal-visible {
     transition:
