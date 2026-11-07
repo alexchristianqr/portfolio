@@ -41,8 +41,19 @@ de confianza.
 
 ## Despliegue
 
-GitHub Actions (`.github/workflows/deployment.yml`, manual con `workflow_dispatch`): instala,
-valida (lint, formato, tipos), compila y publica `dist/` en la rama `gh-pages`.
+GitHub Actions (`.github/workflows/deployment.yml`): instala, valida (lint, formato, tipos),
+compila y publica `dist/` en la rama `gh-pages`, que es lo que sirve GitHub Pages.
+
+**Cuándo se publica** (solo estos dos casos):
+
+1. **Al fusionar un PR a `main`** (`push` a `main`). Flujo habitual: se trabaja en `dev`, se abre un
+   PR `dev` → `main` y, al fusionarlo, se publica. `main` está protegida: solo recibe cambios por PR.
+2. **A mano**, en Actions → Deployment → Run workflow, eligiendo la rama. Hay un solo sitio
+   publicado: desplegar otra rama sustituye la versión real.
+
+Nada más publica: un push a `dev` o a cualquier otra rama **no** despliega. Dos despliegues
+seguidos se encolan (`concurrency`) en vez de solaparse. Es gratis mientras el repositorio sea
+público (Pages y los minutos de Actions).
 
 Configuración en el repositorio (Settings → Secrets and variables → Actions):
 
