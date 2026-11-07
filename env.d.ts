@@ -19,6 +19,9 @@ interface ImportMetaEnv {
   readonly VITE_APP_GOOGLE_ANALITYCS?: string
 }
 
+/** Marca de compilación inyectada por `vite.config.ts` (`define`). Léela desde `src/config/build.ts`. */
+declare const __APP_BUILD__: import('./src/types/build').AppBuild
+
 interface ImportMeta {
   readonly env: ImportMetaEnv
 }

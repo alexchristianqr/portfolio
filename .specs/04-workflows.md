@@ -55,6 +55,24 @@ Nada más publica: un push a `dev` o a cualquier otra rama **no** despliega. Dos
 seguidos se encolan (`concurrency`) en vez de solaparse. Es gratis mientras el repositorio sea
 público (Pages y los minutos de Actions).
 
+### Cómo saber qué versión está publicada
+
+Cada compilación lleva una marca (la genera `vite.config.ts`: versión, commit corto, rama y hora UTC):
+
+- **En el pie de la página**: `© Copyright 2026 · a1b2c3d`. Al pasar el ratón muestra versión, rama y
+  hora de compilación.
+- **En el HTML**: `<meta name="build" content="4.0.0+a1b2c3d (main) …">` (ver código fuente).
+- **Como archivo**: `https://alexchristianqr.github.io/portfolio/build.json`, consultable desde la
+  terminal: `curl -s https://alexchristianqr.github.io/portfolio/build.json`.
+
+Para saber si un cambio ya está publicado, compara ese commit con el de `main`
+(`git rev-parse --short origin/main`). Un despliegue disparado por un merge lleva el commit **del
+merge**, no el del último commit de `dev`; el PR fusionado muestra ese commit. Un despliegue manual
+lleva el último commit de la rama elegida.
+
+GitHub Pages guarda en caché unos minutos: si aún ves el commit anterior, espera o añade un
+parámetro (`build.json?x=1`) para saltarte la caché.
+
 Configuración en el repositorio (Settings → Secrets and variables → Actions):
 
 - **Variables:** `VITE_APP_FILENAME_CV`, `VITE_APP_EMAILJS_BASE_URL`, `VITE_APP_TO_NAME`,

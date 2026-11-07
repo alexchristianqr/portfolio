@@ -1,4 +1,6 @@
-import { defineConfig, loadEnv } from 'vite'
+import { execSync } from 'node:child_process'
+import { readFileSync } from 'node:fs'
+import { defineConfig, loadEnv, type Plugin } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 import { fileURLToPath, URL } from 'node:url'
@@ -47,11 +49,69 @@ const assertEnv = (mode: string): void => {
   }
 }
 
+/** Ejecuta un comando de git; sin git (o fuera de un repo) devuelve cadena vacía en vez de fallar. */
+const git = (command: string): string => {
+  try {
+    return execSync(command, { stdio: ['ignore', 'pipe', 'ignore'] })
+      .toString()
+      .trim()
+  } catch {
+    return ''
+  }
+}
+
+/**
+ * Marca de compilación: qué versión del código es la que está publicada.
+ *
+ * En GitHub Actions el commit y la rama salen de `GITHUB_SHA` / `GITHUB_REF_NAME`; en local, de git.
+ * Con un push a `main` (el merge de un PR) el commit es el del propio merge, no el de `dev`.
+ */
+const buildInfo = (() => {
+  const pkg = JSON.parse(readFileSync('package.json', 'utf8')) as { version: string }
+  return {
+    version: pkg.version,
+    commit: (process.env.GITHUB_SHA ?? git('git rev-parse HEAD')).slice(0, 7) || 'sin-git',
+    branch:
+      process.env.GITHUB_REF_NAME ?? (git('git rev-parse --abbrev-ref HEAD') || 'desconocida'),
+    builtAt: new Date().toISOString()
+  }
+})()
+
+/**
+ * Publica la marca de dos formas, además de la que pinta el pie de página:
+ *  - `<meta name="build">` en el HTML (se ve con «ver código fuente», sin ejecutar JS).
+ *  - `build.json` junto al sitio, consultable con `curl`: <https://…/portfolio/build.json>.
+ */
+const buildMarker = (): Plugin => ({
+  name: 'build-marker',
+  transformIndexHtml: () => [
+    {
+      tag: 'meta',
+      attrs: {
+        name: 'build',
+        content: `${buildInfo.version}+${buildInfo.commit} (${buildInfo.branch}) ${buildInfo.builtAt}`
+      },
+      injectTo: 'head'
+    }
+  ],
+  generateBundle() {
+    this.emitFile({
+      type: 'asset',
+      fileName: 'build.json',
+      source: `${JSON.stringify(buildInfo, null, 2)}\n`
+    })
+  }
+})
+
 export default defineConfig(({ mode }) => {
   assertEnv(mode)
 
   return {
-    plugins: [vue(), tailwindcss()],
+    plugins: [vue(), tailwindcss(), buildMarker()],
+    // Constante que Vite sustituye al compilar; se lee desde `src/config/build.ts`.
+    define: {
+      __APP_BUILD__: JSON.stringify(buildInfo)
+    },
     // El sitio vive en https://<usuario>.github.io/portfolio/
     base: '/portfolio/',
     resolve: {

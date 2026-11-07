@@ -19,7 +19,8 @@ export const es = {
     menu: 'Menú de navegación',
     backToTop: 'Volver arriba',
     language: 'Idioma',
-    copyright: 'Copyright'
+    copyright: 'Copyright',
+    build: 'Versión {version} · rama {branch} · compilado el {date}'
   },
   theme: {
     label: 'Tema',
