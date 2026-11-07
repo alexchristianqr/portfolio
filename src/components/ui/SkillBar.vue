@@ -1,7 +1,18 @@
 <template>
-  <div v-reveal>
-    <img :src="icon" alt="" width="48" height="48" class="mb-1" loading="lazy" />
-    <span class="mb-1.5 block font-display text-sm font-semibold text-ink uppercase">{{
+  <div v-reveal class="flex flex-col gap-2">
+    <!-- Caja fija: los logos tienen proporciones distintas (de 1:1 a 2:1) y, sin ella, cada uno
+         mide lo que dicta su SVG y las barras de una misma fila quedan a alturas distintas. -->
+    <div class="flex size-14 items-center justify-center rounded-lg bg-tile p-2.5">
+      <img
+        :src="icon"
+        alt=""
+        width="48"
+        height="48"
+        class="size-full object-contain"
+        loading="lazy"
+      />
+    </div>
+    <span class="truncate font-display text-sm font-semibold text-ink uppercase" :title="name">{{
       name
     }}</span>
     <div

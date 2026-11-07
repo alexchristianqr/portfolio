@@ -51,6 +51,8 @@
   --track: #dce8f8;
   --chip: #e4edf9;
   --icon-soft: #dff3fc;
+  /* Base de los logos de tecnologías: clara en ambos temas, porque varios logos son negros. */
+  --logo-tile: #f1f5fb;
   --timeline: #1f5297;
 
   /* Estados del formulario. */
@@ -78,6 +80,7 @@
   --track: #1e2a44;
   --chip: #1b2a47;
   --icon-soft: #17324a;
+  --logo-tile: #e6edf7;
   --timeline: #4d86d6;
 
   --shadow-card: 0 4px 24px rgb(0 0 0 / 0.5);
@@ -109,6 +112,7 @@
   --color-track: var(--track);
   --color-chip: var(--chip);
   --color-icon-soft: var(--icon-soft);
+  --color-tile: var(--logo-tile);
   --color-timeline: var(--timeline);
 
   --color-success: var(--success);

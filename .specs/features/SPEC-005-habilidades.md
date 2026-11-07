@@ -14,3 +14,8 @@
 - **RF-03** — La barra se anima de 0 al nivel **una sola vez**, al entrar en pantalla.
 - **RF-04** — Cada barra es un `role="progressbar"` con valor y etiqueta («Nombre: N %»).
 - **RF-05** — Rejilla de 2, 3 o 6 columnas según el ancho.
+- **RF-06** — Todos los logos ocupan una caja idéntica de 56 px (logo de 36 px, `object-contain`)
+  sobre una base clara en ambos temas (`--logo-tile`), porque los SVG tienen proporciones distintas
+  y varios son negros. Resultado: en cada fila los nombres y las barras quedan a la misma altura.
+- **RF-07** — Un nombre largo se recorta con puntos suspensivos (no salta de línea), para no
+  desalinear la barra; el nombre completo queda en `title`.
