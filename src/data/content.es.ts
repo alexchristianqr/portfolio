@@ -199,7 +199,7 @@ export const contentEs: Content<ProjectId> = {
         items: [
           {
             title: 'Líder Técnico',
-            date: '2025 - Presente',
+            date: '01/2026 - Presente',
             place: 'LimaTours SAC',
             link: 'https://www.limatours.com.pe/',
             bullets: [
@@ -209,7 +209,7 @@ export const contentEs: Content<ProjectId> = {
           },
           {
             title: 'Backend Developer',
-            date: '04/2024 - 2025',
+            date: '04/2024 - 12/2025',
             place: 'LimaTours SAC',
             link: 'https://www.limatours.com.pe/',
             bullets: [
@@ -235,9 +235,9 @@ export const contentEs: Content<ProjectId> = {
               'Quality & Development Software SAC / Cliente: Empresas Jordan SA en Santiago - Chile',
             link: 'https://www.qdsgroup.com.pe/',
             bullets: [
-              'Implementación de servicios B2C de orquestación de canales para campañas de Email y SMS. (AWS Api Gateway + Lambda Functions + AWS Step Functions + NodeJS + Typescript)',
-              'Desarrollo en backend para administrar eficientemente los flujos de trabajo automatizado (procesos batch en Scaler). (AWS ECR + AWS EKS + Docker + NestJS + Typescript)',
-              'Desarrollo en backend y apoyo en frontend el servicio e integración para el acortamiento de URL. (AWS Cloud Formation + AWS RDS + Nodejs + Vue 3 + Typescript)'
+              'Como parte del equipo de desarrollo, construí servicios B2C que orquestan canales para campañas de Email y SMS. (AWS API Gateway + Lambda + Step Functions + Node.js + TypeScript)',
+              'Desarrollé el backend que administra flujos de trabajo automatizados y procesos batch (Scaler), desplegado en contenedores. (AWS ECR + EKS + Docker + NestJS + TypeScript)',
+              'Participé en el servicio y la integración de acortamiento de URL, con backend y apoyo en frontend. (AWS CloudFormation + RDS + Node.js + Vue 3 + TypeScript)'
             ]
           },
           {
@@ -246,9 +246,9 @@ export const contentEs: Content<ProjectId> = {
             place: 'Securitec Peru S.A.C',
             link: 'https://www.securitec.pe/',
             bullets: [
-              'Mantenimiento de aplicación web para gestionar campañas de envío de SMS masivos y mejorar las colas de envío. (Laravel 5 + Nodejs + Vue 2 + MySQL).',
-              'Desarrollo de aplicación web administrativa y webphone cliente instalable para gestionar campañas de llamadas VOIP. (Laravel 6 + Nodejs + Vue 2 + MySQL)',
-              'Desarrollo de aplicación web que integra API WhatsApp con Twilio, Telegram, Instagram, Facebook Messenger, Chatbot, pasarela de pagos con PayU y Paypal. (Nodejs + Vue 2 + MongoDB)'
+              'Di mantenimiento a la aplicación de campañas de SMS masivos y mejoré sus colas de envío. (Laravel 5 + Node.js + Vue 2 + MySQL)',
+              'Desarrollé la aplicación administrativa y el webphone instalable para gestionar campañas de llamadas VoIP. (Laravel 6 + Node.js + Vue 2 + MySQL)',
+              'Sumé un producto nuevo al portafolio de la empresa: una plataforma de mensajería omnicanal que integra WhatsApp (Twilio), Telegram, Instagram, Messenger y chatbot, con pasarelas de pago PayU y PayPal. (Node.js + Vue 2 + MongoDB)'
             ]
           },
           {
@@ -277,7 +277,7 @@ export const contentEs: Content<ProjectId> = {
             place: 'Hacom S.A.C',
             link: 'http://www.hacom.com.pe/',
             bullets: [
-              'Crear scripts automatizados de reportes con python para las estadísticas de localización satelital.'
+              'Automaticé con scripts en Python la generación de reportes de estadísticas de localización satelital.'
             ]
           }
         ]
