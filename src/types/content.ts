@@ -13,7 +13,7 @@ export type NavId = Exclude<SectionId, 'hero'>
 
 export interface NavLink {
   id: NavId
-  /** Clase de Bootstrap Icons (`bi-*`). */
+  /** Clase de icono Phosphor, literal completa: `icon-[ph--user]` (Tailwind solo emite lo que lee escrito). */
   icon: string
 }
 

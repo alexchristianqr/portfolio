@@ -32,11 +32,11 @@
             :class="{ 'text-sidebar-active': ui.activeSection === link.id }"
             @click="onNavigate(link.id)"
           >
-            <i
-              class="bi pr-2 text-2xl text-sidebar-icon transition-colors group-hover:text-brand"
+            <span
+              class="mr-2 text-2xl text-sidebar-icon transition-colors group-hover:text-brand"
               :class="[link.icon, { 'text-brand!': ui.activeSection === link.id }]"
               aria-hidden="true"
-            ></i>
+            ></span>
             <span>{{ t(`nav.${link.id}`) }}</span>
           </a>
         </li>
@@ -48,10 +48,10 @@
             class="group mb-2 flex items-center px-4 py-3 text-[15px] text-sidebar-fg transition-colors hover:text-sidebar-active"
             @click="trackEvent('#curriculumvitae')"
           >
-            <i
-              class="bi bi-download pr-2 text-2xl text-sidebar-icon transition-colors group-hover:text-brand"
+            <span
+              class="mr-2 icon-[ph--download-simple] text-2xl text-sidebar-icon transition-colors group-hover:text-brand"
               aria-hidden="true"
-            ></i>
+            ></span>
             <span>{{ t('nav.cv') }}</span>
           </a>
         </li>

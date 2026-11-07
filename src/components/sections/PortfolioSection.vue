@@ -76,14 +76,14 @@ const detail = computed<ProjectDetail | null>(() => {
     stackLabel: t('portfolio.stack'),
     closeLabel: t('portfolio.close'),
     links: [
-      { label: t('portfolio.viewSite'), icon: 'bi-link-45deg', href: project.link },
+      { label: t('portfolio.viewSite'), icon: 'icon-[ph--link]', href: project.link },
       project.repositoryPublic
         ? {
             label: t('portfolio.repositoryPublic'),
-            icon: 'bi-code-slash',
+            icon: 'icon-[ph--code]',
             href: project.repository
           }
-        : { label: t('portfolio.repositoryPrivate'), icon: 'bi-lock' }
+        : { label: t('portfolio.repositoryPrivate'), icon: 'icon-[ph--lock-simple]' }
     ]
   }
 })

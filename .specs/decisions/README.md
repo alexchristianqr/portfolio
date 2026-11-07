@@ -11,3 +11,4 @@ sustituye por otra.
 | [ADR-004](ADR-004-pinia-por-dominio.md)     | Pinia por dominio                            |
 | [ADR-005](ADR-005-tokens-y-modo-oscuro.md)  | Tokens de tema y modo oscuro                 |
 | [ADR-006](ADR-006-retirada-de-librerias.md) | Retirada de las librerías de la plantilla    |
+| [ADR-007](ADR-007-iconos-phosphor.md)       | Phosphor como única familia de iconos        |

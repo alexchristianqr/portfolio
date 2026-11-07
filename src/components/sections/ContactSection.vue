@@ -16,7 +16,7 @@
             <span
               class="inline-flex size-11 shrink-0 items-center justify-center rounded-full bg-icon-soft text-xl text-brand-text transition-colors group-hover:bg-brand-solid group-hover:text-white"
             >
-              <i class="bi" :class="item.icon" aria-hidden="true"></i>
+              <span :class="item.icon" aria-hidden="true"></span>
             </span>
             <div>
               <p class="font-semibold text-ink">{{ item.label }}</p>
@@ -79,12 +79,17 @@ const { form, submit } = useContactForm()
 
 const details = computed(() => [
   {
-    icon: 'bi-envelope',
+    icon: 'icon-[ph--envelope-simple]',
     label: t('contact.email'),
     value: profile.email,
     href: `mailto:${profile.email}`
   },
-  { icon: 'bi-geo-alt', label: t('contact.location'), value: profile.location, href: undefined }
+  {
+    icon: 'icon-[ph--map-pin]',
+    label: t('contact.location'),
+    value: profile.location,
+    href: undefined
+  }
 ])
 
 const labels = computed<ContactFormLabels>(() => ({

@@ -2,7 +2,7 @@
 
 | Campo        | Valor                                                  |
 | ------------ | ------------------------------------------------------ |
-| **Estado**   | aceptada                                               |
+| **Estado**   | aceptada (iconos: ver ADR-007)                         |
 | **Fecha**    | 2026-11-06                                             |
 | **Afecta a** | `src/styles/main.css`, `vite.config.ts`, `components/` |
 
@@ -16,7 +16,7 @@ visual y poder escalarla.
 
 Estilos con **Tailwind CSS v4** (configuración en CSS con `@theme`) y componentes interactivos
 con **Reka UI** (Dialog, Toast, ToggleGroup: sin estilos, con foco, teclado y ARIA resueltos).
-Bootstrap se retira; de Bootstrap Icons solo se conserva la fuente de iconos.
+Bootstrap se retira. (Se conservó provisionalmente la fuente de Bootstrap Icons; ADR-007 la sustituye.)
 
 ## Alternativas consideradas
 

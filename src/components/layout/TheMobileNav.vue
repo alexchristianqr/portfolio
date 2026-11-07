@@ -5,7 +5,7 @@
     :aria-label="t('layout.openMenu')"
     @click="ui.setMobileNav(true)"
   >
-    <i class="bi bi-list" aria-hidden="true"></i>
+    <span class="icon-[ph--list]" aria-hidden="true"></span>
   </button>
 
   <DialogRoot :open="ui.mobileNavOpen" @update:open="ui.setMobileNav">
@@ -20,7 +20,7 @@
           :aria-label="t('layout.closeMenu')"
           class="absolute top-3 right-3 inline-flex size-9 cursor-pointer items-center justify-center rounded-full bg-sidebar-chip text-xl text-white"
         >
-          <i class="bi bi-x-lg" aria-hidden="true"></i>
+          <span class="icon-[ph--x]" aria-hidden="true"></span>
         </DialogClose>
         <SidebarPanel @navigate="ui.setMobileNav(false)" />
       </DialogContent>

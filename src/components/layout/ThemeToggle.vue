@@ -14,7 +14,7 @@
       :title="t(`theme.${option.mode}`)"
       class="inline-flex size-8 cursor-pointer items-center justify-center rounded-full text-sidebar-fg transition-colors hover:text-sidebar-active data-[state=on]:bg-brand-solid data-[state=on]:text-white"
     >
-      <i class="bi" :class="option.icon" aria-hidden="true"></i>
+      <span :class="option.icon" aria-hidden="true"></span>
     </ToggleGroupItem>
   </ToggleGroupRoot>
 </template>
@@ -29,9 +29,9 @@ const { t } = useI18n()
 const theme = useThemeStore()
 
 const options: readonly { mode: ThemeMode; icon: string }[] = [
-  { mode: 'light', icon: 'bi-sun' },
-  { mode: 'dark', icon: 'bi-moon-stars' },
-  { mode: 'system', icon: 'bi-circle-half' }
+  { mode: 'light', icon: 'icon-[ph--sun]' },
+  { mode: 'dark', icon: 'icon-[ph--moon-stars]' },
+  { mode: 'system', icon: 'icon-[ph--circle-half]' }
 ]
 
 function onChange(value: unknown): void {

@@ -47,6 +47,11 @@ Los `id` de sección son anclas públicas: no se renombran.
   `brand-text` / `brand-solid`.
 - Animaciones con `motion-safe:` / `motion-reduce:`; foco con `focus-visible`.
 - Las clases las ordena `prettier-plugin-tailwindcss`: no se ordenan a mano.
+- **Iconos:** siempre la clase Phosphor **literal y completa** (`icon-[ph--user]`), también en los
+  datos (`navLinks`, `socials`…). Nunca se construye con plantillas (`` `icon-[ph--${x}]` ``):
+  Tailwind solo emite el CSS de lo que lee escrito y el icono saldría vacío sin ningún error.
+  Tamaño con `text-*`, color con `text-<token>` (el icono usa `currentColor`). El margen es
+  `mr-*`/`ml-*`, no `p*`: el icono mide `1em` con `border-box` y el relleno lo encogería.
 
 ## TypeScript
 

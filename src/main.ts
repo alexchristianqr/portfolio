@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
-import 'bootstrap-icons/font/bootstrap-icons.css'
 import './styles/main.css'
 import App from './App.vue'
 import { env } from './config/env'

@@ -12,28 +12,28 @@ export const profile: Profile = {
       id: 'linkedin',
       label: 'LinkedIn',
       url: 'https://linkedin.com/in/alexchristianqr/',
-      icon: 'bi-linkedin',
+      icon: 'icon-[ph--linkedin-logo]',
       inSidebar: true
     },
     {
       id: 'github',
       label: 'GitHub',
       url: 'https://github.com/alexchristianqr',
-      icon: 'bi-github',
+      icon: 'icon-[ph--github-logo]',
       inSidebar: true
     },
     {
       id: 'facebook',
       label: 'Facebook',
       url: 'https://facebook.com/alexchristianqr/',
-      icon: 'bi-facebook',
+      icon: 'icon-[ph--facebook-logo]',
       inSidebar: true
     },
     {
       id: 'twitter',
       label: 'X (Twitter)',
       url: 'https://twitter.com/alexchristianqr/',
-      icon: 'bi-twitter-x',
+      icon: 'icon-[ph--x-logo]',
       inSidebar: false
     }
   ]
@@ -41,11 +41,11 @@ export const profile: Profile = {
 
 /** Orden del menú. La etiqueta sale de `nav.<id>` en el diccionario i18n. */
 export const navLinks: readonly NavLink[] = [
-  { id: 'profile', icon: 'bi-person' },
-  { id: 'portfolio', icon: 'bi-journal-text' },
-  { id: 'skills', icon: 'bi-hand-thumbs-up' },
-  { id: 'summary', icon: 'bi-file-earmark-text' },
-  { id: 'contact', icon: 'bi-envelope' }
+  { id: 'profile', icon: 'icon-[ph--user]' },
+  { id: 'portfolio', icon: 'icon-[ph--notebook]' },
+  { id: 'skills', icon: 'icon-[ph--thumbs-up]' },
+  { id: 'summary', icon: 'icon-[ph--file-text]' },
+  { id: 'contact', icon: 'icon-[ph--envelope-simple]' }
 ]
 
 /** Ya ordenados de mayor a menor nivel (antes se ordenaban en `onMounted`). */

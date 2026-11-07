@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+/* Iconos: cada `icon-[ph--nombre]` que aparece en el código se emite como CSS (máscara SVG). */
+@plugin '@iconify/tailwind4';
+
 /*
  * TEMA — los colores solo se escriben aquí (ver .specs/decisions/ADR-005).
  *

@@ -47,13 +47,13 @@
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded bg-brand-solid px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-solid-hover"
               >
-                <i class="bi" :class="link.icon" aria-hidden="true"></i>{{ link.label }}
+                <span :class="link.icon" aria-hidden="true"></span>{{ link.label }}
               </a>
               <span
                 v-else
                 class="inline-flex items-center gap-2 rounded bg-chip px-4 py-2 text-sm font-semibold text-muted"
               >
-                <i class="bi" :class="link.icon" aria-hidden="true"></i>{{ link.label }}
+                <span :class="link.icon" aria-hidden="true"></span>{{ link.label }}
               </span>
             </li>
           </ul>
@@ -63,7 +63,7 @@
           :aria-label="project.closeLabel"
           class="absolute top-3 right-3 inline-flex size-9 items-center justify-center rounded-full bg-sidebar/70 text-white transition-colors hover:bg-sidebar"
         >
-          <i class="bi bi-x-lg" aria-hidden="true"></i>
+          <span class="icon-[ph--x]" aria-hidden="true"></span>
         </DialogClose>
       </DialogContent>
     </DialogPortal>

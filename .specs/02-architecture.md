@@ -9,7 +9,7 @@
 | i18n        | vue-i18n (`legacy: false`)                   | Claves tipadas contra `es.ts`.                     |
 | Estilos     | Tailwind CSS v4 (`@tailwindcss/vite`)        | Config en CSS (`@theme`), sin `tailwind.config`.   |
 | Componentes | Reka UI                                      | Dialog, Toast, ToggleGroup (headless, accesibles). |
-| Iconos      | Bootstrap Icons (solo la fuente)             | Clases `bi-*`.                                     |
+| Iconos      | Phosphor vía `@iconify/tailwind4`            | Clases `icon-[ph--nombre]`; sin fuente ni JS.      |
 | Build       | Vite 6 + `vue-tsc`                           | Alias `@` → `src/`, `base: '/portfolio/'`.         |
 | Calidad     | ESLint (flat) + Prettier + Husky/lint-staged | Prettier ordena clases de Tailwind.                |
 | Runtime     | Node ≥ 22                                    | `.nvmrc`.                                          |
@@ -78,3 +78,4 @@ Ver [ADR-005](decisions/ADR-005-tokens-y-modo-oscuro.md).
 - [ADR-004 — Pinia por dominio](decisions/ADR-004-pinia-por-dominio.md)
 - [ADR-005 — Tokens de tema y modo oscuro](decisions/ADR-005-tokens-y-modo-oscuro.md)
 - [ADR-006 — Retirada de las librerías de la plantilla](decisions/ADR-006-retirada-de-librerias.md)
+- [ADR-007 — Phosphor como única familia de iconos](decisions/ADR-007-iconos-phosphor.md)

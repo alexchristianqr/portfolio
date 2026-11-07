@@ -12,7 +12,7 @@
         :aria-label="closeLabel"
         class="-mt-0.5 ml-auto inline-flex size-6 shrink-0 cursor-pointer items-center justify-center text-muted hover:text-ink"
       >
-        <i class="bi bi-x-lg" aria-hidden="true"></i>
+        <span class="icon-[ph--x]" aria-hidden="true"></span>
       </ToastClose>
     </ToastRoot>
     <ToastViewport

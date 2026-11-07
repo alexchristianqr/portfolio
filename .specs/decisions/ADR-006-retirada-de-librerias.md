@@ -18,7 +18,7 @@ llegar a dispararse.
 Se sustituyen por Vue nativo y se eliminan: Typed.js → `useTypewriter`; Isotope →
 `useProjectFilter` + `TransitionGroup`; GLightbox → `ProjectDialog`; AOS → `v-reveal`;
 Waypoints → `v-progress`; axios → `fetch`; vue-toastification → `AppToast`; Boxicons → Bootstrap
-Icons; Vuex → Pinia. Swiper, PureCounter y jQuery se retiran sin sustituto.
+Icons (después sustituido por Phosphor, ADR-007); Vuex → Pinia. Swiper, PureCounter y jQuery se retiran sin sustituto.
 
 ## Alternativas consideradas
 

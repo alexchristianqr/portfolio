@@ -9,7 +9,7 @@
         :aria-label="link.label"
         class="inline-flex size-9 items-center justify-center rounded-full bg-sidebar-chip text-lg text-white transition-colors hover:bg-brand"
       >
-        <i class="bi" :class="link.icon" aria-hidden="true"></i>
+        <span :class="link.icon" aria-hidden="true"></span>
       </a>
     </li>
   </ul>
