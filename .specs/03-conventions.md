@@ -73,7 +73,8 @@ En español, explican **por qué**, no qué hace la línea.
 
 ## Commits y ramas
 
-- `main` es la rama principal; el trabajo va en ramas `feat/…`, `fix/…`.
+- `dev` es la rama de trabajo y `main` la principal: los cambios se integran con un PR de `dev` a
+  `main`. No hay otras ramas de larga vida (`gh-pages` la genera el despliegue y nunca se edita a mano).
 - Mensajes en español, imperativo, una línea: `agrega filtro de proyectos`.
 - El hook `pre-commit` ejecuta lint-staged (ESLint + Prettier). No se usa `--no-verify`.
 - Un commit no mezcla cambio de comportamiento con reformateo masivo.
