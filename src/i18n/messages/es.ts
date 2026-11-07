@@ -28,6 +28,9 @@ export const es = {
     dark: 'Oscuro',
     system: 'Sistema'
   },
+  resume: {
+    present: 'Presente'
+  },
   portfolio: {
     filtersLabel: 'Filtrar proyectos por categoría',
     filters: {
@@ -58,7 +61,6 @@ export const es = {
     viewGrid: 'Cuadrícula',
     viewList: 'Lista'
   },
-  skills: { levelOf: '{name}: {level} %' },
   contact: {
     activeMedia: 'Medios Activos',
     activeMediaText:

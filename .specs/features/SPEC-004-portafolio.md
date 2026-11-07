@@ -34,7 +34,8 @@
   (todos los que cumplen el filtro, no solo los visibles), con botones o con las flechas ←/→. Da
   la vuelta al llegar al final y muestra la posición («3 de 21»).
 - **RF-11** — El diálogo se cierra con Esc, con el botón de cierre o pulsando fuera; el foco
-  vuelve a la tarjeta que lo abrió.
+  vuelve a la tarjeta que lo abrió. El botón de cierre (X) es **persistente**: queda fijo en la
+  esquina superior (`sticky`) aunque el contenido del diálogo haga scroll.
 - **RF-12** — Un proyecto sin resumen muestra tarjeta y diálogo sin ese bloque (no hay campos
   vacíos).
 - **RF-13** — Dos vistas, conmutables con un selector (Cuadrícula / Lista): la **rejilla** de
@@ -66,5 +67,7 @@
 
 - Las flechas se escuchan en un `div` interior y no en `<DialogContent>`: Reka reenvía los
   atributos por varias capas y el manejador se ejecutaba dos veces por pulsación.
-- Los proyectos «Blog Personal», «Blog CMS Personal», «Exámen Virtual» y «Restaurante Sushi
-  Delivery» usan la imagen genérica de GitHub; conviene sustituirla por una captura real.
+- Los proyectos «Blog Personal», «Blog CMS Personal», «Exámen Virtual», «Restaurante Sushi
+  Delivery» y «Bicinav» usan la imagen genérica de GitHub; conviene sustituirla por una captura real.
+- Todo proyecto declara `stack` (iconos de `public/assets/images/icons/`, ver `TechSlug`) y lleva
+  `summary` en ambos idiomas. «Havítan Landing» y «Bicinav» abren la lista (los más recientes).

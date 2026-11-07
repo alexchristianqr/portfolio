@@ -40,8 +40,16 @@ export interface Profile {
 
 export interface Skill {
   name: string
-  /** 0–100. */
-  level: number
+  /** Archivo en `public/assets/images/icons/`. */
+  icon: string
+}
+
+/** Herramienta o práctica de trabajo (IA, metodologías). Su definición vive en `Content.skills.concepts`. */
+export type ConceptId = 'claude' | 'mcp' | 'copilot' | 'chatgpt' | 'kiro' | 'sdd' | 'solid' | 'tdd'
+
+export interface Concept {
+  id: ConceptId
+  name: string
   /** Archivo en `public/assets/images/icons/`. */
   icon: string
 }
@@ -50,16 +58,29 @@ export type ProjectCategory = 'app' | 'microservice' | 'mobile' | 'landing'
 
 /** Nombre del archivo SVG (sin extensión) en `public/assets/images/icons/`. */
 export type TechSlug =
+  | 'android'
   | 'angular'
+  | 'aws'
   | 'bootstrap'
   | 'css'
+  | 'docker'
+  | 'express'
   | 'firebase'
   | 'git'
   | 'html5'
   | 'ionic'
+  | 'java'
   | 'javascript'
+  | 'kotlin'
+  | 'laravel'
   | 'material-design'
+  | 'mongodb'
+  | 'mysql'
+  | 'nestjs'
+  | 'nodejs'
   | 'nuxtjs'
+  | 'php'
+  | 'python'
   | 'typescript'
   | 'vue'
 
@@ -83,7 +104,10 @@ export interface ProjectText {
 
 export interface ResumeItem {
   title: string
+  /** `MM/AAAA - MM/AAAA`, `AAAA - AAAA`, o `… - Presente` si sigue abierto. */
   date?: string
+  /** Insignia corta junto a la fecha: «Egresado», «Certificado». */
+  status?: string
   place: string
   link?: string
   bullets: string[]
@@ -99,9 +123,16 @@ export interface ResumeCategory {
 
 /** Todo el texto largo de un idioma. `Id` ata los proyectos a los de `projects.data.ts`. */
 export interface Content<Id extends string = string> {
-  hero: { intro: string; phrases: string[] }
+  hero: { phrases: string[] }
   about: { paragraphs: string[] }
-  skills: { intro: string }
+  skills: {
+    intro: string
+    stackTitle: string
+    conceptsTitle: string
+    conceptsIntro: string
+    /** Definición de cada concepto: qué es y cómo lo uso. */
+    concepts: Record<ConceptId, string>
+  }
   portfolio: { intro: string; projects: Record<Id, ProjectText> }
   resume: { categories: ResumeCategory[] }
   contact: { intro: string }
