@@ -1,7 +1,7 @@
 import { computed } from 'vue'
 import { contentEn } from '@/data/content.en'
 import { contentEs } from '@/data/content.es'
-import { profile, navLinks, skills } from '@/data/profile.data'
+import { concepts, profile, navLinks, skills } from '@/data/profile.data'
 import { projects, type ProjectId } from '@/data/projects.data'
 import { useLocaleStore } from '@/stores/locale.store'
 import type { Content, Project, ProjectText } from '@/types/content'
@@ -22,5 +22,5 @@ export function useContent() {
     projects.map((project) => ({ ...project, ...content.value.portfolio.projects[project.id] }))
   )
 
-  return { content, projectViews, profile, navLinks, skills }
+  return { content, projectViews, profile, navLinks, skills, concepts }
 }

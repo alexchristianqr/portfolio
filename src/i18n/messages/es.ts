@@ -28,6 +28,9 @@ export const es = {
     dark: 'Oscuro',
     system: 'Sistema'
   },
+  resume: {
+    present: 'Presente'
+  },
   portfolio: {
     filtersLabel: 'Filtrar proyectos por categoría',
     filters: {

@@ -9,7 +9,7 @@ export const contentEs: Content<ProjectId> = {
   },
   about: {
     paragraphs: [
-      'Ingeniero de Software y Desarrollador Full Stack con más de 5 años creando soluciones eficientes, bien estructuradas y enfocadas en resolver problemas reales. Me apasiona la tecnología cuando tiene propósito: mejorar procesos, conectar sistemas y generar valor tangible.',
+      'Ingeniero de Software y Desarrollador Full Stack con más de 8 años creando soluciones eficientes, bien estructuradas y enfocadas en resolver problemas reales. Me apasiona la tecnología cuando tiene propósito: mejorar procesos, conectar sistemas y generar valor tangible.',
       'He trabajado en los sectores de turismo y hotelería, administración y finanzas, donde he diseñado y desarrollado arquitecturas capaces de escalar y adaptarse a los cambios sin sacrificar calidad. Me interesa tanto el "cómo" como el "para qué" de cada solución, buscando siempre un equilibrio entre rendimiento, mantenibilidad y objetivos del negocio.',
       'Me destaco por ser proactivo, comunicarme con claridad, trabajar bien en equipo y mantener una mentalidad abierta al aprendizaje constante. Disfruto tanto de escribir buenas líneas de código como de compartir conocimientos, colaborar en soluciones o acompañar el crecimiento de otros a través de mentoría.',
       'Trabajo con Spec Driven Development (SDD): antes de escribir código dejo la especificación por escrito —requisitos, decisiones de arquitectura (ADR) y una SPEC por funcionalidad— y esa especificación es la fuente de verdad, tanto para mí como para la IA. Configuro bien mis herramientas para que los agentes trabajen con el contexto correcto: Kiro con steering, Powers y specs (requisitos → diseño → tareas); Claude Code con CLAUDE.md/AGENTS.md, Skills, Hooks y subagentes; y servidores MCP que les dan acceso a código, documentación y datos. La IA acelera la ejecución, pero la dirección y la revisión son mías: cada cambio pasa por lint, tipos, build y por la spec que lo respalda.',
@@ -18,7 +18,25 @@ export const contentEs: Content<ProjectId> = {
   },
   skills: {
     intro:
-      'A lo largo de todos estos años, he utilizado muchas tecnologías y vivido muchas experiencias. Estas han sido de gran utilidad en el desarrollo de software funcional, seguro y escalable.'
+      'Esta es la base técnica que domino a fondo y las herramientas y prácticas con las que analizo, diseño y valido el software.',
+    stackTitle: 'Stack principal',
+    conceptsTitle: 'IA y metodologías',
+    conceptsIntro:
+      'No me quedo en usar las herramientas: defino qué problema resuelven, qué decisiones respaldan y cómo verifico su resultado.',
+    concepts: {
+      sdd: 'Spec Driven Development: la especificación escrita (requisitos, ADR y una SPEC por funcionalidad) es la fuente de verdad. Analizo y acuerdo el «qué» antes del «cómo», y cada cambio se valida contra su spec.',
+      claude:
+        'Asistente de IA para analizar código, proponer diseños y ejecutar cambios acotados. Lo oriento con CLAUDE.md, Skills, Hooks y subagentes; la revisión final es mía.',
+      mcp: 'Model Context Protocol: estándar abierto que conecta a la IA con código, documentación y datos mediante servidores. Le da contexto real en lugar de suposiciones.',
+      kiro: 'IDE con IA centrado en especificaciones: steering, Powers y specs que bajan de requisitos a diseño y tareas. Lo uso para llevar SDD de forma ordenada.',
+      copilot:
+        'Asistente de código dentro del editor. Lo uso para completar patrones repetitivos y explorar alternativas, siempre contrastando el resultado.',
+      chatgpt:
+        'Asistente conversacional para contrastar enfoques, investigar y documentar. Útil para pensar un problema en voz alta antes de decidir.',
+      solid:
+        'Cinco principios de diseño orientado a objetos (responsabilidad única, abierto/cerrado, Liskov, segregación de interfaces e inversión de dependencias) para código mantenible y que cambia sin romperse.',
+      tdd: 'Test Driven Development: escribo la prueba que falla, la hago pasar y refactorizo. El diseño nace de definir primero el comportamiento esperado.'
+    }
   },
   portfolio: {
     intro:
@@ -146,20 +164,18 @@ export const contentEs: Content<ProjectId> = {
           {
             title: 'Ingeniería de Software',
             date: '2022 - 2026',
-            icon: 'icon-[ph--graduation-cap]',
             status: 'Egresado',
             place: 'Universidad Tecnológica del Perú - UTP',
             link: 'https://www.utp.edu.pe/',
             bullets: [
               'Arquitectura de software, bases de datos y metodologías ágiles.',
               'Proyectos integradores en Java, un videojuego en Godot y prácticas de criptografía.',
-              'Se suman más de 5 años de experiencia profesional en desarrollo web y móvil.'
+              'Se suman más de 8 años de experiencia profesional en desarrollo web y móvil.'
             ]
           },
           {
             title: 'Certificación de JavaScript Avanzado',
             date: '2023 - 2024',
-            icon: 'icon-[ph--certificate]',
             status: 'Certificado',
             place: 'Universidad Nacional Mayor de San Marcos - UNMSM',
             link: 'https://www.unmsm.edu.pe/',
@@ -171,7 +187,6 @@ export const contentEs: Content<ProjectId> = {
           {
             title: 'Computación e Informática',
             date: '2012 - 2015',
-            icon: 'icon-[ph--desktop]',
             status: 'Egresado',
             place: 'Instituto Privado Superior Tecnológico - IDAT',
             link: 'https://www.idat.edu.pe/',

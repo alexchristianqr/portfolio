@@ -25,6 +25,9 @@ export const en: MessageSchema = {
     dark: 'Dark',
     system: 'System'
   },
+  resume: {
+    present: 'Present'
+  },
   portfolio: {
     filtersLabel: 'Filter projects by category',
     filters: {

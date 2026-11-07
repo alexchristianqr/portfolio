@@ -46,6 +46,16 @@ export interface Skill {
   icon: string
 }
 
+/** Herramienta o práctica de trabajo (IA, metodologías). Su definición vive en `Content.skills.concepts`. */
+export type ConceptId = 'claude' | 'mcp' | 'copilot' | 'chatgpt' | 'kiro' | 'sdd' | 'solid' | 'tdd'
+
+export interface Concept {
+  id: ConceptId
+  name: string
+  /** Archivo en `public/assets/images/icons/`. */
+  icon: string
+}
+
 export type ProjectCategory = 'app' | 'microservice' | 'mobile' | 'landing'
 
 /** Nombre del archivo SVG (sin extensión) en `public/assets/images/icons/`. */
@@ -96,9 +106,8 @@ export interface ProjectText {
 
 export interface ResumeItem {
   title: string
+  /** `MM/AAAA - MM/AAAA`, `AAAA - AAAA`, o `… - Presente` si sigue abierto. */
   date?: string
-  /** Clase de icono Phosphor, literal completa (solo la usan las tarjetas de formación). */
-  icon?: string
   /** Insignia corta junto a la fecha: «Egresado», «Certificado». */
   status?: string
   place: string
@@ -118,7 +127,14 @@ export interface ResumeCategory {
 export interface Content<Id extends string = string> {
   hero: { intro: string; phrases: string[] }
   about: { paragraphs: string[] }
-  skills: { intro: string }
+  skills: {
+    intro: string
+    stackTitle: string
+    conceptsTitle: string
+    conceptsIntro: string
+    /** Definición de cada concepto: qué es y cómo lo uso. */
+    concepts: Record<ConceptId, string>
+  }
   portfolio: { intro: string; projects: Record<Id, ProjectText> }
   resume: { categories: ResumeCategory[] }
   contact: { intro: string }

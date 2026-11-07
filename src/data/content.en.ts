@@ -9,7 +9,7 @@ export const contentEn: Content<ProjectId> = {
   },
   about: {
     paragraphs: [
-      "Software Engineer and Full Stack Developer with over 5 years of experience creating efficient, well-structured solutions focused on solving real problems. I'm passionate about technology when it serves a purpose: improving processes, connecting systems, and generating tangible value.",
+      "Software Engineer and Full Stack Developer with over 8 years of experience creating efficient, well-structured solutions focused on solving real problems. I'm passionate about technology when it serves a purpose: improving processes, connecting systems, and generating tangible value.",
       'I have worked in the tourism and hospitality, administration, and finance sectors, where I designed and developed architectures capable of scaling and adapting to changes without sacrificing quality. I\'m interested in both the "how" and "why" of each solution, always seeking a balance between performance, maintainability, and business objectives.',
       'I excel at being proactive, communicating clearly, working well in teams, and maintaining an open mindset toward constant learning. I enjoy writing great lines of code as much as I enjoy sharing knowledge, collaborating on solutions, or supporting the growth of others through mentoring.',
       'I work with Spec Driven Development (SDD): before writing code I put the specification in writing —requirements, architecture decisions (ADRs) and one SPEC per feature— and that specification is the source of truth, for me and for the AI alike. I configure my tools so agents work with the right context: Kiro with steering, Powers and specs (requirements → design → tasks); Claude Code with CLAUDE.md/AGENTS.md, Skills, Hooks and subagents; and MCP servers that give them access to code, docs and data. AI speeds up execution, but direction and review stay with me: every change goes through lint, types, build and the spec that backs it.',
@@ -18,7 +18,25 @@ export const contentEn: Content<ProjectId> = {
   },
   skills: {
     intro:
-      'Throughout all these years, I have used many technologies and lived many experiences. These have been very useful in the development of functional, secure and scalable software.'
+      'This is the technical foundation I know in depth, plus the tools and practices I use to analyse, design and validate software.',
+    stackTitle: 'Core stack',
+    conceptsTitle: 'AI and methodologies',
+    conceptsIntro:
+      "I don't just use the tools: I define which problem they solve, which decisions they back and how I verify their output.",
+    concepts: {
+      sdd: 'Spec Driven Development: the written specification (requirements, ADRs and one SPEC per feature) is the source of truth. I analyse and agree the “what” before the “how”, and every change is validated against its spec.',
+      claude:
+        'AI assistant to analyse code, propose designs and run scoped changes. I steer it with CLAUDE.md, Skills, Hooks and subagents; the final review is mine.',
+      mcp: 'Model Context Protocol: an open standard that connects AI to code, documentation and data through servers. It gives the model real context instead of guesses.',
+      kiro: 'Spec-centred AI IDE: steering, Powers and specs that flow from requirements to design to tasks. I use it to run SDD in an orderly way.',
+      copilot:
+        'In-editor coding assistant. I use it for repetitive patterns and to explore alternatives, always checking the result.',
+      chatgpt:
+        'Conversational assistant to compare approaches, research and document. Useful for thinking a problem through out loud before deciding.',
+      solid:
+        'Five object-oriented design principles (single responsibility, open/closed, Liskov, interface segregation and dependency inversion) for maintainable code that changes without breaking.',
+      tdd: 'Test Driven Development: I write the failing test, make it pass and refactor. Design comes from defining the expected behaviour first.'
+    }
   },
   portfolio: {
     intro:
@@ -140,20 +158,18 @@ export const contentEn: Content<ProjectId> = {
           {
             title: 'Software Engineering',
             date: '2022 - 2026',
-            icon: 'icon-[ph--graduation-cap]',
             status: 'Graduate',
             place: 'Universidad Tecnológica del Perú - UTP',
             link: 'https://www.utp.edu.pe/',
             bullets: [
               'Software architecture, databases and agile methodologies.',
               'Capstone projects in Java, a video game in Godot and cryptography labs.',
-              'Backed by more than 5 years of professional experience in web and mobile development.'
+              'Backed by more than 8 years of professional experience in web and mobile development.'
             ]
           },
           {
             title: 'Certification in Advanced JavaScript',
             date: '2023 - 2024',
-            icon: 'icon-[ph--certificate]',
             status: 'Certified',
             place: 'Universidad Nacional Mayor de San Marcos - UNMSM',
             link: 'https://www.unmsm.edu.pe/',
@@ -165,7 +181,6 @@ export const contentEn: Content<ProjectId> = {
           {
             title: 'Computing and Information Technology',
             date: '2012 - 2015',
-            icon: 'icon-[ph--desktop]',
             status: 'Graduate',
             place: 'Instituto Privado Superior Tecnológico - IDAT',
             link: 'https://www.idat.edu.pe/',
