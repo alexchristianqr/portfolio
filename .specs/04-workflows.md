@@ -57,8 +57,8 @@ público (Pages y los minutos de Actions).
 
 Configuración en el repositorio (Settings → Secrets and variables → Actions):
 
-- **Variables:** `VITE_APP_APPURL`, `VITE_APP_FILENAME_CV`, `VITE_APP_EMAILJS_BASE_URL`,
-  `VITE_APP_TO_NAME`, `VITE_APP_TO_EMAIL`.
+- **Variables:** `VITE_APP_FILENAME_CV`, `VITE_APP_EMAILJS_BASE_URL`, `VITE_APP_TO_NAME`,
+  `VITE_APP_TO_EMAIL`, y opcional `VITE_APP_APPURL` (hoy no se lee en el código).
 - **Secretos:** `VITE_APP_EMAILJS_SERVICE_ID`, `VITE_APP_EMAILJS_TEMPLATE_ID`,
   `VITE_APP_EMAILJS_PUBLIC_KEY`, y opcional `VITE_APP_GOOGLE_ANALITYCS`.
 

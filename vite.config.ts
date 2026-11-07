@@ -5,7 +5,6 @@ import { fileURLToPath, URL } from 'node:url'
 
 /** Variables que el proyecto necesita sí o sí. Ver `.env.example`. */
 const REQUIRED_ENV = [
-  'VITE_APP_APPURL',
   'VITE_APP_FILENAME_CV',
   'VITE_APP_EMAILJS_BASE_URL',
   'VITE_APP_EMAILJS_SERVICE_ID',

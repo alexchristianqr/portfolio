@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 # Si faltan las variables obligatorias, `vite build` aborta con la lista (ver vite.config.ts):
-# nunca se publica un formulario de contacto roto. VITE_APP_GOOGLE_ANALITYCS es opcional.
+# nunca se publica un formulario de contacto roto. VITE_APP_GOOGLE_ANALITYCS y VITE_APP_APPURL son opcionales.
 env:
   VITE_APP_APPURL: ${{ vars.VITE_APP_APPURL }}
   VITE_APP_FILENAME_CV: ${{ vars.VITE_APP_FILENAME_CV }}
