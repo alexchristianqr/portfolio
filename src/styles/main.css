@@ -1,0 +1,184 @@
+@import 'tailwindcss';
+
+/*
+ * TEMA — los colores solo se escriben aquí (ver .specs/decisions/ADR-005).
+ *
+ * Tres bloques, de abajo arriba:
+ *   1. :root / [data-theme='dark']   valores semánticos (--surface, --text…) que CAMBIAN con el tema
+ *   2. @theme inline                  los publica como utilidades (bg-surface, text-heading…)
+ *   3. @layer base/components         estilos globales mínimos
+ *
+ * `inline` hace que las utilidades lean `var(--surface)` en lugar de copiar su valor: así el
+ * modo oscuro solo redefine variables y casi ningún componente necesita `dark:`.
+ */
+
+/* Un solo atributo manda: <html data-theme="dark"> (lo pone theme.store y el script de index.html). */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+:root {
+  color-scheme: light;
+
+  /* Marca. `--brand` es el acento decorativo; para TEXTO o relleno con texto blanco se usa
+     `--brand-solid`/`--brand-text`, porque #149ddd sobre blanco da ~3:1 y no llega a AA. */
+  --brand: #149ddd;
+  --brand-hover: #37b3ed;
+  --brand-solid: #0e79a9;
+  --brand-solid-hover: #0b6590;
+  --brand-text: #0e79a9;
+
+  /* Barra lateral y pie: oscuros en ambos temas. */
+  --sidebar: #040b14;
+  --sidebar-fg: #a8a9b4;
+  --sidebar-fg-active: #ffffff;
+  --sidebar-icon: #6f7180;
+  --sidebar-chip: #212431;
+  --sidebar-ring: #2c2f3f;
+
+  /* Superficies y texto. */
+  --surface: #ffffff;
+  --surface-band: #f5f8fd;
+  --surface-raised: #ffffff;
+  --text: #272829;
+  --text-muted: #5b6070;
+  --heading: #173b6c;
+  --ink: #050d18;
+  --border: #e0e1e1;
+
+  /* Acentos suaves. */
+  --track: #dce8f8;
+  --chip: #e4edf9;
+  --icon-soft: #dff3fc;
+  --timeline: #1f5297;
+
+  /* Estados del formulario. */
+  --success: #18d26e;
+  --danger: #ed3c0d;
+
+  --overlay: rgb(5 13 24 / 0.55);
+  --shadow-card: 0 4px 24px rgb(5 13 24 / 0.12);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --brand-text: #37b3ed;
+
+  --surface: #0b1220;
+  --surface-band: #0f1a2e;
+  --surface-raised: #131d33;
+  --text: #d6d9e0;
+  --text-muted: #9aa3b5;
+  --heading: #8bb8f0;
+  --ink: #f1f5f9;
+  --border: #26324a;
+
+  --track: #1e2a44;
+  --chip: #1b2a47;
+  --icon-soft: #17324a;
+  --timeline: #4d86d6;
+
+  --shadow-card: 0 4px 24px rgb(0 0 0 / 0.5);
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-solid: var(--brand-solid);
+  --color-brand-solid-hover: var(--brand-solid-hover);
+  --color-brand-text: var(--brand-text);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-fg: var(--sidebar-fg);
+  --color-sidebar-active: var(--sidebar-fg-active);
+  --color-sidebar-icon: var(--sidebar-icon);
+  --color-sidebar-chip: var(--sidebar-chip);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-surface: var(--surface);
+  --color-band: var(--surface-band);
+  --color-raised: var(--surface-raised);
+  --color-body: var(--text);
+  --color-muted: var(--text-muted);
+  --color-heading: var(--heading);
+  --color-ink: var(--ink);
+  --color-line: var(--border);
+
+  --color-track: var(--track);
+  --color-chip: var(--chip);
+  --color-icon-soft: var(--icon-soft);
+  --color-timeline: var(--timeline);
+
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-overlay: var(--overlay);
+
+  --shadow-card: var(--shadow-card);
+}
+
+@theme {
+  /* La barra lateral se muestra fija desde 1200px, como en el diseño original (antes 1199px). */
+  --breakpoint-xl: 75rem;
+
+  --font-sans: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Poppins', 'Raleway', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --animate-caret: caret 1s steps(1) infinite;
+  @keyframes caret {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--surface);
+    color: var(--text);
+    font-family: var(--font-sans);
+  }
+
+  /* Anillo de foco visible y consistente en todo lo interactivo. */
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+}
+
+/* v-reveal (src/directives/reveal.ts). La clase la añade JS, así que sin JS el contenido se ve. */
+@layer components {
+  .reveal-hidden,
+  .reveal-visible {
+    transition:
+      opacity 0.7s ease-out,
+      transform 0.7s ease-out;
+  }
+
+  .reveal-hidden {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-hidden,
+    .reveal-visible {
+      transition: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
