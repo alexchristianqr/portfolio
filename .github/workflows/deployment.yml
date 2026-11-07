@@ -1,8 +1,14 @@
 name: Deployment
 
 on:
-  workflow_dispatch:  # Permite ejecutar el flujo de trabajo manualmente
+  workflow_dispatch: # Se ejecuta a mano desde la pestaña Actions
 
+# El deploy empuja a la rama gh-pages con GITHUB_TOKEN.
+permissions:
+  contents: write
+
+# Si faltan las variables obligatorias, `vite build` aborta con la lista (ver vite.config.ts):
+# nunca se publica un formulario de contacto roto. VITE_APP_GOOGLE_ANALITYCS es opcional.
 env:
   VITE_APP_APPURL: ${{ vars.VITE_APP_APPURL }}
   VITE_APP_FILENAME_CV: ${{ vars.VITE_APP_FILENAME_CV }}
@@ -11,47 +17,42 @@ env:
   VITE_APP_EMAILJS_SERVICE_ID: ${{ secrets.VITE_APP_EMAILJS_SERVICE_ID }}
   VITE_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_APP_EMAILJS_TEMPLATE_ID }}
   VITE_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}
-  VITE_APP_TO_NAME: ${{ vars.VITE_APP_APPURL }}
-  VITE_APP_TO_EMAIL: ${{ vars.VITE_APP_APPURL }}
+  VITE_APP_TO_NAME: ${{ vars.VITE_APP_TO_NAME }}
+  VITE_APP_TO_EMAIL: ${{ vars.VITE_APP_TO_EMAIL }}
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: "Checkout code"
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: "Set up Node.js"
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20' # Especifica la versión de Node.js a usar
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
 
-    - name: "Debug environment variables"
-      run: |
-        echo "VITE_APP_APPURL=${{ vars.VITE_APP_APPURL }}"
-        echo "VITE_APP_FILENAME_CV=${{ vars.VITE_APP_FILENAME_CV }}"
-        echo "VITE_APP_GOOGLE_ANALITYCS=${{ secrets.VITE_APP_GOOGLE_ANALITYCS }}"
-        echo "VITE_APP_EMAILJS_BASE_URL=${{ vars.VITE_APP_EMAILJS_BASE_URL }}"
-        echo "VITE_APP_EMAILJS_SERVICE_ID=${{ secrets.VITE_APP_EMAILJS_SERVICE_ID }}"
-        echo "VITE_APP_EMAILJS_TEMPLATE_ID=${{ secrets.VITE_APP_EMAILJS_TEMPLATE_ID }}"
-        echo "VITE_APP_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}"
-        echo "VITE_APP_TO_NAME=${{ vars.VITE_APP_TO_NAME }}"
-        echo "VITE_APP_TO_EMAIL=${{ vars.VITE_APP_TO_EMAIL }}"
+      # `--ignore-scripts` evita `husky` (hook de pre-commit) en CI, donde no hace falta.
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
 
-    - name: "Install dependencies"
-      run: npm install
+      - name: Lint
+        run: npm run lint:check
 
-    - name: "Build the project"
-      run: npm run build
+      - name: Format check
+        run: npm run format:check
 
-    - name: "Deploy to GitHub Pages"
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: gh-pages
-        folder: dist
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token para autenticar el despliegue
+      # `npm run build` ya ejecuta vue-tsc, pero va aparte para que el fallo de tipos salga etiquetado.
+      - name: Type check
+        run: npm run type-check
 
-    - name: "Notify deployment success"
-      run: echo "Deployment to GitHub Pages successful!"
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist

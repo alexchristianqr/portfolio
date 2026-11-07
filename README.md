@@ -1,15 +1,39 @@
 # Portfolio
 
-Este es mi portafolio personal, recientemente renovado con Vue 3, Vite y Bootstrap 5. Este proyecto refleja mi evolución como Ingeniero de Software y Desarrollador Web Full Stack, destacando mis habilidades técnicas y algunos de los proyectos más relevantes que he desarrollado a lo largo de mi trayectoria profesional.
+Portafolio personal de **Alex Christian Quispe Roque**, ingeniero de software y desarrollador
+Full Stack. Publicado en <https://alexchristianqr.github.io/portfolio/>.
 
-## Deployment local
+**Stack:** Vue 3 · TypeScript · Pinia · vue-i18n · Tailwind CSS v4 · Reka UI · Vite.
+Español e inglés, tema claro/oscuro.
+
+## Empezar
+
+Requiere Node ≥ 22 (`nvm use`).
 
 ```bash
+npm install
+cp .env.example .env.local.development   # rellena las variables
 npm run dev
 ```
 
-## Deployment production
+Si falta una variable obligatoria, `npm run dev` y `npm run build` se detienen y dicen cuál.
 
-```bash
-npm run build
-```
+## Scripts
+
+| Script                            | Qué hace                              |
+| --------------------------------- | ------------------------------------- |
+| `npm run dev`                     | Servidor de desarrollo                |
+| `npm run build`                   | Tipos + build de producción (`dist/`) |
+| `npm run lint` / `lint:check`     | ESLint (con / sin corrección)         |
+| `npm run format` / `format:check` | Prettier (con / sin escritura)        |
+| `npm run type-check`              | `vue-tsc`                             |
+
+## Documentación
+
+Todo lo que importa para trabajar aquí está en [`.specs/`](.specs/): principios, arquitectura,
+convenciones, una especificación por sección y las decisiones tomadas.
+
+## Despliegue
+
+Manual desde GitHub Actions (`Deployment`) hacia la rama `gh-pages`. Ver
+[`.specs/04-workflows.md`](.specs/04-workflows.md) para las variables y secretos que necesita.
