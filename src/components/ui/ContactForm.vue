@@ -102,5 +102,5 @@ const ids = {
 
 const labelClass = 'text-ink mb-1 block text-sm font-semibold'
 const fieldClass =
-  'border-line bg-surface text-body w-full rounded border px-3 py-2 transition-colors focus-visible:border-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40'
+  'border-muted/70 bg-surface text-body w-full rounded border px-3 py-2 transition-colors focus-visible:border-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40'
 </script>

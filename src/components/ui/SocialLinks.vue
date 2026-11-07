@@ -7,7 +7,10 @@
         rel="noopener noreferrer"
         :title="link.label"
         :aria-label="link.label"
-        class="inline-flex size-9 items-center justify-center rounded-full bg-sidebar-chip text-lg text-white transition-colors hover:bg-brand"
+        :class="[
+          base,
+          tone === 'sidebar' ? 'bg-sidebar-chip text-white' : 'bg-chip text-brand-text'
+        ]"
       >
         <span :class="link.icon" aria-hidden="true"></span>
       </a>
@@ -16,7 +19,15 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  links: readonly { id: string; label: string; url: string; icon: string }[]
-}>()
+withDefaults(
+  defineProps<{
+    links: readonly { id: string; label: string; url: string; icon: string }[]
+    /** `sidebar`: sobre fondo oscuro fijo; `page`: sigue el tema de la página. */
+    tone?: 'sidebar' | 'page'
+  }>(),
+  { tone: 'sidebar' }
+)
+
+const base =
+  'inline-flex size-9 items-center justify-center rounded-full text-lg transition-colors hover:bg-brand hover:text-white'
 </script>

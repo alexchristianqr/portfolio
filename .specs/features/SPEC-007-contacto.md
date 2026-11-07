@@ -22,6 +22,9 @@
 - **RF-06** — **Error** (cualquier otro caso): aviso «El mensaje no fue enviado. Inténtalo de
   nuevo.» y el formulario **conserva lo escrito**.
 - **RF-07** — El aviso se cierra solo a los 4,5 s o con su botón; es anunciado a lectores de pantalla.
+- **RF-08** — Los campos tienen borde con contraste ≥ 3:1 frente al fondo (`border-muted/70`) en
+  ambos temas. Las redes de esta sección usan `SocialLinks tone="page"` (fondo `chip`, icono
+  `brand-text`), de modo que siguen el tema; en la barra lateral se mantiene `tone="sidebar"`.
 
 ## Notas
 

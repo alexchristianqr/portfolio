@@ -40,7 +40,7 @@
       <p class="mt-1 text-muted">
         <span>{{ place }}</span>
         <template v-if="link">
-          <span aria-hidden="true">&nbsp;&nbsp;■&nbsp;&nbsp;</span>
+          <span aria-hidden="true">&nbsp;·&nbsp;</span>
           <a
             :href="link"
             target="_blank"
