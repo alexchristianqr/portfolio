@@ -1,16 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/assets/images/logotipo/favicon.png" rel="icon">
-    <link href="/assets/images/logotipo/apple-touch-icon.png" rel="apple-touch-icon">
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Portafolio de Alex Christian Quispe Roque, ingeniero de software y desarrollador Full Stack."
+    />
+    <link href="/assets/images/logotipo/favicon.png" rel="icon" />
+    <link href="/assets/images/logotipo/apple-touch-icon.png" rel="apple-touch-icon" />
     <title>Alex Christian | Portfolio</title>
+    <script>
+      // Aplica el tema guardado antes de que cargue el bundle, para evitar el parpadeo.
+      // Debe coincidir con `src/stores/theme.store.ts` (clave `theme`, valores light|dark|system).
+      try {
+        var mode = localStorage.getItem('theme') || 'system'
+        var dark =
+          mode === 'dark' ||
+          (mode === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
   </head>
-  <body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
-    <noscript><strong>We're sorry but portfolio doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+  <body>
+    <noscript
+      ><strong
+        >Este portafolio necesita JavaScript habilitado para funcionar correctamente.</strong
+      ></noscript
+    >
     <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Aplicación web portafolio personal con tecnologías modernas",
   "author": {
     "name": "Alex Christian",
@@ -9,39 +9,60 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22",
+    "npm": ">=10"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "reset": "rm -rf node_modules && rm package-lock.json"
+    "dev": "vite --mode local.development",
+    "prebuild": "rimraf dist",
+    "build": "vue-tsc --build && vite build --mode production",
+    "preview": "vite preview --mode production",
+    "lint": "eslint \"src/**/*.{ts,vue}\" \"*.{ts,mjs}\" \"scripts/*.mjs\" --fix",
+    "lint:check": "eslint \"src/**/*.{ts,vue}\" \"*.{ts,mjs}\" \"scripts/*.mjs\"",
+    "format": "prettier --write \"src/**/*.{ts,vue,css}\" \".specs/**/*.md\" \"*.{ts,mjs,json,html,md}\" \"scripts/*.mjs\"",
+    "format:check": "prettier --check \"src/**/*.{ts,vue,css}\" \".specs/**/*.md\" \"*.{ts,mjs,json,html,md}\" \"scripts/*.mjs\"",
+    "type-check": "vue-tsc --build",
+    "prepare": "husky",
+    "reset": "rm -rf node_modules package-lock.json",
+    "images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
-    "aos": "^2.3.4",
-    "axios": "^1.7.9",
-    "bootstrap": "^5.1.2",
-    "bootstrap-icons": "^1.11.3",
-    "boxicons": "^2.1.4",
-    "core-js": "^3.6.5",
-    "glightbox": "^3.3.0",
-    "isotope-layout": "^3.0.6",
-    "jquery": "^3.6.0",
-    "pure_counter": "^0.1.9",
-    "swiper": "^11.2.0",
-    "typed.js": "^2.1.0",
-    "vue": "^3.5.13",
-    "vue-gtag": "^2.0.1",
-    "vue-toastification": "^2.0.0-rc.5",
-    "vuex": "~4.1.0",
-    "waypoints": "^4.0.1"
+    "pinia": "^4.1.0",
+    "reka-ui": "^2.11.0",
+    "vue": "^3.5.45",
+    "vue-i18n": "^11.4.18"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.7",
-    "@types/isotope-layout": "^3.0.14",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "prettier": "^2.3.2",
-    "sass-embedded": "^1.83.1",
-    "vite": "^6.0.5"
+    "@eslint/js": "^10.0.1",
+    "@iconify-json/ph": "^1.2.2",
+    "@iconify/tailwind4": "^1.2.3",
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/tsconfig": "^0.9.1",
+    "eslint": "^10.14.0",
+    "eslint-plugin-vue": "^10.12.0",
+    "globals": "^17.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "rimraf": "^6.1.4",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^6.4.5",
+    "vue-tsc": "^3.3.14"
+  },
+  "lint-staged": {
+    "*.{ts,mjs,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,json,html,md}": [
+      "prettier --write"
+    ]
   }
 }
