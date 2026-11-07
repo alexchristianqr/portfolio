@@ -30,7 +30,7 @@ src/
 ├── services/             I/O puro, sin Vue ni Pinia: email, analytics, storage, url
 ├── stores/               Pinia: locale, theme, ui, contact
 ├── composables/          Lógica local o de ciclo de vida: useContent, useTypewriter, …
-├── directives/           v-reveal, v-progress (IntersectionObserver)
+├── directives/           v-reveal (IntersectionObserver)
 ├── styles/main.css       Tokens de tema, modo oscuro, utilidades globales
 └── components/
     ├── layout/           Sidebar, menú móvil, pie, volver arriba, idioma, tema

@@ -40,8 +40,6 @@ export interface Profile {
 
 export interface Skill {
   name: string
-  /** 0–100. */
-  level: number
   /** Archivo en `public/assets/images/icons/`. */
   icon: string
 }

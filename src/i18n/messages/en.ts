@@ -58,7 +58,6 @@ export const en: MessageSchema = {
     viewGrid: 'Grid',
     viewList: 'List'
   },
-  skills: { levelOf: '{name}: {level} %' },
   contact: {
     activeMedia: 'Active Media',
     activeMediaText:

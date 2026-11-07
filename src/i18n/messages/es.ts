@@ -61,7 +61,6 @@ export const es = {
     viewGrid: 'Cuadrícula',
     viewList: 'Lista'
   },
-  skills: { levelOf: '{name}: {level} %' },
   contact: {
     activeMedia: 'Medios Activos',
     activeMediaText:

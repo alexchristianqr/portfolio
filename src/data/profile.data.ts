@@ -48,17 +48,17 @@ export const navLinks: readonly NavLink[] = [
   { id: 'contact', icon: 'icon-[ph--envelope-simple]' }
 ]
 
-/** Solo lo que domino a fondo. Ya ordenados de mayor a menor nivel. */
+/** Solo lo que domino a fondo, de más a menos. */
 export const skills: readonly Skill[] = [
-  { name: 'Javascript', level: 90, icon: 'javascript.svg' },
-  { name: 'Express', level: 90, icon: 'express.svg' },
-  { name: 'Nodejs', level: 90, icon: 'nodejs.svg' },
-  { name: 'Git', level: 90, icon: 'git.svg' },
-  { name: 'Vuejs', level: 90, icon: 'vue.svg' },
-  { name: 'AWS', level: 80, icon: 'aws.svg' },
-  { name: 'Docker', level: 80, icon: 'docker.svg' },
-  { name: 'Typescript', level: 75, icon: 'typescript.svg' },
-  { name: 'NestJS', level: 75, icon: 'nestjs.svg' }
+  { name: 'Javascript', icon: 'javascript.svg' },
+  { name: 'Express', icon: 'express.svg' },
+  { name: 'Nodejs', icon: 'nodejs.svg' },
+  { name: 'Git', icon: 'git.svg' },
+  { name: 'Vuejs', icon: 'vue.svg' },
+  { name: 'AWS', icon: 'aws.svg' },
+  { name: 'Docker', icon: 'docker.svg' },
+  { name: 'Typescript', icon: 'typescript.svg' },
+  { name: 'NestJS', icon: 'nestjs.svg' }
 ]
 
 /** IA y metodologías. El texto de cada una está en `content.<idioma>.ts` → `skills.concepts`. */
