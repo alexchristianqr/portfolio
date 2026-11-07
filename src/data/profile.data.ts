@@ -2,8 +2,8 @@ import type { Concept, NavLink, Profile, Skill } from '@/types/content'
 
 /** Datos personales que no cambian con el idioma. */
 export const profile: Profile = {
-  fullName: 'Alex Christian Quispe Roque',
-  displayName: 'Alex Christian',
+  fullName: 'Alex Quispe',
+  displayName: 'Alex Quispe',
   email: 'alexchristianqr@gmail.com',
   phone: '(+51) 955588297',
   location: 'Peru',

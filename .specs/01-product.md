@@ -1,6 +1,6 @@
 # Producto
 
-Portafolio personal de **Alex Christian Quispe Roque**, ingeniero de software y desarrollador
+Portafolio personal de **Alex Quispe**, ingeniero de software y desarrollador
 Full Stack. Publicado en <https://alexchristianqr.github.io/portfolio/>.
 
 **Para quién:** reclutadores y clientes que quieren ver trayectoria, proyectos y cómo
