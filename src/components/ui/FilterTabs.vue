@@ -3,7 +3,7 @@
     type="single"
     :model-value="modelValue"
     :aria-label="label"
-    class="mx-auto mb-9 flex flex-wrap justify-center gap-x-1 rounded-3xl bg-surface px-4 py-1"
+    class="mx-auto mb-6 flex flex-wrap justify-center gap-x-1 rounded-3xl bg-surface px-4 py-1"
     @update:model-value="onChange"
   >
     <ToggleGroupItem
@@ -13,6 +13,12 @@
       class="cursor-pointer px-3.5 py-3 text-sm font-semibold text-body uppercase transition-colors hover:text-brand-text data-[state=on]:text-brand-text"
     >
       {{ option.label }}
+      <span
+        v-if="option.count !== undefined"
+        class="ml-1 text-xs font-normal text-muted tabular-nums"
+      >
+        {{ option.count }}
+      </span>
     </ToggleGroupItem>
   </ToggleGroupRoot>
 </template>

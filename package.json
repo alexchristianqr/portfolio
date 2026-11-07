@@ -17,13 +17,14 @@
     "prebuild": "rimraf dist",
     "build": "vue-tsc --build && vite build --mode production",
     "preview": "vite preview --mode production",
-    "lint": "eslint \"src/**/*.{ts,vue}\" \"*.{ts,mjs}\" --fix",
-    "lint:check": "eslint \"src/**/*.{ts,vue}\" \"*.{ts,mjs}\"",
-    "format": "prettier --write \"src/**/*.{ts,vue,css}\" \".specs/**/*.md\" \"*.{ts,mjs,json,html,md}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,vue,css}\" \".specs/**/*.md\" \"*.{ts,mjs,json,html,md}\"",
+    "lint": "eslint \"src/**/*.{ts,vue}\" \"*.{ts,mjs}\" \"scripts/*.mjs\" --fix",
+    "lint:check": "eslint \"src/**/*.{ts,vue}\" \"*.{ts,mjs}\" \"scripts/*.mjs\"",
+    "format": "prettier --write \"src/**/*.{ts,vue,css}\" \".specs/**/*.md\" \"*.{ts,mjs,json,html,md}\" \"scripts/*.mjs\"",
+    "format:check": "prettier --check \"src/**/*.{ts,vue,css}\" \".specs/**/*.md\" \"*.{ts,mjs,json,html,md}\" \"scripts/*.mjs\"",
     "type-check": "vue-tsc --build",
     "prepare": "husky",
-    "reset": "rm -rf node_modules package-lock.json"
+    "reset": "rm -rf node_modules package-lock.json",
+    "images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "pinia": "^4.1.0",
@@ -48,6 +49,7 @@
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "rimraf": "^6.1.4",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.3.5",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.72.1",

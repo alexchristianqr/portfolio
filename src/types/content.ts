@@ -67,7 +67,7 @@ export type TechSlug =
 export interface Project {
   id: string
   category: ProjectCategory
-  /** Archivo en `public/assets/images/portfolio/`. */
+  /** Nombre base (sin extensión) de la imagen; ver `npm run images` (genera `sm/` y `lg/`). */
   image: string
   link: string
   repository: string

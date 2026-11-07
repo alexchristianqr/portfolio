@@ -8,7 +8,7 @@ export const projects = [
   {
     id: 'game-apps',
     category: 'mobile',
-    image: 'gameapps.jpg',
+    image: 'gameapps',
     link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/game-apps/#/',
     repository: 'https://github.com/alexchristianqr/game-apps',
     repositoryPublic: true,
@@ -17,7 +17,7 @@ export const projects = [
   {
     id: 'api-de-whatsapp-b2b',
     category: 'landing',
-    image: 'sharedapis.png',
+    image: 'sharedapis',
     link: 'https://sharedapis.com/',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -26,7 +26,7 @@ export const projects = [
   {
     id: 'clone-de-gmail',
     category: 'mobile',
-    image: 'gmailclone.jpg',
+    image: 'gmailclone',
     link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/gmail-ghpages/',
     repository: 'https://github.com/alexchristianqr/gmail-ghpages',
     repositoryPublic: true,
@@ -35,7 +35,7 @@ export const projects = [
   {
     id: 'iframe',
     category: 'mobile',
-    image: 'iframephone.png',
+    image: 'iframephone',
     link: 'https://alexchristianqr.github.io/iframephone/?src=',
     repository: 'https://github.com/alexchristianqr/iframephone',
     repositoryPublic: true,
@@ -44,7 +44,7 @@ export const projects = [
   {
     id: 'tasks-crm',
     category: 'app',
-    image: 'taskscrm.jpg',
+    image: 'taskscrm',
     link: 'https://wa.link/r28uwd',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -53,7 +53,7 @@ export const projects = [
   {
     id: 'lista-de-tareas',
     category: 'app',
-    image: 'todolist.png',
+    image: 'todolist',
     link: 'https://alexchristianqr.github.io/todolist/',
     repository: 'https://github.com/alexchristianqr/todolist',
     repositoryPublic: true,
@@ -62,7 +62,7 @@ export const projects = [
   {
     id: 'para-ti',
     category: 'app',
-    image: 'foryou.png',
+    image: 'foryou',
     link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/foryou',
     repository: 'https://github.com/alexchristianqr/foryou',
     repositoryPublic: true,
@@ -71,7 +71,7 @@ export const projects = [
   {
     id: 'platcon',
     category: 'app',
-    image: 'platcon.png',
+    image: 'platcon',
     link: 'https://platcon.securitec.pe/login',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -80,7 +80,7 @@ export const projects = [
   {
     id: 'ticker',
     category: 'app',
-    image: 'ticker.png',
+    image: 'ticker',
     link: 'https://app.ticker.pe/login',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -89,7 +89,7 @@ export const projects = [
   {
     id: 'sumate-al-exito',
     category: 'app',
-    image: 'sumatealexito.png',
+    image: 'sumatealexito',
     link: 'https://app.sumatealexito.com/login',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -98,7 +98,7 @@ export const projects = [
   {
     id: 'intellitec',
     category: 'landing',
-    image: 'intellitec.png',
+    image: 'intellitec',
     link: 'https://wa.link/r28uwd',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -107,7 +107,7 @@ export const projects = [
   {
     id: 'portafolio-personal',
     category: 'landing',
-    image: 'portfolio.png',
+    image: 'portfolio',
     link: 'https://alexchristianqr.github.io/portfolio/',
     repository: 'https://github.com/alexchristianqr/portfolio',
     repositoryPublic: true,
@@ -116,7 +116,7 @@ export const projects = [
   {
     id: 'api-en-postman',
     category: 'microservice',
-    image: 'api-colors-postman.png',
+    image: 'api-colors-postman',
     link: 'https://documenter.getpostman.com/view/3683906/UVXonZoV',
     repository: 'https://github.com/alexchristianqr/api-colors',
     repositoryPublic: true,
@@ -125,7 +125,7 @@ export const projects = [
   {
     id: 'api-graphql-tasks-crm',
     category: 'microservice',
-    image: 'graphqlapi.png',
+    image: 'graphqlapi',
     link: 'https://documenter.getpostman.com/view/3683906/UVCCfisV',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -134,7 +134,7 @@ export const projects = [
   {
     id: 'api-principal-tasks-crm',
     category: 'microservice',
-    image: 'microservicio01.png',
+    image: 'microservicio01',
     link: 'https://wa.link/r28uwd',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -143,7 +143,7 @@ export const projects = [
   {
     id: 'blog-personal',
     category: 'app',
-    image: 'github.png',
+    image: 'github',
     link: 'https://github.com/alexchristianqr/blog',
     repository: 'https://github.com/alexchristianqr/blog',
     repositoryPublic: true,
@@ -152,7 +152,7 @@ export const projects = [
   {
     id: 'api-facturacion-tasks-crm',
     category: 'microservice',
-    image: 'microservicio02.png',
+    image: 'microservicio02',
     link: 'https://wa.link/r28uwd',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -161,7 +161,7 @@ export const projects = [
   {
     id: 'api-socket-tasks-crm',
     category: 'microservice',
-    image: 'microservicio03.png',
+    image: 'microservicio03',
     link: 'https://wa.link/r28uwd',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
@@ -170,7 +170,7 @@ export const projects = [
   {
     id: 'blog-cms-personal',
     category: 'app',
-    image: 'github.png',
+    image: 'github',
     link: 'https://github.com/alexchristianqr/cms-blog',
     repository: 'https://github.com/alexchristianqr/cms-blog',
     repositoryPublic: true,
@@ -179,7 +179,7 @@ export const projects = [
   {
     id: 'examen-virtual-en-linea',
     category: 'app',
-    image: 'github.png',
+    image: 'github',
     link: 'https://github.com/alexchristianqr/virtual-exam',
     repository: 'https://github.com/alexchristianqr/virtual-exam',
     repositoryPublic: true,
@@ -188,7 +188,7 @@ export const projects = [
   {
     id: 'restaurante-sushi-delivery',
     category: 'mobile',
-    image: 'github.png',
+    image: 'github',
     link: 'https://github.com/alexchristianqr/rollyroll-app',
     repository: 'https://github.com/alexchristianqr/rollyroll-app',
     repositoryPublic: true,

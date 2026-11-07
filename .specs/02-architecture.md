@@ -17,6 +17,8 @@
 ## Estructura
 
 ```
+assets-src/portfolio/     Imágenes originales de proyectos (no se despliegan)
+scripts/                  optimize-images.mjs → public/.../portfolio/{sm,lg}/*.webp
 src/
 ├── main.ts               Arranque: estilos, Pinia, i18n, analítica, mount
 ├── App.vue               Composición de layout + secciones

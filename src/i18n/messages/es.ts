@@ -47,7 +47,12 @@ export const es = {
     repositoryPublic: 'Ver repositorio público',
     repositoryPrivate: 'Este repositorio es privado',
     stack: 'Tecnologías',
-    close: 'Cerrar'
+    close: 'Cerrar',
+    showing: 'Mostrando {shown} de {total} proyectos',
+    showMore: 'Mostrar más ({count})',
+    prev: 'Proyecto anterior',
+    next: 'Proyecto siguiente',
+    position: '{current} de {total}'
   },
   skills: { levelOf: '{name}: {level} %' },
   contact: {

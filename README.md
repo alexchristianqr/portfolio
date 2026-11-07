@@ -27,6 +27,7 @@ Si falta una variable obligatoria, `npm run dev` y `npm run build` se detienen y
 | `npm run lint` / `lint:check`     | ESLint (con / sin corrección)         |
 | `npm run format` / `format:check` | Prettier (con / sin escritura)        |
 | `npm run type-check`              | `vue-tsc`                             |
+| `npm run images`                  | Optimiza las imágenes de proyectos    |
 
 ## Documentación
 

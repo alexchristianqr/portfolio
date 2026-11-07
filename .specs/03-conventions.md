@@ -36,7 +36,9 @@ Los `id` de sección son anclas públicas: no se renombran.
 - Añadir una clave a `es.ts` obliga a añadirla a `en.ts` (el tipo lo exige).
 - Añadir un proyecto: una entrada en `projects.data.ts` **y** su texto en ambos
   `content.<idioma>.ts`; si falta uno, no compila.
-- Imágenes de proyecto en `public/assets/images/portfolio/`; rutas siempre con `lib/asset.ts`.
+- Imágenes de proyecto: el original va a `assets-src/portfolio/` (no se despliega) y `npm run images`
+  genera las versiones WebP de `public/`. Las rutas se piden siempre a `lib/asset.ts`
+  (`projectThumb`, `projectImage`). Nunca se copia un original de varios MB a `public/`.
 
 ## Estilos
 

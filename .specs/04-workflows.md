@@ -15,14 +15,15 @@
 
 ## Scripts
 
-| Script               | Qué hace                                      |
-| -------------------- | --------------------------------------------- |
-| `npm run dev`        | Servidor de desarrollo.                       |
-| `npm run build`      | `vue-tsc --build` + `vite build` (a `dist/`). |
-| `npm run preview`    | Sirve `dist/` (necesita las variables).       |
-| `npm run lint`       | ESLint con `--fix`. `lint:check` no modifica. |
-| `npm run format`     | Prettier. `format:check` no modifica.         |
-| `npm run type-check` | `vue-tsc --build`.                            |
+| Script               | Qué hace                                              |
+| -------------------- | ----------------------------------------------------- |
+| `npm run dev`        | Servidor de desarrollo.                               |
+| `npm run build`      | `vue-tsc --build` + `vite build` (a `dist/`).         |
+| `npm run preview`    | Sirve `dist/` (necesita las variables).               |
+| `npm run lint`       | ESLint con `--fix`. `lint:check` no modifica.         |
+| `npm run format`     | Prettier. `format:check` no modifica.                 |
+| `npm run type-check` | `vue-tsc --build`.                                    |
+| `npm run images`     | Genera las imágenes WebP de proyectos (ver SPEC-004). |
 
 **Puerta de calidad antes de integrar:** `lint:check`, `format:check`, `type-check`, `build`.
 

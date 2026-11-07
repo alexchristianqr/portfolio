@@ -16,6 +16,10 @@ export interface ProjectDetail {
   list?: { label: string; items: string[] }
   stack: { slug: string; src: string }[]
   stackLabel: string
+  /** Ya formateado: «3 de 21». */
+  position: string
+  prevLabel: string
+  nextLabel: string
   links: ProjectDetailLink[]
   closeLabel: string
 }
@@ -34,4 +38,6 @@ export interface ContactFormLabels {
 export interface FilterOption {
   value: string
   label: string
+  /** Proyectos de esta categoría; se muestra junto a la etiqueta. */
+  count?: number
 }

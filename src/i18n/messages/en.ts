@@ -44,7 +44,12 @@ export const en: MessageSchema = {
     repositoryPublic: 'View public repository',
     repositoryPrivate: 'This repository is private',
     stack: 'Technologies',
-    close: 'Close'
+    close: 'Close',
+    showing: 'Showing {shown} of {total} projects',
+    showMore: 'Show more ({count})',
+    prev: 'Previous project',
+    next: 'Next project',
+    position: '{current} of {total}'
   },
   skills: { levelOf: '{name}: {level} %' },
   contact: {
