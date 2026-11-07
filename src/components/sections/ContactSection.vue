@@ -31,7 +31,7 @@
         <div>
           <h4 class="text-xl font-semibold text-ink">{{ t('contact.social') }}</h4>
           <p class="mt-1 mb-3 text-sm text-body">{{ t('contact.socialText') }}</p>
-          <SocialLinks :links="profile.socials" />
+          <SocialLinks :links="profile.socials" tone="page" />
         </div>
       </div>
 

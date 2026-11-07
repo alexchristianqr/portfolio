@@ -19,7 +19,9 @@
 - **RF-03** — Toda la tarjeta es clicable mediante el botón del título (enlace extendido). El
   foco por teclado se muestra alrededor de la tarjeta entera.
 - **RF-04** — Pestañas de filtro: «Todos» más una por cada categoría **que tenga proyectos**,
-  cada una con su **contador**. Siempre hay una activa: pulsar la activa no la deselecciona.
+  cada una con su **contador**. Siempre hay una activa: pulsar la activa no la deselecciona. En
+  móvil las pestañas van en **una sola fila con scroll horizontal**; desde `sm` se centran y
+  pueden envolver.
 - **RF-05** — Cambiar de filtro vuelve a plegar la lista a 9 (el «Mostrar más» de una categoría
   no arrastra a las demás).
 - **RF-06** — Una línea de estado «Mostrando X de Y proyectos» (`role="status"`) refleja el

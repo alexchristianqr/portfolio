@@ -3,14 +3,14 @@
     type="single"
     :model-value="modelValue"
     :aria-label="label"
-    class="mx-auto mb-6 flex flex-wrap justify-center gap-x-1 rounded-3xl bg-surface px-4 py-1"
+    class="mx-auto mb-6 flex max-w-full flex-nowrap justify-start gap-x-1 overflow-x-auto rounded-3xl bg-surface px-4 py-1 sm:flex-wrap sm:justify-center sm:overflow-visible"
     @update:model-value="onChange"
   >
     <ToggleGroupItem
       v-for="option in options"
       :key="option.value"
       :value="option.value"
-      class="cursor-pointer px-3.5 py-3 text-sm font-semibold text-body uppercase transition-colors hover:text-brand-text data-[state=on]:text-brand-text"
+      class="shrink-0 cursor-pointer px-3.5 py-3 text-sm font-semibold whitespace-nowrap text-body uppercase transition-colors hover:text-brand-text data-[state=on]:text-brand-text"
     >
       {{ option.label }}
       <span

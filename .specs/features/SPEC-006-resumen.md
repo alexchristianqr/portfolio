@@ -23,4 +23,6 @@
   periodos abiertos, se cuenta hasta hoy.
 - **RF-07** — El riel se dibuja y el nodo se rellena al entrar en pantalla (`v-reveal`); con
   `prefers-reduced-motion` aparece ya dibujado y sin pulso.
-- **RF-08** — `status` (Egresado / Certificado) es opcional y se muestra como insignia junto a la fecha.
+- **RF-08** — `status` (Egresado / Certificado) es opcional y se muestra como insignia junto a la fecha. El texto de la insignia usa `brand-text`,
+  que en claro es `#0b6590` (≥ 4.5:1 sobre `--chip`). El lugar y el enlace se separan con un punto
+  medio (`·`), no con un glifo gráfico.
