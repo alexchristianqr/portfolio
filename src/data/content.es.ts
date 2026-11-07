@@ -22,20 +22,19 @@ export const contentEs: Content<ProjectId> = {
     stackTitle: 'Stack principal',
     conceptsTitle: 'IA y metodologías',
     conceptsIntro:
-      'No me quedo en usar las herramientas: defino qué problema resuelven, qué decisiones respaldan y cómo verifico su resultado.',
+      'No me quedo en usar las herramientas: defino qué problema resuelven y cómo verifico su resultado.',
     concepts: {
-      sdd: 'Spec Driven Development: la especificación escrita (requisitos, ADR y una SPEC por funcionalidad) es la fuente de verdad. Analizo y acuerdo el «qué» antes del «cómo», y cada cambio se valida contra su spec.',
+      sdd: 'La especificación escrita es el contrato: requisitos, ADR y criterios de aceptación. Si el código la contradice, es un bug.',
       claude:
-        'Asistente de IA para analizar código, proponer diseños y ejecutar cambios acotados. Lo oriento con CLAUDE.md, Skills, Hooks y subagentes; la revisión final es mía.',
-      mcp: 'Model Context Protocol: estándar abierto que conecta a la IA con código, documentación y datos mediante servidores. Le da contexto real en lugar de suposiciones.',
-      kiro: 'IDE con IA centrado en especificaciones: steering, Powers y specs que bajan de requisitos a diseño y tareas. Lo uso para llevar SDD de forma ordenada.',
+        'Claude Code integrado al flujo: Hooks que corren lint y build, subagentes y modo headless en CI.',
+      mcp: 'Protocolo abierto que conecta la IA con herramientas y datos. Integro servidores como CodeGraph, en solo lectura.',
+      kiro: 'Specs en requisitos (EARS), diseño y tareas, con steering para fijar las convenciones del proyecto.',
       copilot:
-        'Asistente de código dentro del editor. Lo uso para completar patrones repetitivos y explorar alternativas, siempre contrastando el resultado.',
-      chatgpt:
-        'Asistente conversacional para contrastar enfoques, investigar y documentar. Útil para pensar un problema en voz alta antes de decidir.',
+        'Agente que abre PR desde una issue y revisa el diff; nada se integra sin pasar los checks del pipeline.',
+      chatgpt: 'Contrasto alternativas y sus trade-offs antes de fijar una decisión en un ADR.',
       solid:
-        'Cinco principios de diseño orientado a objetos (responsabilidad única, abierto/cerrado, Liskov, segregación de interfaces e inversión de dependencias) para código mantenible y que cambia sin romperse.',
-      tdd: 'Test Driven Development: escribo la prueba que falla, la hago pasar y refactorizo. El diseño nace de definir primero el comportamiento esperado.'
+        'Cinco principios de diseño; los aplico con inyección de dependencias en NestJS para aislar la infraestructura.',
+      tdd: 'Rojo, verde, refactor: la prueba define el comportamiento y el CI no despliega sin verde.'
     }
   },
   portfolio: {

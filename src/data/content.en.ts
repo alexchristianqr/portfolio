@@ -22,20 +22,19 @@ export const contentEn: Content<ProjectId> = {
     stackTitle: 'Core stack',
     conceptsTitle: 'AI and methodologies',
     conceptsIntro:
-      "I don't just use the tools: I define which problem they solve, which decisions they back and how I verify their output.",
+      "I don't just use the tools: I define which problem they solve and how I verify the result.",
     concepts: {
-      sdd: 'Spec Driven Development: the written specification (requirements, ADRs and one SPEC per feature) is the source of truth. I analyse and agree the “what” before the “how”, and every change is validated against its spec.',
+      sdd: "The written spec is the contract: requirements, ADRs and acceptance criteria. If the code contradicts it, it's a bug.",
       claude:
-        'AI assistant to analyse code, propose designs and run scoped changes. I steer it with CLAUDE.md, Skills, Hooks and subagents; the final review is mine.',
-      mcp: 'Model Context Protocol: an open standard that connects AI to code, documentation and data through servers. It gives the model real context instead of guesses.',
-      kiro: 'Spec-centred AI IDE: steering, Powers and specs that flow from requirements to design to tasks. I use it to run SDD in an orderly way.',
+        'Claude Code built into the workflow: Hooks that run lint and build, subagents and headless mode in CI.',
+      mcp: 'Open protocol that connects AI to tools and data. I integrate servers like CodeGraph, read-only.',
+      kiro: 'Specs split into requirements (EARS), design and tasks, with steering to pin project conventions.',
       copilot:
-        'In-editor coding assistant. I use it for repetitive patterns and to explore alternatives, always checking the result.',
-      chatgpt:
-        'Conversational assistant to compare approaches, research and document. Useful for thinking a problem through out loud before deciding.',
+        'Agent that opens PRs from an issue and reviews the diff; nothing merges without passing the pipeline checks.',
+      chatgpt: 'I compare alternatives and their trade-offs before fixing a decision in an ADR.',
       solid:
-        'Five object-oriented design principles (single responsibility, open/closed, Liskov, interface segregation and dependency inversion) for maintainable code that changes without breaking.',
-      tdd: 'Test Driven Development: I write the failing test, make it pass and refactor. Design comes from defining the expected behaviour first.'
+        'Five design principles; I apply them with dependency injection in NestJS to isolate infrastructure.',
+      tdd: "Red, green, refactor: the test defines the behaviour and CI won't deploy without green."
     }
   },
   portfolio: {
