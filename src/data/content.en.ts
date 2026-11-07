@@ -218,8 +218,8 @@ export const contentEn: Content<ProjectId> = {
             place: 'Softtek / Client: Rimac Seguros',
             link: 'https://www.softtek.com/es/',
             bullets: [
-              'General maintenance of broker services (Policies, Renewals, Endorsements, Financing). (AWS + Serverless + Nodejs + Typescript)',
-              'High-impact root solutions for bugs. (AWS + Serverless + DynamoDB + Unit Tests)'
+              'I maintained the broker services of Rimac Seguros: policies, renewals, endorsements and financing. (AWS + Serverless + Node.js + TypeScript)',
+              'I fixed high-impact bugs at their root cause and covered them with unit tests. (AWS + Serverless + DynamoDB)'
             ]
           },
           {
@@ -251,8 +251,8 @@ export const contentEn: Content<ProjectId> = {
             place: 'Corporación Sapia S.A',
             link: 'https://sapia.com.pe/',
             bullets: [
-              'Analyze the requirements of the corresponding areas and provide correct maintenance to the call system. (Nodejs + Vue 2 + MySQL)',
-              'Development of a virtual survey system. (Laravel 5 + Vue 2 + MySQL)'
+              'I analyzed requirements from the user areas and maintained the call system. (Node.js + Vue 2 + MySQL)',
+              'I developed a virtual survey system. (Laravel 5 + Vue 2 + MySQL)'
             ]
           },
           {
@@ -261,8 +261,8 @@ export const contentEn: Content<ProjectId> = {
             place: 'Centros Virtuales del Peru E.I.R.L',
             link: 'https://www.centrosvirtuales.com/',
             bullets: [
-              'As part of the maintenance of the booking web site, create a cineplanet-type COWORKING space reservation selection module. (Ionic 2 + BackboneJS + Bootstrap 3)',
-              "Development of the modern web application 'JOIN SUCCESS' that integrates the new booking module. (Laravel 4 + Nodejs + Vue + MySQL)"
+              'As part of maintaining the booking website, I created a module to pick coworking spaces visually, like choosing seats in a cinema. (Ionic 2 + BackboneJS + Bootstrap 3)',
+              'I developed "Join Success", a modern web application that integrates the new booking module. (Laravel 4 + Node.js + Vue + MySQL)'
             ]
           },
           {

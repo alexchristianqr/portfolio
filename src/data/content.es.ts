@@ -224,8 +224,8 @@ export const contentEs: Content<ProjectId> = {
             place: 'Softtek / Cliente: Rimac Seguros',
             link: 'https://www.softtek.com/es/',
             bullets: [
-              'Mantenimiento general de los servicios de corredores (Pólizas, Renovaciones, Endosos, Financiamientos). (AWS + Serverless + Nodejs + Typescript)',
-              'Soluciones raíz de bugs de alto impacto. (AWS + Serverless + DynamoDB + Unit Tests)'
+              'Di mantenimiento a los servicios de corredores de Rimac Seguros: pólizas, renovaciones, endosos y financiamientos. (AWS + Serverless + Node.js + TypeScript)',
+              'Resolví desde la causa raíz bugs de alto impacto y los cubrí con pruebas unitarias. (AWS + Serverless + DynamoDB)'
             ]
           },
           {
@@ -257,8 +257,8 @@ export const contentEs: Content<ProjectId> = {
             place: 'Corporación Sapia S.A',
             link: 'https://sapia.com.pe/',
             bullets: [
-              'Analizar los requerimientos de las áreas correspondientes y brindar el mantenimiento correcto al sistema de llamadas. (Nodejs + Vue 2 + MySQL)',
-              'Desarrollo de un sistema de encuesta virtual. (Laravel 5 + Vue 2 + MySQL)'
+              'Analicé los requerimientos de las áreas usuarias y di mantenimiento al sistema de llamadas. (Node.js + Vue 2 + MySQL)',
+              'Desarrollé un sistema de encuesta virtual. (Laravel 5 + Vue 2 + MySQL)'
             ]
           },
           {
@@ -267,8 +267,8 @@ export const contentEs: Content<ProjectId> = {
             place: 'Centros Virtuales del Peru E.I.R.L',
             link: 'https://www.centrosvirtuales.com/',
             bullets: [
-              'Como parte del mantenimiento del sitema web de reservas, crear un modulo de selección de reserva de espacios COWORKING tipo cineplanet. (Ionic 2 + BackboneJS + Bootstrap 3)',
-              "Desarrollo de la aplicación web moderna 'SUMATE AL ÉXITO' que integra el nuevo modulo de reservas. (Laravel 4 + Nodejs + Vue + MySQL)"
+              'Dentro del mantenimiento del sitio web de reservas, creé un módulo para elegir espacios de coworking con selección visual, al estilo de las butacas de un cine. (Ionic 2 + BackboneJS + Bootstrap 3)',
+              'Desarrollé «Súmate al Éxito», una aplicación web moderna que integra el nuevo módulo de reservas. (Laravel 4 + Node.js + Vue + MySQL)'
             ]
           },
           {
