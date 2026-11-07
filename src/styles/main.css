@@ -135,6 +135,21 @@
       opacity: 0;
     }
   }
+
+  --animate-hero-in: hero-in 0.8s ease-out both;
+  @keyframes hero-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  }
+
+  --animate-bounce-soft: bounce-soft 2s ease-in-out infinite;
+  @keyframes bounce-soft {
+    50% {
+      transform: translateY(6px);
+    }
+  }
 }
 
 @layer base {
