@@ -25,6 +25,9 @@ export const en: MessageSchema = {
     dark: 'Dark',
     system: 'System'
   },
+  resume: {
+    present: 'Present'
+  },
   portfolio: {
     filtersLabel: 'Filter projects by category',
     filters: {
@@ -55,7 +58,6 @@ export const en: MessageSchema = {
     viewGrid: 'Grid',
     viewList: 'List'
   },
-  skills: { levelOf: '{name}: {level} %' },
   contact: {
     activeMedia: 'Active Media',
     activeMediaText:

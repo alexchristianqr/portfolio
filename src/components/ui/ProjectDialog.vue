@@ -9,6 +9,16 @@
         <!-- Las flechas se escuchan aquí y no en <DialogContent>: Reka reenvía los atributos por varias
              capas internas y el manejador se ejecutaba dos veces por pulsación (saltaba de 2 en 2). -->
         <div @keydown.left.prevent="emit('prev')" @keydown.right.prevent="emit('next')">
+          <!-- Pegajoso: el contenido hace scroll dentro del modal y la X debe seguir a la vista. Alto 0
+               para no empujar la imagen; el botón se posiciona sobre él. -->
+          <div class="sticky top-0 z-10 h-0">
+            <DialogClose
+              :aria-label="project.closeLabel"
+              class="absolute top-3 right-3 inline-flex size-9 cursor-pointer items-center justify-center rounded-full bg-sidebar/80 text-white shadow-card transition-colors hover:bg-sidebar"
+            >
+              <span class="icon-[ph--x]" aria-hidden="true"></span>
+            </DialogClose>
+          </div>
           <img :src="project.image" alt="" class="aspect-[16/9] w-full object-cover object-top" />
           <div class="space-y-4 p-6">
             <div>
@@ -90,13 +100,6 @@
               <span class="icon-[ph--caret-right]" aria-hidden="true"></span>
             </button>
           </nav>
-
-          <DialogClose
-            :aria-label="project.closeLabel"
-            class="absolute top-3 right-3 inline-flex size-9 items-center justify-center rounded-full bg-sidebar/70 text-white transition-colors hover:bg-sidebar"
-          >
-            <span class="icon-[ph--x]" aria-hidden="true"></span>
-          </DialogClose>
         </div>
       </DialogContent>
     </DialogPortal>

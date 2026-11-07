@@ -1,6 +1,6 @@
 # Portfolio
 
-Portafolio personal de **Alex Christian Quispe Roque**, ingeniero de software y desarrollador
+Portafolio personal de **Alex Quispe**, ingeniero de software y desarrollador
 Full Stack. Publicado en <https://alexchristianqr.github.io/portfolio/>.
 
 **Stack:** Vue 3 · TypeScript · Pinia · vue-i18n · Tailwind CSS v4 · Reka UI · Vite.

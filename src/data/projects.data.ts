@@ -6,6 +6,24 @@ import type { Project } from '@/types/content'
  */
 export const projects = [
   {
+    id: 'havitan-landing',
+    category: 'landing',
+    image: 'havitan',
+    link: 'https://havitan.com',
+    repository: 'https://wa.link/r28uwd',
+    repositoryPublic: false,
+    stack: ['vue', 'typescript', 'bootstrap', 'git']
+  },
+  {
+    id: 'bicinav',
+    category: 'mobile',
+    image: 'github',
+    link: 'https://wa.link/r28uwd',
+    repository: 'https://wa.link/r28uwd',
+    repositoryPublic: false,
+    stack: ['kotlin', 'android', 'material-design', 'git']
+  },
+  {
     id: 'game-apps',
     category: 'mobile',
     image: 'gameapps',
@@ -57,7 +75,7 @@ export const projects = [
     link: 'https://alexchristianqr.github.io/todolist/',
     repository: 'https://github.com/alexchristianqr/todolist',
     repositoryPublic: true,
-    stack: []
+    stack: ['javascript', 'html5', 'css', 'git']
   },
   {
     id: 'para-ti',
@@ -66,7 +84,7 @@ export const projects = [
     link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/foryou',
     repository: 'https://github.com/alexchristianqr/foryou',
     repositoryPublic: true,
-    stack: []
+    stack: ['javascript', 'html5', 'css', 'git']
   },
   {
     id: 'platcon',
@@ -75,7 +93,7 @@ export const projects = [
     link: 'https://platcon.securitec.pe/login',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
-    stack: []
+    stack: ['laravel', 'nodejs', 'vue', 'mysql']
   },
   {
     id: 'ticker',
@@ -84,7 +102,7 @@ export const projects = [
     link: 'https://app.ticker.pe/login',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
-    stack: []
+    stack: ['nodejs', 'vue', 'mongodb', 'git']
   },
   {
     id: 'sumate-al-exito',
@@ -93,7 +111,7 @@ export const projects = [
     link: 'https://app.sumatealexito.com/login',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
-    stack: []
+    stack: ['laravel', 'nodejs', 'vue', 'mysql']
   },
   {
     id: 'intellitec',
@@ -102,7 +120,7 @@ export const projects = [
     link: 'https://wa.link/r28uwd',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
-    stack: []
+    stack: ['vue', 'typescript', 'bootstrap', 'git']
   },
   {
     id: 'portafolio-personal',
@@ -111,7 +129,7 @@ export const projects = [
     link: 'https://alexchristianqr.github.io/portfolio/',
     repository: 'https://github.com/alexchristianqr/portfolio',
     repositoryPublic: true,
-    stack: []
+    stack: ['vue', 'typescript', 'git']
   },
   {
     id: 'api-en-postman',
@@ -120,7 +138,7 @@ export const projects = [
     link: 'https://documenter.getpostman.com/view/3683906/UVXonZoV',
     repository: 'https://github.com/alexchristianqr/api-colors',
     repositoryPublic: true,
-    stack: []
+    stack: ['nodejs', 'express', 'mongodb', 'git']
   },
   {
     id: 'api-graphql-tasks-crm',
@@ -129,7 +147,7 @@ export const projects = [
     link: 'https://documenter.getpostman.com/view/3683906/UVCCfisV',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
-    stack: []
+    stack: ['nodejs', 'express', 'mongodb', 'git']
   },
   {
     id: 'api-principal-tasks-crm',
@@ -138,7 +156,7 @@ export const projects = [
     link: 'https://wa.link/r28uwd',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
-    stack: []
+    stack: ['nodejs', 'express', 'mongodb', 'docker']
   },
   {
     id: 'blog-personal',
@@ -147,7 +165,7 @@ export const projects = [
     link: 'https://github.com/alexchristianqr/blog',
     repository: 'https://github.com/alexchristianqr/blog',
     repositoryPublic: true,
-    stack: []
+    stack: ['laravel', 'vue', 'mysql', 'php']
   },
   {
     id: 'api-facturacion-tasks-crm',
@@ -156,7 +174,7 @@ export const projects = [
     link: 'https://wa.link/r28uwd',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
-    stack: []
+    stack: ['nodejs', 'express', 'mongodb', 'git']
   },
   {
     id: 'api-socket-tasks-crm',
@@ -165,7 +183,7 @@ export const projects = [
     link: 'https://wa.link/r28uwd',
     repository: 'https://wa.link/r28uwd',
     repositoryPublic: false,
-    stack: []
+    stack: ['nodejs', 'express', 'mongodb', 'docker']
   },
   {
     id: 'blog-cms-personal',
@@ -174,7 +192,7 @@ export const projects = [
     link: 'https://github.com/alexchristianqr/cms-blog',
     repository: 'https://github.com/alexchristianqr/cms-blog',
     repositoryPublic: true,
-    stack: []
+    stack: ['laravel', 'php', 'mysql', 'git']
   },
   {
     id: 'examen-virtual-en-linea',
@@ -183,7 +201,7 @@ export const projects = [
     link: 'https://github.com/alexchristianqr/virtual-exam',
     repository: 'https://github.com/alexchristianqr/virtual-exam',
     repositoryPublic: true,
-    stack: []
+    stack: ['laravel', 'vue', 'mysql', 'php']
   },
   {
     id: 'restaurante-sushi-delivery',
@@ -192,7 +210,7 @@ export const projects = [
     link: 'https://github.com/alexchristianqr/rollyroll-app',
     repository: 'https://github.com/alexchristianqr/rollyroll-app',
     repositoryPublic: true,
-    stack: []
+    stack: ['ionic', 'angular', 'typescript', 'firebase']
   }
 ] as const satisfies readonly Project[]
 

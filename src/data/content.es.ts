@@ -4,25 +4,49 @@ import type { ProjectId } from './projects.data'
 /** Textos en español. Los datos invariantes viven en `projects.data.ts` y `profile.data.ts`. */
 export const contentEs: Content<ProjectId> = {
   hero: {
-    intro: 'Soy',
-    phrases: ['apasionado', 'lógico', 'desarrollador']
+    phrases: ['Ingeniero de Software', 'Desarrollador Full Stack', 'Líder Técnico con IA y SDD']
   },
   about: {
     paragraphs: [
-      'Ingeniero de Software y Desarrollador Full Stack con más de 5 años creando soluciones eficientes, bien estructuradas y enfocadas en resolver problemas reales. Me apasiona la tecnología cuando tiene propósito: mejorar procesos, conectar sistemas y generar valor tangible.',
-      'He trabajado en los sectores de turismo y hotelería, administración y finanzas, donde he diseñado y desarrollado arquitecturas capaces de escalar y adaptarse a los cambios sin sacrificar calidad. Me interesa tanto el "cómo" como el "para qué" de cada solución, buscando siempre un equilibrio entre rendimiento, mantenibilidad y objetivos del negocio.',
-      'Me destaco por ser proactivo, comunicarme con claridad, trabajar bien en equipo y mantener una mentalidad abierta al aprendizaje constante. Disfruto tanto de escribir buenas líneas de código como de compartir conocimientos, colaborar en soluciones o acompañar el crecimiento de otros a través de mentoría.',
-      '💻 Tecnologías que uso con frecuencia: TypeScript, Laravel, NestJS, Express.js, MySQL, MongoDB, Redis, Serverless, Docker y AWS.'
+      'Escribir código dejó de ser lo difícil. Los agentes de IA lo generan en segundos. Lo difícil es ==decidir qué construir, con qué límites y comprobar que quedó bien==. Según Stack Overflow 2025, el **84 %** de los desarrolladores ya usa IA y el **46 %** desconfía de lo que produce. Eso favorece a quien tiene criterio para dirigir y revisar. Por eso trabajo con **Spec Driven Development (SDD)**. Antes de programar escribo los requisitos, las decisiones de arquitectura (**ADR**) y una **SPEC** por funcionalidad. Esa especificación es la fuente de verdad para mí y para la IA. ==Si el código la contradice, hay un bug.==',
+      'Llevo más de 8 años en backend y full stack, en turismo y seguros entre otros sectores. Hoy soy **Líder Técnico en LimaTours** y dirijo un equipo de 3 personas que trabaja con SDD. Sobre esa base uso **Kiro** para pasar de requisitos a diseño y tareas, **Claude Code** con Skills, Hooks y subagentes, y servidores **MCP** que dan a los agentes acceso a código y datos. Todo con **TypeScript, NestJS y AWS serverless**. La IA ejecuta más rápido cuando la especificación es clara. La dirección y la revisión son mías, y nada se integra sin pasar lint, tipos, build y la spec. Así salen ==proyectos estables, escalables y rentables==: cada decisión queda escrita, se puede revisar y no se rehace lo que nadie entendió. Este portafolio está hecho así.'
     ]
   },
   skills: {
     intro:
-      'A lo largo de todos estos años, he utilizado muchas tecnologías y vivido muchas experiencias. Estas han sido de gran utilidad en el desarrollo de software funcional, seguro y escalable.'
+      'Esta es la base técnica que domino a fondo y las herramientas y prácticas con las que analizo, diseño y valido el software.',
+    stackTitle: 'Stack principal',
+    conceptsTitle: 'IA y metodologías',
+    conceptsIntro:
+      'No me quedo en usar las herramientas: defino qué problema resuelven y cómo verifico su resultado.',
+    concepts: {
+      sdd: 'La especificación escrita es el contrato: requisitos, ADR y criterios de aceptación. Si el código la contradice, es un bug.',
+      claude:
+        'Claude Code integrado al flujo: Hooks que corren lint y build, subagentes y modo headless en CI.',
+      mcp: 'Protocolo abierto que conecta la IA con herramientas y datos. Integro servidores como CodeGraph, en solo lectura.',
+      kiro: 'Specs en requisitos (EARS), diseño y tareas, con steering para fijar las convenciones del proyecto.',
+      copilot:
+        'Agente que abre PR desde una issue y revisa el diff; nada se integra sin pasar los checks del pipeline.',
+      chatgpt: 'Contrasto alternativas y sus trade-offs antes de fijar una decisión en un ADR.',
+      solid:
+        'Cinco principios de diseño; los aplico con inyección de dependencias en NestJS para aislar la infraestructura.',
+      tdd: 'Rojo, verde, refactor: la prueba define el comportamiento y el CI no despliega sin verde.'
+    }
   },
   portfolio: {
     intro:
       'A lo largo de mi carrera como desarrollador profesional, he tenido la oportunidad de trabajar en numerosos proyectos laborales y personales. A continuación, te presento algunos de ellos.',
     projects: {
+      'havitan-landing': {
+        title: 'Havítan Landing',
+        summary:
+          'Sitio web de Havítan, la plataforma de gestión de condominios: reservas de áreas comunes, seguridad y control de acceso, comunicados y cobranzas. Vue 3 + Vite, 100 % estático y construido con Spec Driven Development.'
+      },
+      bicinav: {
+        title: 'Bicinav',
+        summary:
+          'Aplicación Android para ciclistas con mapa, rutas y cuenta de usuario, hecha con Jetpack Compose y Material 3.'
+      },
       'game-apps': {
         title: 'Game apps',
         summary:
@@ -74,20 +98,27 @@ export const contentEs: Content<ProjectId> = {
         summary: 'Es un sistema gestor de administración de reservas de salas COWORKING.'
       },
       intellitec: {
-        title: 'Intellitec'
+        title: 'Intellitec',
+        summary:
+          'Sitio web institucional (landing page) de la empresa de soluciones tecnológicas Intellitec.'
       },
       'portafolio-personal': {
-        title: 'Portafolio Personal'
+        title: 'Portafolio Personal',
+        summary:
+          'Mi portafolio personal: perfil, proyectos, habilidades y contacto, en español e inglés, con modo oscuro.'
       },
       'api-en-postman': {
         title: 'API en postman',
         summary: 'API crud ejercicio de ejemplo  con uso de postman en modo público.'
       },
       'api-graphql-tasks-crm': {
-        title: 'API GraphQL - Tasks CRM'
+        title: 'API GraphQL - Tasks CRM',
+        summary: 'Microservicio GraphQL que integra Tasks CRM con servicios de terceros.'
       },
       'api-principal-tasks-crm': {
-        title: 'API Principal - Tasks CRM'
+        title: 'API Principal - Tasks CRM',
+        summary:
+          'Servicio principal REST de Tasks CRM: usuarios, conversaciones, canales y campañas.'
       },
       'blog-personal': {
         title: 'Blog Personal',
@@ -95,13 +126,17 @@ export const contentEs: Content<ProjectId> = {
           'Es un blog personal en el lado del servidor con laravel y vuejs para desplegarse en el cloud de digital ocean.'
       },
       'api-facturacion-tasks-crm': {
-        title: 'API Facturación - Tasks CRM'
+        title: 'API Facturación - Tasks CRM',
+        summary: 'Microservicio de facturación y cobros de la plataforma Tasks CRM.'
       },
       'api-socket-tasks-crm': {
-        title: 'API Socket - Tasks CRM'
+        title: 'API Socket - Tasks CRM',
+        summary: 'Microservicio de sockets para el chat en tiempo real de Tasks CRM.'
       },
       'blog-cms-personal': {
-        title: 'Blog CMS Personal'
+        title: 'Blog CMS Personal',
+        summary:
+          'Gestor de contenidos (CMS) para publicar y administrar las entradas de mi blog personal.'
       },
       'examen-virtual-en-linea': {
         title: 'Exámen Virtual en Línea',
@@ -109,7 +144,9 @@ export const contentEs: Content<ProjectId> = {
           'Es un sistema gestor de encuesta virtual para evaluar la atención al cliente de mesa de ayuda.'
       },
       'restaurante-sushi-delivery': {
-        title: 'Restaurante Sushi Delivery'
+        title: 'Restaurante Sushi Delivery',
+        summary:
+          'Aplicación móvil para pedir sushi a domicilio: carta, carrito y seguimiento del pedido.'
       }
     }
   },
@@ -120,33 +157,37 @@ export const contentEs: Content<ProjectId> = {
         title: 'Formación Educativa',
         items: [
           {
-            title: 'Ingenieria de Software',
-            date: '2022 - presente',
-            place: 'Universidad Tecnológica del Peru - UTP',
+            title: 'Ingeniería de Software',
+            date: '2022 - 2026',
+            status: 'Egresado',
+            place: 'Universidad Tecnológica del Perú - UTP',
             link: 'https://www.utp.edu.pe/',
             bullets: [
-              'Actualmente curso el octavo ciclo de la carrera de Ingeniería de Software, complementando una formación académica sólida con más de 5 años de experiencia práctica en desarrollo web y móvil. Mi trayectoria me ha permitido dominar tecnologías modernas y adaptarme a los constantes cambios del sector. Durante este tiempo, he adquirido habilidades técnicas avanzadas en programación, arquitectura de software, bases de datos y metodologías ágiles, así como competencias clave como la resolución de problemas, trabajo en equipo y gestión de proyectos. Estoy comprometido con el aprendizaje continuo para mantenerme a la vanguardia tecnológica y aportar soluciones innovadoras que agreguen valor a los proyectos en los que participo.'
+              'Arquitectura de software, bases de datos y metodologías ágiles.',
+              'Proyectos integradores en Java, un videojuego en Godot y prácticas de criptografía.',
+              'Se suman más de 8 años de experiencia profesional en desarrollo web y móvil.'
             ]
           },
           {
             title: 'Certificación de JavaScript Avanzado',
             date: '2023 - 2024',
-            place: 'Universidad Nacional Mayor de San Marcos',
+            status: 'Certificado',
+            place: 'Universidad Nacional Mayor de San Marcos - UNMSM',
             link: 'https://www.unmsm.edu.pe/',
             bullets: [
-              'Certificación en JavaScript Avanzado, donde profundicé conceptos avanzados del lenguaje.',
-              'Esta formación me permitió dominar temas como el manejo de asincronía, patrones de diseño, optimización de rendimiento y mejores prácticas en desarrollo.',
-              'A través de proyectos prácticos, adquirí habilidades para escribir código limpio, eficiente y escalable, aplicando principios de programación funcional y orientada a objetos.',
-              'Esta certificación complementa mi experiencia profesional y me capacita para enfrentar desafíos complejos en el desarrollo de aplicaciones web modernas.'
+              'Asincronía, patrones de diseño y optimización de rendimiento.',
+              'Código limpio y escalable con programación funcional y orientada a objetos.'
             ]
           },
           {
             title: 'Computación e Informática',
             date: '2012 - 2015',
+            status: 'Egresado',
             place: 'Instituto Privado Superior Tecnológico - IDAT',
             link: 'https://www.idat.edu.pe/',
             bullets: [
-              'Egresado de una carrera técnica en desarrollo de software, donde obtuve una formación integral en programación, bases de datos, redes y seguridad informática. Durante este proceso, desarrollé habilidades clave como el pensamiento crítico, la resolución de problemas y el trabajo en equipo. Mi experiencia académica me preparó para diseñar, implementar y mantener soluciones informáticas que cumplan con los requerimientos del usuario final, siempre con un enfoque en la calidad y la mejora continua. Como profesional comprometido, me adapto constantemente a los avances tecnológicos y a las nuevas demandas del mercado para mantenerme actualizado y aportar valor en cada proyecto.'
+              'Programación, bases de datos, redes y seguridad informática.',
+              'Base técnica para diseñar, implementar y mantener soluciones de software.'
             ]
           }
         ]
@@ -156,11 +197,22 @@ export const contentEs: Content<ProjectId> = {
         title: 'Experiencia Profesional',
         items: [
           {
-            title: 'Backend Developer',
-            date: '04/2024 - Presente',
+            title: 'Líder Técnico',
+            date: '01/2026 - Presente',
             place: 'LimaTours SAC',
             link: 'https://www.limatours.com.pe/',
             bullets: [
+              'Lidero un equipo de 3 personas que desarrolla y evoluciona las aplicaciones de gestión turística. (AWS + Serverless + TypeScript)',
+              'Trabajamos con Spec Driven Development: la especificación escrita es la fuente de verdad y cada cambio se revisa contra ella.'
+            ]
+          },
+          {
+            title: 'Backend Developer',
+            date: '04/2024 - 12/2025',
+            place: 'LimaTours SAC',
+            link: 'https://www.limatours.com.pe/',
+            bullets: [
+              'Desarrollé y evolucioné el producto de reservas por HyperGuest: las ventas mensuales crecieron un 1.400 %, de forma progresiva en año y medio.',
               'Desarrollo y mantenimiento de servicios backend para aplicaciones de gestión turística, asegurando alta disponibilidad y rendimiento. (AWS + Serverless + Node.js / PHP / TypeScript)',
               'Implementación de soluciones para optimizar procesos internos y mejorar la experiencia del usuario final. (DynamoDB + Lambda)'
             ]
@@ -171,8 +223,8 @@ export const contentEs: Content<ProjectId> = {
             place: 'Softtek / Cliente: Rimac Seguros',
             link: 'https://www.softtek.com/es/',
             bullets: [
-              'Mantenimiento general de los servicios de corredores (Pólizas, Renovaciones, Endosos, Financiamientos). (AWS + Serverless + Nodejs + Typescript)',
-              'Soluciones raíz de bugs de alto impacto. (AWS + Serverless + DynamoDB + Unit Tests)'
+              'Di mantenimiento a los servicios de corredores de Rimac Seguros: pólizas, renovaciones, endosos y financiamientos. (AWS + Serverless + Node.js + TypeScript)',
+              'Resolví desde la causa raíz bugs de alto impacto y los cubrí con pruebas unitarias. (AWS + Serverless + DynamoDB)'
             ]
           },
           {
@@ -182,9 +234,9 @@ export const contentEs: Content<ProjectId> = {
               'Quality & Development Software SAC / Cliente: Empresas Jordan SA en Santiago - Chile',
             link: 'https://www.qdsgroup.com.pe/',
             bullets: [
-              'Implementación de servicios B2C de orquestación de canales para campañas de Email y SMS. (AWS Api Gateway + Lambda Functions + AWS Step Functions + NodeJS + Typescript)',
-              'Desarrollo en backend para administrar eficientemente los flujos de trabajo automatizado (procesos batch en Scaler). (AWS ECR + AWS EKS + Docker + NestJS + Typescript)',
-              'Desarrollo en backend y apoyo en frontend el servicio e integración para el acortamiento de URL. (AWS Cloud Formation + AWS RDS + Nodejs + Vue 3 + Typescript)'
+              'Como parte del equipo de desarrollo, construí servicios B2C que orquestan canales para campañas de Email y SMS. (AWS API Gateway + Lambda + Step Functions + Node.js + TypeScript)',
+              'Desarrollé el backend que administra flujos de trabajo automatizados y procesos batch (Scaler), desplegado en contenedores. (AWS ECR + EKS + Docker + NestJS + TypeScript)',
+              'Participé en el servicio y la integración de acortamiento de URL, con backend y apoyo en frontend. (AWS CloudFormation + RDS + Node.js + Vue 3 + TypeScript)'
             ]
           },
           {
@@ -193,9 +245,9 @@ export const contentEs: Content<ProjectId> = {
             place: 'Securitec Peru S.A.C',
             link: 'https://www.securitec.pe/',
             bullets: [
-              'Mantenimiento de aplicación web para gestionar campañas de envío de SMS masivos y mejorar las colas de envío. (Laravel 5 + Nodejs + Vue 2 + MySQL).',
-              'Desarrollo de aplicación web administrativa y webphone cliente instalable para gestionar campañas de llamadas VOIP. (Laravel 6 + Nodejs + Vue 2 + MySQL)',
-              'Desarrollo de aplicación web que integra API WhatsApp con Twilio, Telegram, Instagram, Facebook Messenger, Chatbot, pasarela de pagos con PayU y Paypal. (Nodejs + Vue 2 + MongoDB)'
+              'Di mantenimiento a la aplicación de campañas de SMS masivos y mejoré sus colas de envío. (Laravel 5 + Node.js + Vue 2 + MySQL)',
+              'Desarrollé la aplicación administrativa y el webphone instalable para gestionar campañas de llamadas VoIP. (Laravel 6 + Node.js + Vue 2 + MySQL)',
+              'Sumé un producto nuevo al portafolio de la empresa: una plataforma de mensajería omnicanal que integra WhatsApp (Twilio), Telegram, Instagram, Messenger y chatbot, con pasarelas de pago PayU y PayPal. (Node.js + Vue 2 + MongoDB)'
             ]
           },
           {
@@ -204,8 +256,8 @@ export const contentEs: Content<ProjectId> = {
             place: 'Corporación Sapia S.A',
             link: 'https://sapia.com.pe/',
             bullets: [
-              'Analizar los requerimientos de las áreas correspondientes y brindar el mantenimiento correcto al sistema de llamadas. (Nodejs + Vue 2 + MySQL)',
-              'Desarrollo de un sistema de encuesta virtual. (Laravel 5 + Vue 2 + MySQL)'
+              'Analicé los requerimientos de las áreas usuarias y di mantenimiento al sistema de llamadas. (Node.js + Vue 2 + MySQL)',
+              'Desarrollé un sistema de encuesta virtual. (Laravel 5 + Vue 2 + MySQL)'
             ]
           },
           {
@@ -214,8 +266,8 @@ export const contentEs: Content<ProjectId> = {
             place: 'Centros Virtuales del Peru E.I.R.L',
             link: 'https://www.centrosvirtuales.com/',
             bullets: [
-              'Como parte del mantenimiento del sitema web de reservas, crear un modulo de selección de reserva de espacios COWORKING tipo cineplanet. (Ionic 2 + BackboneJS + Bootstrap 3)',
-              "Desarrollo de la aplicación web moderna 'SUMATE AL ÉXITO' que integra el nuevo modulo de reservas. (Laravel 4 + Nodejs + Vue + MySQL)"
+              'Dentro del mantenimiento del sitio web de reservas, creé un módulo para elegir espacios de coworking con selección visual, al estilo de las butacas de un cine. (Ionic 2 + BackboneJS + Bootstrap 3)',
+              'Desarrollé «Súmate al Éxito», una aplicación web moderna que integra el nuevo módulo de reservas. (Laravel 4 + Node.js + Vue + MySQL)'
             ]
           },
           {
@@ -224,7 +276,7 @@ export const contentEs: Content<ProjectId> = {
             place: 'Hacom S.A.C',
             link: 'http://www.hacom.com.pe/',
             bullets: [
-              'Crear scripts automatizados de reportes con python para las estadísticas de localización satelital.'
+              'Automaticé con scripts en Python la generación de reportes de estadísticas de localización satelital.'
             ]
           }
         ]
