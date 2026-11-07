@@ -49,7 +49,10 @@ export const en: MessageSchema = {
     showMore: 'Show more ({count})',
     prev: 'Previous project',
     next: 'Next project',
-    position: '{current} of {total}'
+    position: '{current} of {total}',
+    viewLabel: 'Change view',
+    viewGrid: 'Grid',
+    viewList: 'List'
   },
   skills: { levelOf: '{name}: {level} %' },
   contact: {

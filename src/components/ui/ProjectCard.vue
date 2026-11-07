@@ -6,7 +6,7 @@
   >
     <div class="relative aspect-[16/10] overflow-hidden bg-chip">
       <img
-        :src="image"
+        :src="item.image"
         alt=""
         width="720"
         height="450"
@@ -15,35 +15,35 @@
         class="size-full object-cover object-top transition-transform duration-300 motion-safe:group-hover:scale-105"
       />
       <span
-        v-if="isPrivate"
-        :title="privateLabel"
+        v-if="item.isPrivate"
+        :title="item.privateLabel"
         class="absolute top-2 right-2 inline-flex size-7 items-center justify-center rounded-full bg-sidebar/80 text-white"
       >
         <span class="icon-[ph--lock-simple]" aria-hidden="true"></span>
-        <span class="sr-only">{{ privateLabel }}</span>
+        <span class="sr-only">{{ item.privateLabel }}</span>
       </span>
     </div>
 
     <div class="flex flex-1 flex-col gap-1 p-4">
       <p class="text-xs font-semibold tracking-wide text-brand-text uppercase">
-        {{ categoryLabel }}
+        {{ item.categoryLabel }}
       </p>
       <h3 class="font-display text-lg font-semibold text-ink">
         <button
           type="button"
           class="cursor-pointer text-left outline-none after:absolute after:inset-0 after:content-['']"
-          :aria-label="openLabel"
+          :aria-label="item.openLabel"
           @click="emit('open')"
         >
-          {{ title }}
+          {{ item.title }}
         </button>
       </h3>
-      <p v-if="summary" class="line-clamp-2 text-sm text-muted">{{ summary }}</p>
+      <p v-if="item.summary" class="line-clamp-2 text-sm text-muted">{{ item.summary }}</p>
 
       <!-- Decorativo: el detalle completo de tecnologías está en el diálogo, con texto alternativo. -->
-      <div v-if="stack.length" class="mt-auto flex items-center gap-2 pt-3" aria-hidden="true">
+      <div v-if="item.stack.length" class="mt-auto flex items-center gap-2 pt-3" aria-hidden="true">
         <img
-          v-for="tech in stack.slice(0, MAX_TECH)"
+          v-for="tech in item.stack.slice(0, MAX_TECH)"
           :key="tech.slug"
           :src="tech.src"
           alt=""
@@ -51,8 +51,8 @@
           height="20"
           class="size-5 object-contain"
         />
-        <span v-if="stack.length > MAX_TECH" class="text-xs font-semibold text-muted">
-          +{{ stack.length - MAX_TECH }}
+        <span v-if="item.stack.length > MAX_TECH" class="text-xs font-semibold text-muted">
+          +{{ item.stack.length - MAX_TECH }}
         </span>
       </div>
     </div>
@@ -60,17 +60,9 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  title: string
-  image: string
-  categoryLabel: string
-  summary?: string
-  stack: readonly { slug: string; src: string }[]
-  isPrivate: boolean
-  /** Textos ya traducidos: `ui/` no conoce i18n. */
-  privateLabel: string
-  openLabel: string
-}>()
+import type { ProjectItem } from '@/types/ui'
+
+defineProps<{ item: ProjectItem }>()
 
 const emit = defineEmits<{ open: [] }>()
 

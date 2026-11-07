@@ -55,6 +55,13 @@ Los `id` de sección son anclas públicas: no se renombran.
   Tamaño con `text-*`, color con `text-<token>` (el icono usa `currentColor`). El margen es
   `mr-*`/`ml-*`, no `p*`: el icono mide `1em` con `border-box` y el relleno lo encogería.
 
+## Estado en la URL
+
+Se guarda en la _query string_ (`?cat=…`), no en el hash, y con `history.replaceState`: la lectura
+y escritura viven en `services/url.service.ts` y el composable que lo usa valida lo leído
+(valores desconocidos se ignoran) y omite los valores por defecto. Los nombres de parámetro no se
+renombran: están en enlaces compartidos.
+
 ## TypeScript
 
 - Sin `any` ni `@ts-ignore`. Importaciones de solo tipos con `import type`.

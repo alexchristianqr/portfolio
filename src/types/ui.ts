@@ -24,6 +24,28 @@ export interface ProjectDetail {
   closeLabel: string
 }
 
+/** Lo que necesitan la tarjeta y la fila de un proyecto: son dos vistas del mismo dato. */
+export interface ProjectItem {
+  title: string
+  image: string
+  categoryLabel: string
+  summary?: string
+  stack: readonly { slug: string; src: string }[]
+  isPrivate: boolean
+  /** Textos ya traducidos: `ui/` no conoce i18n. */
+  privateLabel: string
+  openLabel: string
+}
+
+export type ProjectViewMode = 'grid' | 'list'
+
+export interface ViewOption {
+  value: ProjectViewMode
+  label: string
+  /** Clase de icono literal y completa (`icon-[ph--...]`). */
+  icon: string
+}
+
 export interface ContactFormLabels {
   name: string
   email: string

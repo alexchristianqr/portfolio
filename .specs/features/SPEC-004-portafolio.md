@@ -5,7 +5,7 @@
 | **Estado**      | Implementada                                                                               |
 | **Componentes** | `PortfolioSection`, `ProjectCard`, `FilterTabs`, `ProjectDialog`                           |
 | **Datos**       | `projects.data.ts` (invariable) + `content.<idioma>.ts` → `portfolio.projects[id]` (texto) |
-| **Lógica**      | `useProjectFilter`, `useContent().projectViews`                                            |
+| **Lógica**      | `useProjectFilter`, `usePortfolioUrl`, `services/url.service.ts`                           |
 | **Imágenes**    | `assets-src/portfolio/` (originales) → `npm run images` → `public/.../portfolio/{sm,lg}/`  |
 | **Ancla**       | `#portfolio`                                                                               |
 
@@ -37,6 +37,18 @@
   vuelve a la tarjeta que lo abrió.
 - **RF-12** — Un proyecto sin resumen muestra tarjeta y diálogo sin ese bloque (no hay campos
   vacíos).
+- **RF-13** — Dos vistas, conmutables con un selector (Cuadrícula / Lista): la **rejilla** de
+  tarjetas y una **lista compacta** de filas (miniatura, categoría, título de hasta 2 líneas,
+  resumen, tecnologías e insignia de privado). En pantallas pequeñas la fila oculta los iconos de
+  tecnologías. Filtros, «Mostrar más» y diálogo funcionan igual en ambas.
+- **RF-14** — El filtro y la vista **viajan en la URL**: `?cat=landing&view=list#portfolio`.
+  Parámetros: `cat` = `app` · `microservice` · `mobile` · `landing`; `view` = `list`. Los valores por
+  defecto (`all`, `grid`) no aparecen: el estado inicial tiene la URL limpia.
+- **RF-15** — Al cargar un enlace con parámetros se aplica el estado antes del primer pintado y
+  la página aterriza en `#portfolio`. Un valor desconocido (`?cat=inventada`) se ignora; el orden
+  de los parámetros da igual; se puede dar solo uno.
+- **RF-16** — Cada cambio reemplaza la URL (`history.replaceState`): **no añade entradas al
+  historial**. Abrir el diálogo no la modifica.
 
 ## Reglas de contenido
 
@@ -47,6 +59,10 @@
   `lg/<nombre>.webp` (1280 px, diálogo). Los originales no se despliegan.
 
 ## Notas
+
+- **Por qué query y no hash:** `#portfolio?cat=landing` no coincide con ningún `id`, así que el
+  navegador no bajaría a la sección. Con la query, el hash sigue siendo el ancla.
+- Los nombres de parámetro (`cat`, `view`) forman parte de enlaces ya compartidos: no se renombran.
 
 - Las flechas se escuchan en un `div` interior y no en `<DialogContent>`: Reka reenvía los
   atributos por varias capas y el manejador se ejecutaba dos veces por pulsación.

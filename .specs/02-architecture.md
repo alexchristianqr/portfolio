@@ -27,7 +27,7 @@ src/
 ├── data/                 profile.data, projects.data, content.{es,en} (texto largo)
 ├── config/env.ts         import.meta.env tipado y congelado
 ├── lib/asset.ts          Rutas de activos bajo BASE_URL
-├── services/             I/O puro, sin Vue ni Pinia: email, analytics, storage
+├── services/             I/O puro, sin Vue ni Pinia: email, analytics, storage, url
 ├── stores/               Pinia: locale, theme, ui, contact
 ├── composables/          Lógica local o de ciclo de vida: useContent, useTypewriter, …
 ├── directives/           v-reveal, v-progress (IntersectionObserver)

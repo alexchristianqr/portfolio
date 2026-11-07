@@ -52,7 +52,10 @@ export const es = {
     showMore: 'Mostrar más ({count})',
     prev: 'Proyecto anterior',
     next: 'Proyecto siguiente',
-    position: '{current} de {total}'
+    position: '{current} de {total}',
+    viewLabel: 'Cambiar vista',
+    viewGrid: 'Cuadrícula',
+    viewList: 'Lista'
   },
   skills: { levelOf: '{name}: {level} %' },
   contact: {
