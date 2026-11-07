@@ -34,7 +34,8 @@
   (todos los que cumplen el filtro, no solo los visibles), con botones o con las flechas ←/→. Da
   la vuelta al llegar al final y muestra la posición («3 de 21»).
 - **RF-11** — El diálogo se cierra con Esc, con el botón de cierre o pulsando fuera; el foco
-  vuelve a la tarjeta que lo abrió.
+  vuelve a la tarjeta que lo abrió. El botón de cierre (X) es **persistente**: queda fijo en la
+  esquina superior (`sticky`) aunque el contenido del diálogo haga scroll.
 - **RF-12** — Un proyecto sin resumen muestra tarjeta y diálogo sin ese bloque (no hay campos
   vacíos).
 - **RF-13** — Dos vistas, conmutables con un selector (Cuadrícula / Lista): la **rejilla** de
