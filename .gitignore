@@ -27,3 +27,6 @@ dist-ssr
 .env.production
 .env.local
 .env.development
+# Entornos: nunca versionar, solo el contrato
+.env.*
+!.env.example
