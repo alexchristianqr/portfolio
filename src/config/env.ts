@@ -5,7 +5,7 @@
  * Que existan lo garantiza `vite.config.ts` (aborta si falta una obligatoria).
  */
 export const env = Object.freeze({
-  appUrl: import.meta.env.VITE_APP_APPURL,
+  appUrl: import.meta.env.VITE_APP_APPURL || undefined,
   cvFilename: import.meta.env.VITE_APP_FILENAME_CV,
   googleAnalyticsId: import.meta.env.VITE_APP_GOOGLE_ANALITYCS || undefined,
   emailjs: {

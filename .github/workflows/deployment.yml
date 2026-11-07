@@ -1,14 +1,26 @@
 name: Deployment
 
 on:
-  workflow_dispatch: # Se ejecuta a mano desde la pestaña Actions
+  # Publica al fusionar un PR a `main` (un merge es un push a `main`). `main` está protegida:
+  # solo se escribe en ella con un PR, así que ningún commit suelto ni ninguna otra rama publica.
+  push:
+    branches: [main]
+  # Despliegue manual de la rama que elijas en Actions → Deployment → Run workflow. Ojo: hay un
+  # solo sitio publicado, así que desplegar otra rama sustituye la versión real.
+  workflow_dispatch:
 
-# El deploy empuja a la rama gh-pages con GITHUB_TOKEN.
+# Dos despliegues a la vez se pisarían al empujar a gh-pages: se encolan en vez de solaparse.
+concurrency:
+  group: deployment
+  cancel-in-progress: false
+
+# El deploy empuja a la rama gh-pages con GITHUB_TOKEN. Esa rama no dispara este workflow
+# (solo `main`), así que no hay bucle.
 permissions:
   contents: write
 
 # Si faltan las variables obligatorias, `vite build` aborta con la lista (ver vite.config.ts):
-# nunca se publica un formulario de contacto roto. VITE_APP_GOOGLE_ANALITYCS es opcional.
+# nunca se publica un formulario de contacto roto. VITE_APP_GOOGLE_ANALITYCS y VITE_APP_APPURL son opcionales.
 env:
   VITE_APP_APPURL: ${{ vars.VITE_APP_APPURL }}
   VITE_APP_FILENAME_CV: ${{ vars.VITE_APP_FILENAME_CV }}

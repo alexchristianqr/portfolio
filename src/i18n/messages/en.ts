@@ -16,7 +16,8 @@ export const en: MessageSchema = {
     menu: 'Navigation menu',
     backToTop: 'Back to top',
     language: 'Language',
-    copyright: 'Copyright'
+    copyright: 'Copyright',
+    build: 'Version {version} · branch {branch} · built on {date}'
   },
   theme: {
     label: 'Theme',
