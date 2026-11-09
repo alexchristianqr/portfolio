@@ -4,12 +4,17 @@ import type { ProjectId } from './projects.data'
 /** Textos en inglés. Los datos invariantes viven en `projects.data.ts` y `profile.data.ts`. */
 export const contentEn: Content<ProjectId> = {
   hero: {
-    phrases: ['Software Engineer', 'Full Stack Developer', 'Tech Lead with AI and SDD']
+    phrases: [
+      'Software Engineer',
+      'Full Stack Developer',
+      'Tech Lead',
+      'Backend and Cloud Engineer'
+    ]
   },
   about: {
     paragraphs: [
       "Writing code is no longer the hard part. AI agents generate it in seconds. The hard part is ==deciding what to build, within which limits, and checking it came out right==. According to Stack Overflow 2025, **84%** of developers already use AI and **46%** don't trust what it produces. That favors whoever has the judgment to direct and review. That is why I work with **Spec Driven Development (SDD)**. Before coding I write the requirements, the architecture decisions (**ADRs**) and one **SPEC** per feature. That specification is the source of truth for me and for the AI. ==If the code contradicts it, there is a bug.==",
-      'I have over 8 years in backend and full stack, in tourism and insurance among other sectors. Today I am **Tech Lead at LimaTours** and I run a team of 3 people that works with SDD. On that base I use **Kiro** to go from requirements to design and tasks, **Claude Code** with Skills, Hooks and subagents, and **MCP** servers that give agents access to code and data. All of it on **TypeScript, NestJS and serverless AWS**. AI executes faster when the specification is clear. Direction and review stay with me, and nothing is merged without passing lint, types, build and the spec. That is how projects end up ==stable, scalable and profitable==: every decision is written down, can be reviewed, and nobody redoes what no one understood. This portfolio is built that way.'
+      'I have over 8 years in backend and full stack, in tourism and insurance among other sectors. Today I am **Tech Lead at LimaTours** and I lead a team that works applying **SDD**: specification first, code after. With **Kiro** I go from requirements to design and tasks. With **Claude Code** I use Skills, Hooks and subagents. With **MCP** servers I give agents access to code and data. All of it on **TypeScript, NestJS and serverless AWS**. AI executes faster when the specification is clear. Direction and review stay with me, and nothing is merged without passing lint, types, build and the spec. That is how projects end up ==stable, scalable and profitable==: every decision is written down, can be reviewed, and nobody redoes what no one understood. This portfolio is built that way.'
     ]
   },
   skills: {
@@ -196,7 +201,7 @@ export const contentEn: Content<ProjectId> = {
             place: 'LimaTours SAC',
             link: 'https://www.limatours.com.pe/',
             bullets: [
-              'I lead a team of 3 people that develops and evolves the tourism management applications. (AWS + Serverless + TypeScript)',
+              'I lead a team that develops and evolves the tourism management applications. (AWS + Serverless + TypeScript)',
               'We work with Spec Driven Development: the written specification is the source of truth and every change is reviewed against it.'
             ]
           },
