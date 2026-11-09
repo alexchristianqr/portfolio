@@ -4,12 +4,17 @@ import type { ProjectId } from './projects.data'
 /** Textos en español. Los datos invariantes viven en `projects.data.ts` y `profile.data.ts`. */
 export const contentEs: Content<ProjectId> = {
   hero: {
-    phrases: ['Ingeniero de Software', 'Desarrollador Full Stack', 'Líder Técnico con IA y SDD']
+    phrases: [
+      'Ingeniero de Software',
+      'Desarrollador Full Stack',
+      'Líder Técnico',
+      'Ingeniero Backend y Cloud'
+    ]
   },
   about: {
     paragraphs: [
       'Escribir código dejó de ser lo difícil. Los agentes de IA lo generan en segundos. Lo difícil es ==decidir qué construir, con qué límites y comprobar que quedó bien==. Según Stack Overflow 2025, el **84 %** de los desarrolladores ya usa IA y el **46 %** desconfía de lo que produce. Eso favorece a quien tiene criterio para dirigir y revisar. Por eso trabajo con **Spec Driven Development (SDD)**. Antes de programar escribo los requisitos, las decisiones de arquitectura (**ADR**) y una **SPEC** por funcionalidad. Esa especificación es la fuente de verdad para mí y para la IA. ==Si el código la contradice, hay un bug.==',
-      'Llevo más de 8 años en backend y full stack, en turismo y seguros entre otros sectores. Hoy soy **Líder Técnico en LimaTours** y dirijo un equipo de 3 personas que trabaja con SDD. Sobre esa base uso **Kiro** para pasar de requisitos a diseño y tareas, **Claude Code** con Skills, Hooks y subagentes, y servidores **MCP** que dan a los agentes acceso a código y datos. Todo con **TypeScript, NestJS y AWS serverless**. La IA ejecuta más rápido cuando la especificación es clara. La dirección y la revisión son mías, y nada se integra sin pasar lint, tipos, build y la spec. Así salen ==proyectos estables, escalables y rentables==: cada decisión queda escrita, se puede revisar y no se rehace lo que nadie entendió. Este portafolio está hecho así.'
+      'Llevo más de 8 años en backend y full stack, en turismo y seguros entre otros sectores. Hoy soy **Líder Técnico en LimaTours** y dirijo un equipo que trabaja aplicando **SDD**: primero la especificación, después el código. Con **Kiro** paso de requisitos a diseño y tareas. Con **Claude Code** uso Skills, Hooks y subagentes. Con servidores **MCP** doy a los agentes acceso a código y datos. Todo sobre **TypeScript, NestJS y AWS serverless**. La IA ejecuta más rápido cuando la especificación es clara. La dirección y la revisión son mías, y nada se integra sin pasar lint, tipos, build y la spec. Así salen ==proyectos estables, escalables y rentables==: cada decisión queda escrita, se puede revisar y no se rehace lo que nadie entendió. Este portafolio está hecho así.'
     ]
   },
   skills: {
@@ -202,7 +207,7 @@ export const contentEs: Content<ProjectId> = {
             place: 'LimaTours SAC',
             link: 'https://www.limatours.com.pe/',
             bullets: [
-              'Lidero un equipo de 3 personas que desarrolla y evoluciona las aplicaciones de gestión turística. (AWS + Serverless + TypeScript)',
+              'Lidero un equipo que desarrolla y evoluciona las aplicaciones de gestión turística. (AWS + Serverless + TypeScript)',
               'Trabajamos con Spec Driven Development: la especificación escrita es la fuente de verdad y cada cambio se revisa contra ella.'
             ]
           },
