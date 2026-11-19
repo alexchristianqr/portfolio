@@ -27,10 +27,10 @@ export const projects = [
     id: 'game-apps',
     category: 'mobile',
     image: 'gameapps',
-    link: 'https://alexchristianqr.github.io/iframephone/?src=https://alexchristianqr.github.io/game-apps/#/',
+    link: 'https://alexchristianqr.github.io/game-apps/#/home',
     repository: 'https://github.com/alexchristianqr/game-apps',
     repositoryPublic: true,
-    stack: ['angular', 'firebase', 'typescript', 'material-design', 'git']
+    stack: ['angular', 'firebase', 'typescript', 'git']
   },
   {
     id: 'api-de-whatsapp-b2b',

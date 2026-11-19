@@ -55,10 +55,10 @@ export const contentEn: Content<ProjectId> = {
       'game-apps': {
         title: 'Game apps',
         summary:
-          'An interactive web application of classic games, the ones that had their golden age between 1995 and 2000. It is designed to run responsively on the web.',
+          'A web portal of classic arcade-style games, the ones that had their golden age between 1995 and 2000. You play for free in the browser, with no sign-up or download, and it is responsive.',
         list: {
           label: 'Available games',
-          items: ['Tic-tac-toe']
+          items: ['Tic-tac-toe', 'Smart toy', 'Tetris', 'Bomberman']
         }
       },
       'api-de-whatsapp-b2b': {
