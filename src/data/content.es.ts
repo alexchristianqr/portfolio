@@ -55,10 +55,10 @@ export const contentEs: Content<ProjectId> = {
       'game-apps': {
         title: 'Game apps',
         summary:
-          'Es una aplicación web interactiva de juegos clásicos. Aquellos juegos que tuvieron su época dorada en los años 95 al 2000. La app está diseñada para ejecutarse por la web de manera responsiva.',
+          'Portal web de juegos clásicos con aire arcade, de los que tuvieron su época dorada entre 1995 y 2000. Se juega gratis en el navegador, sin registrarse ni descargar nada, y es responsivo.',
         list: {
           label: 'Lista de juegos disponibles',
-          items: ['Tres en linea']
+          items: ['Tres en línea', 'Smart toy', 'Tetris', 'Bomberman']
         }
       },
       'api-de-whatsapp-b2b': {
