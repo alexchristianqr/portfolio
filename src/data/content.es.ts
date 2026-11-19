@@ -207,7 +207,7 @@ export const contentEs: Content<ProjectId> = {
             place: 'LimaTours SAC',
             link: 'https://www.limatours.com.pe/',
             bullets: [
-              'Lidero un equipo que desarrolla y evoluciona las aplicaciones de gestión turística. (AWS + Serverless + TypeScript)',
+              'Lidero el equipo que desarrolla y evoluciona las aplicaciones de gestión turística.',
               'Trabajamos con Spec Driven Development: la especificación escrita es la fuente de verdad y cada cambio se revisa contra ella.'
             ]
           },
@@ -218,8 +218,8 @@ export const contentEs: Content<ProjectId> = {
             link: 'https://www.limatours.com.pe/',
             bullets: [
               'Desarrollé y evolucioné el producto de reservas por HyperGuest: las ventas mensuales crecieron un 1.400 %, de forma progresiva en año y medio.',
-              'Desarrollo y mantenimiento de servicios backend para aplicaciones de gestión turística, asegurando alta disponibilidad y rendimiento. (AWS + Serverless + Node.js / PHP / TypeScript)',
-              'Implementación de soluciones para optimizar procesos internos y mejorar la experiencia del usuario final. (DynamoDB + Lambda)'
+              'Desarrollé y mantuve los servicios backend de las aplicaciones de gestión turística, asegurando alta disponibilidad y buen rendimiento.',
+              'Implementé soluciones que optimizaron los procesos internos y mejoraron la experiencia del usuario final.'
             ]
           },
           {
@@ -228,8 +228,8 @@ export const contentEs: Content<ProjectId> = {
             place: 'Softtek / Cliente: Rimac Seguros',
             link: 'https://www.softtek.com/es/',
             bullets: [
-              'Di mantenimiento a los servicios de corredores de Rimac Seguros: pólizas, renovaciones, endosos y financiamientos. (AWS + Serverless + Node.js + TypeScript)',
-              'Resolví desde la causa raíz bugs de alto impacto y los cubrí con pruebas unitarias. (AWS + Serverless + DynamoDB)'
+              'Mantuve los servicios para corredores de Rimac Seguros: pólizas, renovaciones, endosos y financiamientos.',
+              'Resolví desde la causa raíz errores de alto impacto y los cubrí con pruebas unitarias.'
             ]
           },
           {
@@ -239,9 +239,9 @@ export const contentEs: Content<ProjectId> = {
               'Quality & Development Software SAC / Cliente: Empresas Jordan SA en Santiago - Chile',
             link: 'https://www.qdsgroup.com.pe/',
             bullets: [
-              'Como parte del equipo de desarrollo, construí servicios B2C que orquestan canales para campañas de Email y SMS. (AWS API Gateway + Lambda + Step Functions + Node.js + TypeScript)',
-              'Desarrollé el backend que administra flujos de trabajo automatizados y procesos batch (Scaler), desplegado en contenedores. (AWS ECR + EKS + Docker + NestJS + TypeScript)',
-              'Participé en el servicio y la integración de acortamiento de URL, con backend y apoyo en frontend. (AWS CloudFormation + RDS + Node.js + Vue 3 + TypeScript)'
+              'Construí, dentro del equipo de desarrollo, los servicios B2C que orquestan los canales de las campañas de Email y SMS.',
+              'Desarrollé el backend que administra flujos de trabajo automatizados y procesos batch (Scaler).',
+              'Participé en el servicio de acortamiento de URL y en su integración, con foco en backend y apoyo en frontend.'
             ]
           },
           {
@@ -250,9 +250,9 @@ export const contentEs: Content<ProjectId> = {
             place: 'Securitec Peru S.A.C',
             link: 'https://www.securitec.pe/',
             bullets: [
-              'Di mantenimiento a la aplicación de campañas de SMS masivos y mejoré sus colas de envío. (Laravel 5 + Node.js + Vue 2 + MySQL)',
-              'Desarrollé la aplicación administrativa y el webphone instalable para gestionar campañas de llamadas VoIP. (Laravel 6 + Node.js + Vue 2 + MySQL)',
-              'Sumé un producto nuevo al portafolio de la empresa: una plataforma de mensajería omnicanal que integra WhatsApp (Twilio), Telegram, Instagram, Messenger y chatbot, con pasarelas de pago PayU y PayPal. (Node.js + Vue 2 + MongoDB)'
+              'Mantuve la aplicación de campañas de SMS masivos y mejoré sus colas de envío.',
+              'Desarrollé la aplicación administrativa y el webphone instalable para gestionar campañas de llamadas VoIP.',
+              'Sumé un producto nuevo al portafolio de la empresa: una plataforma de mensajería omnicanal que integra WhatsApp, Telegram, Instagram, Messenger y chatbot, con pasarelas de pago PayU y PayPal.'
             ]
           },
           {
@@ -261,8 +261,8 @@ export const contentEs: Content<ProjectId> = {
             place: 'Corporación Sapia S.A',
             link: 'https://sapia.com.pe/',
             bullets: [
-              'Analicé los requerimientos de las áreas usuarias y di mantenimiento al sistema de llamadas. (Node.js + Vue 2 + MySQL)',
-              'Desarrollé un sistema de encuesta virtual. (Laravel 5 + Vue 2 + MySQL)'
+              'Analicé los requerimientos de las áreas usuarias y mantuve el sistema de llamadas.',
+              'Desarrollé un sistema de encuestas virtuales.'
             ]
           },
           {
@@ -271,8 +271,8 @@ export const contentEs: Content<ProjectId> = {
             place: 'Centros Virtuales del Peru E.I.R.L',
             link: 'https://www.centrosvirtuales.com/',
             bullets: [
-              'Dentro del mantenimiento del sitio web de reservas, creé un módulo para elegir espacios de coworking con selección visual, al estilo de las butacas de un cine. (Ionic 2 + BackboneJS + Bootstrap 3)',
-              'Desarrollé «Súmate al Éxito», una aplicación web moderna que integra el nuevo módulo de reservas. (Laravel 4 + Node.js + Vue + MySQL)'
+              'Durante el mantenimiento del sitio web de reservas, creé un módulo para elegir espacios de coworking de forma visual, como se eligen las butacas de un cine.',
+              'Desarrollé «Súmate al Éxito», una aplicación web moderna que integra el nuevo módulo de reservas.'
             ]
           },
           {
@@ -281,7 +281,7 @@ export const contentEs: Content<ProjectId> = {
             place: 'Hacom S.A.C',
             link: 'http://www.hacom.com.pe/',
             bullets: [
-              'Automaticé con scripts en Python la generación de reportes de estadísticas de localización satelital.'
+              'Automaticé la generación de reportes de estadísticas de localización satelital.'
             ]
           }
         ]

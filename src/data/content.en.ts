@@ -201,7 +201,7 @@ export const contentEn: Content<ProjectId> = {
             place: 'LimaTours SAC',
             link: 'https://www.limatours.com.pe/',
             bullets: [
-              'I lead a team that develops and evolves the tourism management applications. (AWS + Serverless + TypeScript)',
+              'I lead the team that develops and evolves the tourism management applications.',
               'We work with Spec Driven Development: the written specification is the source of truth and every change is reviewed against it.'
             ]
           },
@@ -212,8 +212,8 @@ export const contentEn: Content<ProjectId> = {
             link: 'https://www.limatours.com.pe/',
             bullets: [
               'I built and evolved the HyperGuest reservations product: monthly sales grew 1,400%, progressively over a year and a half.',
-              'Development and maintenance of backend services for tourism management applications, ensuring high availability and performance. (AWS + Serverless + Node.js / PHP / TypeScript)',
-              'Implementation of solutions to optimize internal processes and improve the end-user experience. (DynamoDB + Lambda)'
+              'I developed and maintained the backend services of the tourism management applications, ensuring high availability and solid performance.',
+              'I implemented solutions that streamlined internal processes and improved the end-user experience.'
             ]
           },
           {
@@ -222,8 +222,8 @@ export const contentEn: Content<ProjectId> = {
             place: 'Softtek / Client: Rimac Seguros',
             link: 'https://www.softtek.com/es/',
             bullets: [
-              'I maintained the broker services of Rimac Seguros: policies, renewals, endorsements and financing. (AWS + Serverless + Node.js + TypeScript)',
-              'I fixed high-impact bugs at their root cause and covered them with unit tests. (AWS + Serverless + DynamoDB)'
+              'I maintained the broker services of Rimac Seguros: policies, renewals, endorsements and financing.',
+              'I fixed high-impact bugs at their root cause and covered them with unit tests.'
             ]
           },
           {
@@ -233,9 +233,9 @@ export const contentEn: Content<ProjectId> = {
               'Quality & Development Software SAC / Client: Empresas Jordan SA in Santiago - Chile',
             link: 'https://www.qdsgroup.com.pe/',
             bullets: [
-              'As part of the development team, I built B2C services that orchestrate channels for Email and SMS campaigns. (AWS API Gateway + Lambda + Step Functions + Node.js + TypeScript)',
-              'I developed the backend that manages automated workflows and batch processes (Scaler), deployed on containers. (AWS ECR + EKS + Docker + NestJS + TypeScript)',
-              'I worked on the URL shortening service and integration, on the backend with frontend support. (AWS CloudFormation + RDS + Node.js + Vue 3 + TypeScript)'
+              'Within the development team, I built the B2C services that orchestrate the channels for Email and SMS campaigns.',
+              'I developed the backend that manages automated workflows and batch processes (Scaler).',
+              'I worked on the URL shortening service and its integration, focused on the backend with support on the frontend.'
             ]
           },
           {
@@ -244,9 +244,9 @@ export const contentEn: Content<ProjectId> = {
             place: 'Securitec Peru S.A.C',
             link: 'https://www.securitec.pe/',
             bullets: [
-              'I maintained the mass SMS campaign application and improved its delivery queues. (Laravel 5 + Node.js + Vue 2 + MySQL)',
-              'I developed the administrative application and installable webphone to manage VoIP call campaigns. (Laravel 6 + Node.js + Vue 2 + MySQL)',
-              "I added a new product to the company's portfolio: an omnichannel messaging platform that integrates WhatsApp (Twilio), Telegram, Instagram, Messenger and chatbot, with PayU and PayPal payment gateways. (Node.js + Vue 2 + MongoDB)"
+              'I maintained the mass SMS campaign application and improved its delivery queues.',
+              'I developed the administrative application and installable webphone to manage VoIP call campaigns.',
+              "I added a new product to the company's portfolio: an omnichannel messaging platform that integrates WhatsApp, Telegram, Instagram, Messenger and chatbot, with PayU and PayPal payment gateways."
             ]
           },
           {
@@ -255,8 +255,8 @@ export const contentEn: Content<ProjectId> = {
             place: 'Corporación Sapia S.A',
             link: 'https://sapia.com.pe/',
             bullets: [
-              'I analyzed requirements from the user areas and maintained the call system. (Node.js + Vue 2 + MySQL)',
-              'I developed a virtual survey system. (Laravel 5 + Vue 2 + MySQL)'
+              'I analyzed requirements from the user areas and maintained the call system.',
+              'I developed a virtual survey system.'
             ]
           },
           {
@@ -265,8 +265,8 @@ export const contentEn: Content<ProjectId> = {
             place: 'Centros Virtuales del Peru E.I.R.L',
             link: 'https://www.centrosvirtuales.com/',
             bullets: [
-              'As part of maintaining the booking website, I created a module to pick coworking spaces visually, like choosing seats in a cinema. (Ionic 2 + BackboneJS + Bootstrap 3)',
-              'I developed "Join Success", a modern web application that integrates the new booking module. (Laravel 4 + Node.js + Vue + MySQL)'
+              'While maintaining the booking website, I created a module to pick coworking spaces visually, the way you choose seats in a cinema.',
+              'I developed "Join Success", a modern web application that integrates the new booking module.'
             ]
           },
           {
@@ -274,9 +274,7 @@ export const contentEn: Content<ProjectId> = {
             date: '01/2016 - 06/2016',
             place: 'Hacom S.A.C',
             link: 'http://www.hacom.com.pe/',
-            bullets: [
-              'I automated the generation of satellite location statistics reports with Python scripts.'
-            ]
+            bullets: ['I automated the generation of satellite location statistics reports.']
           }
         ]
       }
